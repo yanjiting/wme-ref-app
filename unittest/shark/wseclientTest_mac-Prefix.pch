@@ -1,0 +1,19 @@
+//
+// Prefix header for all source files of the 'wrtp' target in the 'wrtp' project
+//
+
+#include <Carbon/Carbon.h>
+
+#define MACOS
+
+#define MachOSupport
+
+#define WSE_WBX_UNIFIED_TRACE
+
+#define ENABLE_FAST_RSFEC
+//#define OPENGL_SUPPORT_YUV422
+
+#define WSE_CALAYER_SUPPORT_MULTI_OUTPUT
+#define AVCAPTURE_SUPPORT
+
+#define _U_TEST_

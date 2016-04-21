@@ -1,0 +1,9 @@
+// NOTE: InHouse is just a variant of Release.
+#include "Release.xcconfig"
+
+CODE_SIGN_IDENTITY = iPhone Distribution: Cisco Systems, Inc.;
+PROVISIONING_PROFILE = 083C7FBA-8EBE-480C-AB92-4F1E1FC03CE5;
+
+// Loading Lookback framework only for In-House builds so that
+// it doesn't get submitted to AppStore.
+OTHER_LDFLAGS_LOOKBACK = -ObjC -framework AdSupport

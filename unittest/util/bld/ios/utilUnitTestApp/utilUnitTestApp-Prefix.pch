@@ -1,0 +1,27 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+//#define MACOS           1
+#define MACOSX          1
+#define CM_MACOS
+#define CM_IOS
+
+#define MachOSupport    1
+#define __TRACE__       1
+
+#define GTEST_USE_OWN_TR1_TUPLE 1
+#define GTEST_HAS_TR1_TUPLE 1

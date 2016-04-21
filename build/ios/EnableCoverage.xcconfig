@@ -1,0 +1,21 @@
+
+//
+//  Created by hfe-vscm-mac on 4/24/14.
+//  Copyright (c) 2014 Hank Peng. All rights reserved.
+//
+// Note: this file is used by all of the media SDK module.
+//       Be careful to add any info to it
+GCC_GENERATE_TEST_COVERAGE_FILES = YES
+
+GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES
+
+GCC_GENERATE_DEBUGGING_SYMBOLS = YES
+
+GCC_PREPROCESSOR_DEFINITIONS = ENABLED_GCOV_FLAG APP_IOS $(inherited)
+
+GCC_PREPROCESSOR_DEFINITIONS[sdk=iphoneos*] = RUN_ON_DEVICE $(inherited)
+
+//For fix a special compiler issue on arm64 architecture with CC
+GCC_OPTIMIZATION_LEVEL = 0
+
+OBJROOT = /tmp/cc_iOS

@@ -1,0 +1,11 @@
+This file describes the interface IWmeMediaTrackBase.
+
+.. contents:: 
+    :local: 
+    :depth: 2
+
+<doxygen2rst class=wme::IWmeMediaTrackBase>IWmeMediaTrackBase</doxygen2rst>
+
+<doxygen2rst class=wme::IWmeExternalRenderer>IWmeExternalRenderer</doxygen2rst>
+
+<doxygen2rst class=wme::IWmeExternalInputter>IWmeExternalInputter</doxygen2rst>

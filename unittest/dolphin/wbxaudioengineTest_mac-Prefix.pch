@@ -1,0 +1,12 @@
+//
+// Prefix header for all source files of the 'wrtp' target in the 'wrtp' project
+//
+
+#include <Carbon/Carbon.h>
+
+#define MACOS 1
+#define WSE_WBX_UNIFIED_TRACE
+
+#define GTEST
+
+#define __USE_CISCO_SAFE_C__

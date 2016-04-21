@@ -1,0 +1,300 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F79D0E4F1BFC61B30054C8B2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F79D0E4E1BFC61B30054C8B2 /* main.cpp */; };
+		F79D0E571BFC62100054C8B2 /* read_config.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F79D0E551BFC62100054C8B2 /* read_config.cpp */; settings = {ASSET_TAGS = (); }; };
+		F7D51EFD1BFEFB2900BF2741 /* DownConvert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F7D51EFB1BFEFB2900BF2741 /* DownConvert.cpp */; settings = {ASSET_TAGS = (); }; };
+		F7D51F071C02B65B00BF2741 /* ParserFrame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F7D51F051C02B65B00BF2741 /* ParserFrame.cpp */; settings = {ASSET_TAGS = (); }; };
+		F7D51F0D1C02EC5300BF2741 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7D51F0C1C02EC5300BF2741 /* AVFoundation.framework */; };
+		F7D51F0F1C02EC5F00BF2741 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7D51F0E1C02EC5F00BF2741 /* Cocoa.framework */; };
+		F7D51F121C02F1BA00BF2741 /* QualityCalculation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F7D51F101C02F1BA00BF2741 /* QualityCalculation.cpp */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F79D0E491BFC61B30054C8B2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F79D0E4B1BFC61B30054C8B2 /* VideoQualityMetric */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = VideoQualityMetric; sourceTree = BUILT_PRODUCTS_DIR; };
+		F79D0E4E1BFC61B30054C8B2 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		F79D0E551BFC62100054C8B2 /* read_config.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = read_config.cpp; sourceTree = "<group>"; };
+		F79D0E561BFC62100054C8B2 /* read_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = read_config.h; sourceTree = "<group>"; };
+		F7D51EFB1BFEFB2900BF2741 /* DownConvert.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DownConvert.cpp; sourceTree = "<group>"; };
+		F7D51EFC1BFEFB2900BF2741 /* DownConvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownConvert.h; sourceTree = "<group>"; };
+		F7D51F051C02B65B00BF2741 /* ParserFrame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ParserFrame.cpp; sourceTree = "<group>"; };
+		F7D51F061C02B65B00BF2741 /* ParserFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParserFrame.h; sourceTree = "<group>"; };
+		F7D51F0C1C02EC5300BF2741 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F7D51F0E1C02EC5F00BF2741 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		F7D51F101C02F1BA00BF2741 /* QualityCalculation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = QualityCalculation.cpp; sourceTree = "<group>"; };
+		F7D51F111C02F1BA00BF2741 /* QualityCalculation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QualityCalculation.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F79D0E481BFC61B30054C8B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7D51F0F1C02EC5F00BF2741 /* Cocoa.framework in Frameworks */,
+				F7D51F0D1C02EC5300BF2741 /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F79D0E421BFC61B30054C8B2 = {
+			isa = PBXGroup;
+			children = (
+				F7D51F0E1C02EC5F00BF2741 /* Cocoa.framework */,
+				F7D51F0C1C02EC5300BF2741 /* AVFoundation.framework */,
+				F79D0E4D1BFC61B30054C8B2 /* VideoQualityMetric */,
+				F79D0E4C1BFC61B30054C8B2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F79D0E4C1BFC61B30054C8B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F79D0E4B1BFC61B30054C8B2 /* VideoQualityMetric */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F79D0E4D1BFC61B30054C8B2 /* VideoQualityMetric */ = {
+			isa = PBXGroup;
+			children = (
+				F7D51F101C02F1BA00BF2741 /* QualityCalculation.cpp */,
+				F7D51F111C02F1BA00BF2741 /* QualityCalculation.h */,
+				F7D51F051C02B65B00BF2741 /* ParserFrame.cpp */,
+				F7D51F061C02B65B00BF2741 /* ParserFrame.h */,
+				F7D51EFB1BFEFB2900BF2741 /* DownConvert.cpp */,
+				F7D51EFC1BFEFB2900BF2741 /* DownConvert.h */,
+				F79D0E551BFC62100054C8B2 /* read_config.cpp */,
+				F79D0E561BFC62100054C8B2 /* read_config.h */,
+				F79D0E4E1BFC61B30054C8B2 /* main.cpp */,
+			);
+			path = VideoQualityMetric;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F79D0E4A1BFC61B30054C8B2 /* VideoQualityMetric */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F79D0E521BFC61B30054C8B2 /* Build configuration list for PBXNativeTarget "VideoQualityMetric" */;
+			buildPhases = (
+				F79D0E471BFC61B30054C8B2 /* Sources */,
+				F79D0E481BFC61B30054C8B2 /* Frameworks */,
+				F79D0E491BFC61B30054C8B2 /* CopyFiles */,
+				F7D51F181C0429DB00BF2741 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VideoQualityMetric;
+			productName = VideoQualityMetric;
+			productReference = F79D0E4B1BFC61B30054C8B2 /* VideoQualityMetric */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F79D0E431BFC61B30054C8B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = karina;
+				TargetAttributes = {
+					F79D0E4A1BFC61B30054C8B2 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = F79D0E461BFC61B30054C8B2 /* Build configuration list for PBXProject "VideoQualityMetric" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F79D0E421BFC61B30054C8B2;
+			productRefGroup = F79D0E4C1BFC61B30054C8B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F79D0E4A1BFC61B30054C8B2 /* VideoQualityMetric */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F7D51F181C0429DB00BF2741 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp -rf ../../../../vendor/openh264/libs/mac64/*.dylib ./bin/$CONFIGURATION";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F79D0E471BFC61B30054C8B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F79D0E4F1BFC61B30054C8B2 /* main.cpp in Sources */,
+				F7D51EFD1BFEFB2900BF2741 /* DownConvert.cpp in Sources */,
+				F79D0E571BFC62100054C8B2 /* read_config.cpp in Sources */,
+				F7D51F071C02B65B00BF2741 /* ParserFrame.cpp in Sources */,
+				F7D51F121C02F1BA00BF2741 /* QualityCalculation.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F79D0E501BFC61B30054C8B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "..\\..\\..\\..\\..\\vendor\\openh264\\api/**";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SYMROOT = ./bin;
+			};
+			name = Debug;
+		};
+		F79D0E511BFC61B30054C8B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "..\\..\\..\\..\\..\\vendor\\openh264\\api/**";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SYMROOT = ./bin;
+			};
+			name = Release;
+		};
+		F79D0E531BFC61B30054C8B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = "../../../../vendor/openh264/api/**";
+				LIBRARY_SEARCH_PATHS = "../../../../vendor/openh264/libs/mac64/**";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F79D0E541BFC61B30054C8B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = "../../../../vendor/openh264/api/**";
+				LIBRARY_SEARCH_PATHS = "../../../../vendor/openh264/libs/mac64/**";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F79D0E461BFC61B30054C8B2 /* Build configuration list for PBXProject "VideoQualityMetric" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F79D0E501BFC61B30054C8B2 /* Debug */,
+				F79D0E511BFC61B30054C8B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F79D0E521BFC61B30054C8B2 /* Build configuration list for PBXNativeTarget "VideoQualityMetric" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F79D0E531BFC61B30054C8B2 /* Debug */,
+				F79D0E541BFC61B30054C8B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F79D0E431BFC61B30054C8B2 /* Project object */;
+}

@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FF9F2BDB-31EE-4998-BB06-79C31057298A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectName>WMEVideoComponent</ProjectName>
+    <RootNamespace>WMEVideoComponent</RootNamespace>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <AppContainerApplication>true</AppContainerApplication>
+    <ApplicationType>Windows Phone Silverlight</ApplicationType>
+    <ApplicationTypeRevision>8.1</ApplicationTypeRevision>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <OutDir>$(Platform)\$(Configuration)\$(MSBuildProjectName)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <OutDir>$(SolutionDir)$(PlatformTarget)\$(Configuration)\$(MSBuildProjectName)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>_WINRT_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)pch.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalUsingDirectories>
+      </AdditionalUsingDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>_WINRT_DLL;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)pch.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalUsingDirectories>
+      </AdditionalUsingDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>_WINRT_DLL;WP8;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)pch.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalUsingDirectories>
+      </AdditionalUsingDirectories>
+      <AdditionalIncludeDirectories>..\..\..\QRCode\vendor\zxing\cpp;..\..\..\QRCode;..\..\..\src;..\..\..\..\json-cpp\include;..\..\..\..\..\api;..\..\..\..\..\mediasession\src;..\..\..\..\..\mediaengine\tp\include;..\..\..\..\..\mediaengine\util\src;..\..\..\..\..\mediaengine\util\include;..\..\..\..\..\mediaengine\util\include\client;..\..\..\..\..\mediaengine\util\include\windows;..\WMEAudioComponent;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAsManaged>false</CompileAsManaged>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <AdditionalDependencies>util.lib;tp.lib;mediasession.lib;wmeclient.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\json-cpp\WP8\json\ARM\$(Configuration)\json;..\..\..\..\..\mediaengine\bin\WP8\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>WP8;WIN32;_CRT_SECURE_NO_WARNINGS;_WINRT_DLL;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)pch.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalUsingDirectories>
+      </AdditionalUsingDirectories>
+      <AdditionalIncludeDirectories>..\..\..\QRCode\vendor\zxing\cpp;..\..\..\QRCode;..\..\..\src;..\..\..\..\json-cpp\include;..\..\..\..\..\api;..\..\..\..\..\mediasession\src;..\..\..\..\..\mediaengine\tp\include;..\..\..\..\..\mediaengine\util\src;..\..\..\..\..\mediaengine\util\include;..\..\..\..\..\mediaengine\util\include\client;..\..\..\..\..\mediaengine\util\include\windows;..\WMEAudioComponent;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAsManaged>false</CompileAsManaged>
+      <Optimization>MaxSpeed</Optimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <AdditionalDependencies>util.lib;tp.lib;mediasession.lib;wmeclient.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\json-cpp\WP8\json\ARM\$(Configuration)\json;..\..\..\..\..\mediaengine\bin\WP8\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\json-cpp\src\lib_json\json_batchallocator.h" />
+    <ClInclude Include="..\..\..\..\json-cpp\src\lib_json\json_tool.h" />
+    <ClInclude Include="..\..\..\src\asenum.h" />
+    <ClInclude Include="..\..\..\src\BackdoorAgent.h" />
+    <ClInclude Include="..\..\..\src\BackdoorAgentSink.h" />
+    <ClInclude Include="..\..\..\src\bearer_oauth.h" />
+    <ClInclude Include="..\..\..\src\Calabash.h" />
+    <ClInclude Include="..\..\..\src\calliope_client.h" />
+    <ClInclude Include="..\..\..\src\ClickCall.h" />
+    <ClInclude Include="..\..\..\src\externaltransport.h" />
+    <ClInclude Include="..\..\..\src\Loopback.h" />
+    <ClInclude Include="..\..\..\src\PeerCall.h" />
+    <ClInclude Include="..\..\..\src\ScreenTrackViewAnalyzer.h" />
+    <ClInclude Include="..\..\..\src\StatsInfo.h" />
+    <ClInclude Include="..\..\..\src\TAHTTPServer.h" />
+    <ClInclude Include="..\..\..\src\testconfig.h" />
+    <ClInclude Include="..\..\..\src\wsclient.h" />
+    <ClInclude Include="ExternalRenderContentProvider.h" />
+    <ClInclude Include="WMEVideoHost.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\json-cpp\src\lib_json\json_reader.cpp" />
+    <ClCompile Include="..\..\..\..\json-cpp\src\lib_json\json_value.cpp" />
+    <ClCompile Include="..\..\..\..\json-cpp\src\lib_json\json_writer.cpp" />
+    <ClCompile Include="..\..\..\src\asenum.cpp" />
+    <ClCompile Include="..\..\..\src\BackdoorAgent.cpp" />
+    <ClCompile Include="..\..\..\src\bearer_oauth.cpp" />
+    <ClCompile Include="..\..\..\src\Calabash.cpp" />
+    <ClCompile Include="..\..\..\src\calliope_client.cpp" />
+    <ClCompile Include="..\..\..\src\ClickCall.cpp" />
+    <ClCompile Include="..\..\..\src\cmdlinehandler.cpp" />
+    <ClCompile Include="..\..\..\src\cpuusage.cpp" />
+    <ClCompile Include="..\..\..\src\externaltransport.cpp" />
+    <ClCompile Include="..\..\..\src\Loopback.cpp" />
+    <ClCompile Include="..\..\..\src\PeerCall.cpp" />
+    <ClCompile Include="..\..\..\src\ScreenTrackViewAnalyzer.cpp" />
+    <ClCompile Include="..\..\..\src\StatsInfo.cpp" />
+    <ClCompile Include="..\..\..\src\stringtoargcargv.cpp" />
+    <ClCompile Include="..\..\..\src\TAHTTPServer.cpp" />
+    <ClCompile Include="..\..\..\src\wsclient.cpp" />
+    <ClCompile Include="ExternalRenderContentProvider.cpp" />
+    <ClCompile Include="WMEVideoHost.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\json-cpp\src\lib_json\json_internalarray.inl" />
+    <None Include="..\..\..\..\json-cpp\src\lib_json\json_internalmap.inl" />
+    <None Include="..\..\..\..\json-cpp\src\lib_json\json_valueiterator.inl" />
+    <None Include="..\..\..\..\json-cpp\src\lib_json\sconscript" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LogSink\LogSink.vcxproj">
+      <Project>{64c19368-d96e-4a5a-84e6-3932c5b9d066}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

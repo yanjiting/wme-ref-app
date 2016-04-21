@@ -1,0 +1,337 @@
+{
+    "perf": {
+        "send": {
+            "720p": {
+                "win": {
+                    "general": {
+                        "memSize": [
+                            ">",
+                            1000
+                        ],
+                        "physCore": [
+                            ">=",
+                            4
+                        ]
+                    },
+                    "specials": [
+                        {
+                            "memSize": [
+                                ">",
+                                1000
+                            ],
+                            "physCore": [
+                                ">=",
+                                2
+                            ],
+                            "virtCore": [
+                                "==",
+                                2
+                            ],
+                            "cpuFreq": [
+                                ">=",
+                                2400
+                            ]
+                        },
+                        {
+                            "memSize": [
+                                ">",
+                                1000
+                            ],
+                            "physCore": [
+                                ">=",
+                                2
+                            ],
+                            "virtCore": [
+                                "==",
+                                1
+                            ],
+                            "cpuFreq": [
+                                ">=",
+                                2800
+                            ]
+                        }
+                    ]
+                },
+                "mac": {
+                    "general": {
+                        "memSize": [
+                            ">",
+                            1000
+                        ],
+                        "physCore": [
+                            ">=",
+                            4
+                        ]
+                    },
+                    "specials": [
+                        {
+                            "memSize": [
+                                ">",
+                                1000
+                            ],
+                            "physCore": [
+                                ">=",
+                                2
+                            ],
+                            "virtCore": [
+                                "==",
+                                2
+                            ],
+                            "cpuFreq": [
+                                ">=",
+                                2400
+                            ]
+                        },
+                        {
+                            "memSize": [
+                                ">",
+                                1000
+                            ],
+                            "physCore": [
+                                ">=",
+                                2
+                            ],
+                            "virtCore": [
+                                "==",
+                                1
+                            ],
+                            "cpuFreq": [
+                                ">=",
+                                2800
+                            ]
+                        },
+                        {
+                            "HWEnabled": true
+                        }
+                    ]
+                },
+                "android": {
+                    "specials": [
+                        {
+                            "HWEnabled": true
+                        }
+                    ]
+                },
+                "ios": {
+                    "specials": [
+                        {
+                            "HWEnabled": true
+                        }
+                    ]
+                }
+            },
+            "360p": {
+                "android": {
+                    "general": {
+                        "memSize": [
+                            ">",
+                            1500
+                        ],
+                        "physCore": [
+                            ">=",
+                            4
+                        ]
+                    }
+                },
+                "ios": {
+                    "general": {
+                        "physCore": [
+                            ">=",
+                            2
+                        ]
+                    }
+                },
+                "win": {
+                    "general": {
+                        "memSize": [
+                            ">",
+                            1000
+                        ],
+                        "physCore": [
+                            ">=",
+                            2
+                        ],
+                        "cpuFreq": [
+                            "<",
+                            2400
+                        ]
+                    }
+                },
+                "mac": {
+                    "general": {
+                        "memSize": [
+                            ">",
+                            1000
+                        ],
+                        "physCore": [
+                            ">=",
+                            2
+                        ],
+                        "cpuFreq": [
+                            "<",
+                            2400
+                        ]
+                    }
+                }
+            },
+            "180p": {
+                "android": {
+                    "general": {
+                        "physCore": [
+                            "between",
+                            2,
+                            4
+                        ]
+                    }
+                },
+                "ios": {
+                    "general": {
+                        "physCore": [
+                            "<",
+                            2
+                        ]
+                    }
+                },
+                "win": {
+                    "general": {
+                        "physCore": [
+                            "<",
+                            2
+                        ],
+                        "cpuFreq": [
+                            ">=",
+                            2400
+                        ],
+                        "memSize": [
+                            ">=",
+                            1000
+                        ]
+                    }
+                },
+                "mac": {
+                    "general": {
+                        "physCore": [
+                            "<",
+                            2
+                        ],
+                        "cpuFreq": [
+                            ">=",
+                            2400
+                        ],
+                        "memSize": [
+                            ">=",
+                            1000
+                        ]
+                    }
+                }
+            }
+        },
+        "receive": {
+            "180p": {
+                "android": {
+                    "general": {
+                        "physCore": [
+                            "between",
+                            2,
+                            4
+                        ]
+                    }
+                },
+                "ios": {
+                    "general": {
+                        "physCore": [
+                            "<",
+                            2
+                        ]
+                    }
+                },
+                "mac": {
+                    "general": {
+                        "cpuFreq": [
+                            ">=",
+                            2400
+                        ],
+                        "memSize": [
+                            ">=",
+                            1000
+                        ],
+                        "physCore": [
+                            "<",
+                            2
+                        ]
+                    }
+                },
+                "win": {
+                    "general": {
+                        "cpuFreq": [
+                            ">=",
+                            2400
+                        ],
+                        "memSize": [
+                            ">=",
+                            1000
+                        ],
+                        "physCore": [
+                            "<",
+                            2
+                        ]
+                    }
+                }
+            },
+            "360p": {
+                "android": {
+                    "general": {
+                        "memSize": [
+                            ">",
+                            1500
+                        ],
+                        "physCore": [
+                            ">=",
+                            4
+                        ]
+                    }
+                },
+                "ios": {
+                    "general": {
+                        "physCore": [
+                            ">=",
+                            2
+                        ]
+                    }
+                },
+                "mac": {
+                    "general": {
+                        "cpuFreq": [
+                            "<",
+                            2400
+                        ],
+                        "memSize": [
+                            ">",
+                            1000
+                        ],
+                        "physCore": [
+                            ">=",
+                            2
+                        ]
+                    }
+                },
+                "win": {
+                    "general": {
+                        "cpuFreq": [
+                            "<",
+                            2400
+                        ],
+                        "memSize": [
+                            ">",
+                            1000
+                        ],
+                        "physCore": [
+                            ">=",
+                            2
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

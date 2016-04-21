@@ -1,0 +1,11 @@
+TARGETED_DEVICE_FAMILY = 1,2
+OTHER_LDFLAGS = $(inherited) $(OTHER_LDFLAGS_REVEAL) $(OTHER_LDFLAGS_LOOKBACK) -lstdc++ -force_load "./Frameworks/calabash.framework/calabash"
+PRODUCT_NAME = $(TARGET_NAME)
+GCC_PRECOMPILE_PREFIX_HEADER = YES;
+OTHER_CPLUSPLUSFLAGS = $(inherited) -DTEST_MODE=1
+
+// NOTE: For now, only automatically analyze the main target.
+// In the future, we may want to analyze all targets.
+//CLANG_STATIC_ANALYZER_MODE = deep
+//RUN_CLANG_STATIC_ANALYZER = YES
+

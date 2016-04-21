@@ -1,0 +1,16 @@
+#!/usr/bin/python
+
+import commands
+import os
+
+#only for android device
+def remove_gcov_on_device():
+    print "remove /sdcard/wme_gcov folder on device"
+    #device_id = commands.getoutput("adb devices | awk 'NR==2{print $1}'")
+    #os.system("adb -s %s shell rm -r /sdcard/wme_gcov" % (device_id))
+    device_ids = commands.getoutput("adb devices | awk -F' ' '/\tdevice/{print $1}'")
+    for device_id in device_ids.split():
+        os.system("adb -s %s shell rm -rf /sdcard/wme_gcov" % (device_id))
+
+if __name__ == "__main__":
+    remove_gcov_on_device()

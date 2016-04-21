@@ -1,0 +1,59 @@
+10788                          
+[03/11/2016 16:17:56.483 pid=707 tid=440060] [UTIL] :[UTIL] INFO: PretInitialationTimer::PretInitialationTimer: _SC_CLK_TCK=100
+[03/11/2016 16:17:57.005 pid=707 tid=440060] [UTIL] :[UTIL] INFO:      std::allocator(10,000x160):     490,000
+   CCmListAllocator(10,000x160):      40,000
+
+[03/11/2016 16:17:58.689 pid=707 tid=440060] [UTIL] :[UTIL] INFO:            std swap(1,000,000):   1,500,000
+      custom assign(1,000,000):     180,000
+
+[03/11/2016 16:17:58.691 pid=707 tid=440060] [UTIL] :[UTIL] ERROR: /Users/zzchu/Desktop/git-ws/wme_git/wme/unittest/util/bld/ios/../../../../mediaengine/util/include/CmMessageBlock.h:323 Assert failed: (DWORD)(m_pEndPtr - m_pWritePtr) >= aStep[/Users/zzchu/Desktop/git-ws/wme_git/wme/unittest/util/bld/ios/../../../../mediaengine/util/include/CmMessageBlock.h:323]
+[03/11/2016 16:17:58.691 pid=707 tid=440060] [UTIL] :[UTIL] ERROR: /Users/zzchu/Desktop/git-ws/wme_git/wme/unittest/util/bld/ios/../../../../mediaengine/util/include/CmMessageBlock.h:331 Assert failed: (DWORD)(m_pWritePtr - m_pReadPtr) >= aStep[/Users/zzchu/Desktop/git-ws/wme_git/wme/unittest/util/bld/ios/../../../../mediaengine/util/include/CmMessageBlock.h:331]
+[03/11/2016 16:17:58.692 pid=707 tid=440060] [UTIL] :[UTIL] ERROR: /Users/zzchu/Desktop/git-ws/wme_git/wme/unittest/util/bld/ios/../../../../mediaengine/util/include/CmMessageBlock.h:340 Assert failed: m_pWritePtr >= m_pReadPtr + aStep[/Users/zzchu/Desktop/git-ws/wme_git/wme/unittest/util/bld/ios/../../../../mediaengine/util/include/CmMessageBlock.h:340]
+[03/11/2016 16:17:58.692 pid=707 tid=440060] [UTIL] :[UTIL] ERROR: /Users/zzchu/Desktop/git-ws/wme_git/wme/mediaengine/util/src/CmMessageBlock.cpp:200 Assert failed: CM_BIT_DISABLED(m_Flag, READ_LOCKED)[/Users/zzchu/Desktop/git-ws/wme_git/wme/mediaengine/util/src/CmMessageBlock.cpp:200]
+[03/11/2016 16:17:58.692 pid=707 tid=440060] [UTIL] :[UTIL] ERROR: /Users/zzchu/Desktop/git-ws/wme_git/wme/unittest/util/bld/ios/../../../../mediaengine/util/include/CmMessageBlock.h:310 Assert failed: CM_BIT_DISABLED(m_Flag, READ_LOCKED)[/Users/zzchu/Desktop/git-ws/wme_git/wme/unittest/util/bld/ios/../../../../mediaengine/util/include/CmMessageBlock.h:310]
+[03/11/2016 16:17:58.692 pid=707 tid=440060] [UTIL] :[UTIL] ERROR: /Users/zzchu/Desktop/git-ws/wme_git/wme/unittest/util/bld/ios/../../../../mediaengine/util/include/CmMessageBlock.h:339 Assert failed: CM_BIT_DISABLED(m_Flag, READ_LOCKED)[/Users/zzchu/Desktop/git-ws/wme_git/wme/unittest/util/bld/ios/../../../../mediaengine/util/include/CmMessageBlock.h:339]
+[03/11/2016 16:17:58.692 pid=707 tid=440060] [UTIL] :[UTIL] ERROR: /Users/zzchu/Desktop/git-ws/wme_git/wme/mediaengine/util/src/CmMessageBlock.cpp:251 Assert failed: CM_BIT_DISABLED(m_Flag, WRITE_LOCKED)[/Users/zzchu/Desktop/git-ws/wme_git/wme/mediaengine/util/src/CmMessageBlock.cpp:251]
+[03/11/2016 16:17:58.692 pid=707 tid=440060] [UTIL] :[UTIL] ERROR: /Users/zzchu/Desktop/git-ws/wme_git/wme/unittest/util/bld/ios/../../../../mediaengine/util/include/CmMessageBlock.h:316 Assert failed: CM_BIT_DISABLED(m_Flag, WRITE_LOCKED)[/Users/zzchu/Desktop/git-ws/wme_git/wme/unittest/util/bld/ios/../../../../mediaengine/util/include/CmMessageBlock.h:316]
+[03/11/2016 16:17:58.692 pid=707 tid=440060] [UTIL] :[UTIL] ERROR: /Users/zzchu/Desktop/git-ws/wme_git/wme/unittest/util/bld/ios/../../../../mediaengine/util/include/CmMessageBlock.h:330 Assert failed: CM_BIT_DISABLED(m_Flag, WRITE_LOCKED)[/Users/zzchu/Desktop/git-ws/wme_git/wme/unittest/util/bld/ios/../../../../mediaengine/util/include/CmMessageBlock.h:330]
+[03/11/2016 16:17:58.693 pid=707 tid=440060] [UTIL] :[UTIL] WARNING: CCmMessageBlock::SetData failed, m_pBeginPtr is not NULL this=0x154d160a0[/Users/zzchu/Desktop/git-ws/wme_git/wme/mediaengine/util/src/CmMessageBlock.cpp:62]
+[03/11/2016 16:17:58.693 pid=707 tid=440060] [UTIL] :[UTIL] WARNING: CCmMessageBlock::SetData failed, m_pBeginPtr is not NULL this=0x154d160a0[/Users/zzchu/Desktop/git-ws/wme_git/wme/mediaengine/util/src/CmMessageBlock.cpp:62]
+[03/11/2016 16:17:58.693 pid=707 tid=440060] [UTIL] :[UTIL] ERROR: /Users/zzchu/Desktop/git-ws/wme_git/wme/unittest/util/bld/ios/../../../../mediaengine/util/include/CmMessageBlock.h:323 Assert failed: (DWORD)(m_pEndPtr - m_pWritePtr) >= aStep[/Users/zzchu/Desktop/git-ws/wme_git/wme/unittest/util/bld/ios/../../../../mediaengine/util/include/CmMessageBlock.h:323]
+[03/11/2016 16:17:58.693 pid=707 tid=440060] [UTIL] :[UTIL] WARNING: CCmMessageBlock::SetData failed, m_pBeginPtr is not NULL this=0x154e03b80[/Users/zzchu/Desktop/git-ws/wme_git/wme/mediaengine/util/src/CmMessageBlock.cpp:97]
+[03/11/2016 16:17:58.694 pid=707 tid=440060] [UTIL] :[UTIL] ERROR: /Users/zzchu/Desktop/git-ws/wme_git/wme/mediaengine/util/src/CmMessageBlock.cpp:313 Assert failed: aMb != pMbMove[/Users/zzchu/Desktop/git-ws/wme_git/wme/mediaengine/util/src/CmMessageBlock.cpp:313]
+[03/11/2016 16:17:58.694 pid=707 tid=440060] [UTIL] :[UTIL] ERROR: CCmMessageBlock::AdvanceChainedWritePtr, can't advance. m_pBeginPtr=0x16fdf6a28 m_pReadPtr=0x16fdf6a36 this=0x154e039b0[/Users/zzchu/Desktop/git-ws/wme_git/wme/mediaengine/util/src/CmMessageBlock.cpp:351]
+[03/11/2016 16:17:58.694 pid=707 tid=440060] [UTIL] :[UTIL] ERROR: CCmMessageBlock::AdvanceChainedWritePtr, can't advance. m_pBeginPtr=0x16fdf6a28 m_pReadPtr=0x16fdf6a36 this=0x154e039b0[/Users/zzchu/Desktop/git-ws/wme_git/wme/mediaengine/util/src/CmMessageBlock.cpp:351]
+[03/11/2016 16:17:58.695 pid=707 tid=440060] [UTIL] :[UTIL] WARNING: CCmMessageBlock::Disjoint, there are not DUPLICATED blocks behind the disjointed block. this=0x154d16440[/Users/zzchu/Desktop/git-ws/wme_git/wme/mediaengine/util/src/CmMessageBlock.cpp:523]
+[03/11/2016 16:17:58.695 pid=707 tid=440060] [UTIL] :[UTIL] ERROR: /Users/zzchu/Desktop/git-ws/wme_git/wme/mediaengine/util/src/CmMessageBlock.cpp:651 Assert failed: nSrcLen + nOffset <= this->GetChainedLength()[/Users/zzchu/Desktop/git-ws/wme_git/wme/mediaengine/util/src/CmMessageBlock.cpp:651]
+[03/11/2016 16:17:58.695 pid=707 tid=440060] [UTIL] :[UTIL] ERROR: /Users/zzchu/Desktop/git-ws/wme_git/wme/mediaengine/util/src/CmMessageBlock.cpp:650 Assert failed: pSrc[/Users/zzchu/Desktop/git-ws/wme_git/wme/mediaengine/util/src/CmMessageBlock.cpp:650]
+[03/11/2016 16:17:58.696 pid=707 tid=440060] [UTIL] :[UTIL] ERROR: /Users/zzchu/Desktop/git-ws/wme_git/wme/mediaengine/util/src/CmMessageBlock.cpp:651 Assert failed: nSrcLen + nOffset <= this->GetChainedLength()[/Users/zzchu/Desktop/git-ws/wme_git/wme/mediaengine/util/src/CmMessageBlock.cpp:651]
+[03/11/2016 16:17:58.696 pid=707 tid=440060] [UTIL] :[UTIL] ERROR: /Users/zzchu/Desktop/git-ws/wme_git/wme/mediaengine/util/src/CmMessageBlock.cpp:679 Assert failed: pPeekBuffer[/Users/zzchu/Desktop/git-ws/wme_git/wme/mediaengine/util/src/CmMessageBlock.cpp:679]
+[03/11/2016 16:17:58.696 pid=707 tid=440060] [UTIL] :[UTIL] ERROR: /Users/zzchu/Desktop/git-ws/wme_git/wme/mediaengine/util/src/CmMessageBlock.cpp:680 Assert failed: nPeekLen + nOffset <= this->GetChainedLength()[/Users/zzchu/Desktop/git-ws/wme_git/wme/mediaengine/util/src/CmMessageBlock.cpp:680]
+[03/11/2016 16:17:58.698 pid=707 tid=440060] [UTIL] :[UTIL] ERROR: Lockfree CmLockFreeQueueSpScWrapper::en_queue suze=64[/Users/zzchu/Desktop/git-ws/wme_git/wme/mediaengine/util/src/CmUtilMisc.cpp:2044]
+[03/11/2016 16:17:58.700 pid=707 tid=440060] [UTIL] :[UTIL] ERROR: Lockfree CmLockFreeQueueSpScWrapper::en_queue suze=8[/Users/zzchu/Desktop/git-ws/wme_git/wme/mediaengine/util/src/CmUtilMisc.cpp:2044]
+[03/11/2016 16:17:58.700 pid=707 tid=440060] [UTIL] :[UTIL] ERROR: Lockfree CmLockFreeQueueSpScWrapper::en_queue suze=64[/Users/zzchu/Desktop/git-ws/wme_git/wme/mediaengine/util/src/CmUtilMisc.cpp:2044]
+[03/11/2016 16:17:58.700 pid=707 tid=440060] [UTIL] :[UTIL] ERROR: Lockfree CmLockFreeQueueSpScWrapper::en_queue suze=128[/Users/zzchu/Desktop/git-ws/wme_git/wme/mediaengine/util/src/CmUtilMisc.cpp:2044]
+[03/11/2016 16:17:58.700 pid=707 tid=440060] [UTIL] :[UTIL] ERROR: Lockfree CmLockFreeQueueSpScWrapper::en_queue suze=512[/Users/zzchu/Desktop/git-ws/wme_git/wme/mediaengine/util/src/CmUtilMisc.cpp:2044]
+[03/11/2016 16:17:58.701 pid=707 tid=440060] [UTIL] :[UTIL] ERROR: Lockfree CmLockFreeQueueSpScWrapper::en_queue suze=1024[/Users/zzchu/Desktop/git-ws/wme_git/wme/mediaengine/util/src/CmUtilMisc.cpp:2044]
+[03/11/2016 16:17:58.703 pid=707 tid=440060] [UTIL] :[UTIL] ERROR: Lockfree CmLockFreeQueueSpScWrapper::en_queue suze=2048[/Users/zzchu/Desktop/git-ws/wme_git/wme/mediaengine/util/src/CmUtilMisc.cpp:2044]
+[03/11/2016 16:17:58.706 pid=707 tid=440060] [UTIL] :[UTIL] ERROR: Lockfree CmLockFreeQueueSpScWrapper::en_queue suze=10240[/Users/zzchu/Desktop/git-ws/wme_git/wme/mediaengine/util/src/CmUtilMisc.cpp:2044]
+[03/11/2016 16:17:58.718 pid=707 tid=440060] [UTIL] :[UTIL] ERROR: Lockfree CmLockFreeQueueWrapper::en_queue suze=64[/Users/zzchu/Desktop/git-ws/wme_git/wme/mediaengine/util/src/CmUtilMisc.cpp:1995]
+[03/11/2016 16:17:58.719 pid=707 tid=440060] [UTIL] :[UTIL] ERROR: Lockfree CmLockFreeQueueWrapper::en_queue suze=8[/Users/zzchu/Desktop/git-ws/wme_git/wme/mediaengine/util/src/CmUtilMisc.cpp:1995]
+[03/11/2016 16:17:58.720 pid=707 tid=440060] [UTIL] :[UTIL] ERROR: Lockfree CmLockFreeQueueWrapper::en_queue suze=64[/Users/zzchu/Desktop/git-ws/wme_git/wme/mediaengine/util/src/CmUtilMisc.cpp:1995]
+[03/11/2016 16:17:58.720 pid=707 tid=440060] [UTIL] :[UTIL] ERROR: Lockfree CmLockFreeQueueWrapper::en_queue suze=128[/Users/zzchu/Desktop/git-ws/wme_git/wme/mediaengine/util/src/CmUtilMisc.cpp:1995]
+[03/11/2016 16:17:58.721 pid=707 tid=440060] [UTIL] :[UTIL] ERROR: Lockfree CmLockFreeQueueWrapper::en_queue suze=512[/Users/zzchu/Desktop/git-ws/wme_git/wme/mediaengine/util/src/CmUtilMisc.cpp:1995]
+[03/11/2016 16:17:58.722 pid=707 tid=440060] [UTIL] :[UTIL] ERROR: Lockfree CmLockFreeQueueWrapper::en_queue suze=1024[/Users/zzchu/Desktop/git-ws/wme_git/wme/mediaengine/util/src/CmUtilMisc.cpp:1995]
+[03/11/2016 16:17:58.724 pid=707 tid=440060] [UTIL] :[UTIL] ERROR: Lockfree CmLockFreeQueueWrapper::en_queue suze=2048[/Users/zzchu/Desktop/git-ws/wme_git/wme/mediaengine/util/src/CmUtilMisc.cpp:1995]
+[03/11/2016 16:17:58.731 pid=707 tid=440060] [UTIL] :[UTIL] ERROR: Lockfree CmLockFreeQueueWrapper::en_queue suze=10240[/Users/zzchu/Desktop/git-ws/wme_git/wme/mediaengine/util/src/CmUtilMisc.cpp:1995]
+[03/11/2016 16:18:02.066 pid=707 tid=440060] [UTIL] :[UTIL] INFO:   push/pop count  = 1024000
+    nStdListQueueUseTimeWithLock = 860000
+    nStdListQueueUseTime        = 660000
+    nNoLimitQueueUseTime        = 0
+    nQueueUseTime       = 1170000
+    nSpScQueueUseTime       = 640000
+
+[03/11/2016 16:18:02.425 pid=707 tid=440060] [UTIL] :[UTIL] INFO:   produce/customer count  = 10240
+    nLockUseTime        = 340000
+    nLockFreeUseTime    = 20000
+
+************************* Current Trace Point *************************
+

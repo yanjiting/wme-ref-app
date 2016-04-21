@@ -1,0 +1,23 @@
+//
+// Prefix header for all source files of the 'mediasessionUT_ios' target in the 'mediasessionUT_ios' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+//#include <Carbon/Carbon.h>
+
+#define MACOS           1
+#define MACOSX          1
+#define CM_MACOS 
+
+#define MachOSupport    1
+#define __TRACE__       1

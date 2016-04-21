@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Pcapfile enable</key>
+	<false/>
+	<key>Audio info</key>
+	<dict>
+		<key>Audio enable</key>
+		<false/>
+		<key>Audio file</key>
+		<string>audio1.pcap</string>
+		<key>Audio source IP</key>
+		<string>192.168.2.7</string>
+		<key>Audio source port</key>
+		<integer>43138</integer>
+		<key>Audio destination IP</key>
+		<string>166.78.47.126</string>
+		<key>Audio destination port</key>
+		<integer>43138</integer>
+	</dict>
+	<key>Video info</key>
+	<dict>
+		<key>Video enable</key>
+		<false/>
+		<key>Video file</key>
+		<string>video1.pcap</string>
+		<key>Video source IP</key>
+		<string>192.168.2.7</string>
+		<key>Video source port</key>
+		<integer>43138</integer>
+		<key>Video destination IP</key>
+		<string>166.78.47.126</string>
+		<key>Video destination port</key>
+		<integer>43138</integer>
+	</dict>
+</dict>
+</plist>

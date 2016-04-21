@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\appshare">
+      <UniqueIdentifier>{16074e8f-bfac-44f7-922a-c40336348b12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CWmeAudioVolumeControllerTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CWmeCodecEnumeratorTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CWmeInterfaceTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CWmelAudioDeviceTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CWmeLocalAudioExternalTrackTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CWmeLocalAudioTrackTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CWmeLocalVideoExternalTrackTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CWmeLocalVideoTrackTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CWmeMediaDeviceNotifierTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CWmeMediaInfoTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CWmeMediaSessionTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CWmeMediaSyncBoxTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CWmeRemoteAudioTrackTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CWmeRemoteVideoTrackTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CWmeVideoCaptureDeviceTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CWmeVideoCodecEnumeratorTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CWmeVideoPreviewTrackTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WhitneyMediaSDK_GTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WmeH264PacketizationTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CWmeScreenCaptureEngineTest.cpp">
+      <Filter>Source Files\appshare</Filter>
+    </ClCompile>
+    <ClCompile Include="CWmeScreenShareLocalCompositeTrackTest.cpp">
+      <Filter>Source Files\appshare</Filter>
+    </ClCompile>
+    <ClCompile Include="CWmeScreenShareLocalTrackTest.cpp">
+      <Filter>Source Files\appshare</Filter>
+    </ClCompile>
+    <ClCompile Include="CWmeScreenShareRemoteTrackTest.cpp">
+      <Filter>Source Files\appshare</Filter>
+    </ClCompile>
+    <ClCompile Include="CWmeScreenShareSourceTest.cpp">
+      <Filter>Source Files\appshare</Filter>
+    </ClCompile>
+    <ClCompile Include="CWmeScreenTrackTestBase.cpp">
+      <Filter>Source Files\appshare</Filter>
+    </ClCompile>
+    <ClCompile Include="CWmeNetworkIndicatorTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CWmeScreenTrackTestBase.h">
+      <Filter>Source Files\appshare</Filter>
+    </ClInclude>
+    <ClInclude Include="CWmeMediaSDKMock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

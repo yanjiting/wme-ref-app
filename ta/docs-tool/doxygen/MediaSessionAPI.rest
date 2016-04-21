@@ -1,0 +1,73 @@
+
+    - `Overview`_
+        - `Supported Platforms`_
+        - `Lifetime of WME`_
+        - `Threading of API`_
+        - `A glance of internal Architecture`_
+    - Examples
+        - <doxygen2rst link=Examples>Some Basic Examples</doxygen2rst>
+        - <doxygen2rst link=HTTPProxyFlow>Tunneling through HTTP Proxy</doxygen2rst>
+        - <doxygen2rst link=StunTrace>Stun trace/ping</doxygen2rst>
+        - <doxygen2rst link=PerformanceControl>Static/Dynamic performance control</doxygen2rst>
+        - <doxygen2rst link=ActiveVideo>Clarification On CSI change notifications</doxygen2rst>
+    - References
+        - <doxygen2rst link=IWmeMediaConnection>MediaConnection</doxygen2rst>
+        - <doxygen2rst link=IWmeMediaConnectionSink>MediaConnection Callbacks</doxygen2rst>
+        - <doxygen2rst link=IWmeMediaConnection4T>MediaConnection For WebEx</doxygen2rst>
+        - <doxygen2rst link=IWmeMediaTrackBase>Media Track</doxygen2rst>
+        - <doxygen2rst link=MediaConfig>Media Config</doxygen2rst>
+        - <doxygen2rst link=DeviceManagement>Device Management</doxygen2rst>
+        - <doxygen2rst link=Error>WME Error Codes</doxygen2rst>
+        - <doxygen2rst link=TypesAndStructures>Miscellaneous Types and Structures</doxygen2rst>
+    
+Overview
+===========================
+The Media Session API of WME aimed to simplify the client call to WME and support SDP negotiation. The design philosophy is similar to WebRTC, the interface `IWmeMediaConnection` is equivalant to `PeerConnection`. The difference from WebRTC is that WME fully integrates with cisco multistream and MARI protocol.
+
+The scope of these API are: 
+
+    - bind the media and transport together with SDP negotiation
+    - setup media parameters
+    - manipulate media tracks
+    - device management
+    
+Supported Platforms
+-------------------------
+
+    WME now fully supports a bit of platforms: 
+    
+    - Mac OS (32/64bits, >= 10.7)
+    - Windows Desktop(32bits, >= Widows 7, 64bits is under working)
+    - iOS (32/64 bits)
+    - Android (API level >= 16, 32bits only)
+    - Windows Phone (32bits only, windows phone 8.1)
+    
+    WME also partially supports (util/tp/mediasession/rtp) for Linux servers (ubuntu, CentOS, 32/64 bits). It has currently been used in LQT server (https://mediatest.ciscospark.com) and CLIO NBR server.
+    
+Lifetime of WME
+-------------------------
+
+    - <doxygen2rst link=IWmeMediaConnection#InitMediaEngine>InitMediaEngine</doxygen2rst>/<doxygen2rst link=IWmeMediaConnection#UninitMediaEngine>UninitMediaEngine</doxygen2rst>: this should be the same lifetime of client.
+    - <doxygen2rst link=IWmeMediaConnection#CreateMediaConnection>MediaConnection</doxygen2rst>: this should be the same lifecycle of a call or preview session, and it doesn't support reuse after it has been stopped.
+    - Device management: this should be the same lifetime of client because we will monitor system device change notifications.
+
+Threading of API
+-------------------------
+
+    - Client can call Media Session API from any thread,
+    - Media Session might call back from different threads,
+    - WME has its own threads and may execute some tasks in UI thread but should never block UI.
+
+    
+A glance of internal Architecture
+----------------------------------
+
+    Media Session API has now wrapper for 3 languages: C++, Android(Java) and C#(Windows).
+    
+    Shark is video engine which includes video capture, encode/decode and render for varying platforms. It integrates with Open H264.
+    
+    Dolphin is audio engine which covers audio capture/playout, pre-processing, encode/decode, AEC, AGC, etc.
+    
+    QoS module integrates with cisco MARI library and WRTP module which supports cisco multistream protocols.
+
+.. image:: images/architecture.png

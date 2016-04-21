@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PreferenceSpecifiers</key>
+	<array>
+		<dict>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>Title</key>
+			<string>Trace</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string>Max Trace Level</string>
+			<key>Key</key>
+			<string>max_trace_level_preference</string>
+			<key>DefaultValue</key>
+			<integer>2</integer>
+			<key>Titles</key>
+			<array>
+				<string>Error Trace</string>
+				<string>Warning Trace</string>
+				<string>Information Trace</string>
+				<string>Debug Trace</string>
+				<string>All Trace</string>
+			</array>
+			<key>Values</key>
+			<array>
+				<integer>0</integer>
+				<integer>1</integer>
+				<integer>2</integer>
+				<integer>3</integer>
+				<integer>4</integer>
+			</array>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>Title</key>
+			<string>Debug Setting</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSTextFieldSpecifier</string>
+			<key>KeyboardType</key>
+			<string>URL</string>
+			<key>Title</key>
+			<string>StatusServer</string>
+			<key>DefaultValue</key>
+			<string></string>
+			<key>Key</key>
+			<string>StatusServer</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>Title</key>
+			<string>SendCpuUsageStatus</string>
+			<key>Key</key>
+			<string>SendCpuUsageStatus</string>
+			<key>DefaultValue</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>Title</key>
+			<string>SendBatteryStatus</string>
+			<key>Key</key>
+			<string>SendBatteryStatus</string>
+			<key>DefaultValue</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSTextFieldSpecifier</string>
+			<key>DefaultValue</key>
+			<string>15</string>
+			<key>KeyboardType</key>
+			<string>NumberPad</string>
+			<key>Title</key>
+			<string>StatusUpdateInterval</string>
+			<key>Key</key>
+			<string>StatusUpdateInterval</string>
+		</dict>
+	</array>
+	<key>Title</key>
+	<string></string>
+	<key>StringsTable</key>
+	<string>Root</string>
+</dict>
+</plist>

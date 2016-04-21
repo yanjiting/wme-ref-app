@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Json-cpp">
+      <UniqueIdentifier>{96e75155-5fe9-44d1-adaa-4486c517f93a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="qrcode-scan">
+      <UniqueIdentifier>{ccbc5527-53c3-4cd9-8cbd-02e553107ed8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Calliope">
+      <UniqueIdentifier>{4f2ab170-1789-4df9-bd2d-dce277acd73f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TA-Backdoor">
+      <UniqueIdentifier>{a74d4a42-d4bd-4840-9924-e7a1ad278e50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Misc&amp;UI">
+      <UniqueIdentifier>{fd26fb99-365c-4fc5-9556-1bea5c737f0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Stats">
+      <UniqueIdentifier>{9be4df21-0563-46fc-ab02-fad04517c73c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\json-cpp\src\lib_json\json_batchallocator.h">
+      <Filter>Json-cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\json-cpp\src\lib_json\json_tool.h">
+      <Filter>Json-cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\QRCode\lodepng.h">
+      <Filter>qrcode-scan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\QRCode\jpgd.h">
+      <Filter>qrcode-scan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ScreenTrackViewAnalyzer.h">
+      <Filter>qrcode-scan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\QRCode\zxinghelper.h">
+      <Filter>qrcode-scan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\QRCode\ImageReaderSource.h">
+      <Filter>qrcode-scan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\wsclient.h">
+      <Filter>Calliope</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\calliope_client.h">
+      <Filter>Calliope</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\bearer_oauth.h">
+      <Filter>Calliope</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\BackdoorAgent.h">
+      <Filter>TA-Backdoor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\TAHTTPServer.h">
+      <Filter>TA-Backdoor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Calabash.h">
+      <Filter>TA-Backdoor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\asenum.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ClickCall.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Loopback.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\PeerCall.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Misc&amp;UI</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfigDialog.h">
+      <Filter>Misc&amp;UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\testconfig.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\StatsInfo.h">
+      <Filter>Stats</Filter>
+    </ClInclude>
+    <ClInclude Include="ClickCall_win.h">
+      <Filter>Misc&amp;UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\externaltransport.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\CameraPreview.h">
+      <Filter>Misc&amp;UI</Filter>
+    </ClInclude>
+    <ClInclude Include="ProxyAuthenication.h">
+      <Filter>Misc&amp;UI</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ClickCall.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\ClickCall.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Loopback.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\PeerCall.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\json-cpp\src\lib_json\json_reader.cpp">
+      <Filter>Json-cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\json-cpp\src\lib_json\json_value.cpp">
+      <Filter>Json-cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\json-cpp\src\lib_json\json_writer.cpp">
+      <Filter>Json-cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\asenum.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\QRCode\zxinghelper.cpp">
+      <Filter>qrcode-scan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\QRCode\jpgd.cpp">
+      <Filter>qrcode-scan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\QRCode\lodepng.cpp">
+      <Filter>qrcode-scan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\QRCode\ImageReaderSource.cpp">
+      <Filter>qrcode-scan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\bearer_oauth.cpp">
+      <Filter>Calliope</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\calliope_client.cpp">
+      <Filter>Calliope</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\wsclient.cpp">
+      <Filter>Calliope</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\BackdoorAgent.cpp">
+      <Filter>TA-Backdoor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\TAHTTPServer.cpp">
+      <Filter>TA-Backdoor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Calabash.cpp">
+      <Filter>TA-Backdoor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\stringtoargcargv.cpp">
+      <Filter>Misc&amp;UI</Filter>
+    </ClCompile>
+    <ClCompile Include="ClickCall_win.cpp">
+      <Filter>Misc&amp;UI</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfigDialog.cpp">
+      <Filter>Misc&amp;UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\StatsInfo.cpp">
+      <Filter>Stats</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\cpuusage.cpp">
+      <Filter>Stats</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ScreenTrackViewAnalyzer.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\cmdlinehandler.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\externaltransport.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\CameraPreview.cpp">
+      <Filter>Misc&amp;UI</Filter>
+    </ClCompile>
+    <ClCompile Include="ProxyAuthenication.cpp">
+      <Filter>Misc&amp;UI</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="ClickCallNew.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

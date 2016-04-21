@@ -1,0 +1,136 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Main" >
+
+    
+    <RadioGroup  
+        android:id="@+id/hostSwitch"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:orientation="horizontal"  
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_x="3px">  
+        <RadioButton  
+            android:id="@+id/radioHost"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:text="Host          "  
+        />  
+        <RadioButton  
+            android:id="@+id/radioClient"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content" 
+            android:text="Client"  
+        />    
+    </RadioGroup>  
+
+    <TextView
+        android:id="@+id/hostIP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/hostSwitch"
+       	android:layout_below="@+id/hostSwitch"
+       	android:layout_marginLeft="22dip"
+       	android:layout_marginTop="22dip"
+        android:text="@string/hostIP" />
+
+    <Button
+        android:id="@+id/connectBttn"
+        android:layout_width="240dip"
+        android:layout_height="100dip"
+        android:layout_alignLeft="@+id/hostSwitch"
+       	android:layout_below="@+id/hostIP"
+       	android:layout_marginTop="22dip"
+        android:text="@string/connect" />
+
+    <EditText
+        android:id="@+id/ipEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/hostIP"
+        android:layout_toRightOf="@+id/hostIP"
+        android:hint="Type in IP address here ..."
+        android:inputType="phone" >
+    </EditText>
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/connectBttn"
+        android:layout_toRightOf="@+id/connectBttn" />
+    
+    <CheckBox
+        android:id="@+id/picinpic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="picture in picture(better for debug)"  
+        android:layout_alignLeft="@+id/connectBttn"
+       	android:layout_below="@+id/connectBttn"/>
+    
+    <TextView
+        android:id="@+id/myip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="my ip is:" 
+        android:layout_alignLeft="@+id/picinpic"
+       	android:layout_below="@+id/picinpic" />
+    
+    
+    <CheckBox
+        android:id="@+id/battery_performance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="battery/performance info" 
+        android:layout_alignLeft="@+id/myip"
+        android:layout_marginTop="22dip"
+       	android:layout_below="@+id/myip"/>
+    
+    <TextView
+        android:id="@+id/ServerIP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/battery_performance"
+       	android:layout_below="@+id/battery_performance"
+       	android:layout_marginLeft="22dip"
+       	android:layout_marginTop="22dip"
+        android:text="HttpServerIP"/>
+    
+    <EditText
+        android:id="@+id/ServerAddressEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ServerIP"
+        android:layout_toRightOf="@+id/ServerIP"
+        android:hint="173.39.168.28"
+        android:inputType="phone" >
+    </EditText>
+    
+    <EditText
+        android:id="@+id/ServerPortEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ServerAddressEdit"
+        android:layout_toRightOf="@+id/ServerAddressEdit"
+        android:hint="8080"
+        android:inputType="phone" >
+    </EditText>
+    
+    <TextView
+        android:id="@+id/CommandSent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ServerIP"
+       	android:layout_below="@+id/ServerIP"
+       	android:layout_marginLeft="22dip"
+       	android:layout_marginTop="22dip"
+        android:text="None"/>
+
+</RelativeLayout>

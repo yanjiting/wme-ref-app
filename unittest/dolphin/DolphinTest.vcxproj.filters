@@ -1,0 +1,369 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\UT">
+      <UniqueIdentifier>{d7c857f6-7e3d-4435-a18c-02fb26095621}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AudioEngine">
+      <UniqueIdentifier>{044ec3dd-8895-457b-98f3-0c1ffb89762d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AudioEngine\Playback">
+      <UniqueIdentifier>{11abe1c0-6b3f-4554-8d4c-06ec8a955624}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AudioEngine\Playback\Header Files">
+      <UniqueIdentifier>{4f9a589c-8949-464d-bbbd-4bd4eb8df5d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AudioEngine\Playback\Source Files">
+      <UniqueIdentifier>{ef965598-3d3d-441b-8b7f-6a3dfabc1065}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AudioEngine\framework">
+      <UniqueIdentifier>{5c6cc61f-ca12-4762-9add-5cad7ba1380b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AudioEngine\framework\Header Files">
+      <UniqueIdentifier>{6bd8091c-90b5-4381-9036-41b2166919fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AudioEngine\framework\Source Files">
+      <UniqueIdentifier>{cff1ec93-043f-43ff-98f2-8bc87d2e75af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AudioEngine\Device Control">
+      <UniqueIdentifier>{0f5f52aa-b55e-4fa8-9374-60520b2a8235}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AudioEngine\Device Control\Header Files">
+      <UniqueIdentifier>{22b1fda5-a044-4906-a727-d0d8907d3bd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AudioEngine\Device Control\Source Files">
+      <UniqueIdentifier>{dfd7127c-819c-4b21-9fc8-7e49ad7a4342}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AudioEngine\Common">
+      <UniqueIdentifier>{f5eff69a-9412-4909-b166-62f95ba4abf4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AudioEngine\Common\Header Files">
+      <UniqueIdentifier>{b69e948c-7d08-40c2-b93b-cd7a4fff9cc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AudioEngine\Common\Source Files">
+      <UniqueIdentifier>{0676146a-728d-408d-b768-b0e6774ab44b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AudioEngine\Capture">
+      <UniqueIdentifier>{816b4dd9-dc16-4dee-9ed7-97e1a70ab466}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AudioEngine\Capture\Header Files">
+      <UniqueIdentifier>{7d466333-156b-47d4-840a-2c1dc0fa8da9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AudioEngine\Capture\Source Files">
+      <UniqueIdentifier>{27c50d5d-857c-403f-a928-e9edda1dc308}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AudioEngine\AQE">
+      <UniqueIdentifier>{7afeda40-dccf-48e5-86f2-3c0c89151d0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AudioEngine\AQE\Header Files">
+      <UniqueIdentifier>{51112377-dd9d-48b8-b58d-fdf3ed171ac8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AudioEngine\AQE\Source Files">
+      <UniqueIdentifier>{1380c34e-2e60-44cb-9f7f-ba1ffca388ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AudioEngine\datadump">
+      <UniqueIdentifier>{5d2a0724-69fd-44df-adfe-705ce13bb8c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Source Files\AudioEngine\JSON">
+      <UniqueIdentifier>{58becec3-143f-4789-b4f9-847156bccce8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="aqe\AQE_Unit_MyTest.cpp">
+      <Filter>Source Files\UT</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\CMixerDestroyEventTest.cpp">
+      <Filter>Source Files\UT</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\CMixerStartEventTest.cpp">
+      <Filter>Source Files\UT</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\CMixerStopEventTest.cpp">
+      <Filter>Source Files\UT</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\CWbxAeAudioChannelTest.cpp">
+      <Filter>Source Files\UT</Filter>
+    </ClCompile>
+    <ClCompile Include="common\CwbxAeMediaBlockListTest.cpp">
+      <Filter>Source Files\UT</Filter>
+    </ClCompile>
+    <ClCompile Include="jitterbuffer\CWbxAeMediaBlockListTest.cpp">
+      <Filter>Source Files\UT</Filter>
+    </ClCompile>
+    <ClCompile Include="jitterbuffer\CWbxAeMediaBlockTest.cpp">
+      <Filter>Source Files\UT</Filter>
+    </ClCompile>
+    <ClCompile Include="common\CWBXAEMediaBlockTest.cpp">
+      <Filter>Source Files\UT</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\CWbxAeVoiceMixerTest.cpp">
+      <Filter>Source Files\UT</Filter>
+    </ClCompile>
+    <ClCompile Include="common\CWbxAJBJitterbufferTest.cpp">
+      <Filter>Source Files\UT</Filter>
+    </ClCompile>
+    <ClCompile Include="common\CWbxAJBPolicyTest.cpp">
+      <Filter>Source Files\UT</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\CWbxAudioEngineImplTest.cpp">
+      <Filter>Source Files\UT</Filter>
+    </ClCompile>
+    <ClCompile Include="common\CWbxMemPoolTest.cpp">
+      <Filter>Source Files\UT</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files\UT</Filter>
+    </ClCompile>
+    <ClCompile Include="aqe\Modules_UnitTest.cpp">
+      <Filter>Source Files\UT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\dolphin\src\AudioEngine\src\playback\WbxAeAudioPlayback.cpp">
+      <Filter>Source Files\AudioEngine\Playback\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\dolphin\src\AudioEngine\src\playback\win32\WbxAePlaybackPlatformCoreAudio.cpp">
+      <Filter>Source Files\AudioEngine\Playback\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\dolphin\src\AudioEngine\src\playback\WbxAePlaybackPlatformFactory.cpp">
+      <Filter>Source Files\AudioEngine\Playback\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\dolphin\src\AudioEngine\src\playback\win32\WbxAePlaybackPlatformWin32.cpp">
+      <Filter>Source Files\AudioEngine\Playback\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\dolphin\src\AudioEngine\src\framework\WbxAeAudioChannel.cpp">
+      <Filter>Source Files\AudioEngine\framework\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\dolphin\src\AudioEngine\src\framework\WbxAeVoiceMixer.cpp">
+      <Filter>Source Files\AudioEngine\framework\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\dolphin\src\AudioEngine\src\framework\WbxAudioEngineImpl.cpp">
+      <Filter>Source Files\AudioEngine\framework\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\dolphin\src\AudioEngine\src\deviceenumerator\win32\WbxAeCoreAudioImpl.cpp">
+      <Filter>Source Files\AudioEngine\Device Control\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\dolphin\src\AudioEngine\src\deviceenumerator\win32\WbxAeCoreVolumeControl.cpp">
+      <Filter>Source Files\AudioEngine\Device Control\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\dolphin\src\AudioEngine\src\deviceenumerator\WbxAeCreateDeviceEnum.cpp">
+      <Filter>Source Files\AudioEngine\Device Control\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\dolphin\src\AudioEngine\src\deviceenumerator\win32\WbxAeDeviceEnumerator.cpp">
+      <Filter>Source Files\AudioEngine\Device Control\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\dolphin\src\AudioEngine\src\deviceenumerator\win32\WbxAeDSoundImpl.cpp">
+      <Filter>Source Files\AudioEngine\Device Control\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\dolphin\src\AudioEngine\src\deviceenumerator\win32\WbxAeMixVolumeControl.cpp">
+      <Filter>Source Files\AudioEngine\Device Control\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\dolphin\src\AudioEngine\src\deviceenumerator\win32\WbxAeStringTool.cpp">
+      <Filter>Source Files\AudioEngine\Device Control\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\dolphin\src\AudioEngine\src\deviceenumerator\win32\WbxAeVolumeControl.cpp">
+      <Filter>Source Files\AudioEngine\Device Control\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\dolphin\src\AudioEngine\src\common\WbxAeJitterBuffer.cpp">
+      <Filter>Source Files\AudioEngine\Common\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\dolphin\src\AudioEngine\src\common\WbxAeJitterPolicy.cpp">
+      <Filter>Source Files\AudioEngine\Common\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\dolphin\src\AudioEngine\src\common\WbxAeMediaBlock.cpp">
+      <Filter>Source Files\AudioEngine\Common\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\dolphin\src\AudioEngine\src\common\WbxAeMediaBlockList.cpp">
+      <Filter>Source Files\AudioEngine\Common\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\dolphin\src\AudioEngine\src\capture\WbxAeAudioCapture.cpp">
+      <Filter>Source Files\AudioEngine\Capture\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\dolphin\src\AudioEngine\src\capture\win32\WbxAeCapturePlatformCoreAudio.cpp">
+      <Filter>Source Files\AudioEngine\Capture\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\dolphin\src\AudioEngine\src\capture\WbxAeCapturePlatformFactory.cpp">
+      <Filter>Source Files\AudioEngine\Capture\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\dolphin\src\AudioEngine\src\capture\win32\WbxAeCapturePlatformWin32.cpp">
+      <Filter>Source Files\AudioEngine\Capture\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\dolphin\src\AudioEngine\src\aqe\WbxAeAEC_Module.cpp">
+      <Filter>Source Files\AudioEngine\AQE\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\dolphin\src\AudioEngine\src\aqe\WbxAeAnalogAGCDecide_Module.cpp">
+      <Filter>Source Files\AudioEngine\AQE\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\dolphin\src\AudioEngine\src\aqe\WbxAeAQE.cpp">
+      <Filter>Source Files\AudioEngine\AQE\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\dolphin\src\AudioEngine\src\aqe\WbxAeBaseModule.cpp">
+      <Filter>Source Files\AudioEngine\AQE\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\dolphin\src\AudioEngine\src\aqe\WbxAeBuffer_Module.cpp">
+      <Filter>Source Files\AudioEngine\AQE\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\dolphin\src\AudioEngine\src\aqe\WbxAeDigitalAGC_Module.cpp">
+      <Filter>Source Files\AudioEngine\AQE\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\dolphin\src\AudioEngine\src\aqe\WbxAePrepareAECData_Module.cpp">
+      <Filter>Source Files\AudioEngine\AQE\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\dolphin\src\AudioEngine\src\aqe\WbxAeSignalAnalysis_Module.cpp">
+      <Filter>Source Files\AudioEngine\AQE\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\dolphin\src\AudioEngine\src\datadump\WbxDataDump.cpp">
+      <Filter>Source Files\AudioEngine\datadump</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\dolphin\src\AudioEngine\src\framework\WbxAeEncoderThread.cpp">
+      <Filter>Source Files\AudioEngine\framework\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\dolphin\src\AudioEngine\src\datadump\WBXAeWavAdaptor.cpp">
+      <Filter>Source Files\AudioEngine\datadump</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\dolphin\src\AudioEngine\src\framework\AudioDefaultSettings.cpp">
+      <Filter>Source Files\AudioEngine\framework\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\vendor\SuperEasyJSON\json.cpp">
+      <Filter>Source Files\AudioEngine\JSON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\dolphin\src\AudioEngine\src\capture\win32\WbxAeCaptureFlatformWinDMO.cpp">
+      <Filter>Source Files\AudioEngine\Capture\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\dolphin\src\AudioEngine\src\framework\WbxAeAudioMetrics.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\mediaengine\dolphin\src\AudioEngine\src\playback\IWbxAePlaybackPlatformFactory.h">
+      <Filter>Source Files\AudioEngine\Playback\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediaengine\dolphin\src\AudioEngine\h\WbxAeAudioPlayback.h">
+      <Filter>Source Files\AudioEngine\Playback\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediaengine\dolphin\src\AudioEngine\src\playback\win32\WbxAePlaybackPlatformCoreAudio.h">
+      <Filter>Source Files\AudioEngine\Playback\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediaengine\dolphin\src\AudioEngine\src\playback\win32\WbxAePlaybackPlatformWin32.h">
+      <Filter>Source Files\AudioEngine\Playback\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediaengine\dolphin\src\AudioEngine\src\framework\WbxAeAudioChannel.h">
+      <Filter>Source Files\AudioEngine\framework\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediaengine\dolphin\src\AudioEngine\src\framework\WbxAeVoiceMixer.h">
+      <Filter>Source Files\AudioEngine\framework\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediaengine\dolphin\src\AudioEngine\src\framework\WbxAudioEngineImpl.h">
+      <Filter>Source Files\AudioEngine\framework\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediaengine\dolphin\src\AudioEngine\src\deviceenumerator\win32\targetver.h">
+      <Filter>Source Files\AudioEngine\Device Control\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediaengine\dolphin\src\AudioEngine\src\deviceenumerator\win32\WbxAeCoreAudioImpl.h">
+      <Filter>Source Files\AudioEngine\Device Control\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediaengine\dolphin\src\AudioEngine\src\deviceenumerator\win32\WbxAeCoreVolumeControl.h">
+      <Filter>Source Files\AudioEngine\Device Control\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediaengine\dolphin\src\AudioEngine\src\deviceenumerator\win32\WbxAeDeviceEnumerator.h">
+      <Filter>Source Files\AudioEngine\Device Control\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediaengine\dolphin\src\AudioEngine\src\deviceenumerator\win32\WbxAeDSoundImpl.h">
+      <Filter>Source Files\AudioEngine\Device Control\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediaengine\dolphin\src\AudioEngine\src\deviceenumerator\win32\WbxAeMixVolumeControl.h">
+      <Filter>Source Files\AudioEngine\Device Control\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediaengine\dolphin\src\AudioEngine\src\deviceenumerator\win32\WbxAeStringTool.h">
+      <Filter>Source Files\AudioEngine\Device Control\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediaengine\dolphin\src\AudioEngine\src\deviceenumerator\win32\WbxAeVolumeControl.h">
+      <Filter>Source Files\AudioEngine\Device Control\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediaengine\dolphin\src\AudioEngine\src\common\WbxAeJitterBuffer.h">
+      <Filter>Source Files\AudioEngine\Common\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediaengine\dolphin\src\AudioEngine\src\common\WbxAeJitterPolicy.h">
+      <Filter>Source Files\AudioEngine\Common\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediaengine\dolphin\src\AudioEngine\src\common\WbxAeMediaBlock.h">
+      <Filter>Source Files\AudioEngine\Common\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediaengine\dolphin\src\AudioEngine\src\common\WbxAeMediaBlockList.h">
+      <Filter>Source Files\AudioEngine\Common\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediaengine\dolphin\src\AudioEngine\src\common\WbxAeTrace.h">
+      <Filter>Source Files\AudioEngine\Common\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediaengine\dolphin\src\AudioEngine\h\IWbxAeAudioCaptureStatus.h">
+      <Filter>Source Files\AudioEngine\Capture\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediaengine\dolphin\src\AudioEngine\src\capture\IWbxAeCapturePlatformFactory.h">
+      <Filter>Source Files\AudioEngine\Capture\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediaengine\dolphin\src\AudioEngine\h\WbxAeAudioCapture.h">
+      <Filter>Source Files\AudioEngine\Capture\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediaengine\dolphin\src\AudioEngine\h\WbxAeAudioEngineCommon.h">
+      <Filter>Source Files\AudioEngine\Capture\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediaengine\dolphin\src\AudioEngine\src\capture\win32\WbxAeCapturePlatformCoreAudio.h">
+      <Filter>Source Files\AudioEngine\Capture\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediaengine\dolphin\src\AudioEngine\src\capture\win32\WbxAeCapturePlatformWin32.h">
+      <Filter>Source Files\AudioEngine\Capture\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediaengine\dolphin\src\AudioEngine\src\aqe\WbxAeAEC_Module.h">
+      <Filter>Source Files\AudioEngine\AQE\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediaengine\dolphin\src\AudioEngine\src\aqe\WbxAeAnalogAGCDecide_Module.h">
+      <Filter>Source Files\AudioEngine\AQE\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediaengine\dolphin\src\AudioEngine\h\WbxAeAQE.h">
+      <Filter>Source Files\AudioEngine\AQE\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediaengine\dolphin\src\AudioEngine\h\WbxAeAQE_define.h">
+      <Filter>Source Files\AudioEngine\AQE\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediaengine\dolphin\src\AudioEngine\src\aqe\WbxAeAQE_define_inner.h">
+      <Filter>Source Files\AudioEngine\AQE\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediaengine\dolphin\src\AudioEngine\src\aqe\WbxAeBaseModule.h">
+      <Filter>Source Files\AudioEngine\AQE\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediaengine\dolphin\src\AudioEngine\src\aqe\WbxAeBuffer_Module.h">
+      <Filter>Source Files\AudioEngine\AQE\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediaengine\dolphin\src\AudioEngine\src\aqe\WbxAeParameterClass.h">
+      <Filter>Source Files\AudioEngine\AQE\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediaengine\dolphin\src\AudioEngine\src\aqe\WbxAePrepareAECData_Module.h">
+      <Filter>Source Files\AudioEngine\AQE\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediaengine\dolphin\src\AudioEngine\src\aqe\WbxAeSignalAnalysis_Module.h">
+      <Filter>Source Files\AudioEngine\AQE\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediaengine\dolphin\src\AudioEngine\src\framework\WbxAeEncoderThread.h">
+      <Filter>Source Files\AudioEngine\framework\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediaengine\dolphin\src\AudioEngine\src\framework\AudioDefaultSettings.h">
+      <Filter>Source Files\AudioEngine\framework\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediaengine\dolphin\src\AudioEngine\src\capture\win32\WbxAeCaptureFlatformWinDMO.h">
+      <Filter>Source Files\AudioEngine\Capture\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediaengine\dolphin\src\AudioEngine\src\framework\WbxAeAudioMetrics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

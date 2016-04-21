@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
+  <Identity Name="147b8ef4-1689-49c9-ae3c-8e31696c605d" Publisher="CN=vincent" Version="1.0.0.0" />
+  <mp:PhoneIdentity PhoneProductId="a0f06b8f-af36-4f55-83d1-57cd5c2d7144" PhonePublisherId="80edd611-a04b-472f-8968-b49b10bbac37" />
+  <Properties>
+    <DisplayName>Refapp-wp</DisplayName>
+    <PublisherDisplayName>vincent</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.3.1</OSMinVersion>
+    <OSMaxVersionTested>6.3.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="AGHost.exe" EntryPoint="MainPage.xaml">
+      <m3:VisualElements DisplayName="Refapp-wp" Square150x150Logo="Assets\SquareTile150x150.png" Square44x44Logo="Assets\Logo.png" Description="Refapp-wp" ForegroundText="light" BackgroundColor="#464646">
+        <m3:DefaultTile Square71x71Logo="Assets\SquareTile71x71.png">
+        </m3:DefaultTile>
+        <m3:SplashScreen Image="Assets\SplashScreen.png" />
+      </m3:VisualElements>
+      <Extensions>
+        <Extension Category="windows.backgroundTasks" EntryPoint="AgHost.BackgroundVoipTask">
+          <BackgroundTasks ServerName="BackEnd">
+            <Task Type="pushNotification" />
+          </BackgroundTasks>
+        </Extension>
+      </Extensions>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClientServer" />
+    <Capability Name="videosLibrary" />
+    <DeviceCapability Name="microphone" />
+    <DeviceCapability Name="webcam" />
+  </Capabilities>
+  <Extensions>
+    <Extension Category="windows.activatableClass.inProcessServer">
+      <InProcessServer>
+        <Path>AgHostSvcs.dll</Path>
+        <ActivatableClass ActivatableClassId="AgHost.BackgroundVoipTask" ThreadingModel="both" />
+      </InProcessServer>
+    </Extension>
+    <Extension Category="windows.activatableClass.inProcessServer">
+      <InProcessServer>
+        <Path>WMEAudioComponent.DLL</Path>
+        <ActivatableClass ActivatableClassId="PhoneVoIPApp.BackEnd.MessageReceivedEventHandler" ThreadingModel="MTA" />
+        <ActivatableClass ActivatableClassId="PhoneVoIPApp.BackEnd.BackEndTransport" ThreadingModel="MTA" />
+        <ActivatableClass ActivatableClassId="PhoneVoIPApp.BackEnd.BackEndAudio" ThreadingModel="MTA" />
+        <ActivatableClass ActivatableClassId="PhoneVoIPApp.BackEnd.CameraLocationChangedEventHandler" ThreadingModel="MTA" />
+        <ActivatableClass ActivatableClassId="PhoneVoIPApp.BackEnd.BackEndCapture" ThreadingModel="MTA" />
+        <ActivatableClass ActivatableClassId="PhoneVoIPApp.BackEnd.IncomingCallDialogDismissedCallback" ThreadingModel="MTA" />
+        <ActivatableClass ActivatableClassId="PhoneVoIPApp.BackEnd.CallController" ThreadingModel="MTA" />
+        <ActivatableClass ActivatableClassId="PhoneVoIPApp.BackEnd.Globals" ThreadingModel="MTA" />
+      </InProcessServer>
+    </Extension>
+    <Extension Category="windows.activatableClass.outOfProcessServer">
+      <OutOfProcessServer ServerName="BackEnd">
+        <Path>PhoneVoIPApp.ServerHost.exe</Path>
+        <Instancing>singleInstance</Instancing>
+		<ActivatableClass ActivatableClassId="WMEAudioComponent.WMEAudioHost" />
+      </OutOfProcessServer>
+    </Extension>
+    <Extension Category="windows.activatableClass.proxyStub">
+      <ProxyStub ClassId="5B64E2FA-1CC8-383E-9996-0479504D1482">
+        <Path>VoipBackEndProxyStub.DLL</Path>
+        <Interface Name="WMEAudioComponent.IBackgroundEventListener" InterfaceId="CD7C4ACB-0992-3CD1-920F-0B40696AE6E6" />  
+        <Interface Name="WMEAudioComponent.__IWMEAudioHostPublicNonVirtuals" InterfaceId="5B64E2FA-1CC8-383E-9996-0479504D1482" />       
+      </ProxyStub>
+    </Extension>
+  </Extensions>
+</Package>

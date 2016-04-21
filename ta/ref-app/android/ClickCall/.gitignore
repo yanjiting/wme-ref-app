@@ -1,0 +1,10 @@
+target
+obj
+bin
+gen
+*.iml
+build.xml
+proguard-project.txt
+libs
+assets
+project.properties

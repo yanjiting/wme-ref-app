@@ -1,0 +1,359 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6FA0267F1AF23302008CB4DC /* libtcaec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FA0267B1AF23261008CB4DC /* libtcaec.a */; };
+		6FA026801AF23302008CB4DC /* libtcaudio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FA0267E1AF23261008CB4DC /* libtcaudio.a */; };
+		D42F1DDF1AF12AA800082957 /* out_mono_wme.dat in CopyFiles */ = {isa = PBXBuildFile; fileRef = D42F1DDE1AF12A7100082957 /* out_mono_wme.dat */; };
+		D42F1DE31AF12B2500082957 /* ls_mono.dat in CopyFiles */ = {isa = PBXBuildFile; fileRef = D42F1DE21AF12B1C00082957 /* ls_mono.dat */; };
+		D42F1DE41AF12B2500082957 /* mic_mono.dat in CopyFiles */ = {isa = PBXBuildFile; fileRef = D42F1DE11AF12B1000082957 /* mic_mono.dat */; };
+		D42F1E621AF2300E00082957 /* tcaecTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D42F1E611AF2300E00082957 /* tcaecTest.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6FA0267A1AF23261008CB4DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D42F1DFA1AF137E100082957 /* tcaec.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FACE934D196CD6C30008EED3;
+			remoteInfo = tcaec;
+		};
+		6FA0267D1AF23261008CB4DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D42F1DC31AF1245A00082957 /* tcaudio.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FA8DB390196CC74300A3A855;
+			remoteInfo = tcaudio;
+		};
+		6FA026811AF23318008CB4DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D42F1DFA1AF137E100082957 /* tcaec.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = FACE934C196CD6C30008EED3;
+			remoteInfo = tcaec;
+		};
+		6FA026831AF23318008CB4DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D42F1DC31AF1245A00082957 /* tcaudio.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = FA8DB38F196CC74300A3A855;
+			remoteInfo = tcaudio;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6F6248401AEA6B0200DBBACF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				D42F1DE31AF12B2500082957 /* ls_mono.dat in CopyFiles */,
+				D42F1DE41AF12B2500082957 /* mic_mono.dat in CopyFiles */,
+				D42F1DDF1AF12AA800082957 /* out_mono_wme.dat in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6F6248421AEA6B0200DBBACF /* tc-aec-ut */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "tc-aec-ut"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D42F1DC31AF1245A00082957 /* tcaudio.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = tcaudio.xcodeproj; path = ../../../../../mediaengine/dolphin/src/AudioEngine/src/tcaudio/tcaudio.xcodeproj; sourceTree = "<group>"; };
+		D42F1DDE1AF12A7100082957 /* out_mono_wme.dat */ = {isa = PBXFileReference; lastKnownFileType = file; name = out_mono_wme.dat; path = ../../../../../vendor/tc/functional/audio/local/in/cmod/aec/test/data/out_mono_wme.dat; sourceTree = "<group>"; };
+		D42F1DE11AF12B1000082957 /* mic_mono.dat */ = {isa = PBXFileReference; lastKnownFileType = file; name = mic_mono.dat; path = ../../../../../vendor/tc/functional/audio/local/in/cmod/aec/test/data/mic_mono.dat; sourceTree = "<group>"; };
+		D42F1DE21AF12B1C00082957 /* ls_mono.dat */ = {isa = PBXFileReference; lastKnownFileType = file; name = ls_mono.dat; path = ../../../../../vendor/tc/functional/audio/local/in/cmod/aec/test/data/ls_mono.dat; sourceTree = "<group>"; };
+		D42F1DFA1AF137E100082957 /* tcaec.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = tcaec.xcodeproj; path = ../../../../../mediaengine/dolphin/src/AudioEngine/src/tcaec/tcaec.xcodeproj; sourceTree = "<group>"; };
+		D42F1E611AF2300E00082957 /* tcaecTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tcaecTest.cpp; path = "tc-aec-ut/tcaecTest.cpp"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6F62483F1AEA6B0200DBBACF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FA0267F1AF23302008CB4DC /* libtcaec.a in Frameworks */,
+				6FA026801AF23302008CB4DC /* libtcaudio.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6F6248391AEA6B0200DBBACF = {
+			isa = PBXGroup;
+			children = (
+				6F6248441AEA6B0200DBBACF /* tc-aec-ut */,
+				6F6248431AEA6B0200DBBACF /* Products */,
+				D42F1DE21AF12B1C00082957 /* ls_mono.dat */,
+				D42F1DE11AF12B1000082957 /* mic_mono.dat */,
+				D42F1DDE1AF12A7100082957 /* out_mono_wme.dat */,
+				D42F1DFA1AF137E100082957 /* tcaec.xcodeproj */,
+				D42F1DC31AF1245A00082957 /* tcaudio.xcodeproj */,
+			);
+			sourceTree = "<group>";
+		};
+		6F6248431AEA6B0200DBBACF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6F6248421AEA6B0200DBBACF /* tc-aec-ut */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6F6248441AEA6B0200DBBACF /* tc-aec-ut */ = {
+			isa = PBXGroup;
+			children = (
+				D42F1E611AF2300E00082957 /* tcaecTest.cpp */,
+			);
+			path = "tc-aec-ut";
+			sourceTree = "<group>";
+		};
+		6FA026751AF23261008CB4DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6FA0267B1AF23261008CB4DC /* libtcaec.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6FA026771AF23261008CB4DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6FA0267E1AF23261008CB4DC /* libtcaudio.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6F6248411AEA6B0200DBBACF /* tc-aec-ut */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F6248491AEA6B0200DBBACF /* Build configuration list for PBXNativeTarget "tc-aec-ut" */;
+			buildPhases = (
+				6F62483E1AEA6B0200DBBACF /* Sources */,
+				6F62483F1AEA6B0200DBBACF /* Frameworks */,
+				6F6248401AEA6B0200DBBACF /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6FA026821AF23318008CB4DC /* PBXTargetDependency */,
+				6FA026841AF23318008CB4DC /* PBXTargetDependency */,
+			);
+			name = "tc-aec-ut";
+			productName = "tc-aec-ut";
+			productReference = 6F6248421AEA6B0200DBBACF /* tc-aec-ut */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6F62483A1AEA6B0200DBBACF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+			};
+			buildConfigurationList = 6F62483D1AEA6B0200DBBACF /* Build configuration list for PBXProject "tc-aec-ut" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6F6248391AEA6B0200DBBACF;
+			productRefGroup = 6F6248431AEA6B0200DBBACF /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 6FA026751AF23261008CB4DC /* Products */;
+					ProjectRef = D42F1DFA1AF137E100082957 /* tcaec.xcodeproj */;
+				},
+				{
+					ProductGroup = 6FA026771AF23261008CB4DC /* Products */;
+					ProjectRef = D42F1DC31AF1245A00082957 /* tcaudio.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				6F6248411AEA6B0200DBBACF /* tc-aec-ut */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		6FA0267B1AF23261008CB4DC /* libtcaec.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libtcaec.a;
+			remoteRef = 6FA0267A1AF23261008CB4DC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6FA0267E1AF23261008CB4DC /* libtcaudio.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libtcaudio.a;
+			remoteRef = 6FA0267D1AF23261008CB4DC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6F62483E1AEA6B0200DBBACF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D42F1E621AF2300E00082957 /* tcaecTest.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6FA026821AF23318008CB4DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = tcaec;
+			targetProxy = 6FA026811AF23318008CB4DC /* PBXContainerItemProxy */;
+		};
+		6FA026841AF23318008CB4DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = tcaudio;
+			targetProxy = 6FA026831AF23318008CB4DC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6F6248471AEA6B0200DBBACF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		6F6248481AEA6B0200DBBACF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		6F62484A1AEA6B0200DBBACF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../../../mediaengine/dolphin/src/AudioEngine/src/tcaec/tcaec",
+					"$(SRCROOT)/../../../../../mediaengine/dolphin/src/cochelea/include",
+					"$(SRCROOT)/../../../../../vendor/tc/platform/audio/audtest/api",
+				);
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/../../../../../distribution/ios/Debug\"";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6F62484B1AEA6B0200DBBACF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../../../mediaengine/dolphin/src/AudioEngine/src/tcaec/tcaec",
+					"$(SRCROOT)/../../../../../mediaengine/dolphin/src/cochelea/include",
+					"$(SRCROOT)/../../../../../vendor/tc/platform/audio/audtest/api",
+				);
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/../../../../../distribution/ios/Debug\"";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6F62483D1AEA6B0200DBBACF /* Build configuration list for PBXProject "tc-aec-ut" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F6248471AEA6B0200DBBACF /* Debug */,
+				6F6248481AEA6B0200DBBACF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F6248491AEA6B0200DBBACF /* Build configuration list for PBXNativeTarget "tc-aec-ut" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F62484A1AEA6B0200DBBACF /* Debug */,
+				6F62484B1AEA6B0200DBBACF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6F62483A1AEA6B0200DBBACF /* Project object */;
+}

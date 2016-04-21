@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resources">
+      <UniqueIdentifier>f9503e3a-8b4f-4bc4-a863-f3e019534b26</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tga;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="g2log">
+      <UniqueIdentifier>{f465911b-0b3d-45fd-b96c-2aebd890fa00}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="G2logSink.cpp" />
+    <ClCompile Include="g2log\active.cpp">
+      <Filter>g2log</Filter>
+    </ClCompile>
+    <ClCompile Include="g2log\crashhandler_win.cpp">
+      <Filter>g2log</Filter>
+    </ClCompile>
+    <ClCompile Include="g2log\g2log.cpp">
+      <Filter>g2log</Filter>
+    </ClCompile>
+    <ClCompile Include="g2log\g2logworker.cpp">
+      <Filter>g2log</Filter>
+    </ClCompile>
+    <ClCompile Include="g2log\g2time.cpp">
+      <Filter>g2log</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="G2logSink.h" />
+    <ClInclude Include="g2log\active.h">
+      <Filter>g2log</Filter>
+    </ClInclude>
+    <ClInclude Include="g2log\crashhandler.h">
+      <Filter>g2log</Filter>
+    </ClInclude>
+    <ClInclude Include="g2log\g2future.h">
+      <Filter>g2log</Filter>
+    </ClInclude>
+    <ClInclude Include="g2log\g2log.h">
+      <Filter>g2log</Filter>
+    </ClInclude>
+    <ClInclude Include="g2log\g2logworker.h">
+      <Filter>g2log</Filter>
+    </ClInclude>
+    <ClInclude Include="g2log\g2moveoncopy.hpp">
+      <Filter>g2log</Filter>
+    </ClInclude>
+    <ClInclude Include="g2log\g2time.h">
+      <Filter>g2log</Filter>
+    </ClInclude>
+    <ClInclude Include="g2log\shared_queue.h">
+      <Filter>g2log</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

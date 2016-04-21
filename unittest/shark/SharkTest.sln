@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SharkTest", "SharkTest.vcproj", "{33482E76-C5C0-4EEB-ADF9-98E49ADD4C64}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BE0BFCCB-0091-4487-B1BF-B0A9765AAB17} = {BE0BFCCB-0091-4487-B1BF-B0A9765AAB17}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MJPGDecoder", "..\..\mediaengine\shark\bld\client\windows\MJPGDecoder.vcproj", "{37511A1B-EC37-4E46-B9FC-18B95A73334D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SvcClientEngine", "..\..\mediaengine\shark\bld\client\windows\SvcClientEngine.vcproj", "{BE0BFCCB-0091-4487-B1BF-B0A9765AAB17}"
+	ProjectSection(ProjectDependencies) = postProject
+		{37511A1B-EC37-4E46-B9FC-18B95A73334D} = {37511A1B-EC37-4E46-B9FC-18B95A73334D}
+		{55150534-B17B-4D6E-A716-D0C7E6996072} = {55150534-B17B-4D6E-A716-D0C7E6996072}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wsertp", "..\..\mediaengine\shark\bld\client\windows\wsertp.vcproj", "{55150534-B17B-4D6E-A716-D0C7E6996072}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{33482E76-C5C0-4EEB-ADF9-98E49ADD4C64}.Debug|Win32.ActiveCfg = Debug|Win32
+		{33482E76-C5C0-4EEB-ADF9-98E49ADD4C64}.Debug|Win32.Build.0 = Debug|Win32
+		{33482E76-C5C0-4EEB-ADF9-98E49ADD4C64}.Release|Win32.ActiveCfg = Release|Win32
+		{33482E76-C5C0-4EEB-ADF9-98E49ADD4C64}.Release|Win32.Build.0 = Release|Win32
+		{37511A1B-EC37-4E46-B9FC-18B95A73334D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{37511A1B-EC37-4E46-B9FC-18B95A73334D}.Debug|Win32.Build.0 = Debug|Win32
+		{37511A1B-EC37-4E46-B9FC-18B95A73334D}.Release|Win32.ActiveCfg = Release|Win32
+		{37511A1B-EC37-4E46-B9FC-18B95A73334D}.Release|Win32.Build.0 = Release|Win32
+		{BE0BFCCB-0091-4487-B1BF-B0A9765AAB17}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BE0BFCCB-0091-4487-B1BF-B0A9765AAB17}.Debug|Win32.Build.0 = Debug|Win32
+		{BE0BFCCB-0091-4487-B1BF-B0A9765AAB17}.Release|Win32.ActiveCfg = Release|Win32
+		{BE0BFCCB-0091-4487-B1BF-B0A9765AAB17}.Release|Win32.Build.0 = Release|Win32
+		{55150534-B17B-4D6E-A716-D0C7E6996072}.Debug|Win32.ActiveCfg = Debug|Win32
+		{55150534-B17B-4D6E-A716-D0C7E6996072}.Debug|Win32.Build.0 = Debug|Win32
+		{55150534-B17B-4D6E-A716-D0C7E6996072}.Release|Win32.ActiveCfg = Release|Win32
+		{55150534-B17B-4D6E-A716-D0C7E6996072}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

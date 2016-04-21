@@ -1,0 +1,848 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		171CEC991A2DD02A0025E7FE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 171CEC981A2DD02A0025E7FE /* SystemConfiguration.framework */; };
+		17CBCD8E1A2F20EB00E4A172 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17CBCD8D1A2F20EB00E4A172 /* CoreTelephony.framework */; };
+		320C8A6919175DA90049027A /* DebugCommon.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 320C8A6719175DA90049027A /* DebugCommon.xcconfig */; };
+		320C8A6A19175DA90049027A /* ReleaseCommon.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 320C8A6819175DA90049027A /* ReleaseCommon.xcconfig */; };
+		32335666190F2C990013A95D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32335665190F2C990013A95D /* Foundation.framework */; };
+		32335668190F2C990013A95D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32335667190F2C990013A95D /* CoreGraphics.framework */; };
+		3233566A190F2C990013A95D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32335669190F2C990013A95D /* UIKit.framework */; };
+		32335670190F2C990013A95D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3233566E190F2C990013A95D /* InfoPlist.strings */; };
+		32335672190F2C990013A95D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32335671190F2C990013A95D /* main.m */; };
+		32335676190F2C990013A95D /* UTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32335675190F2C990013A95D /* UTAppDelegate.m */; };
+		32335678190F2C990013A95D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32335677190F2C990013A95D /* Images.xcassets */; };
+		3233567F190F2C990013A95D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3233567E190F2C990013A95D /* XCTest.framework */; };
+		32335680190F2C990013A95D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32335665190F2C990013A95D /* Foundation.framework */; };
+		32335681190F2C990013A95D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32335669190F2C990013A95D /* UIKit.framework */; };
+		32335689190F2C990013A95D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 32335687190F2C990013A95D /* InfoPlist.strings */; };
+		3233568B190F2C990013A95D /* wrtpUnitTestAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3233568A190F2C990013A95D /* wrtpUnitTestAppTests.m */; };
+		323356C1190F2D570013A95D /* ActiveBufferTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32335694190F2D570013A95D /* ActiveBufferTest.cpp */; };
+		323356C3190F2D570013A95D /* CFBPacketTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32335696190F2D570013A95D /* CFBPacketTest.cpp */; };
+		323356C4190F2D570013A95D /* CFECEncoderTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32335697190F2D570013A95D /* CFECEncoderTest.cpp */; };
+		323356C5190F2D570013A95D /* CFECLevelTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32335698190F2D570013A95D /* CFECLevelTest.cpp */; };
+		323356C6190F2D570013A95D /* CMMFrameManagerTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32335699190F2D570013A95D /* CMMFrameManagerTest.cpp */; };
+		323356C7190F2D570013A95D /* CPSFBPacketTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3233569A190F2D570013A95D /* CPSFBPacketTest.cpp */; };
+		323356C8190F2D570013A95D /* CRetransmissionPacketTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3233569B190F2D570013A95D /* CRetransmissionPacketTest.cpp */; };
+		323356C9190F2D570013A95D /* CRTCPHandlerTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3233569C190F2D570013A95D /* CRTCPHandlerTest.cpp */; };
+		323356CA190F2D570013A95D /* CRTCPPacketTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3233569D190F2D570013A95D /* CRTCPPacketTest.cpp */; };
+		323356CC190F2D570013A95D /* CRTPAggregatePacketTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3233569F190F2D570013A95D /* CRTPAggregatePacketTest.cpp */; };
+		323356CE190F2D570013A95D /* CRTPChannelTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 323356A1190F2D570013A95D /* CRTPChannelTest.cpp */; };
+		323356CF190F2D570013A95D /* CRTPFBPacketTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 323356A2190F2D570013A95D /* CRTPFBPacketTest.cpp */; };
+		323356D0190F2D570013A95D /* CRTPPacketLazyTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 323356A3190F2D570013A95D /* CRTPPacketLazyTest.cpp */; };
+		323356D1190F2D570013A95D /* CRTPPacketTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 323356A4190F2D570013A95D /* CRTPPacketTest.cpp */; };
+		323356D2190F2D570013A95D /* CRTPSessionClientTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 323356A5190F2D570013A95D /* CRTPSessionClientTest.cpp */; };
+		323356D3190F2D570013A95D /* CRTPStreamTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 323356A6190F2D570013A95D /* CRTPStreamTest.cpp */; };
+		323356D4190F2D570013A95D /* CRTPUtilsTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 323356A7190F2D570013A95D /* CRTPUtilsTest.cpp */; };
+		323356D6190F2D570013A95D /* CSendWindowTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 323356A9190F2D570013A95D /* CSendWindowTest.cpp */; };
+		323356D7190F2D570013A95D /* CSeqCountorTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 323356AA190F2D570013A95D /* CSeqCountorTest.cpp */; };
+		323356D8190F2D570013A95D /* CSequenceDBTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 323356AB190F2D570013A95D /* CSequenceDBTest.cpp */; };
+		323356D9190F2D570013A95D /* CVideoStreamTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 323356AC190F2D570013A95D /* CVideoStreamTest.cpp */; };
+		323356DB190F2D570013A95D /* FrameNALFragmentTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 323356AE190F2D570013A95D /* FrameNALFragmentTest.cpp */; };
+		323356DC190F2D570013A95D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 323356AF190F2D570013A95D /* main.cpp */; };
+		323356DD190F2D570013A95D /* MediaStatisticsTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 323356B0190F2D570013A95D /* MediaStatisticsTest.cpp */; };
+		323356DE190F2D570013A95D /* NewTraceInterfaceTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 323356B1190F2D570013A95D /* NewTraceInterfaceTest.cpp */; };
+		323356DF190F2D570013A95D /* PktStatTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 323356B2190F2D570013A95D /* PktStatTest.cpp */; };
+		323356E0190F2D570013A95D /* PSFBCallFlowTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 323356B3190F2D570013A95D /* PSFBCallFlowTest.cpp */; };
+		323356E3190F2D570013A95D /* RTPMediaAPITest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 323356B6190F2D570013A95D /* RTPMediaAPITest.cpp */; };
+		323356E4190F2D570013A95D /* RTPPacketizationTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 323356B7190F2D570013A95D /* RTPPacketizationTest.cpp */; };
+		323356E5190F2D570013A95D /* RTPSessionConfigTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 323356B8190F2D570013A95D /* RTPSessionConfigTest.cpp */; };
+		323356E6190F2D570013A95D /* RTPTimeTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 323356B9190F2D570013A95D /* RTPTimeTest.cpp */; };
+		323356E7190F2D570013A95D /* SendControlTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 323356BA190F2D570013A95D /* SendControlTest.cpp */; };
+		323356E8190F2D570013A95D /* SendingControlTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 323356BB190F2D570013A95D /* SendingControlTest.cpp */; };
+		323356E9190F2D570013A95D /* SpeedMeasureTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 323356BC190F2D570013A95D /* SpeedMeasureTest.cpp */; };
+		323356EA190F2D570013A95D /* testutil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 323356BD190F2D570013A95D /* testutil.cpp */; };
+		323356EB190F2D570013A95D /* TMMBRTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 323356BE190F2D570013A95D /* TMMBRTest.cpp */; };
+		323356ED190F2D570013A95D /* WMEInterfaceMock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 323356C0190F2D570013A95D /* WMEInterfaceMock.cpp */; };
+		3A8DCF2D19D50EB40019DB6A /* NetworkIndicatorTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A8DCF2C19D50EB40019DB6A /* NetworkIndicatorTest.cpp */; };
+		8006598C19752A3B006F217C /* SimulcastTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8006598B19752A3B006F217C /* SimulcastTest.cpp */; };
+		80BECCAF1B5CE709003DF9EE /* CRTPLossRatioStatsTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80BECCAE1B5CE709003DF9EE /* CRTPLossRatioStatsTest.cpp */; };
+		844E2B2E1910CFAB008BDC07 /* AVSyncAPITest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 844E2B241910CFAA008BDC07 /* AVSyncAPITest.cpp */; };
+		844E2B2F1910CFAB008BDC07 /* CInformQoSAPITEST.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 844E2B251910CFAA008BDC07 /* CInformQoSAPITEST.cpp */; };
+		844E2B301910CFAB008BDC07 /* CRTPSessionClientAPITest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 844E2B261910CFAA008BDC07 /* CRTPSessionClientAPITest.cpp */; };
+		844E2B311910CFAB008BDC07 /* CSecurityStrategyWrapperClientTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 844E2B271910CFAA008BDC07 /* CSecurityStrategyWrapperClientTest.cpp */; };
+		844E2B321910CFAB008BDC07 /* CWmeCodecPayloadTypeAPITest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 844E2B281910CFAA008BDC07 /* CWmeCodecPayloadTypeAPITest.cpp */; };
+		844E2B331910CFAB008BDC07 /* RTPWMEAPITest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 844E2B291910CFAA008BDC07 /* RTPWMEAPITest.cpp */; };
+		844E2B341910CFAB008BDC07 /* SecurityPolicyAPITest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 844E2B2A1910CFAB008BDC07 /* SecurityPolicyAPITest.cpp */; };
+		844E2B351910CFAB008BDC07 /* SendControlAPITest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 844E2B2B1910CFAB008BDC07 /* SendControlAPITest.cpp */; };
+		844E2B361910CFAB008BDC07 /* SendControlAPITestForAS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 844E2B2C1910CFAB008BDC07 /* SendControlAPITestForAS.cpp */; };
+		844E2B371910CFAB008BDC07 /* SesscionConfigObserverTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 844E2B2D1910CFAB008BDC07 /* SesscionConfigObserverTest.cpp */; };
+		849E480E1921BB44007D8FFE /* CRTPThreadTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 849E480D1921BB44007D8FFE /* CRTPThreadTest.cpp */; };
+		868DBC961B8AE1BE0072183D /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 868DBC951B8AE1BE0072183D /* libz.1.2.5.dylib */; };
+		868DBC9C1B8AE62F0072183D /* json.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 868DBC981B8AE62F0072183D /* json.cpp */; };
+		868DBC9D1B8AE62F0072183D /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 868DBC9A1B8AE62F0072183D /* LICENSE */; };
+		868DBC9E1B8AE62F0072183D /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 868DBC9B1B8AE62F0072183D /* README.txt */; };
+		BD0788401ACA4123000DC197 /* RTPStreamManagementTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD07883F1ACA4123000DC197 /* RTPStreamManagementTest.cpp */; };
+		BD6CA0E81963916700A92AF0 /* SimulcastCallflowTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD6CA0E71963916700A92AF0 /* SimulcastCallflowTest.cpp */; };
+		BD9284C91B9EAD8F00F027C4 /* VideoRecvBufferTest in Resources */ = {isa = PBXBuildFile; fileRef = BD9284C81B9EAD8F00F027C4 /* VideoRecvBufferTest */; };
+		BD9E88AF19E669A6006C8857 /* RTPHeaderExtensionVideoTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD9E88AE19E669A6006C8857 /* RTPHeaderExtensionVideoTest.cpp */; };
+		BF1BE73F19E50F2600D2AC5F /* CRTPRecoverTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF1BE73E19E50F2600D2AC5F /* CRTPRecoverTest.cpp */; };
+		F071C0E21A02134100EF4F87 /* libgmock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F071C0DD1A02134100EF4F87 /* libgmock.a */; };
+		F071C0E31A02134100EF4F87 /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F071C0DE1A02134100EF4F87 /* libgtest.a */; };
+		F071C0E61A02134100EF4F87 /* libwrtp_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F071C0E11A02134100EF4F87 /* libwrtp_ios.a */; };
+		F071C0E81A02134B00EF4F87 /* libwqos_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F071C0E71A02134B00EF4F87 /* libwqos_ios.a */; };
+		F071C0EA1A02135C00EF4F87 /* libsrtp_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F071C0E91A02135C00EF4F87 /* libsrtp_ios.a */; };
+		F071C0EC1A02137400EF4F87 /* libutil_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F071C0EB1A02137400EF4F87 /* libutil_ios.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		32335682190F2C990013A95D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3233565A190F2C990013A95D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32335661190F2C990013A95D;
+			remoteInfo = wrtpUnitTestApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		171CEC981A2DD02A0025E7FE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		17CBCD8D1A2F20EB00E4A172 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		320C8A6719175DA90049027A /* DebugCommon.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = DebugCommon.xcconfig; path = ../../../bld/ios/DebugCommon.xcconfig; sourceTree = "<group>"; };
+		320C8A6819175DA90049027A /* ReleaseCommon.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = ReleaseCommon.xcconfig; path = ../../../bld/ios/ReleaseCommon.xcconfig; sourceTree = "<group>"; };
+		32335662190F2C990013A95D /* wrtpUnitTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wrtpUnitTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		32335665190F2C990013A95D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		32335667190F2C990013A95D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		32335669190F2C990013A95D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3233566D190F2C990013A95D /* wrtpUnitTestApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "wrtpUnitTestApp-Info.plist"; sourceTree = "<group>"; };
+		3233566F190F2C990013A95D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		32335671190F2C990013A95D /* main.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = main.m; sourceTree = "<group>"; };
+		32335673190F2C990013A95D /* wrtpUnitTestApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wrtpUnitTestApp-Prefix.pch"; sourceTree = "<group>"; };
+		32335674190F2C990013A95D /* UTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UTAppDelegate.h; sourceTree = "<group>"; };
+		32335675190F2C990013A95D /* UTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UTAppDelegate.m; sourceTree = "<group>"; };
+		32335677190F2C990013A95D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3233567D190F2C990013A95D /* wrtpUnitTestAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wrtpUnitTestAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3233567E190F2C990013A95D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		32335686190F2C990013A95D /* wrtpUnitTestAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "wrtpUnitTestAppTests-Info.plist"; sourceTree = "<group>"; };
+		32335688190F2C990013A95D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3233568A190F2C990013A95D /* wrtpUnitTestAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wrtpUnitTestAppTests.m; sourceTree = "<group>"; };
+		32335694190F2D570013A95D /* ActiveBufferTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ActiveBufferTest.cpp; path = ../../ActiveBufferTest.cpp; sourceTree = "<group>"; };
+		32335696190F2D570013A95D /* CFBPacketTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CFBPacketTest.cpp; path = ../../CFBPacketTest.cpp; sourceTree = "<group>"; };
+		32335697190F2D570013A95D /* CFECEncoderTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CFECEncoderTest.cpp; path = ../../CFECEncoderTest.cpp; sourceTree = "<group>"; };
+		32335698190F2D570013A95D /* CFECLevelTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CFECLevelTest.cpp; path = ../../CFECLevelTest.cpp; sourceTree = "<group>"; };
+		32335699190F2D570013A95D /* CMMFrameManagerTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CMMFrameManagerTest.cpp; path = ../../CMMFrameManagerTest.cpp; sourceTree = "<group>"; };
+		3233569A190F2D570013A95D /* CPSFBPacketTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CPSFBPacketTest.cpp; path = ../../CPSFBPacketTest.cpp; sourceTree = "<group>"; };
+		3233569B190F2D570013A95D /* CRetransmissionPacketTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CRetransmissionPacketTest.cpp; path = ../../CRetransmissionPacketTest.cpp; sourceTree = "<group>"; };
+		3233569C190F2D570013A95D /* CRTCPHandlerTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CRTCPHandlerTest.cpp; path = ../../CRTCPHandlerTest.cpp; sourceTree = "<group>"; };
+		3233569D190F2D570013A95D /* CRTCPPacketTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CRTCPPacketTest.cpp; path = ../../CRTCPPacketTest.cpp; sourceTree = "<group>"; };
+		3233569F190F2D570013A95D /* CRTPAggregatePacketTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CRTPAggregatePacketTest.cpp; path = ../../CRTPAggregatePacketTest.cpp; sourceTree = "<group>"; };
+		323356A1190F2D570013A95D /* CRTPChannelTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CRTPChannelTest.cpp; path = ../../CRTPChannelTest.cpp; sourceTree = "<group>"; };
+		323356A2190F2D570013A95D /* CRTPFBPacketTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CRTPFBPacketTest.cpp; path = ../../CRTPFBPacketTest.cpp; sourceTree = "<group>"; };
+		323356A3190F2D570013A95D /* CRTPPacketLazyTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CRTPPacketLazyTest.cpp; path = ../../CRTPPacketLazyTest.cpp; sourceTree = "<group>"; };
+		323356A4190F2D570013A95D /* CRTPPacketTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CRTPPacketTest.cpp; path = ../../CRTPPacketTest.cpp; sourceTree = "<group>"; };
+		323356A5190F2D570013A95D /* CRTPSessionClientTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CRTPSessionClientTest.cpp; path = ../../CRTPSessionClientTest.cpp; sourceTree = "<group>"; };
+		323356A6190F2D570013A95D /* CRTPStreamTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CRTPStreamTest.cpp; path = ../../CRTPStreamTest.cpp; sourceTree = "<group>"; };
+		323356A7190F2D570013A95D /* CRTPUtilsTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CRTPUtilsTest.cpp; path = ../../CRTPUtilsTest.cpp; sourceTree = "<group>"; };
+		323356A9190F2D570013A95D /* CSendWindowTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CSendWindowTest.cpp; path = ../../CSendWindowTest.cpp; sourceTree = "<group>"; };
+		323356AA190F2D570013A95D /* CSeqCountorTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CSeqCountorTest.cpp; path = ../../CSeqCountorTest.cpp; sourceTree = "<group>"; };
+		323356AB190F2D570013A95D /* CSequenceDBTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CSequenceDBTest.cpp; path = ../../CSequenceDBTest.cpp; sourceTree = "<group>"; };
+		323356AC190F2D570013A95D /* CVideoStreamTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CVideoStreamTest.cpp; path = ../../CVideoStreamTest.cpp; sourceTree = "<group>"; };
+		323356AE190F2D570013A95D /* FrameNALFragmentTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FrameNALFragmentTest.cpp; path = ../../FrameNALFragmentTest.cpp; sourceTree = "<group>"; };
+		323356AF190F2D570013A95D /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../../main.cpp; sourceTree = "<group>"; };
+		323356B0190F2D570013A95D /* MediaStatisticsTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MediaStatisticsTest.cpp; path = ../../MediaStatisticsTest.cpp; sourceTree = "<group>"; };
+		323356B1190F2D570013A95D /* NewTraceInterfaceTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NewTraceInterfaceTest.cpp; path = ../../NewTraceInterfaceTest.cpp; sourceTree = "<group>"; };
+		323356B2190F2D570013A95D /* PktStatTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PktStatTest.cpp; path = ../../PktStatTest.cpp; sourceTree = "<group>"; };
+		323356B3190F2D570013A95D /* PSFBCallFlowTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PSFBCallFlowTest.cpp; path = ../../PSFBCallFlowTest.cpp; sourceTree = "<group>"; };
+		323356B6190F2D570013A95D /* RTPMediaAPITest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RTPMediaAPITest.cpp; path = ../../RTPMediaAPITest.cpp; sourceTree = "<group>"; };
+		323356B7190F2D570013A95D /* RTPPacketizationTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RTPPacketizationTest.cpp; path = ../../RTPPacketizationTest.cpp; sourceTree = "<group>"; };
+		323356B8190F2D570013A95D /* RTPSessionConfigTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RTPSessionConfigTest.cpp; path = ../../RTPSessionConfigTest.cpp; sourceTree = "<group>"; };
+		323356B9190F2D570013A95D /* RTPTimeTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RTPTimeTest.cpp; path = ../../RTPTimeTest.cpp; sourceTree = "<group>"; };
+		323356BA190F2D570013A95D /* SendControlTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SendControlTest.cpp; path = ../../SendControlTest.cpp; sourceTree = "<group>"; };
+		323356BB190F2D570013A95D /* SendingControlTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SendingControlTest.cpp; path = ../../SendingControlTest.cpp; sourceTree = "<group>"; };
+		323356BC190F2D570013A95D /* SpeedMeasureTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SpeedMeasureTest.cpp; path = ../../SpeedMeasureTest.cpp; sourceTree = "<group>"; };
+		323356BD190F2D570013A95D /* testutil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = testutil.cpp; path = ../../testutil.cpp; sourceTree = "<group>"; };
+		323356BE190F2D570013A95D /* TMMBRTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TMMBRTest.cpp; path = ../../TMMBRTest.cpp; sourceTree = "<group>"; };
+		323356C0190F2D570013A95D /* WMEInterfaceMock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = WMEInterfaceMock.cpp; path = ../../WMEInterfaceMock.cpp; sourceTree = "<group>"; };
+		3A8DCF2C19D50EB40019DB6A /* NetworkIndicatorTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NetworkIndicatorTest.cpp; path = ../../NetworkIndicatorTest.cpp; sourceTree = "<group>"; };
+		6F98558C1A3E7107004791E6 /* libmariqos.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmariqos.a; path = "../../../../vendor/mari/libs/ios/Debug-iphonesimulator/libmariqos.a"; sourceTree = "<group>"; };
+		8006598B19752A3B006F217C /* SimulcastTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SimulcastTest.cpp; path = ../../SimulcastTest.cpp; sourceTree = "<group>"; };
+		80BECCAE1B5CE709003DF9EE /* CRTPLossRatioStatsTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CRTPLossRatioStatsTest.cpp; path = ../../CRTPLossRatioStatsTest.cpp; sourceTree = "<group>"; };
+		80F873A01A4AAC6600658B62 /* librsfec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librsfec.a; path = ../../../../vendor/mari/build/libs/mac/Debug/librsfec.a; sourceTree = "<group>"; };
+		844E2B241910CFAA008BDC07 /* AVSyncAPITest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AVSyncAPITest.cpp; path = ../../AVSyncAPITest.cpp; sourceTree = "<group>"; };
+		844E2B251910CFAA008BDC07 /* CInformQoSAPITEST.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CInformQoSAPITEST.cpp; path = ../../CInformQoSAPITEST.cpp; sourceTree = "<group>"; };
+		844E2B261910CFAA008BDC07 /* CRTPSessionClientAPITest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CRTPSessionClientAPITest.cpp; path = ../../CRTPSessionClientAPITest.cpp; sourceTree = "<group>"; };
+		844E2B271910CFAA008BDC07 /* CSecurityStrategyWrapperClientTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CSecurityStrategyWrapperClientTest.cpp; path = ../../CSecurityStrategyWrapperClientTest.cpp; sourceTree = "<group>"; };
+		844E2B281910CFAA008BDC07 /* CWmeCodecPayloadTypeAPITest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CWmeCodecPayloadTypeAPITest.cpp; path = ../../CWmeCodecPayloadTypeAPITest.cpp; sourceTree = "<group>"; };
+		844E2B291910CFAA008BDC07 /* RTPWMEAPITest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RTPWMEAPITest.cpp; path = ../../RTPWMEAPITest.cpp; sourceTree = "<group>"; };
+		844E2B2A1910CFAB008BDC07 /* SecurityPolicyAPITest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SecurityPolicyAPITest.cpp; path = ../../SecurityPolicyAPITest.cpp; sourceTree = "<group>"; };
+		844E2B2B1910CFAB008BDC07 /* SendControlAPITest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SendControlAPITest.cpp; path = ../../SendControlAPITest.cpp; sourceTree = "<group>"; };
+		844E2B2C1910CFAB008BDC07 /* SendControlAPITestForAS.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SendControlAPITestForAS.cpp; path = ../../SendControlAPITestForAS.cpp; sourceTree = "<group>"; };
+		844E2B2D1910CFAB008BDC07 /* SesscionConfigObserverTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SesscionConfigObserverTest.cpp; path = ../../SesscionConfigObserverTest.cpp; sourceTree = "<group>"; };
+		849E480D1921BB44007D8FFE /* CRTPThreadTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CRTPThreadTest.cpp; path = ../../CRTPThreadTest.cpp; sourceTree = "<group>"; };
+		868DBC951B8AE1BE0072183D /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
+		868DBC981B8AE62F0072183D /* json.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = json.cpp; path = ../../../../vendor/SuperEasyJSON/json.cpp; sourceTree = "<group>"; };
+		868DBC991B8AE62F0072183D /* json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = json.h; path = ../../../../vendor/SuperEasyJSON/json.h; sourceTree = "<group>"; };
+		868DBC9A1B8AE62F0072183D /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../../../../vendor/SuperEasyJSON/LICENSE; sourceTree = "<group>"; };
+		868DBC9B1B8AE62F0072183D /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.txt; path = ../../../../vendor/SuperEasyJSON/README.txt; sourceTree = "<group>"; };
+		BD07883F1ACA4123000DC197 /* RTPStreamManagementTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RTPStreamManagementTest.cpp; path = ../../RTPStreamManagementTest.cpp; sourceTree = "<group>"; };
+		BD6CA0E71963916700A92AF0 /* SimulcastCallflowTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SimulcastCallflowTest.cpp; path = ../../SimulcastCallflowTest.cpp; sourceTree = "<group>"; };
+		BD9284C81B9EAD8F00F027C4 /* VideoRecvBufferTest */ = {isa = PBXFileReference; lastKnownFileType = folder; name = VideoRecvBufferTest; path = ../../VideoRecvBufferTest; sourceTree = "<group>"; };
+		BD9E88AE19E669A6006C8857 /* RTPHeaderExtensionVideoTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RTPHeaderExtensionVideoTest.cpp; path = ../../RTPHeaderExtensionVideoTest.cpp; sourceTree = "<group>"; };
+		BF1BE73E19E50F2600D2AC5F /* CRTPRecoverTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CRTPRecoverTest.cpp; path = ../../CRTPRecoverTest.cpp; sourceTree = "<group>"; };
+		F071C0DD1A02134100EF4F87 /* libgmock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgmock.a; path = "../../../../vendor/gtest/bld/ios/./bin/Debug-iphoneos/libgmock.a"; sourceTree = "<group>"; };
+		F071C0DE1A02134100EF4F87 /* libgtest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgtest.a; path = "../../../../vendor/gtest/bld/ios/./bin/Debug-iphoneos/libgtest.a"; sourceTree = "<group>"; };
+		F071C0DF1A02134100EF4F87 /* libwbxtrace.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libwbxtrace.a; path = "/Users/zzchu/Desktop/svn-ws/Jenkins/trunk/mediaengine/wbxtrace/src/ios/../../../../distribution/ios/Debug-iphoneos/libwbxtrace.a"; sourceTree = "<absolute>"; };
+		F071C0E11A02134100EF4F87 /* libwrtp_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libwrtp_ios.a; path = "/Users/zzchu/Desktop/svn-ws/Jenkins/trunk/mediaengine/transmission/src/../../../distribution/ios/Release-iphoneos/libwrtp_ios.a"; sourceTree = "<absolute>"; };
+		F071C0E71A02134B00EF4F87 /* libwqos_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libwqos_ios.a; path = "/Users/zzchu/Desktop/svn-ws/Jenkins/trunk/mediaengine/wqos/src/../../../distribution/ios/Release-iphoneos/libwqos_ios.a"; sourceTree = "<absolute>"; };
+		F071C0E91A02135C00EF4F87 /* libsrtp_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsrtp_ios.a; path = "/Users/zzchu/Desktop/svn-ws/Jenkins/trunk/mediaengine/transmission/ciscosrtp/bld/ios/../../../../../distribution/ios/Release-iphoneos/libsrtp_ios.a"; sourceTree = "<absolute>"; };
+		F071C0EB1A02137400EF4F87 /* libutil_ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libutil_ios.a; path = "/Users/zzchu/Desktop/svn-ws/Jenkins/trunk/mediaengine/util/src/../../../distribution/ios/Debug-iphoneos/libutil_ios.a"; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3233565F190F2C990013A95D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				868DBC961B8AE1BE0072183D /* libz.1.2.5.dylib in Frameworks */,
+				17CBCD8E1A2F20EB00E4A172 /* CoreTelephony.framework in Frameworks */,
+				171CEC991A2DD02A0025E7FE /* SystemConfiguration.framework in Frameworks */,
+				F071C0EC1A02137400EF4F87 /* libutil_ios.a in Frameworks */,
+				F071C0EA1A02135C00EF4F87 /* libsrtp_ios.a in Frameworks */,
+				F071C0E81A02134B00EF4F87 /* libwqos_ios.a in Frameworks */,
+				F071C0E21A02134100EF4F87 /* libgmock.a in Frameworks */,
+				F071C0E31A02134100EF4F87 /* libgtest.a in Frameworks */,
+				F071C0E61A02134100EF4F87 /* libwrtp_ios.a in Frameworks */,
+				32335668190F2C990013A95D /* CoreGraphics.framework in Frameworks */,
+				3233566A190F2C990013A95D /* UIKit.framework in Frameworks */,
+				32335666190F2C990013A95D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3233567A190F2C990013A95D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3233567F190F2C990013A95D /* XCTest.framework in Frameworks */,
+				32335681190F2C990013A95D /* UIKit.framework in Frameworks */,
+				32335680190F2C990013A95D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		320C8A6619175D960049027A /* config */ = {
+			isa = PBXGroup;
+			children = (
+				320C8A6719175DA90049027A /* DebugCommon.xcconfig */,
+				320C8A6819175DA90049027A /* ReleaseCommon.xcconfig */,
+			);
+			name = config;
+			sourceTree = "<group>";
+		};
+		32335659190F2C990013A95D = {
+			isa = PBXGroup;
+			children = (
+				868DBC971B8AE6030072183D /* SuperEasyJSON */,
+				6FC44F3A195452B40029F828 /* libs */,
+				320C8A6619175D960049027A /* config */,
+				323356EE190F2D640013A95D /* src */,
+				3233566B190F2C990013A95D /* wrtpUnitTestApp */,
+				32335684190F2C990013A95D /* wrtpUnitTestAppTests */,
+				32335664190F2C990013A95D /* Frameworks */,
+				32335663190F2C990013A95D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		32335663190F2C990013A95D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32335662190F2C990013A95D /* wrtpUnitTestApp.app */,
+				3233567D190F2C990013A95D /* wrtpUnitTestAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32335664190F2C990013A95D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				868DBC951B8AE1BE0072183D /* libz.1.2.5.dylib */,
+				80F873A01A4AAC6600658B62 /* librsfec.a */,
+				6F98558C1A3E7107004791E6 /* libmariqos.a */,
+				17CBCD8D1A2F20EB00E4A172 /* CoreTelephony.framework */,
+				171CEC981A2DD02A0025E7FE /* SystemConfiguration.framework */,
+				F071C0EB1A02137400EF4F87 /* libutil_ios.a */,
+				F071C0E91A02135C00EF4F87 /* libsrtp_ios.a */,
+				F071C0E71A02134B00EF4F87 /* libwqos_ios.a */,
+				F071C0DD1A02134100EF4F87 /* libgmock.a */,
+				F071C0DE1A02134100EF4F87 /* libgtest.a */,
+				F071C0DF1A02134100EF4F87 /* libwbxtrace.a */,
+				F071C0E11A02134100EF4F87 /* libwrtp_ios.a */,
+				32335665190F2C990013A95D /* Foundation.framework */,
+				32335667190F2C990013A95D /* CoreGraphics.framework */,
+				32335669190F2C990013A95D /* UIKit.framework */,
+				3233567E190F2C990013A95D /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3233566B190F2C990013A95D /* wrtpUnitTestApp */ = {
+			isa = PBXGroup;
+			children = (
+				32335674190F2C990013A95D /* UTAppDelegate.h */,
+				32335675190F2C990013A95D /* UTAppDelegate.m */,
+				32335677190F2C990013A95D /* Images.xcassets */,
+				3233566C190F2C990013A95D /* Supporting Files */,
+			);
+			path = wrtpUnitTestApp;
+			sourceTree = "<group>";
+		};
+		3233566C190F2C990013A95D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3233566D190F2C990013A95D /* wrtpUnitTestApp-Info.plist */,
+				3233566E190F2C990013A95D /* InfoPlist.strings */,
+				32335671190F2C990013A95D /* main.m */,
+				32335673190F2C990013A95D /* wrtpUnitTestApp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		32335684190F2C990013A95D /* wrtpUnitTestAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				3233568A190F2C990013A95D /* wrtpUnitTestAppTests.m */,
+				32335685190F2C990013A95D /* Supporting Files */,
+			);
+			path = wrtpUnitTestAppTests;
+			sourceTree = "<group>";
+		};
+		32335685190F2C990013A95D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				32335686190F2C990013A95D /* wrtpUnitTestAppTests-Info.plist */,
+				32335687190F2C990013A95D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		323356EE190F2D640013A95D /* src */ = {
+			isa = PBXGroup;
+			children = (
+				BD9284C81B9EAD8F00F027C4 /* VideoRecvBufferTest */,
+				80BECCAE1B5CE709003DF9EE /* CRTPLossRatioStatsTest.cpp */,
+				BD07883F1ACA4123000DC197 /* RTPStreamManagementTest.cpp */,
+				32335694190F2D570013A95D /* ActiveBufferTest.cpp */,
+				844E2B241910CFAA008BDC07 /* AVSyncAPITest.cpp */,
+				32335696190F2D570013A95D /* CFBPacketTest.cpp */,
+				32335697190F2D570013A95D /* CFECEncoderTest.cpp */,
+				32335698190F2D570013A95D /* CFECLevelTest.cpp */,
+				844E2B251910CFAA008BDC07 /* CInformQoSAPITEST.cpp */,
+				32335699190F2D570013A95D /* CMMFrameManagerTest.cpp */,
+				3233569A190F2D570013A95D /* CPSFBPacketTest.cpp */,
+				3233569B190F2D570013A95D /* CRetransmissionPacketTest.cpp */,
+				3233569C190F2D570013A95D /* CRTCPHandlerTest.cpp */,
+				3233569D190F2D570013A95D /* CRTCPPacketTest.cpp */,
+				3233569F190F2D570013A95D /* CRTPAggregatePacketTest.cpp */,
+				323356A1190F2D570013A95D /* CRTPChannelTest.cpp */,
+				323356A2190F2D570013A95D /* CRTPFBPacketTest.cpp */,
+				323356A3190F2D570013A95D /* CRTPPacketLazyTest.cpp */,
+				323356A4190F2D570013A95D /* CRTPPacketTest.cpp */,
+				BF1BE73E19E50F2600D2AC5F /* CRTPRecoverTest.cpp */,
+				844E2B261910CFAA008BDC07 /* CRTPSessionClientAPITest.cpp */,
+				323356A5190F2D570013A95D /* CRTPSessionClientTest.cpp */,
+				323356A6190F2D570013A95D /* CRTPStreamTest.cpp */,
+				849E480D1921BB44007D8FFE /* CRTPThreadTest.cpp */,
+				323356A7190F2D570013A95D /* CRTPUtilsTest.cpp */,
+				844E2B271910CFAA008BDC07 /* CSecurityStrategyWrapperClientTest.cpp */,
+				323356A9190F2D570013A95D /* CSendWindowTest.cpp */,
+				323356AA190F2D570013A95D /* CSeqCountorTest.cpp */,
+				323356AB190F2D570013A95D /* CSequenceDBTest.cpp */,
+				323356AC190F2D570013A95D /* CVideoStreamTest.cpp */,
+				844E2B281910CFAA008BDC07 /* CWmeCodecPayloadTypeAPITest.cpp */,
+				323356AE190F2D570013A95D /* FrameNALFragmentTest.cpp */,
+				323356AF190F2D570013A95D /* main.cpp */,
+				323356B0190F2D570013A95D /* MediaStatisticsTest.cpp */,
+				3A8DCF2C19D50EB40019DB6A /* NetworkIndicatorTest.cpp */,
+				323356B1190F2D570013A95D /* NewTraceInterfaceTest.cpp */,
+				323356B2190F2D570013A95D /* PktStatTest.cpp */,
+				323356B3190F2D570013A95D /* PSFBCallFlowTest.cpp */,
+				BD9E88AE19E669A6006C8857 /* RTPHeaderExtensionVideoTest.cpp */,
+				323356B6190F2D570013A95D /* RTPMediaAPITest.cpp */,
+				323356B7190F2D570013A95D /* RTPPacketizationTest.cpp */,
+				323356B8190F2D570013A95D /* RTPSessionConfigTest.cpp */,
+				323356B9190F2D570013A95D /* RTPTimeTest.cpp */,
+				844E2B291910CFAA008BDC07 /* RTPWMEAPITest.cpp */,
+				844E2B2A1910CFAB008BDC07 /* SecurityPolicyAPITest.cpp */,
+				844E2B2B1910CFAB008BDC07 /* SendControlAPITest.cpp */,
+				844E2B2C1910CFAB008BDC07 /* SendControlAPITestForAS.cpp */,
+				323356BA190F2D570013A95D /* SendControlTest.cpp */,
+				323356BB190F2D570013A95D /* SendingControlTest.cpp */,
+				844E2B2D1910CFAB008BDC07 /* SesscionConfigObserverTest.cpp */,
+				BD6CA0E71963916700A92AF0 /* SimulcastCallflowTest.cpp */,
+				8006598B19752A3B006F217C /* SimulcastTest.cpp */,
+				323356BC190F2D570013A95D /* SpeedMeasureTest.cpp */,
+				323356BD190F2D570013A95D /* testutil.cpp */,
+				323356BE190F2D570013A95D /* TMMBRTest.cpp */,
+				323356C0190F2D570013A95D /* WMEInterfaceMock.cpp */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		6FC44F3A195452B40029F828 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = libs;
+			sourceTree = "<group>";
+		};
+		868DBC971B8AE6030072183D /* SuperEasyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				868DBC981B8AE62F0072183D /* json.cpp */,
+				868DBC991B8AE62F0072183D /* json.h */,
+				868DBC9A1B8AE62F0072183D /* LICENSE */,
+				868DBC9B1B8AE62F0072183D /* README.txt */,
+			);
+			name = SuperEasyJSON;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		32335661190F2C990013A95D /* wrtpUnitTestApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3233568E190F2C990013A95D /* Build configuration list for PBXNativeTarget "wrtpUnitTestApp" */;
+			buildPhases = (
+				3233565E190F2C990013A95D /* Sources */,
+				3233565F190F2C990013A95D /* Frameworks */,
+				32335660190F2C990013A95D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = wrtpUnitTestApp;
+			productName = wrtpUnitTestApp;
+			productReference = 32335662190F2C990013A95D /* wrtpUnitTestApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3233567C190F2C990013A95D /* wrtpUnitTestAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32335691190F2C990013A95D /* Build configuration list for PBXNativeTarget "wrtpUnitTestAppTests" */;
+			buildPhases = (
+				32335679190F2C990013A95D /* Sources */,
+				3233567A190F2C990013A95D /* Frameworks */,
+				3233567B190F2C990013A95D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32335683190F2C990013A95D /* PBXTargetDependency */,
+			);
+			name = wrtpUnitTestAppTests;
+			productName = wrtpUnitTestAppTests;
+			productReference = 3233567D190F2C990013A95D /* wrtpUnitTestAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3233565A190F2C990013A95D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = UT;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = WME;
+				TargetAttributes = {
+					3233567C190F2C990013A95D = {
+						TestTargetID = 32335661190F2C990013A95D;
+					};
+				};
+			};
+			buildConfigurationList = 3233565D190F2C990013A95D /* Build configuration list for PBXProject "wrtpUnitTestApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 32335659190F2C990013A95D;
+			productRefGroup = 32335663190F2C990013A95D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				32335661190F2C990013A95D /* wrtpUnitTestApp */,
+				3233567C190F2C990013A95D /* wrtpUnitTestAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		32335660190F2C990013A95D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32335670190F2C990013A95D /* InfoPlist.strings in Resources */,
+				320C8A6919175DA90049027A /* DebugCommon.xcconfig in Resources */,
+				BD9284C91B9EAD8F00F027C4 /* VideoRecvBufferTest in Resources */,
+				32335678190F2C990013A95D /* Images.xcassets in Resources */,
+				320C8A6A19175DA90049027A /* ReleaseCommon.xcconfig in Resources */,
+				868DBC9E1B8AE62F0072183D /* README.txt in Resources */,
+				868DBC9D1B8AE62F0072183D /* LICENSE in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3233567B190F2C990013A95D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32335689190F2C990013A95D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3233565E190F2C990013A95D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				844E2B371910CFAB008BDC07 /* SesscionConfigObserverTest.cpp in Sources */,
+				844E2B351910CFAB008BDC07 /* SendControlAPITest.cpp in Sources */,
+				844E2B311910CFAB008BDC07 /* CSecurityStrategyWrapperClientTest.cpp in Sources */,
+				323356C1190F2D570013A95D /* ActiveBufferTest.cpp in Sources */,
+				BF1BE73F19E50F2600D2AC5F /* CRTPRecoverTest.cpp in Sources */,
+				3A8DCF2D19D50EB40019DB6A /* NetworkIndicatorTest.cpp in Sources */,
+				323356D8190F2D570013A95D /* CSequenceDBTest.cpp in Sources */,
+				323356D9190F2D570013A95D /* CVideoStreamTest.cpp in Sources */,
+				323356CF190F2D570013A95D /* CRTPFBPacketTest.cpp in Sources */,
+				323356D4190F2D570013A95D /* CRTPUtilsTest.cpp in Sources */,
+				323356C8190F2D570013A95D /* CRetransmissionPacketTest.cpp in Sources */,
+				323356DC190F2D570013A95D /* main.cpp in Sources */,
+				323356E3190F2D570013A95D /* RTPMediaAPITest.cpp in Sources */,
+				323356E5190F2D570013A95D /* RTPSessionConfigTest.cpp in Sources */,
+				844E2B361910CFAB008BDC07 /* SendControlAPITestForAS.cpp in Sources */,
+				844E2B341910CFAB008BDC07 /* SecurityPolicyAPITest.cpp in Sources */,
+				323356C3190F2D570013A95D /* CFBPacketTest.cpp in Sources */,
+				323356D0190F2D570013A95D /* CRTPPacketLazyTest.cpp in Sources */,
+				323356DF190F2D570013A95D /* PktStatTest.cpp in Sources */,
+				868DBC9C1B8AE62F0072183D /* json.cpp in Sources */,
+				323356CC190F2D570013A95D /* CRTPAggregatePacketTest.cpp in Sources */,
+				323356E9190F2D570013A95D /* SpeedMeasureTest.cpp in Sources */,
+				323356D6190F2D570013A95D /* CSendWindowTest.cpp in Sources */,
+				323356CE190F2D570013A95D /* CRTPChannelTest.cpp in Sources */,
+				323356D7190F2D570013A95D /* CSeqCountorTest.cpp in Sources */,
+				323356CA190F2D570013A95D /* CRTCPPacketTest.cpp in Sources */,
+				323356D3190F2D570013A95D /* CRTPStreamTest.cpp in Sources */,
+				BD9E88AF19E669A6006C8857 /* RTPHeaderExtensionVideoTest.cpp in Sources */,
+				323356E0190F2D570013A95D /* PSFBCallFlowTest.cpp in Sources */,
+				844E2B2E1910CFAB008BDC07 /* AVSyncAPITest.cpp in Sources */,
+				323356C6190F2D570013A95D /* CMMFrameManagerTest.cpp in Sources */,
+				323356E8190F2D570013A95D /* SendingControlTest.cpp in Sources */,
+				323356DE190F2D570013A95D /* NewTraceInterfaceTest.cpp in Sources */,
+				323356DB190F2D570013A95D /* FrameNALFragmentTest.cpp in Sources */,
+				323356ED190F2D570013A95D /* WMEInterfaceMock.cpp in Sources */,
+				323356C4190F2D570013A95D /* CFECEncoderTest.cpp in Sources */,
+				323356C7190F2D570013A95D /* CPSFBPacketTest.cpp in Sources */,
+				323356E7190F2D570013A95D /* SendControlTest.cpp in Sources */,
+				323356D2190F2D570013A95D /* CRTPSessionClientTest.cpp in Sources */,
+				323356C9190F2D570013A95D /* CRTCPHandlerTest.cpp in Sources */,
+				323356EB190F2D570013A95D /* TMMBRTest.cpp in Sources */,
+				844E2B2F1910CFAB008BDC07 /* CInformQoSAPITEST.cpp in Sources */,
+				323356D1190F2D570013A95D /* CRTPPacketTest.cpp in Sources */,
+				844E2B331910CFAB008BDC07 /* RTPWMEAPITest.cpp in Sources */,
+				323356E4190F2D570013A95D /* RTPPacketizationTest.cpp in Sources */,
+				323356DD190F2D570013A95D /* MediaStatisticsTest.cpp in Sources */,
+				80BECCAF1B5CE709003DF9EE /* CRTPLossRatioStatsTest.cpp in Sources */,
+				BD6CA0E81963916700A92AF0 /* SimulcastCallflowTest.cpp in Sources */,
+				32335672190F2C990013A95D /* main.m in Sources */,
+				844E2B301910CFAB008BDC07 /* CRTPSessionClientAPITest.cpp in Sources */,
+				323356E6190F2D570013A95D /* RTPTimeTest.cpp in Sources */,
+				844E2B321910CFAB008BDC07 /* CWmeCodecPayloadTypeAPITest.cpp in Sources */,
+				323356C5190F2D570013A95D /* CFECLevelTest.cpp in Sources */,
+				32335676190F2C990013A95D /* UTAppDelegate.m in Sources */,
+				8006598C19752A3B006F217C /* SimulcastTest.cpp in Sources */,
+				323356EA190F2D570013A95D /* testutil.cpp in Sources */,
+				849E480E1921BB44007D8FFE /* CRTPThreadTest.cpp in Sources */,
+				BD0788401ACA4123000DC197 /* RTPStreamManagementTest.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32335679190F2C990013A95D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3233568B190F2C990013A95D /* wrtpUnitTestAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		32335683190F2C990013A95D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32335661190F2C990013A95D /* wrtpUnitTestApp */;
+			targetProxy = 32335682190F2C990013A95D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3233566E190F2C990013A95D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3233566F190F2C990013A95D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		32335687190F2C990013A95D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32335688190F2C990013A95D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3233568C190F2C990013A95D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3233568D190F2C990013A95D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3233568F190F2C990013A95D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 320C8A6719175DA90049027A /* DebugCommon.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "wrtpUnitTestApp/wrtpUnitTestApp-Prefix.pch";
+				"GCC_PREPROCESSOR_DEFINITIONS[sdk=iphonesimulator*]" = (
+					IOS_SIMULATOR,
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../mediaengine/util/src\"",
+				);
+				INFOPLIST_FILE = "wrtpUnitTestApp/wrtpUnitTestApp-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../../vendor/gtest/bld/ios/bin/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					"\"$(SRCROOT)/../../../../vendor/openssl/ciscossl/libs/ios/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"",
+					"$(SRCROOT)/../../../../distribution/ios/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					"\"$(SRCROOT)/../../../../vendor/mari/build/libs/ios/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"",
+				);
+				OTHER_LDFLAGS = (
+					"-lwqos_ios",
+					"-lrsfec",
+					"-lsrtp_ios",
+					"-lutil_ios",
+					"-lwrtp_ios",
+					"-lgtest",
+					"-lgmock",
+					"-lcrypto",
+					"-lmariqos",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYMROOT = "$(SRCROOT)/build";
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../../../vendor/gtest/gmock-1.7.0/include\" \"$(SRCROOT)/../../../../vendor/gtest/gtest-1.7.0/include\" \"$(SRCROOT)/../../../../mediaengine/transmission/src\" \"$(SRCROOT)/../../../../mediaengine/util/include/ios\" \"$(SRCROOT)/../../../../mediaengine/util/include\" \"$(SRCROOT)/../../../../mediaengine/util/include/client\" \"$(SRCROOT)/../../../../mediaengine/transmission/include\" \"$(SRCROOT)/../../../../vendor\" \"$(SRCROOT)/../../../../mediaengine/wqos/include\" \"$(SRCROOT)/../../../../mediaengine/wqos/src\" \"$(SRCROOT)/../../../../vendor/gtest/wbxmock/src\" \"$(SRCROOT)/../../../../api\" \"$(SRCROOT)/../../../../vendor/libsrtp/include\" \"$(SRCROOT)/../../../../vendor/libsrtp/crypto/include\" \"$(SRCROOT)/../../../../vendor/mari/code/include\"";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		32335690190F2C990013A95D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 320C8A6819175DA90049027A /* ReleaseCommon.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "wrtpUnitTestApp/wrtpUnitTestApp-Prefix.pch";
+				"GCC_PREPROCESSOR_DEFINITIONS[sdk=iphonesimulator*]" = IOS_SIMULATOR;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../mediaengine/util/src\"",
+				);
+				INFOPLIST_FILE = "wrtpUnitTestApp/wrtpUnitTestApp-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../../vendor/gtest/bld/ios/bin/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					"\"$(SRCROOT)/../../../../vendor/openssl/ciscossl/libs/ios/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"",
+					"$(SRCROOT)/../../../../distribution/ios/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					"\"$(SRCROOT)/../../../../vendor/mari/build/libs/ios/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"",
+					"/Users/joycqu/projects/f-wme/wme/vendor/mari/build/libs/ios/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+				);
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = (
+					"-lwqos_ios",
+					"-lrsfec",
+					"-lsrtp_ios",
+					"-lutil_ios",
+					"-lwrtp_ios",
+					"-lgtest",
+					"-lgmock",
+					"-lcrypto",
+					"-lmariqos",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYMROOT = "$(SRCROOT)/build";
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../../../vendor/gtest/gmock-1.7.0/include\" \"$(SRCROOT)/../../../../vendor/gtest/gtest-1.7.0/include\" \"$(SRCROOT)/../../../../mediaengine/transmission/src\" \"$(SRCROOT)/../../../../mediaengine/util/include/ios\" \"$(SRCROOT)/../../../../mediaengine/util/include\" \"$(SRCROOT)/../../../../mediaengine/util/include/client\" \"$(SRCROOT)/../../../../mediaengine/transmission/include\" \"$(SRCROOT)/../../../../vendor\" \"$(SRCROOT)/../../../../mediaengine/wqos/include\" \"$(SRCROOT)/../../../../mediaengine/wqos/src\" \"$(SRCROOT)/../../../../vendor/gtest/wbxmock/src\" \"$(SRCROOT)/../../../../api\" \"$(SRCROOT)/../../../../vendor/libsrtp/include\" \"$(SRCROOT)/../../../../vendor/libsrtp/crypto/include\" \"$(SRCROOT)/../../../../vendor/mari/code/include\"";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		32335692190F2C990013A95D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/wrtpUnitTestApp.app/wrtpUnitTestApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "wrtpUnitTestApp/wrtpUnitTestApp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "wrtpUnitTestAppTests/wrtpUnitTestAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		32335693190F2C990013A95D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/wrtpUnitTestApp.app/wrtpUnitTestApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "wrtpUnitTestApp/wrtpUnitTestApp-Prefix.pch";
+				INFOPLIST_FILE = "wrtpUnitTestAppTests/wrtpUnitTestAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3233565D190F2C990013A95D /* Build configuration list for PBXProject "wrtpUnitTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3233568C190F2C990013A95D /* Debug */,
+				3233568D190F2C990013A95D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3233568E190F2C990013A95D /* Build configuration list for PBXNativeTarget "wrtpUnitTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3233568F190F2C990013A95D /* Debug */,
+				32335690190F2C990013A95D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32335691190F2C990013A95D /* Build configuration list for PBXNativeTarget "wrtpUnitTestAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32335692190F2C990013A95D /* Debug */,
+				32335693190F2C990013A95D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3233565A190F2C990013A95D /* Project object */;
+}

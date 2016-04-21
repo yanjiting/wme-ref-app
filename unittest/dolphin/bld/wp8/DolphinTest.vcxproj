@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\aqe\WbxAeAEC_Module.cpp" />
+    <ClCompile Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\aqe\WbxAeAnalogAGCDecide_Module.cpp" />
+    <ClCompile Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\aqe\WbxAeAQE.cpp" />
+    <ClCompile Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\aqe\WbxAeBaseModule.cpp" />
+    <ClCompile Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\aqe\WbxAeBuffer_Module.cpp" />
+    <ClCompile Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\aqe\WbxAeDigitalAGC_Module.cpp" />
+    <ClCompile Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\aqe\WbxAeNR_Module.cpp" />
+    <ClCompile Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\aqe\WbxAePrepareAECData_Module.cpp" />
+    <ClCompile Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\aqe\WbxAeQI.cpp" />
+    <ClCompile Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\aqe\WbxAeSignalAnalysis_Module.cpp" />
+    <ClCompile Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\capture\WbxAeAudioCapture.cpp" />
+    <ClCompile Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\capture\WbxAeCapturePlatformFactory.cpp" />
+    <ClCompile Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\capture\wp8\WbxAeCapturePlatformWP80.cpp" />
+    <ClCompile Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\common\WbxAeJitterBuffer.cpp" />
+    <ClCompile Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\common\WbxAeJitterPolicy.cpp" />
+    <ClCompile Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\common\WbxAeMediaBlock.cpp" />
+    <ClCompile Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\common\WbxAeMediaBlockList.cpp" />
+    <ClCompile Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\datadump\WBXAeWavAdaptor.cpp" />
+    <ClCompile Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\datadump\WbxDataDump.cpp" />
+    <ClCompile Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\deviceenumerator\WbxAeCreateDeviceEnum.cpp" />
+    <ClCompile Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\deviceenumerator\wp8\WbxAEDeviceEmu_winp8.cpp" />
+    <ClCompile Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\deviceenumerator\wp8\WbxAEVolumeControl_WP8.cpp" />
+    <ClCompile Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\framework\AudioDefaultSettings.cpp" />
+    <ClCompile Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\framework\WbxAeAudioChannel.cpp" />
+    <ClCompile Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\framework\WbxAeEncoderThread.cpp" />
+    <ClCompile Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\framework\WbxAeVoiceMixer.cpp" />
+    <ClCompile Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\framework\WbxAudioEngineImpl.cpp" />
+    <ClCompile Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\playback\WbxAeAudioPlayback.cpp" />
+    <ClCompile Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\playback\WbxAePlaybackPlatformFactory.cpp" />
+    <ClCompile Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\playback\wp8\WbxAePlaybackPlatformWP80.cpp" />
+    <ClCompile Include="..\..\..\..\mediaengine\shark\src\common\WP8_thread\ThreadEmulation.cpp" />
+    <ClCompile Include="..\..\..\..\mediaengine\shark\src\common\WseDebug.cpp" />
+    <ClCompile Include="..\..\..\..\mediaengine\shark\src\common\WseHeapMem.cpp" />
+    <ClCompile Include="..\..\..\..\mediaengine\shark\src\common\WseTaskThread.cpp" />
+    <ClCompile Include="..\..\..\..\mediaengine\shark\src\common\WseTimer.cpp" />
+    <ClCompile Include="..\..\..\..\mediaengine\shark\src\common\WseUtil.cpp" />
+    <ClCompile Include="..\..\..\..\mediaengine\shark\src\common\WseWorkPath.cpp" />
+    <ClCompile Include="..\..\..\..\vendor\SuperEasyJSON\json.cpp" />
+    <ClCompile Include="..\..\aqe\Modules_UnitTest.cpp" />
+    <ClCompile Include="..\..\common\CwbxAeMediaBlockListTest.cpp" />
+    <ClCompile Include="..\..\common\CWBXAEMediaBlockTest.cpp" />
+    <ClCompile Include="..\..\common\CWbxAJBPolicyTest.cpp" />
+    <ClCompile Include="..\..\common\CWbxMemPoolTest.cpp" />
+    <ClCompile Include="..\..\framework\CMixerDestroyEventTest.cpp" />
+    <ClCompile Include="..\..\framework\CMixerStartEventTest.cpp" />
+    <ClCompile Include="..\..\framework\CMixerStopEventTest.cpp" />
+    <ClCompile Include="..\..\framework\CWbxAeAudioChannelTest.cpp" />
+    <ClCompile Include="..\..\framework\CWBXAeWavAdaptorTest.cpp" />
+    <ClCompile Include="..\..\jitterbuffer\CWbxAeMediaBlockListTest.cpp" />
+    <ClCompile Include="..\..\jitterbuffer\CWbxAeMediaBlockTest.cpp" />
+    <ClCompile Include="..\..\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\include\IWbxAeBase.h" />
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\include\IWbxAeCapturePlatform.h" />
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\include\IWbxAePlaybackPlatform.h" />
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\include\WbxAeAJBInterface.h" />
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\include\WbxAeAJBPolicy.h" />
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\include\WbxAeCodecError.h" />
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\include\WbxAeCodecInterface.h" />
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\include\WbxAeDefine.h" />
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\include\WbxAeFecRecoverDef.h" />
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\h\IWbxAeAudioCaptureStatus.h" />
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\h\WbxAeAudioCapture.h" />
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\h\WbxAeAudioEngineCommon.h" />
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\h\WbxAeAudioPlayback.h" />
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\aqe\WbxAeAEC_Module.h" />
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\aqe\WbxAeAnalogAGCDecide_Module.h" />
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\aqe\WbxAeAQE_define_inner.h" />
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\aqe\WbxAeBaseModule.h" />
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\aqe\WbxAeBuffer_Module.h" />
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\aqe\WbxAeDigitalAGC_Module.h" />
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\aqe\WbxAeNR_Module.h" />
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\aqe\WbxAeParameterClass.h" />
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\aqe\WbxAePrepareAECData_Module.h" />
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\aqe\WbxAeQI.h" />
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\aqe\WbxAeSignalAnalysis_Module.h" />
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\capture\IWbxAeCapturePlatformFactory.h" />
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\capture\wp8\WbxAeCapturePlatformWP80.h" />
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\common\WbxAeJitterBuffer.h" />
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\common\WbxAeJitterPolicy.h" />
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\common\WbxAeMediaBlock.h" />
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\common\WbxAeMediaBlockList.h" />
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\common\WbxAeTrace.h" />
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\datadump\WBXAeWavAdaptor.h" />
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\datadump\WbxDataDump.h" />
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\deviceenumerator\wp8\WbxAEDeviceEmu_winp8.h" />
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\deviceenumerator\wp8\WbxAEVolumeControl_WP8.h" />
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\framework\AudioDefaultSettings.h" />
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\framework\WbxAeAudioChannel.h" />
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\framework\WbxAeEncoderThread.h" />
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\framework\WbxAeVoiceMixer.h" />
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\framework\WbxAudioEngineImpl.h" />
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\playback\IWbxAePlaybackPlatformFactory.h" />
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\playback\wp8\WbxAePlaybackPlatformWP80.h" />
+    <ClInclude Include="..\..\..\..\mediaengine\shark\src\common\macros.h" />
+    <ClInclude Include="..\..\..\..\mediaengine\shark\src\common\mem_align.h" />
+    <ClInclude Include="..\..\..\..\mediaengine\shark\src\common\MyBase.h" />
+    <ClInclude Include="..\..\..\..\mediaengine\shark\src\common\WP8_thread\ThreadEmulation.h" />
+    <ClInclude Include="..\..\..\..\mediaengine\shark\src\common\WseCircleBuffer.h" />
+    <ClInclude Include="..\..\..\..\mediaengine\shark\src\common\WseEvent.h" />
+    <ClInclude Include="..\..\..\..\mediaengine\shark\src\common\WseHeapMem.h" />
+    <ClInclude Include="..\..\..\..\mediaengine\shark\src\common\WseMem.h" />
+    <ClInclude Include="..\..\..\..\mediaengine\shark\src\common\WseTaskBase.h" />
+    <ClInclude Include="..\..\..\..\mediaengine\shark\src\common\WseTaskThread.h" />
+    <ClInclude Include="..\..\..\..\mediaengine\shark\src\common\WseWorkPath.h" />
+    <ClInclude Include="..\..\..\..\mediaengine\shark\src\h\WseMutex.h" />
+    <ClInclude Include="..\..\..\..\mediaengine\shark\src\h\WseMutexGuardT.h" />
+    <ClInclude Include="..\..\..\..\mediaengine\shark\src\h\WseTextFormator.h" />
+    <ClInclude Include="..\..\..\..\mediaengine\shark\src\h\WseUtil.h" />
+    <ClInclude Include="..\..\..\..\vendor\SuperEasyJSON\json.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DolphinTest.def" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{24ae1d14-f2f9-4ffa-bae4-bfc9a927ee8f}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectName>DolphinTest</ProjectName>
+    <RootNamespace>DolphinTest</RootNamespace>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <AppContainerApplication>true</AppContainerApplication>
+    <ApplicationType>Windows Phone Silverlight</ApplicationType>
+    <ApplicationTypeRevision>8.1</ApplicationTypeRevision>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IgnoreImportLibrary>false</IgnoreImportLibrary>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IgnoreImportLibrary>false</IgnoreImportLibrary>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <IgnoreImportLibrary>false</IgnoreImportLibrary>
+    <OutDir>..\..\..\..\mediaengine\bin\WP8\$(Configuration)\</OutDir>
+    <IntDir>..\..\..\..\mediaengine\objs\WP8\DolphinTest\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <IgnoreImportLibrary>false</IgnoreImportLibrary>
+    <OutDir>..\..\..\..\mediaengine\bin\WP8\$(Configuration)\</OutDir>
+    <IntDir>..\..\..\..\mediaengine\objs\WP8\DolphinTest\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+      <ModuleDefinitionFile>DolphinTest.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+      <ModuleDefinitionFile>DolphinTest.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\..\..\..\vendor\gtest\gmock-1.7.0\include;..\..\..\..\vendor\gtest\gmock-1.7.0;..\..\..\..\vendor\gtest\gtest-r690\include;..\..\..\..\vendor\gtest\gtest-r690;..\..\..\..\mediaengine\dolphin\include;..\..\..\..\mediaengine\dolphin\src\AudioEngine\h;..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\capture\wp8;..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\capture;..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\aqe;..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\common;..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\deviceenumerator\wp8;..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\framework;..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\playback\wp8;..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\playback;..\..\..\..\mediaengine\shark\src\common\WP8_thread;..\..\..\..\mediaengine\shark\include;..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\datadump;..\..\..\..\mediaengine\shark\src\h;..\..\..\..\mediaengine\shark\src\common;..\..\..\..\vendor\security\include;..\..\..\..\mediaengine\dolphin\src\cochelea\include;..\..\..\..\vendor\SuperEasyJSON;..\..\..\..\mediaengine\dolphin\src\wbxaudiocodec\common;..\..\..\..\mediaengine\util\include\windows;..\..\..\..\mediaengine\util\include;..\..\..\..\mediaengine\util\include\client;..\..\..\..\vendor;..\..\..\..\api;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>UNITTEST;_USRDLL;WP8;WP8_TEST;UNICODE;__USE_CISCO_SAFE_C__;WIN32;_CRT_SECURE_NO_WARNINGS;WSE_WBX_UNIFIED_TRACE;GTEST;ENABLE_FAST_RSFEC;HAVE_MMX;QOE_MEASURE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+      <AdditionalLibraryDirectories>..\..\..\..\distribution\WP8\libs\$(Configuration);..\..\..\..\vendor\gtest\libs\WP8\$(Configuration);..\..\..\..\vendor\security\libs\WP8\$(Configuration);..\..\..\..\mediaengine\libs\WP8\$(Configuration);..\..\..\..\mediaengine\bin\WP8\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>gtestd.lib;gmockd.lib;safec.lib;webex_vad.lib;webex_resample.lib;wbx_aagc.lib;libwebexagc.lib;wbx_sa.lib;wbxaecodec.lib;wbx_tsm.lib;wbx_aecm.lib;wsertp.lib;Phoneaudioses.lib;util.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>DolphinTest.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\..\..\..\vendor\gtest\gmock-1.7.0\include;..\..\..\..\vendor\gtest\gmock-1.7.0;..\..\..\..\vendor\gtest\gtest-r690\include;..\..\..\..\vendor\gtest\gtest-r690;..\..\..\..\mediaengine\dolphin\include;..\..\..\..\mediaengine\dolphin\src\AudioEngine\h;..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\capture\wp8;..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\capture;..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\aqe;..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\common;..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\deviceenumerator\wp8;..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\framework;..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\playback\wp8;..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\playback;..\..\..\..\mediaengine\shark\src\common\WP8_thread;..\..\..\..\mediaengine\shark\include;..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\datadump;..\..\..\..\mediaengine\shark\src\h;..\..\..\..\mediaengine\shark\src\common;..\..\..\..\vendor\security\include;..\..\..\..\mediaengine\dolphin\src\cochelea\include;..\..\..\..\vendor\SuperEasyJSON;..\..\..\..\mediaengine\dolphin\src\wbxaudiocodec\common;..\..\..\..\mediaengine\util\include\windows;..\..\..\..\mediaengine\util\include;..\..\..\..\mediaengine\util\include\client;..\..\..\..\vendor;..\..\..\..\api;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>UNITTEST;_USRDLL;WP8;WP8_TEST;UNICODE;__USE_CISCO_SAFE_C__;WIN32;_CRT_SECURE_NO_WARNINGS;WSE_WBX_UNIFIED_TRACE;GTEST;ENABLE_FAST_RSFEC;HAVE_MMX;QOE_MEASURE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+      <ModuleDefinitionFile>DolphinTest.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>..\..\..\..\distribution\WP8\libs\$(Configuration);..\..\..\..\vendor\gtest\libs\WP8\$(Configuration);..\..\..\..\vendor\security\libs\WP8\$(Configuration);..\..\..\..\mediaengine\libs\WP8\$(Configuration);..\..\..\..\mediaengine\bin\WP8\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>gtest.lib;gmock.lib;safec.lib;webex_vad.lib;webex_resample.lib;wbx_aagc.lib;libwebexagc.lib;wbx_sa.lib;wbxaecodec.lib;wbx_tsm.lib;wbx_aecm.lib;wsertp.lib;Phoneaudioses.lib;util.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

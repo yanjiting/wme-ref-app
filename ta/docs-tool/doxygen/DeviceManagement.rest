@@ -1,0 +1,13 @@
+.. contents:: 
+    :local: 
+
+Device Management
+===========================
+
+<doxygen2rst class=wme::IWmeMediaDeviceEnumerator>IWmeMediaDeviceEnumerator</doxygen2rst>
+
+<doxygen2rst class=wme::IWmeMediaDevice>IWmeMediaDevice</doxygen2rst>
+
+<doxygen2rst class=wme::IWmeScreenSourceEnumerator>IWmeScreenSourceEnumerator</doxygen2rst>
+
+<doxygen2rst class=wme::IWmeScreenSource>IWmeScreenSource</doxygen2rst>

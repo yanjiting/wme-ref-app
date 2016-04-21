@@ -1,0 +1,54 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+#define GTEST
+
+#define MACOS
+#define CM_IOS                          1
+#define MAC_IOS                         1
+#define MX_IOS                          1
+#define IPHONEOS                        1
+
+#define __USE_CISCO_SAFE_C__
+#define _U_TEST_
+#define CM_DISABLE_EVENT_REPORT
+#define WSE_WBX_UNIFIED_TRACE
+#define GTEST_USE_OWN_TR1_TUPLE 1
+#define GTEST_HAS_TR1_TUPLE     1
+
+#ifdef USE_NAMESPACE
+#define START_UTIL_NS namespace UTIL_NS {
+#define END_UTIL_NS }
+#define USE_UTIL_NS using namespace UTIL_NS;
+
+#define START_TP_NS namespace TP_NS {
+#define END_TP_NS }
+#define USE_TP_NS using namespace TP_NS;
+
+#else
+
+#define START_UTIL_NS
+#define END_UTIL_NS
+#define USE_UTIL_NS
+
+#define START_TP_NS
+#define END_TP_NS
+#define USE_TP_NS
+
+#endif
+
+#define APP_IOS

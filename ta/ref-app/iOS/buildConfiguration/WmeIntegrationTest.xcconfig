@@ -1,0 +1,8 @@
+TARGETED_DEVICE_FAMILY = 1,2
+OTHER_LDFLAGS = $(inherited) -lstdc++ -force_load "./Frameworks/calabash.framework/calabash" -lsafec -lwbx_aec -lwbx_cng -lwbx_dagc -lwbx_plc -lwbx_resample -lwbx_aagc -lwbx_vad -lwbx_tsm -lwbx_sa -lwbxaecodec -lwbxaudioengine -lwmeclient -lwrtp_ios -lwqos_ios -lwseutil -lwseclient -lwsertp -lsrtp_ios -lMediasession -ltp_ios -lutil_ios -lsdp -lnattool -ltcaudio -ltcaec -ltcagc  -lrsfec -lmariqos -lqoem
+PRODUCT_NAME = $(TARGET_NAME)
+OTHER_CFLAGS = $(inherited) -DTEST_MODE=1
+OTHER_CPLUSPLUSFLAGS = $(inherited) -DTEST_MODE=1
+GCC_PRECOMPILE_PREFIX_HEADER = YES;
+
+LIBRARY_SEARCH_PATHS = $(WEBEX_MEDIA_ENGINE_PATHS)"/$(BASE_CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)" $(inherited)

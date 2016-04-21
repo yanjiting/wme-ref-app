@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ClickCall</string>
+    <string name="app_desc">Click to call</string>
+    <string name="start_btn">Start</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="authdesc">Proxy Authentication</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+</resources>

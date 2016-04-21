@@ -1,0 +1,208 @@
+.. contents:: 
+    :local: 
+
+Examples
+===========================
+
+Initiaize a video call
+-------------------------
+
+Here is the basic call flow to initialize a video call:
+
+<doxygen2rst uml=basic_callflow>
+participant "Client" as Client 
+participant "wme::MediaConnection" as Connection 
+participant "wme::MediaTrack" as Track
+participant "Signal" as Signal
+participant "Remote Peer" as Peer
+
+Client -> Connection: CreateMediaConnection 
+Client -> Connection: AddMedia(Video)
+Connection --> Client: OnMediaReady(local Track)
+activate Client
+Client -> Track: AddRenderWindow(view)
+Client -> Track: Start
+deactivate Client
+Client -> Connection: CreateOffer
+Connection --> Client: OnSDPReady(Offer)
+activate Client
+Client -> Signal: put the SDP offer to other party (server or peer)
+Signal -> Client: get the SDP answer from other party (server or peer)
+deactivate Client
+Client -> Connection: SetReceivedSDP
+Connection <--> Peer: Create transport and start to send media data
+Connection --> Client: OnMediaReady(remote Track)
+activate Client
+Client -> Track: AddRenderWindow(view)
+Client -> Track: Start
+deactivate Client
+</doxygen2rst>
+
+It is almost the same for audio, and you can definitely combine them together just like our turorial codes have done.
+
+Accept a video call
+-------------------------
+
+This is only used for peer to peer call without server in the middle. 
+If there is a server, the other peer of the call is always the server, so we will keep the call flow in previous example.
+This can also be used in NBR server where the call is always placed by the Calliope server.
+
+<doxygen2rst uml=accept_callflow>
+participant "Client" as Client 
+participant "wme::MediaConnection" as Connection 
+participant "wme::MediaTrack" as Track
+participant Signal as Signal
+participant "Remote Peer" as Peer
+
+Signal -> Client: get the SDP offer from remote peer
+Client -> Connection: SetReceivedSDP
+Client -> Connection: AddMedia(Video)
+Connection --> Client: OnMediaReady(local Track)
+activate Client
+Client -> Track: AddRenderWindow(view)
+Client -> Track: Start
+deactivate Client
+Client -> Connection: CreateAnswer
+Connection --> Client: OnSDPReady(Answer)
+Client -> Signal: put the SDP answer to remote peer
+Connection <--> Peer: Create transport and start to send media data
+Connection --> Client: OnMediaReady(remote Track)
+activate Client
+Client -> Track: AddRenderWindow(view)
+Client -> Track: Start
+deactivate Client
+</doxygen2rst>
+
+Setup media parameters
+-------------------------
+
+The lifetime of media parameters is the same as MediaConnection, that means, you need to setup media parameters for each MediaConnection.
+We have 2 layers of parameters: global parameters and media specific parameters.
+
+For exmaple, you can set to diable SRTP and enable cisco multistream in global configuration like this:
+
+.. code:: C++
+
+    IWmeMediaConnection *pMediaConn = NULL;
+    CreateMediaConnection(&pMediaConn);
+    if (pMediaConn) {
+        pMediaConn->GetGlobalConfig()->EnableSRTP(false);
+        pMediaConn->GetGlobalConfig()->EnableMultiStream(false);
+    }
+    
+You can set to use AVC only and setup AVC max profile level ID to 0x42000D like this:
+
+.. code:: C++
+
+    IWmeMediaConnection *pMediaConn = NULL;
+    CreateMediaConnection(&pMediaConn);
+    if (pMediaConn) {
+        int videoMID = 1;
+        pMediaConn->AddMedia(WmeSessionType_Video, WmeDirection_Recv, videoMID, NULL);
+        pMediaConn->GetVideoConfig(videoMID)->SetSelectedCodec(WmeCodecType_AVC);
+        pMediaConn->GetVideoConfig(videoMID)->SetEncodeParams(WmeCodecType_AVC, 0x42000D);
+    }
+    
+
+You need to aware what is the right time to setup media parameters, generally:
+
+    - global parameters SHOULD be set right after MediaConnection is created,
+    - parameters need to appear in SDP MUST be set before CreateOffer or CreateAnswer,
+    - most media parameters SHOULD be set before track is started
+
+Please double check the reference of API description to know the right time to set them:
+
+    - <doxygen2rst link=MediaConfig#iaudioconfig>Audio Config</doxygen2rst>
+    - <doxygen2rst link=MediaConfig#ivideoconfig>Video Config</doxygen2rst>
+    - <doxygen2rst link=MediaConfig#ishareconfig>Sharing Config</doxygen2rst>
+    - <doxygen2rst link=MediaConfig#iglobalconfig>Global Config</doxygen2rst>
+
+
+Enumerate devices
+-------------------------
+
+Sample code for android:
+
+.. code:: Java
+
+    mDevManager = new DeviceManager();
+    List<MediaDevice> cameras = mDevManager.listCameras();
+    for(MediaDevice c : cameras) {
+        Log.i("Test", "Device:" + c.sDisplayName);
+    }
+
+Sample code for C#:
+
+.. code:: C#
+
+    var mics = DeviceManager.Instance.listDevices(WmeSessionType.WmeSessionType_Audio, FlowType.Capture);
+    var spks = DeviceManager.Instance.listDevices(WmeSessionType.WmeSessionType_Audio, FlowType.Render);
+    var defaultMic = DeviceManager.Instance.GetSystemDefaultDevice(WmeSessionType.WmeSessionType_Audio, FlowType.Capture);
+    var defaultSpeaker = DeviceManager.Instance.GetSystemDefaultDevice(WmeSessionType.WmeSessionType_Audio, FlowType.Render);
+    foreach (MediaDevice device in mics)
+    {
+        Console.WriteLine("Test device is:" + device.uniqueName);
+    }
+
+
+Sample code for C++:
+
+.. code:: C++
+
+    IWmeMediaEngine *mediaEngine = NULL;
+    if(pMediaConn )
+        mediaEngine = pMediaConn->GetEngine();
+    IWmeMediaDeviceEnumerator *pWmeMediaDeviceEnumerator = NULL;
+    ret = mediaEngine->CreateMediaDeviceEnumerator(WmeMediaTypeAudio, WmeDeviceOut, &pWmeMediaDeviceEnumerator);
+    if (pWmeMediaDeviceEnumerator) {
+        int nDevCount = 0;
+        pWmeMediaDeviceEnumerator->GetDeviceNumber(nDevCount);
+        for (int i = 0; i < nDevCount; i++) {
+            IWmeMediaDevice *pDeviceTmp = NULL;
+            pWmeMediaDeviceEnumerator->GetDevice(i, &pDeviceTmp);
+            if (pDeviceTmp) {
+                int szLen = 5120;
+                char szDeviceName[5120] = {0};
+                pDeviceTmp->GetFriendlyName(szDeviceName, szLen);
+                pDeviceTmp->Release();
+            }
+        }
+    }
+    
+
+Enumerate applications for sharing (desktop only)
+-------------------------------------------------
+
+Sample code for C#:
+
+.. code:: C#
+
+    List<ScreenSource> mSources = ScreenSourceManager.Instance.sources();
+    var mainWindow = ScreenSourceManager.Instance.FindSourceByFriendlyName("MainWindow");
+
+Sample code for C++:
+
+.. code:: C++
+
+    IWmeMediaEngine *pWmeMediaEngine;
+    WmeCreateMediaEngine(&pWmeMediaEngine);
+	if (pWmeMediaEngine == NULL)
+		return false;
+	IWmeScreenSourceEnumerator * pWmeScreenSourceEnumeratorApp;
+    pWmeMediaEngine->CreateScreenSourceEnumerator(&pWmeScreenSourceEnumeratorApp, wme::WmeScreenSourceTypeApplication);
+	if (pWmeScreenSourceEnumeratorApp == NULL)
+		return false;
+    int nCount = 0;
+    pWmeScreenSourceEnumeratorApp->GetNumber(nCount);
+    for (int i = 0; i < nCount; i++){
+        IWmeScreenSource * pWmeScreenSource = NULL;
+        pWmeScreenSourceEnumeratorApp->GetSource(i, &pWmeScreenSource);
+        if (pWmeScreenSource != NULL) {
+            pWmeScreenSource->Release();
+        }
+    }
+    
+Android audio device manipulation
+-------------------------------------------------
+
+This topic is requested by Android train team. Let audio team to add.

@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Main" >
+
+    <CheckBox
+        android:id="@+id/checkBoxEnableAudio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enable Audio" />
+    
+	<TextView
+	    android:id="@+id/audio_codec_type_tv"
+	    android:paddingTop="50dp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:text="CodecType" />
+	
+	
+	<Spinner
+        android:id="@+id/audioCodecTypeSpinner"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignLeft="@+id/audio_codec_type_tv"
+        android:layout_below="@+id/audio_codec_type_tv" />
+	
+	<Button
+        android:id="@+id/btnSelectAudioFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_file" 
+        android:layout_alignLeft="@+id/audioCodecTypeSpinner"
+        android:layout_below="@+id/audioCodecTypeSpinner"/>
+	
+	<TextView
+	    android:id="@+id/tviewAudioRawPath"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/btnSelectAudioFile"
+	    android:layout_toRightOf="@+id/btnSelectAudioFile"
+	    android:text="Path" />
+	
+	<EditText
+         android:id="@+id/editChannels"
+         android:layout_width="100dip"
+         android:layout_height="wrap_content"
+         android:ems="10"
+         android:inputType="number"
+         android:hint="Channels"
+         android:layout_alignLeft="@+id/btnSelectAudioFile"
+        android:layout_below="@+id/btnSelectAudioFile" >
+     </EditText>
+     
+	<EditText
+         android:id="@+id/editSampleRate"
+         android:layout_width="100dip"
+         android:layout_height="wrap_content"
+         android:ems="10"
+         android:inputType="number"
+         android:hint="SampleRate"
+         android:layout_alignBottom="@+id/editChannels"
+         android:layout_toRightOf="@+id/editChannels">
+     </EditText>
+     
+	<EditText
+         android:id="@+id/editBitsPerSample"
+         android:layout_width="100dip"
+         android:layout_height="wrap_content"
+         android:ems="10"
+         android:inputType="number"
+         android:hint="BitsPerSample"
+         android:layout_alignBottom="@+id/editSampleRate"
+         android:layout_toRightOf="@+id/editSampleRate">
+     </EditText>
+     
+	<CheckBox
+         android:id="@+id/checkBoxApplyAudioRawFile"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="ApplyAudioRawFile" 
+         android:layout_alignLeft="@+id/editChannels"
+        android:layout_below="@+id/editChannels" />
+	
+	<TextView
+	    android:id="@+id/textview_audio_output_path"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/checkBoxApplyAudioRawFile"
+        android:layout_below="@+id/checkBoxApplyAudioRawFile"
+	    android:text="" />
+	
+	<CheckBox
+         android:id="@+id/checkBoxApplyAudioOutputFile"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="ApplyOutputFile" 
+         android:layout_alignLeft="@+id/textview_audio_output_path"
+        android:layout_below="@+id/textview_audio_output_path" />
+
+</RelativeLayout>

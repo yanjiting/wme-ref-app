@@ -1,0 +1,104 @@
+15305                          
+[03/11/2016 16:25:53.901 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CreateShareCapture]>>eSHARE_CAPTURER_TYPE=3
+[03/11/2016 16:25:54.028 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [DestroyShareCapture]>>pIShareCapturer=0x14fe58c10
+[03/11/2016 16:25:54.030 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CreateShareCaptureEngine]>>eSHARE_CAPTURE_ENGINE_TYPE=2
+[03/11/2016 16:25:54.030 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CreateShareCapture]>>eSHARE_CAPTURER_TYPE=1
+[03/11/2016 16:25:54.034 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [DestroyShareCaptureEngine]>>eSHARE_CAPTURE_ENGINE_TYPE=2
+[03/11/2016 16:25:54.034 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [DestroyShareCapture]>>pIShareCapturer=0x14fd9c720
+[03/11/2016 16:25:54.035 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: DestroySharePointing(0x14fe58c10)
+[03/11/2016 16:25:54.035 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CreateShareCaptureEngine]>>eSHARE_CAPTURE_ENGINE_TYPE=3
+[03/11/2016 16:25:54.035 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CreateShareCapture]>>eSHARE_CAPTURER_TYPE=2
+[03/11/2016 16:25:54.038 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [DestroyShareCaptureEngine]>>eSHARE_CAPTURE_ENGINE_TYPE=3
+[03/11/2016 16:25:54.038 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [DestroyShareCapture]>>pIShareCapturer=0x14fe6db20
+[03/11/2016 16:25:54.038 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: DestroySharePointing(0x14fe58c10)
+[03/11/2016 16:25:54.038 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CreateShareCaptureEngine]>>eSHARE_CAPTURE_ENGINE_TYPE=1
+[03/11/2016 16:25:54.038 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [DestroyShareCaptureEngine]>>eSHARE_CAPTURE_ENGINE_TYPE=1
+[03/11/2016 16:25:54.038 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: DestroySharePointing(0x14fd63ed0)
+[03/11/2016 16:25:54.038 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CreateShareCaptureEngine]>>eSHARE_CAPTURE_ENGINE_TYPE=0
+[03/11/2016 16:25:54.040 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] ERROR: [CShareCaptureEngine::Start]>>fail>>without screen source, m_eSHARE_CAPTURE_ENGINE_TYPE=2,count = 0[/Users/zzchu/Desktop/git-ws/wme_git/wme/mediaengine/appshare/src/share_capture_engine_impl.cpp:226]
+[03/11/2016 16:25:54.040 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::AddCaptureShareSource]>>ret=0
+[03/11/2016 16:25:54.040 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::AddCaptureShareSource]>>eShareSourceType=2
+[03/11/2016 16:25:54.040 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::_UpdateShareDisplaySize]>>x=1024>>y=768
+[03/11/2016 16:25:54.040 pid=735 tid=442735] [UTIL] :[UTIL] INFO: ACmThread::Create, aType=1 aFlag=1 Register=0, name=scn-cap this=0x14fd9d240
+[03/11/2016 16:25:54.041 pid=735 tid=442813] [WSE] :[WSE] INFO: ComTaskThread::OnThreadRun, Begin.
+[03/11/2016 16:25:54.041 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::CScreenCaptureTaskThread]>>Start,[CheckPoint]
+[03/11/2016 16:25:54.041 pid=735 tid=442813] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::_InitCaptureTimer]>>current  nFps=5
+[03/11/2016 16:25:54.041 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::_CreateCaptureThread]>>sucess
+[03/11/2016 16:25:54.041 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::Status>>m_eSHARE_CAPTURE_ENGINE_STATUS=1
+[03/11/2016 16:25:54.041 pid=735 tid=442735] [WSE] :[WSE] INFO: ComTaskThread::Stop
+[03/11/2016 16:25:54.041 pid=735 tid=442813] [WSE] :[WSE] INFO: ComTaskThread::OnThreadRun, End.
+[03/11/2016 16:25:54.041 pid=735 tid=442735] [UTIL] :[UTIL] INFO: GetStopFlag()=1 this=0x14fd9d240
+[03/11/2016 16:25:54.041 pid=735 tid=442735] [UTIL] :[UTIL] INFO: ACmThread::Destory, aReason=0 this=0x14fd9d240
+[03/11/2016 16:25:54.041 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::CScreenCaptureTaskThread]>>Destroy,[CheckPoint]
+[03/11/2016 16:25:54.041 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::_DestroyCaptureThread]
+[03/11/2016 16:25:54.041 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::Status>>m_eSHARE_CAPTURE_ENGINE_STATUS=2
+[03/11/2016 16:25:54.042 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] ERROR: [CShareCaptureEngine::Start]>>fail>>without screen source, m_eSHARE_CAPTURE_ENGINE_TYPE=2,count = 0[/Users/zzchu/Desktop/git-ws/wme_git/wme/mediaengine/appshare/src/share_capture_engine_impl.cpp:226]
+[03/11/2016 16:25:54.042 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::AddCaptureShareSource]>>ret=0
+[03/11/2016 16:25:54.042 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::AddCaptureShareSource]>>eShareSourceType=2
+[03/11/2016 16:25:54.042 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::_UpdateShareDisplaySize]>>x=1024>>y=768
+[03/11/2016 16:25:54.042 pid=735 tid=442735] [UTIL] :[UTIL] INFO: ACmThread::Create, aType=1 aFlag=1 Register=0, name=scn-cap this=0x14fd9d240
+[03/11/2016 16:25:54.042 pid=735 tid=442814] [WSE] :[WSE] INFO: ComTaskThread::OnThreadRun, Begin.
+[03/11/2016 16:25:54.042 pid=735 tid=442814] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::_InitCaptureTimer]>>current  nFps=5
+[03/11/2016 16:25:54.042 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::CScreenCaptureTaskThread]>>Start,[CheckPoint]
+[03/11/2016 16:25:54.043 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::_CreateCaptureThread]>>sucess
+[03/11/2016 16:25:54.043 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::Status>>m_eSHARE_CAPTURE_ENGINE_STATUS=1
+[03/11/2016 16:25:54.043 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::Status>>m_eSHARE_CAPTURE_ENGINE_STATUS=3
+[03/11/2016 16:25:54.043 pid=735 tid=442735] [WSE] :[WSE] INFO: ComTaskThread::Stop
+[03/11/2016 16:25:54.043 pid=735 tid=442814] [WSE] :[WSE] INFO: ComTaskThread::OnThreadRun, End.
+[03/11/2016 16:25:54.043 pid=735 tid=442735] [UTIL] :[UTIL] INFO: GetStopFlag()=1 this=0x14fd9d240
+[03/11/2016 16:25:54.043 pid=735 tid=442735] [UTIL] :[UTIL] INFO: ACmThread::Destory, aReason=0 this=0x14fd9d240
+[03/11/2016 16:25:54.043 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::CScreenCaptureTaskThread]>>Destroy,[CheckPoint]
+[03/11/2016 16:25:54.044 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::_DestroyCaptureThread]
+[03/11/2016 16:25:54.044 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::Status>>m_eSHARE_CAPTURE_ENGINE_STATUS=2
+[03/11/2016 16:25:54.044 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::AddCaptureShareSource]>>ret=0
+[03/11/2016 16:25:54.044 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::AddCaptureShareSource]>>eShareSourceType=2
+[03/11/2016 16:25:54.044 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::_UpdateShareDisplaySize]>>x=1024>>y=768
+[03/11/2016 16:25:54.044 pid=735 tid=442735] [UTIL] :[UTIL] INFO: ACmThread::Create, aType=1 aFlag=1 Register=0, name=scn-cap this=0x14fd9d240
+[03/11/2016 16:25:54.044 pid=735 tid=442815] [WSE] :[WSE] INFO: ComTaskThread::OnThreadRun, Begin.
+[03/11/2016 16:25:54.044 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::CScreenCaptureTaskThread]>>Start,[CheckPoint]
+[03/11/2016 16:25:54.045 pid=735 tid=442815] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::_InitCaptureTimer]>>current  nFps=5
+[03/11/2016 16:25:54.045 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::_CreateCaptureThread]>>sucess
+[03/11/2016 16:25:54.045 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::Status>>m_eSHARE_CAPTURE_ENGINE_STATUS=1
+[03/11/2016 16:25:54.045 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::Status>>m_eSHARE_CAPTURE_ENGINE_STATUS=3
+[03/11/2016 16:25:54.045 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::Status>>m_eSHARE_CAPTURE_ENGINE_STATUS=1
+[03/11/2016 16:25:54.045 pid=735 tid=442735] [WSE] :[WSE] INFO: ComTaskThread::Stop
+[03/11/2016 16:25:54.045 pid=735 tid=442815] [WSE] :[WSE] INFO: ComTaskThread::OnThreadRun, End.
+[03/11/2016 16:25:54.045 pid=735 tid=442735] [UTIL] :[UTIL] INFO: GetStopFlag()=1 this=0x14fd9d240
+[03/11/2016 16:25:54.045 pid=735 tid=442735] [UTIL] :[UTIL] INFO: ACmThread::Destory, aReason=0 this=0x14fd9d240
+[03/11/2016 16:25:54.045 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::CScreenCaptureTaskThread]>>Destroy,[CheckPoint]
+[03/11/2016 16:25:54.045 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::_DestroyCaptureThread]
+[03/11/2016 16:25:54.045 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::StSetExternalIShareCapturerart]>>m_pIShareCapturerExternal=0x0
+[03/11/2016 16:25:54.045 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::_UpdateShareDisplaySize]>>x=1024>>y=768
+[03/11/2016 16:25:54.045 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::StSetExternalIShareCapturerart]>>m_pIShareCapturerExternal=0x102e9c0e8
+[03/11/2016 16:25:54.046 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::StSetExternalISharePointingart]>>m_pIShareCapturerExternal=0x0
+[03/11/2016 16:25:54.046 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::StSetExternalISharePointingart]>>m_pIShareCapturerExternal=0x102e9c0c8
+[03/11/2016 16:25:54.046 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::AddCaptureShareSource]>>ret=4294967295
+[03/11/2016 16:25:54.046 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::AddCaptureShareSource]>>ret=0
+[03/11/2016 16:25:54.046 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::AddCaptureShareSource]>>eShareSourceType=2
+[03/11/2016 16:25:54.046 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::_UpdateShareDisplaySize]>>x=1024>>y=768
+[03/11/2016 16:25:54.046 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::AddCaptureShareSource]>>ret=0
+[03/11/2016 16:25:54.046 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::AddCaptureShareSource]>>eShareSourceType=2
+[03/11/2016 16:25:54.046 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::AddCaptureShareSource]>>ret=0
+[03/11/2016 16:25:54.046 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::AddCaptureShareSource]>>eShareSourceType=2
+[03/11/2016 16:25:54.046 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::RemoveCaptureShareSource]>>eShareSourceType=2
+[03/11/2016 16:25:54.046 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::AddCaptureShareSource]>>ret=0
+[03/11/2016 16:25:54.047 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::AddCaptureShareSource]>>eShareSourceType=2
+[03/11/2016 16:25:54.047 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::_UpdateShareDisplaySize]>>x=1024>>y=768
+[03/11/2016 16:25:54.047 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::AddCaptureShareSource]>>ret=0
+[03/11/2016 16:25:54.047 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::AddCaptureShareSource]>>eShareSourceType=2
+[03/11/2016 16:25:54.047 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::RemoveCaptureShareSource]>>eShareSourceType=2
+[03/11/2016 16:25:54.047 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::RemoveCaptureShareSource]>>eShareSourceType=2
+[03/11/2016 16:25:54.047 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::AddCaptureShareSource]>>ret=0
+[03/11/2016 16:25:54.047 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::AddCaptureShareSource]>>eShareSourceType=2
+[03/11/2016 16:25:54.047 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::_UpdateShareDisplaySize]>>x=1024>>y=768
+[03/11/2016 16:25:54.047 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::AddCaptureShareSource]>>ret=0
+[03/11/2016 16:25:54.047 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::AddCaptureShareSource]>>eShareSourceType=2
+[03/11/2016 16:25:54.047 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::RemoveCaptureShareSource]>>eShareSourceType=2
+[03/11/2016 16:25:54.047 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::RemoveCaptureShareSource]>>eShareSourceType=2
+[03/11/2016 16:25:54.048 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::AddCaptureShareSource]>>ret=0
+[03/11/2016 16:25:54.048 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::AddCaptureShareSource]>>eShareSourceType=2
+[03/11/2016 16:25:54.048 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::_UpdateShareDisplaySize]>>x=1024>>y=768
+[03/11/2016 16:25:54.048 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::AddCaptureShareSource]>>ret=0
+[03/11/2016 16:25:54.048 pid=735 tid=442735] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] INFO: [CShareCaptureEngine::AddCaptureShareSource]>>eShareSourceType=2
+************************* Current Trace Point *************************
+

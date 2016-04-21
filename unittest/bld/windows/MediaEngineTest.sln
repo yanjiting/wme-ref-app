@@ -1,0 +1,91 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wfectest", "..\..\wfec\wfectest.vcproj", "{65A8B953-1FB7-4826-9A8B-0E11C0F560DB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "utilTest", "..\..\util\utilTest.vcproj", "{21471EBE-AE8D-43B1-8F24-8D415FA7B5EE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tpTest", "..\..\tp\tpTest.vcproj", "{49A4826D-1B46-4191-BAA6-6F07A35E1E9C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wqosTest", "..\..\wqos\wqosTest.vcproj", "{805C9DBF-703A-4A73-B977-1F29A8E01081}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wrtpTest", "..\..\wrtp\wrtpTest.vcproj", "{A239551A-79EF-455D-9B30-CC31A137E31D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WmeTest", "..\..\wme\wmetest.vcproj", "{BD4DD546-9DF3-4708-92F2-760F03154F34}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DolphinTest", "..\..\dolphin\DolphinTest.vcproj", "{84E8C759-3BB2-4F8F-A5BA-F31FDFE7F372}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SharkTest", "..\..\shark\SharkTest.vcproj", "{33482E76-C5C0-4EEB-ADF9-98E49ADD4C64}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "appshare", "appshare", "{A94FBEDD-B533-4371-BFAE-9CE3077D0FF3}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "appshare_unittest", "..\..\appshare\bld\windows\appshare_unittest.vcproj", "{76E6335D-B363-4FED-9DB4-623684C0BC59}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9AEB7E79-269B-4A5B-AD11-BC1AA5CB4682} = {9AEB7E79-269B-4A5B-AD11-BC1AA5CB4682}
+		{6360BACB-B2AB-4A88-9AEA-0FEEA8AF2E18} = {6360BACB-B2AB-4A88-9AEA-0FEEA8AF2E18}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libAppshare", "..\..\..\mediaengine\appshare\bld\client\windows\libAppshare.vcproj", "{6360BACB-B2AB-4A88-9AEA-0FEEA8AF2E18}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wmeutil", "..\..\..\mediaengine\wmeutil\bld\client\win32\wmeutil.vcproj", "{9AEB7E79-269B-4A5B-AD11-BC1AA5CB4682}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{65A8B953-1FB7-4826-9A8B-0E11C0F560DB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{65A8B953-1FB7-4826-9A8B-0E11C0F560DB}.Debug|Win32.Build.0 = Debug|Win32
+		{65A8B953-1FB7-4826-9A8B-0E11C0F560DB}.Release|Win32.ActiveCfg = Release|Win32
+		{65A8B953-1FB7-4826-9A8B-0E11C0F560DB}.Release|Win32.Build.0 = Release|Win32
+		{21471EBE-AE8D-43B1-8F24-8D415FA7B5EE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{21471EBE-AE8D-43B1-8F24-8D415FA7B5EE}.Debug|Win32.Build.0 = Debug|Win32
+		{21471EBE-AE8D-43B1-8F24-8D415FA7B5EE}.Release|Win32.ActiveCfg = Release|Win32
+		{21471EBE-AE8D-43B1-8F24-8D415FA7B5EE}.Release|Win32.Build.0 = Release|Win32
+		{49A4826D-1B46-4191-BAA6-6F07A35E1E9C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{49A4826D-1B46-4191-BAA6-6F07A35E1E9C}.Debug|Win32.Build.0 = Debug|Win32
+		{49A4826D-1B46-4191-BAA6-6F07A35E1E9C}.Release|Win32.ActiveCfg = Release|Win32
+		{49A4826D-1B46-4191-BAA6-6F07A35E1E9C}.Release|Win32.Build.0 = Release|Win32
+		{805C9DBF-703A-4A73-B977-1F29A8E01081}.Debug|Win32.ActiveCfg = Debug|Win32
+		{805C9DBF-703A-4A73-B977-1F29A8E01081}.Debug|Win32.Build.0 = Debug|Win32
+		{805C9DBF-703A-4A73-B977-1F29A8E01081}.Release|Win32.ActiveCfg = Release|Win32
+		{805C9DBF-703A-4A73-B977-1F29A8E01081}.Release|Win32.Build.0 = Release|Win32
+		{A239551A-79EF-455D-9B30-CC31A137E31D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A239551A-79EF-455D-9B30-CC31A137E31D}.Debug|Win32.Build.0 = Debug|Win32
+		{A239551A-79EF-455D-9B30-CC31A137E31D}.Release|Win32.ActiveCfg = Release|Win32
+		{A239551A-79EF-455D-9B30-CC31A137E31D}.Release|Win32.Build.0 = Release|Win32
+		{BD4DD546-9DF3-4708-92F2-760F03154F34}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BD4DD546-9DF3-4708-92F2-760F03154F34}.Debug|Win32.Build.0 = Debug|Win32
+		{BD4DD546-9DF3-4708-92F2-760F03154F34}.Release|Win32.ActiveCfg = Release|Win32
+		{BD4DD546-9DF3-4708-92F2-760F03154F34}.Release|Win32.Build.0 = Release|Win32
+		{84E8C759-3BB2-4F8F-A5BA-F31FDFE7F372}.Debug|Win32.ActiveCfg = Debug|Win32
+		{84E8C759-3BB2-4F8F-A5BA-F31FDFE7F372}.Debug|Win32.Build.0 = Debug|Win32
+		{84E8C759-3BB2-4F8F-A5BA-F31FDFE7F372}.Release|Win32.ActiveCfg = Release|Win32
+		{84E8C759-3BB2-4F8F-A5BA-F31FDFE7F372}.Release|Win32.Build.0 = Release|Win32
+		{33482E76-C5C0-4EEB-ADF9-98E49ADD4C64}.Debug|Win32.ActiveCfg = Debug|Win32
+		{33482E76-C5C0-4EEB-ADF9-98E49ADD4C64}.Debug|Win32.Build.0 = Debug|Win32
+		{33482E76-C5C0-4EEB-ADF9-98E49ADD4C64}.Release|Win32.ActiveCfg = Release|Win32
+		{33482E76-C5C0-4EEB-ADF9-98E49ADD4C64}.Release|Win32.Build.0 = Release|Win32
+		{76E6335D-B363-4FED-9DB4-623684C0BC59}.Debug|Win32.ActiveCfg = Debug|Win32
+		{76E6335D-B363-4FED-9DB4-623684C0BC59}.Debug|Win32.Build.0 = Debug|Win32
+		{76E6335D-B363-4FED-9DB4-623684C0BC59}.Release|Win32.ActiveCfg = Release|Win32
+		{76E6335D-B363-4FED-9DB4-623684C0BC59}.Release|Win32.Build.0 = Release|Win32
+		{6360BACB-B2AB-4A88-9AEA-0FEEA8AF2E18}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6360BACB-B2AB-4A88-9AEA-0FEEA8AF2E18}.Debug|Win32.Build.0 = Debug|Win32
+		{6360BACB-B2AB-4A88-9AEA-0FEEA8AF2E18}.Release|Win32.ActiveCfg = Release|Win32
+		{6360BACB-B2AB-4A88-9AEA-0FEEA8AF2E18}.Release|Win32.Build.0 = Release|Win32
+		{9AEB7E79-269B-4A5B-AD11-BC1AA5CB4682}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9AEB7E79-269B-4A5B-AD11-BC1AA5CB4682}.Debug|Win32.Build.0 = Debug|Win32
+		{9AEB7E79-269B-4A5B-AD11-BC1AA5CB4682}.Release|Win32.ActiveCfg = Release|Win32
+		{9AEB7E79-269B-4A5B-AD11-BC1AA5CB4682}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{76E6335D-B363-4FED-9DB4-623684C0BC59} = {A94FBEDD-B533-4371-BFAE-9CE3077D0FF3}
+		{6360BACB-B2AB-4A88-9AEA-0FEEA8AF2E18} = {A94FBEDD-B533-4371-BFAE-9CE3077D0FF3}
+		{9AEB7E79-269B-4A5B-AD11-BC1AA5CB4682} = {A94FBEDD-B533-4371-BFAE-9CE3077D0FF3}
+	EndGlobalSection
+EndGlobal

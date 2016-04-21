@@ -1,0 +1,27 @@
+USER_DEPTH = ../../..
+
+include $(USER_DEPTH)/build/env.make
+include $(USER_DEPTH)/build/platform.make
+
+USER_BIN = util_client_test
+
+USER_SRCS = \
+    main.cpp \
+	CmTimeValueTest.cpp 
+
+USER_INCLDIRS = -I./ -I$(USER_DEPTH)/src/common/include \
+    -I$(USER_DEPTH)/third_party/testtools/include \
+        -I$(USER_DEPTH)/include \
+        -I$(USER_DEPTH)/src/include \
+        -I$(USER_DEPTH)/src/common/include/linux \
+        -I$(USER_DEPTH)/src/common/include/client
+
+USER_DEFFLAGS += -fprofile-arcs -ftest-coverage -DCM_SUPPORT_T120_UTIL -DCM_PORT_CLIENT -D__UNITTEST__
+
+USER_LINK_LIBS = $(USER_DEPTH)/libs/libutil_client.a 
+
+USER_OBJ_DIR = $(USER_DEPTH)/bin/objs/common/util/client
+
+USER_LINK_DLLS = -L$(USER_DEPTH)/libs -lgtest -lgmock -lrt
+
+include $(USER_DEPTH)/build/all_in_one.make

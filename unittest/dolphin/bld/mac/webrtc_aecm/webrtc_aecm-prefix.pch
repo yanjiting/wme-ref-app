@@ -1,0 +1,6 @@
+#ifdef __OBJC__
+#import <Foundation/Foundation.h>
+#endif
+
+#define WEBRTC_POSIX
+#define IOS

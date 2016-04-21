@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    	xmlns:android="http://schemas.android.com/apk/res/android"    		    		
+    		android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+    	<LinearLayout 
+            android:id="@+id/llRemoteView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/locus_main"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+                <view
+                        android:id="@+id/RemoteShareGLView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        class="com.webex.wseclient.WseGLView" />
+
+                <view
+                        android:id="@+id/RemoteVideoGLView"
+                        android:layout_width="480dp"
+                        android:layout_height="270dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_alignParentBottom="true"
+                        class="com.webex.wseclient.WseGLView" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    
+    
+    	<LinearLayout 
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="3">
+ 
+           	<view
+		        android:id="@+id/LocalVideoGLView"
+		        android:layout_width="fill_parent"
+		        android:layout_height="240dip"
+		        class="com.webex.wseclient.WseGLView" >
+		    </view>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="" />
+            
+            <CheckBox
+                android:id="@+id/checkBoxSpeaker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Speaker" 
+                android:layout_gravity="bottom"/>
+            <CheckBox
+                android:id="@+id/checkBoxMute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mute" 
+                android:layout_gravity="bottom"/>
+            <CheckBox
+                android:id="@+id/checkBoxVideo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Video" 
+                android:layout_gravity="bottom"/>
+            <CheckBox
+                    android:id="@+id/checkBoxShare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Remote Share"
+                    android:layout_gravity="bottom"/>
+
+            <CheckBox
+                android:id="@+id/checkBoxAudio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Audio" 
+                android:layout_gravity="bottom"/>
+            <CheckBox
+                android:id="@+id/checkBoxSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BackCamera" 
+                android:layout_gravity="bottom"/>
+
+        </LinearLayout>
+        
+        
+
+    
+
+ </LinearLayout >   

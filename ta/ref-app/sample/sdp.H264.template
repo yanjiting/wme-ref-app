@@ -1,0 +1,41 @@
+v=0
+o=wme-drone-3.3.0 0 1 IN IP4 127.0.0.1
+s=-
+b=AS:0
+t=0 0
+m=audio <AUDIO_PORT> RTP/AVP 101 0 8 9
+c=IN IP4 <IP_ADDR>
+b=TIAS:64000
+a=content:main
+a=sendrecv
+a=rtpmap:101 opus/48000/2
+a=fmtp:101 maxplaybackrate=48000;maxaveragebitrate=64000;stereo=1
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:9 G722/8000
+a=extmap:1/sendrecv http://protocols.cisco.com/virtualid
+a=extmap:2/sendrecv urn:ietf:params:rtp-hdrext:ssrc-audio-level
+a=extmap:3/sendrecv urn:ietf:params:rtp-hdrext:toffset
+a=rtcp-mux
+a=sprop-source:0 csi=15617;count=1
+a=sprop-simul:0 100 *
+a=rtcp-fb:* ccm cisco-scr
+m=video <VIDEO_PORT> RTP/AVP 101 97
+c=IN IP4 <IP_ADDR>
+b=TIAS:1000000
+a=content:main
+a=sendrecv
+a=rtpmap:101 H264/90000
+a=fmtp:101 profile-level-id=420016;packetization-mode=1;max-mbps=115200;max-fs=3840;max-fps=3000;max-br=4000;max-dpb=11520
+a=rtpmap:97 H264/90000
+a=fmtp:97 profile-level-id=420016;packetization-mode=0;max-mbps=115200;max-fs=3840;max-fps=3000;max-br=4000;max-dpb=11520
+a=rtcp-fb:* nack pli
+a=rtcp-fb:* ccm tmmbr
+a=extmap:1/sendrecv http://protocols.cisco.com/virtualid
+a=extmap:2/sendrecv http://protocols.cisco.com/framemarking
+a=extmap:3/sendrecv urn:ietf:params:rtp-hdrext:toffset
+a=rtcp-mux
+a=sprop-source:0 csi=15616;count=1
+a=sprop-simul:0 100 101 profile-level-id=42e01f;max-mbps=108000;max-fs=3600;max-fps=3000;
+a=sprop-simul:0 101 97 profile-level-id=42e01f;max-mbps=108000;max-fs=3600;max-fps=3000;
+a=rtcp-fb:* ccm cisco-scr

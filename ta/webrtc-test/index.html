@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="scripts/jquery-1.9.1.js"></script>
+<script src="scripts/jquery-ui.min.js"></script>
+<script src="scripts/init.js"></script>
+<script src="scripts/adapter.js"></script>
+<script src="scripts/webrtc.js"></script>
+<script src="scripts/ws.js"></script>
+<script src="scripts/demo.js"></script>
+<link rel="stylesheet" href="themes/base/jquery-ui.css">
+<style type="text/css">
+    .viewname{position: absolute;
+              background-color:rgba(212,212,212,0.5); 
+              bottom: -0px;
+			  text-align:center;
+			  color:rgb(0,0,0);
+			  line-height:18px;
+              width:100%;}
+	.view{display:inline-block;}
+</style>
+</head>
+<body>
+<button id="sendTheData">Generate and send data</button>
+<button id="close">Close</button>
+    <section>
+         <div class="progress">
+           <div class="label">Send progress: </div>
+           <progress id="sendProgress" max="0" value="0"></progress>
+         </div>
+
+         <div class="progress">
+           <div class="label">Receive progress: </div>
+           <progress id="receiveProgress" max="0" value="0"></progress>
+         </div>
+
+         <div id="bitrate"></div>
+
+         <a id="received"></a>
+       </section>
+<div id="bigview">
+</div>
+<div id="smallview">
+</div>
+<div id="serverview">
+</div>
+
+<video src="images/Penguins_of_Madagascar.webm" id="videosrc" width="320" controls ></video>    
+</body>
+</html>

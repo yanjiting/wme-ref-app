@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/disable_enable_video" />
+
+        <CheckBox
+            android:id="@+id/checkBoxEnableVideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enable_video" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/external_track" />
+
+        <CheckBox
+            android:id="@+id/checkBoxEnableExternalTrack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enable_external_track" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btnSelectFile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/select_file" />
+
+            <TextView
+                android:id="@+id/textViewSelectedFile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/selected_file_name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dip"
+                android:text="@string/video_size" />
+
+            <EditText
+                android:id="@+id/editTextWidth"
+                android:layout_width="70dip"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number" >
+            </EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/split_label" />
+
+            <EditText
+                android:id="@+id/editTextHeight"
+                android:layout_width="70dip"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number" >
+            </EditText>
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="at" />
+
+            <EditText
+                android:id="@+id/editTextFPS"
+                android:layout_width="50dip"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number" >
+            </EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/video_color" />
+
+            <Spinner
+                android:id="@+id/rawVideoColorspace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnApplyExternal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/apply_external_track" />
+        
+        <TextView
+		    android:id="@+id/textview_video_output_path"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="" />
+	
+		<CheckBox
+	         android:id="@+id/checkBoxApplyVideoOutputFile"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:text="ApplyOutputFile" />
+        
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/data_dump" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/data_dump" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/checkBoxDumpRawCapture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@+string/rawCaptureDump" />
+
+            <CheckBox
+                android:id="@+id/checkBoxDumpEncodeRtp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@+string/encodeRtpDump" />
+
+            <CheckBox
+                android:id="@+id/checkBoxDumpRecvNal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@+string/recvNalDump" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/checkBoxDumpDecodeNal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@+string/decodeNalDump" />
+
+            <CheckBox
+                android:id="@+id/checkBoxDumpRenderData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@+string/renderDataDump" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/video_parameters" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <Spinner
+                android:id="@+id/videoCodecParamSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:id="@+id/CaptureParamSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/videoCodecParamSpinner"
+                android:layout_toRightOf="@id/videoCodecParamSpinner" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Spinner
+                android:id="@+id/VQualitySpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:id="@+id/cameraSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/VQualitySpinner"
+                android:layout_toRightOf="@id/VQualitySpinner" />
+
+            <Spinner
+                android:id="@+id/RenderSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/cameraSpinner"
+                android:layout_toRightOf="@id/cameraSpinner" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/video_preview" />
+
+        <CheckBox
+            android:id="@+id/checkBoxForceLandscapeRender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forcerenderinlandscape" />
+
+        <FrameLayout
+    	    	android:id="@+id/previewlayout"
+    			android:layout_width="fill_parent"
+    			android:layout_height="fill_parent"
+    			android:orientation="vertical">
+	        <view
+	            android:id="@+id/PreviewVideoGLView"
+	            android:layout_width="640dip"
+	            android:layout_height="480dip"
+	            class="com.webex.wseclient.WseGLView" >
+	        </view>
+	        
+	        <TextView
+		        android:id="@+id/PreviewStatistic"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@android:color/holo_blue_bright"
+                android:layout_gravity="bottom"
+		        android:text=""/>
+        </FrameLayout>
+    </LinearLayout>
+
+</ScrollView>

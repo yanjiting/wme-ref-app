@@ -1,0 +1,4 @@
+# ignore lib folder
+*.vcproj
+# ignore object files
+*.o

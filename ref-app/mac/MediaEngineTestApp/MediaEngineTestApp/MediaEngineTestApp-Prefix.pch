@@ -1,0 +1,11 @@
+//
+// Prefix header for all source files of the 'MediaEngineTestApp' target in the 'MediaEngineTestApp' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
+
+#define MachOSupport
+#define MACOS
+//#define ENABLE_COMMAND_LINE

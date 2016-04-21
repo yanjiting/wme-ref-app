@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="EditControl">
+        <attr format="string" name="label" />
+        <attr format="string" name="text" />
+        <attr format="string" name="values" />
+        <attr format="boolean" name="checked"/>
+    </declare-styleable>
+</resources>  

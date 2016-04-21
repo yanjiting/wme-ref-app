@@ -1,0 +1,714 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		482F14341B57BD37002C2324 /* util.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 482F14331B57BD2C002C2324 /* util.framework */; };
+		750F6A271BEC7D180027F73B /* CCAudioMetricsTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 750F6A261BEC7D180027F73B /* CCAudioMetricsTest.cpp */; settings = {ASSET_TAGS = (); }; };
+		84C1300E192B4CC80084A578 /* CWbxAudioEngineImplTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 994220F91909FC340054301F /* CWbxAudioEngineImplTest.cpp */; };
+		84C1300F192B4E8A0084A578 /* CWbxAeAudioChannelTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 994220F51909FC340054301F /* CWbxAeAudioChannelTest.cpp */; };
+		84C130A7192C89730084A578 /* CWbxMemPoolTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 994220F01909FC340054301F /* CWbxMemPoolTest.cpp */; };
+		84C130A9192C90440084A578 /* CWbxAeVoiceMixerTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 994220F81909FC340054301F /* CWbxAeVoiceMixerTest.cpp */; };
+		84C13120192DA1680084A578 /* wbxaecodec.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C1311D192DA13B0084A578 /* wbxaecodec.framework */; };
+		9926468B190DFF3300D3698D /* wmeutil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99264688190DFEE300D3698D /* wmeutil.framework */; };
+		994221151909FC340054301F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 994220FF1909FC340054301F /* main.cpp */; };
+		9942211D1909FCF40054301F /* wbxaudioengine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 994220E31909FC130054301F /* wbxaudioengine.framework */; };
+		9942211E1909FCF80054301F /* libgmock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 994220C41909FC020054301F /* libgmock.a */; };
+		9942211F1909FCFB0054301F /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 994220C71909FC020054301F /* libgtest.a */; };
+		99422144190A02580054301F /* CwbxAeMediaBlockListTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 994220EC1909FC340054301F /* CwbxAeMediaBlockListTest.cpp */; };
+		9942214C190A029A0054301F /* CWBXAEMediaBlockTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 994220ED1909FC340054301F /* CWBXAEMediaBlockTest.cpp */; };
+		9942214E190A031B0054301F /* CWbxAJBPolicyTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 994220EF1909FC340054301F /* CWbxAJBPolicyTest.cpp */; };
+		99422157190A04440054301F /* CMixerDestroyEventTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 994220F21909FC340054301F /* CMixerDestroyEventTest.cpp */; };
+		99422158190A04510054301F /* CMixerStartEventTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 994220F31909FC340054301F /* CMixerStartEventTest.cpp */; };
+		99422159190A04670054301F /* CMixerStopEventTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 994220F41909FC340054301F /* CMixerStopEventTest.cpp */; };
+		99D5AED0190A2ADB00A91D61 /* Modules_UnitTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 994220E81909FC340054301F /* Modules_UnitTest.cpp */; };
+		99D5AED4190A2B8F00A91D61 /* AQE_Unit_MyTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 994220E61909FC340054301F /* AQE_Unit_MyTest.cpp */; };
+		A0902D7719481A1F00C16BBB /* wsertp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0902D74194819F900C16BBB /* wsertp.framework */; };
+		A0EAC9011946DA50002EC80C /* CWbxAJBJitterbufferTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 994220EE1909FC340054301F /* CWbxAJBJitterbufferTest.cpp */; };
+		A1B90AF019F4EE4200696B63 /* CAudioDefaultSettingsTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1B90AEE19F4EE4200696B63 /* CAudioDefaultSettingsTest.cpp */; };
+		A1B90AF119F4EE4200696B63 /* CWBXAeWavAdaptorTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1B90AEF19F4EE4200696B63 /* CWBXAeWavAdaptorTest.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		482F14321B57BD2C002C2324 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 482F142E1B57BD2B002C2324 /* util.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B10A6ADA1697BD3A00374A3E;
+			remoteInfo = util;
+		};
+		84C1311C192DA13B0084A578 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84C13118192DA13B0084A578 /* wbxaecodec.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 41C7216517B2463D00B57F53;
+			remoteInfo = wbxaecodec;
+		};
+		84C1311E192DA15E0084A578 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84C13118192DA13B0084A578 /* wbxaecodec.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 41C7216417B2463D00B57F53;
+			remoteInfo = wbxaecodec;
+		};
+		99264687190DFEE300D3698D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99264683190DFEE200D3698D /* wmeutil.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A503F4AB1793C52200FB1105;
+			remoteInfo = wmeutil;
+		};
+		99264689190DFF2A00D3698D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99264683190DFEE200D3698D /* wmeutil.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A503F4AA1793C52200FB1105;
+			remoteInfo = wmeutil;
+		};
+		994220C31909FC020054301F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 994220BC1909FC020054301F /* gmock.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 995119CE1908B9680003775D;
+			remoteInfo = gmock;
+		};
+		994220C61909FC020054301F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 994220BF1909FC020054301F /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 99B81CF61908B65000614567;
+			remoteInfo = gtest;
+		};
+		994220E21909FC130054301F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 994220C81909FC110054301F /* wbxaudioengine.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4178B41917B8A30E00AEB9D8;
+			remoteInfo = wbxaudioengine;
+		};
+		994221171909FCE40054301F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 994220C81909FC110054301F /* wbxaudioengine.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4178B41817B8A30E00AEB9D8;
+			remoteInfo = wbxaudioengine;
+		};
+		994221191909FCE60054301F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 994220BC1909FC020054301F /* gmock.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 995119CD1908B9680003775D;
+			remoteInfo = gmock;
+		};
+		9942211B1909FCE80054301F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 994220BF1909FC020054301F /* gtest.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 99B81CF51908B65000614567;
+			remoteInfo = gtest;
+		};
+		A0902D73194819F900C16BBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0902D6F194819F900C16BBB /* wsertp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 04B7984F1149D83E00629A02;
+			remoteInfo = wsertp;
+		};
+		A0902D7519481A1400C16BBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0902D6F194819F900C16BBB /* wsertp.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 04B7984E1149D83E00629A02;
+			remoteInfo = wsertp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		994220AB1909FBAB0054301F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		482F142E1B57BD2B002C2324 /* util.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = util.xcodeproj; path = ../../mediaengine/util/src/util.xcodeproj; sourceTree = "<group>"; };
+		750F6A261BEC7D180027F73B /* CCAudioMetricsTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCAudioMetricsTest.cpp; sourceTree = "<group>"; };
+		84C13118192DA13B0084A578 /* wbxaecodec.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = wbxaecodec.xcodeproj; path = ../../mediaengine/dolphin/bld/client/mac/wbxaecodec.xcodeproj; sourceTree = "<group>"; };
+		99264683190DFEE200D3698D /* wmeutil.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = wmeutil.xcodeproj; path = ../../mediaengine/wmeutil/bld/client/mac/wmeutil.xcodeproj; sourceTree = "<group>"; };
+		994220AD1909FBAB0054301F /* wbxaudioengineTest_mac */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = wbxaudioengineTest_mac; sourceTree = BUILT_PRODUCTS_DIR; };
+		994220BC1909FC020054301F /* gmock.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = gmock.xcodeproj; path = ../../vendor/gtest/bld/mac/gmock.xcodeproj; sourceTree = "<group>"; };
+		994220BF1909FC020054301F /* gtest.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = gtest.xcodeproj; path = ../../vendor/gtest/bld/mac/gtest.xcodeproj; sourceTree = "<group>"; };
+		994220C81909FC110054301F /* wbxaudioengine.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = wbxaudioengine.xcodeproj; path = ../../mediaengine/dolphin/bld/client/mac/wbxaudioengine.xcodeproj; sourceTree = "<group>"; };
+		994220E51909FC340054301F /* AQE_Unit_Gtest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AQE_Unit_Gtest.cpp; sourceTree = "<group>"; };
+		994220E61909FC340054301F /* AQE_Unit_MyTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AQE_Unit_MyTest.cpp; sourceTree = "<group>"; };
+		994220E81909FC340054301F /* Modules_UnitTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Modules_UnitTest.cpp; sourceTree = "<group>"; };
+		994220E91909FC340054301F /* ParameterClass_UnitTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ParameterClass_UnitTest.cpp; sourceTree = "<group>"; };
+		994220EC1909FC340054301F /* CwbxAeMediaBlockListTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CwbxAeMediaBlockListTest.cpp; sourceTree = "<group>"; };
+		994220ED1909FC340054301F /* CWBXAEMediaBlockTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CWBXAEMediaBlockTest.cpp; sourceTree = "<group>"; };
+		994220EE1909FC340054301F /* CWbxAJBJitterbufferTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CWbxAJBJitterbufferTest.cpp; sourceTree = "<group>"; };
+		994220EF1909FC340054301F /* CWbxAJBPolicyTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CWbxAJBPolicyTest.cpp; sourceTree = "<group>"; };
+		994220F01909FC340054301F /* CWbxMemPoolTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CWbxMemPoolTest.cpp; sourceTree = "<group>"; };
+		994220F21909FC340054301F /* CMixerDestroyEventTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CMixerDestroyEventTest.cpp; sourceTree = "<group>"; };
+		994220F31909FC340054301F /* CMixerStartEventTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CMixerStartEventTest.cpp; sourceTree = "<group>"; };
+		994220F41909FC340054301F /* CMixerStopEventTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CMixerStopEventTest.cpp; sourceTree = "<group>"; };
+		994220F51909FC340054301F /* CWbxAeAudioChannelTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CWbxAeAudioChannelTest.cpp; sourceTree = "<group>"; };
+		994220F61909FC340054301F /* CWbxAePlaybackChannelTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CWbxAePlaybackChannelTest.cpp; sourceTree = "<group>"; };
+		994220F71909FC340054301F /* CWbxAeRecordChannelTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CWbxAeRecordChannelTest.cpp; sourceTree = "<group>"; };
+		994220F81909FC340054301F /* CWbxAeVoiceMixerTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CWbxAeVoiceMixerTest.cpp; sourceTree = "<group>"; };
+		994220F91909FC340054301F /* CWbxAudioEngineImplTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CWbxAudioEngineImplTest.cpp; sourceTree = "<group>"; };
+		994220FF1909FC340054301F /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		994221161909FC710054301F /* wbxaudioengineTest_mac-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wbxaudioengineTest_mac-Prefix.pch"; sourceTree = "<group>"; };
+		A0902D6F194819F900C16BBB /* wsertp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = wsertp.xcodeproj; path = ../../mediaengine/shark/bld/client/mac/wsertp.xcodeproj; sourceTree = "<group>"; };
+		A1B90AEE19F4EE4200696B63 /* CAudioDefaultSettingsTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CAudioDefaultSettingsTest.cpp; sourceTree = "<group>"; };
+		A1B90AEF19F4EE4200696B63 /* CWBXAeWavAdaptorTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CWBXAeWavAdaptorTest.cpp; sourceTree = "<group>"; };
+		BFF9578C1945857B00E3EBD8 /* DebugCommon.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = DebugCommon.xcconfig; path = ../../mediaengine/bld/mac/Config/DebugCommon.xcconfig; sourceTree = "<group>"; };
+		BFF9578D1945857B00E3EBD8 /* ReleaseCommon.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = ReleaseCommon.xcconfig; path = ../../mediaengine/bld/mac/Config/ReleaseCommon.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		994220AA1909FBAB0054301F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				482F14341B57BD37002C2324 /* util.framework in Frameworks */,
+				A0902D7719481A1F00C16BBB /* wsertp.framework in Frameworks */,
+				9942211F1909FCFB0054301F /* libgtest.a in Frameworks */,
+				9942211E1909FCF80054301F /* libgmock.a in Frameworks */,
+				9926468B190DFF3300D3698D /* wmeutil.framework in Frameworks */,
+				84C13120192DA1680084A578 /* wbxaecodec.framework in Frameworks */,
+				9942211D1909FCF40054301F /* wbxaudioengine.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		482F142F1B57BD2B002C2324 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				482F14331B57BD2C002C2324 /* util.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84C13119192DA13B0084A578 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84C1311D192DA13B0084A578 /* wbxaecodec.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		99264684190DFEE200D3698D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99264688190DFEE300D3698D /* wmeutil.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		994220A41909FBAB0054301F = {
+			isa = PBXGroup;
+			children = (
+				BFF9578B1945856600E3EBD8 /* Config */,
+				994220BB1909FBF70054301F /* Dependencies */,
+				994220BA1909FBE70054301F /* Tests */,
+				994220B91909FBE10054301F /* Others */,
+				994220AE1909FBAB0054301F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		994220AE1909FBAB0054301F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				994220AD1909FBAB0054301F /* wbxaudioengineTest_mac */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		994220B91909FBE10054301F /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				994221161909FC710054301F /* wbxaudioengineTest_mac-Prefix.pch */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
+		994220BA1909FBE70054301F /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				994220E41909FC340054301F /* aqe */,
+				994220EB1909FC340054301F /* common */,
+				994220F11909FC340054301F /* framework */,
+				994220FF1909FC340054301F /* main.cpp */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		994220BB1909FBF70054301F /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				482F142E1B57BD2B002C2324 /* util.xcodeproj */,
+				A0902D6F194819F900C16BBB /* wsertp.xcodeproj */,
+				994220BF1909FC020054301F /* gtest.xcodeproj */,
+				994220BC1909FC020054301F /* gmock.xcodeproj */,
+				99264683190DFEE200D3698D /* wmeutil.xcodeproj */,
+				84C13118192DA13B0084A578 /* wbxaecodec.xcodeproj */,
+				994220C81909FC110054301F /* wbxaudioengine.xcodeproj */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		994220BD1909FC020054301F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				994220C41909FC020054301F /* libgmock.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		994220C01909FC020054301F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				994220C71909FC020054301F /* libgtest.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		994220C91909FC110054301F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				994220E31909FC130054301F /* wbxaudioengine.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		994220E41909FC340054301F /* aqe */ = {
+			isa = PBXGroup;
+			children = (
+				994220E51909FC340054301F /* AQE_Unit_Gtest.cpp */,
+				994220E61909FC340054301F /* AQE_Unit_MyTest.cpp */,
+				994220E81909FC340054301F /* Modules_UnitTest.cpp */,
+				994220E91909FC340054301F /* ParameterClass_UnitTest.cpp */,
+			);
+			path = aqe;
+			sourceTree = "<group>";
+		};
+		994220EB1909FC340054301F /* common */ = {
+			isa = PBXGroup;
+			children = (
+				994220EC1909FC340054301F /* CwbxAeMediaBlockListTest.cpp */,
+				994220ED1909FC340054301F /* CWBXAEMediaBlockTest.cpp */,
+				994220EE1909FC340054301F /* CWbxAJBJitterbufferTest.cpp */,
+				994220EF1909FC340054301F /* CWbxAJBPolicyTest.cpp */,
+				994220F01909FC340054301F /* CWbxMemPoolTest.cpp */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		994220F11909FC340054301F /* framework */ = {
+			isa = PBXGroup;
+			children = (
+				A1B90AEE19F4EE4200696B63 /* CAudioDefaultSettingsTest.cpp */,
+				750F6A261BEC7D180027F73B /* CCAudioMetricsTest.cpp */,
+				A1B90AEF19F4EE4200696B63 /* CWBXAeWavAdaptorTest.cpp */,
+				994220F21909FC340054301F /* CMixerDestroyEventTest.cpp */,
+				994220F31909FC340054301F /* CMixerStartEventTest.cpp */,
+				994220F41909FC340054301F /* CMixerStopEventTest.cpp */,
+				994220F51909FC340054301F /* CWbxAeAudioChannelTest.cpp */,
+				994220F61909FC340054301F /* CWbxAePlaybackChannelTest.cpp */,
+				994220F71909FC340054301F /* CWbxAeRecordChannelTest.cpp */,
+				994220F81909FC340054301F /* CWbxAeVoiceMixerTest.cpp */,
+				994220F91909FC340054301F /* CWbxAudioEngineImplTest.cpp */,
+			);
+			path = framework;
+			sourceTree = "<group>";
+		};
+		A0902D70194819F900C16BBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0902D74194819F900C16BBB /* wsertp.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BFF9578B1945856600E3EBD8 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				BFF9578C1945857B00E3EBD8 /* DebugCommon.xcconfig */,
+				BFF9578D1945857B00E3EBD8 /* ReleaseCommon.xcconfig */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		994220AC1909FBAB0054301F /* wbxaudioengineTest_mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 994220B61909FBAB0054301F /* Build configuration list for PBXNativeTarget "wbxaudioengineTest_mac" */;
+			buildPhases = (
+				994220A91909FBAB0054301F /* Sources */,
+				994220AA1909FBAB0054301F /* Frameworks */,
+				994220AB1909FBAB0054301F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0902D7619481A1400C16BBB /* PBXTargetDependency */,
+				9942211C1909FCE80054301F /* PBXTargetDependency */,
+				9942211A1909FCE60054301F /* PBXTargetDependency */,
+				9926468A190DFF2A00D3698D /* PBXTargetDependency */,
+				84C1311F192DA15E0084A578 /* PBXTargetDependency */,
+				994221181909FCE40054301F /* PBXTargetDependency */,
+			);
+			name = wbxaudioengineTest_mac;
+			productName = wbxaudioengineTest_mac;
+			productReference = 994220AD1909FBAB0054301F /* wbxaudioengineTest_mac */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		994220A51909FBAB0054301F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = cisco;
+			};
+			buildConfigurationList = 994220A81909FBAB0054301F /* Build configuration list for PBXProject "wbxaudioengineTest_mac" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 994220A41909FBAB0054301F;
+			productRefGroup = 994220AE1909FBAB0054301F /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 994220BD1909FC020054301F /* Products */;
+					ProjectRef = 994220BC1909FC020054301F /* gmock.xcodeproj */;
+				},
+				{
+					ProductGroup = 994220C01909FC020054301F /* Products */;
+					ProjectRef = 994220BF1909FC020054301F /* gtest.xcodeproj */;
+				},
+				{
+					ProductGroup = 482F142F1B57BD2B002C2324 /* Products */;
+					ProjectRef = 482F142E1B57BD2B002C2324 /* util.xcodeproj */;
+				},
+				{
+					ProductGroup = 84C13119192DA13B0084A578 /* Products */;
+					ProjectRef = 84C13118192DA13B0084A578 /* wbxaecodec.xcodeproj */;
+				},
+				{
+					ProductGroup = 994220C91909FC110054301F /* Products */;
+					ProjectRef = 994220C81909FC110054301F /* wbxaudioengine.xcodeproj */;
+				},
+				{
+					ProductGroup = 99264684190DFEE200D3698D /* Products */;
+					ProjectRef = 99264683190DFEE200D3698D /* wmeutil.xcodeproj */;
+				},
+				{
+					ProductGroup = A0902D70194819F900C16BBB /* Products */;
+					ProjectRef = A0902D6F194819F900C16BBB /* wsertp.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				994220AC1909FBAB0054301F /* wbxaudioengineTest_mac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		482F14331B57BD2C002C2324 /* util.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = util.framework;
+			remoteRef = 482F14321B57BD2C002C2324 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84C1311D192DA13B0084A578 /* wbxaecodec.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = wbxaecodec.framework;
+			remoteRef = 84C1311C192DA13B0084A578 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		99264688190DFEE300D3698D /* wmeutil.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = wmeutil.framework;
+			remoteRef = 99264687190DFEE300D3698D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		994220C41909FC020054301F /* libgmock.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libgmock.a;
+			remoteRef = 994220C31909FC020054301F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		994220C71909FC020054301F /* libgtest.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libgtest.a;
+			remoteRef = 994220C61909FC020054301F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		994220E31909FC130054301F /* wbxaudioengine.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = wbxaudioengine.framework;
+			remoteRef = 994220E21909FC130054301F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A0902D74194819F900C16BBB /* wsertp.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = wsertp.framework;
+			remoteRef = A0902D73194819F900C16BBB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXSourcesBuildPhase section */
+		994220A91909FBAB0054301F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0EAC9011946DA50002EC80C /* CWbxAJBJitterbufferTest.cpp in Sources */,
+				84C130A9192C90440084A578 /* CWbxAeVoiceMixerTest.cpp in Sources */,
+				84C130A7192C89730084A578 /* CWbxMemPoolTest.cpp in Sources */,
+				84C1300F192B4E8A0084A578 /* CWbxAeAudioChannelTest.cpp in Sources */,
+				750F6A271BEC7D180027F73B /* CCAudioMetricsTest.cpp in Sources */,
+				84C1300E192B4CC80084A578 /* CWbxAudioEngineImplTest.cpp in Sources */,
+				994221151909FC340054301F /* main.cpp in Sources */,
+				A1B90AF019F4EE4200696B63 /* CAudioDefaultSettingsTest.cpp in Sources */,
+				99422144190A02580054301F /* CwbxAeMediaBlockListTest.cpp in Sources */,
+				9942214C190A029A0054301F /* CWBXAEMediaBlockTest.cpp in Sources */,
+				9942214E190A031B0054301F /* CWbxAJBPolicyTest.cpp in Sources */,
+				99422157190A04440054301F /* CMixerDestroyEventTest.cpp in Sources */,
+				99422158190A04510054301F /* CMixerStartEventTest.cpp in Sources */,
+				A1B90AF119F4EE4200696B63 /* CWBXAeWavAdaptorTest.cpp in Sources */,
+				99422159190A04670054301F /* CMixerStopEventTest.cpp in Sources */,
+				99D5AED0190A2ADB00A91D61 /* Modules_UnitTest.cpp in Sources */,
+				99D5AED4190A2B8F00A91D61 /* AQE_Unit_MyTest.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84C1311F192DA15E0084A578 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = wbxaecodec;
+			targetProxy = 84C1311E192DA15E0084A578 /* PBXContainerItemProxy */;
+		};
+		9926468A190DFF2A00D3698D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = wmeutil;
+			targetProxy = 99264689190DFF2A00D3698D /* PBXContainerItemProxy */;
+		};
+		994221181909FCE40054301F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = wbxaudioengine;
+			targetProxy = 994221171909FCE40054301F /* PBXContainerItemProxy */;
+		};
+		9942211A1909FCE60054301F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = gmock;
+			targetProxy = 994221191909FCE60054301F /* PBXContainerItemProxy */;
+		};
+		9942211C1909FCE80054301F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = gtest;
+			targetProxy = 9942211B1909FCE80054301F /* PBXContainerItemProxy */;
+		};
+		A0902D7619481A1400C16BBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = wsertp;
+			targetProxy = A0902D7519481A1400C16BBB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		994220B41909FBAB0054301F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFF9578C1945857B00E3EBD8 /* DebugCommon.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(SRCROOT)/../../mediaengine/dolphin/include\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OBJROOT = "$(SRCROOT)/../objs/mac";
+				SDKROOT = macosx;
+				SYMROOT = "$(SRCROOT)/../bin/mac";
+			};
+			name = Debug;
+		};
+		994220B51909FBAB0054301F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFF9578D1945857B00E3EBD8 /* ReleaseCommon.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(SRCROOT)/../../mediaengine/dolphin/include\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OBJROOT = "$(SRCROOT)/../objs/mac";
+				SDKROOT = macosx;
+				SYMROOT = "$(SRCROOT)/../bin/mac";
+			};
+			name = Release;
+		};
+		994220B71909FBAB0054301F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "wbxaudioengineTest_mac-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					MachOSupport,
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../vendor/gtest/gtest-1.7.0/include\"",
+					"\"$(SRCROOT)/../../vendor/gtest/gtest-1.7.0\"",
+					"\"$(SRCROOT)/../../vendor/gtest/gmock-1.7.0/include\"",
+					"\"$(SRCROOT)/../../vendor/gtest/gmock-1.7.0\"",
+					"\"$(SRCROOT)/../../mediaengine/util/include\"",
+					"\"$(SRCROOT)/../../mediaengine/util/include/macos\"",
+					"\"$(SRCROOT)/../../mediaengine/util/include/client\"",
+					"\"$(SRCROOT)/../../mediaengine/dolphin/include\"",
+					"\"$(SRCROOT)/../../mediaengine/dolphin/src/AudioEngine/h\"",
+					"\"$(SRCROOT)/../../mediaengine/shark/src/h\"",
+					"\"$(SRCROOT)/../../mediaengine/shark/include\"",
+					"\"$(SRCROOT)/../../mediaengine/dolphin/src/AudioEngine/src\"/**",
+					"\"$(SRCROOT)/../../mediaengine/dolphin/src/cochelea/include\"",
+					"\"$(SRCROOT)/../../vendor/security/include\"",
+					"\"$(SRCROOT)/../../mediaengine/shark/src/common\"",
+					"\"$(SRCROOT)/../../mediaengine/dolphin/src/AudioEngine/src/datadump\"",
+					"\"$(SRCROOT)/../../vendor/SuperEasyJSON\"",
+					"\"$(SRCROOT)/../../vendor/qoem/include\"",
+					"\"$(SRCROOT)/../../api\"",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../../../../distribution/mac/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		994220B81909FBAB0054301F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "wbxaudioengineTest_mac-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = MachOSupport;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../vendor/gtest/gtest-1.7.0/include\"",
+					"\"$(SRCROOT)/../../vendor/gtest/gtest-1.7.0\"",
+					"\"$(SRCROOT)/../../vendor/gtest/gmock-1.7.0/include\"",
+					"\"$(SRCROOT)/../../vendor/gtest/gmock-1.7.0\"",
+					"\"$(SRCROOT)/../../mediaengine/util/include\"",
+					"\"$(SRCROOT)/../../mediaengine/util/include/macos\"",
+					"\"$(SRCROOT)/../../mediaengine/util/include/client\"",
+					"\"$(SRCROOT)/../../mediaengine/dolphin/include\"",
+					"\"$(SRCROOT)/../../mediaengine/dolphin/src/AudioEngine/h\"",
+					"\"$(SRCROOT)/../../mediaengine/shark/src/h\"",
+					"\"$(SRCROOT)/../../mediaengine/shark/include\"",
+					"\"$(SRCROOT)/../../mediaengine/dolphin/src/AudioEngine/src\"/**",
+					"\"$(SRCROOT)/../../mediaengine/dolphin/src/cochelea/include\"",
+					"\"$(SRCROOT)/../../vendor/security/include\"",
+					"\"$(SRCROOT)/../../mediaengine/shark/src/common\"",
+					"\"$(SRCROOT)/../../mediaengine/dolphin/src/AudioEngine/src/datadump\"",
+					"\"$(SRCROOT)/../../vendor/SuperEasyJSON\"",
+					"\"$(SRCROOT)/../../vendor/qoem/include\"",
+					"\"$(SRCROOT)/../../api\"",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../../../../distribution/mac/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		994220A81909FBAB0054301F /* Build configuration list for PBXProject "wbxaudioengineTest_mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				994220B41909FBAB0054301F /* Debug */,
+				994220B51909FBAB0054301F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		994220B61909FBAB0054301F /* Build configuration list for PBXNativeTarget "wbxaudioengineTest_mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				994220B71909FBAB0054301F /* Debug */,
+				994220B81909FBAB0054301F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 994220A51909FBAB0054301F /* Project object */;
+}

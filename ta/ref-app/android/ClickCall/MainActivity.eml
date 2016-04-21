@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component jdk="Android API 19 Platform" jdk_type="Android SDK">
+	<exclude-output/>
+	<contentEntry url="file://$MODULE_DIR$"/>
+	<levels>
+		<level name="wseclient" value="project"/>
+		<level name="wmeclient" value="project"/>
+		<level name="json-simple-1.1.1" value="project"/>
+		<level name="json-20140107" value="project"/>
+		<level name="java_websocket" value="project"/>
+	</levels>
+</component>

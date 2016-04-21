@@ -1,0 +1,16 @@
+.. contents:: 
+    :local: 
+
+Error Definietions
+====================
+
+If WME function return long, then WME_S_OK(0) is success and WME_S_FALSE(0x46000001) is partial success and all others are failure.
+WME could also notify client with callbacks:
+
+    - <doxygen2rst link=IWmeMediaConnectionSink#OnError>General Error Callback</doxygen2rst>
+    - <doxygen2rst link=IWmeMediaConnectionSink#OnMediaError>Error on particular media track</doxygen2rst>
+
+Error Code Table
+================
+
+<doxygen2rst define=WmeError.h>Error Codes</doxygen2rst>

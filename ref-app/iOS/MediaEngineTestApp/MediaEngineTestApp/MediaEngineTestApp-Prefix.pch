@@ -1,0 +1,41 @@
+//
+// Prefix header for all source files of the 'MediaEngineTestApp' target in the 'MediaEngineTestApp' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+#define CM_IOS                          1
+#define CM_MACOS                        1
+#define MACOS 							1
+#define MACOSX							1
+
+#define MachOSupport
+
+//#define TARGET_API_MAC_CARBON 			1
+
+#define CM_PORT_CLIENT 					1	//Modify For T22
+
+#define MM_DISABLE_INTERFACE_TRACE 		1
+//#define CM_SUPPORT_T120_UTIL			1
+//#define CM_DISABLE_TRACE				1
+//#define CM_HAS_BUILTIN_ATOMIC_OP 		1
+#define CM_USE_REACTOR_SELECT 1
+
+#define __TRACE__ 						1
+
+#define XCODE_TOOL						1
+#define SUPPORT_DNS
+#define SUPPRT_REACTOR
+
+#define SUPPORT_DNS
+#define SUPPORT_REACTOR
+#define IOS

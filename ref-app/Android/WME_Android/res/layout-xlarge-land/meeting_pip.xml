@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    	xmlns:android="http://schemas.android.com/apk/res/android"    		    		
+    		android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            
+    	    
+    	    <FrameLayout
+    	    	android:id="@+id/framelayout"
+    			android:layout_width="fill_parent"
+    			android:layout_height="fill_parent"
+    			android:orientation="vertical">
+
+                <view
+                        android:id="@+id/RemoteShareGLView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentLeft="true"
+                        class="com.webex.wseclient.WseGLView" >
+                </view>
+
+                <view
+                        android:id="@+id/RemoteVideoGLView"
+                        android:layout_width="320dp"
+                        android:layout_height="180dp"
+                        android:layout_gravity="bottom|right"
+                        class="com.webex.wseclient.WseGLView" />
+
+
+                <view
+		        android:id="@+id/LocalVideoGLView"
+		        android:layout_width="320dip"
+		        android:layout_height="180dip"
+		        android:layout_gravity="left|bottom"
+		        class="com.webex.wseclient.WseGLView" >
+		    	</view>
+		    	
+    	        
+    	        <LinearLayout 
+    	        android:layout_gravity="top"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+
+		            <CheckBox
+		                android:id="@+id/checkBoxSpeaker"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="Speaker" 
+		                android:textColor="@android:color/white"
+		                android:layout_gravity="bottom"/>
+		            <CheckBox
+		                android:id="@+id/checkBoxMute"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="Mute" 
+		                android:textColor="@android:color/white"
+		                android:layout_gravity="bottom"/>
+		            <CheckBox
+		                android:id="@+id/checkBoxVideo"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="Video" 
+		                android:textColor="@android:color/white"
+		                android:layout_gravity="bottom"/>
+                    <CheckBox
+                            android:id="@+id/checkBoxShare"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Remote Share"
+                            android:textColor="@android:color/white"
+                            android:layout_gravity="bottom"/>
+
+                    <CheckBox
+		                android:id="@+id/checkBoxAudio"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="Audio" 
+		                android:textColor="@android:color/white"
+		                android:layout_gravity="bottom"/>
+		            <CheckBox
+		                android:id="@+id/checkBoxSwitch"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="BackCamera" 
+		                android:textColor="@android:color/white"
+		                android:layout_gravity="bottom"/>
+		            
+		            <TextView
+				        android:id="@+id/Statistic"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:textColor="@android:color/holo_orange_dark"
+		                android:layout_gravity="bottom"
+				        android:text=""/>
+		            
+		            <TextView
+				        android:id="@+id/RenderInfo"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:textColor="@android:color/holo_orange_dark"
+		                android:layout_gravity="bottom"
+				        android:text=""/>
+
+        		</LinearLayout>
+    		
+    	    </FrameLayout>
+   
+
+ </LinearLayout >   

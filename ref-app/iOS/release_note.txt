@@ -1,0 +1,108 @@
+
+
+Media Engine Test App release note
+
+
+
+Version 1.0 features:
+1. A simple peer-to-peer audio/video connection.
+2. Same application can be used as a host or as a receiver.
+3. Audio and Video can be controlled (start/stop) separately.
+4. TP is included, but users can use their own implementation.
+5. RTCP is not included at this point.
+6. Audio and Video codec use default configuration setting.
+7. Only front view camera is turn on at this moment.
+8. Display windows only support horizontal poetry view. 
+9...
+
+Version 1.0.1 features:
+1. Enable iPad Simulator mode.
+2. Fix memory leak and audio quality.
+
+Version 1.0.2 features:
+1. Remove warning messages: "ARM function not 4-byte aligned:..."
+
+Version 1.1 features:
+1. A/V sync
+2. Codec capability/parameter setting
+	- video codec: 	SVC, 160x90@7.5fps
+			SVC, 320x180@15.0fps
+			SVC, 640x360@30.0fps
+	- audio codec: 	OPUS, sample freq: 16kHz, bitrate:  25kbps
+3. Device enumeration and notification
+4. ICE/STUN
+ connection.
+5. Media session API for wrapping RTP/RTCP inside the engine
+
+
+Version 2.0 features:
+1. iOS protrait view
+2. Log level control
+3. Android support
+
+
+Version 2.2 features:
+1. Android protrait view
+2. Backward compatible
+3. Debug data dump.
+4. QoS
+5. Android video capture device enumator, video camera switch.
+6.
+
+
+Version 2.3 features:
+1. Correct Jitter info
+2. Remote IO without AEC/NS for iOS
+3. AEC/NS for android 
+4. Resolution change notification 
+5. Version number in API
+6. More codec options
+7. Audio delay tuning
+8. Media level statistics: resolution, frame rate and bit rate
+9. ....
+
+
+Version 2.4.1 features:
+The new features in WME engine:
+1.	Audio session management support
+2.	Remote IO AECM(NS) support ( it is enabled by default)
+3.	Battery cost reduce
+4.	CPU cost analysis ,and find out where the CPU is cost, will implement in next sprint.
+5.	Log refine to reduce the CPU occupy.
+6.	MTU size configurable support
+7.	Audio statistic
+	a)	Total sent/received bytes
+	b)	Avg bitrate in whole session life
+	c)	Bitrate every one second
+8.	Video statistic
+	a)	Total Number of IDRs received at receiver side in whole session
+	b)	Total number of IDR request events sent at receiver side in whole session
+	c)	Total number of IDRs sent at sender side in whole session
+	d)	Total number of IDR request events received at sender side in whole session
+9.	Windows/Mac command line tool support
+10.	Solve the iOS 7 SDK compile issue
+11.	The first version SDK document, 
+12.	iOS/Android crashes fix
+13.	FEC configurable support
+14.	MTU size configurable support
+15.	Smooth sender tuning to reduce CPU cost
+16.	Log refine to reduce CPU cost
+17.	TP enhancement for Android
+18.	Network statistics
+	a)	fLossRatio;
+	b)	uJitter;
+	c)	uRoundTripTime;
+	d)	uBytes;
+	e)	uPackets;
+	f)	uBitRate;
+	g)	uRRtimeWindowMs;
+	h)	uFECLevel;
+	i)	uFECRecoveredPackets;
+19.	Fix one of large jitter issue(happen after mute for a long time)
+20.	xcode upgrade support
+21.	Deliver document(SRTP part)
+
+Version 2.4.2 features:
+1. Fix Audio session control
+2. Fix security code for Mac
+3. Add package script for Mac

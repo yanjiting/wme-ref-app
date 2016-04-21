@@ -1,0 +1,633 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3AA39F0419B963CF00CDA645 /* CWmeNetworkIndicatorTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3AA39F0319B963CF00CDA645 /* CWmeNetworkIndicatorTest.cpp */; };
+		992646BF190E005900D3698D /* util.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992646BC190DFFF900D3698D /* util.framework */; };
+		99421E241908F45D0054301F /* wmeclient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99511A191908D0CB0003775D /* wmeclient.framework */; };
+		99511A591908D1470003775D /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 99511A1F1908D0DC0003775D /* libgtest.a */; };
+		99511A5A1908D14A0003775D /* libgmock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 99511A251908D0E00003775D /* libgmock.a */; };
+		99511A741908D2A00003775D /* CWmeAudioVolumeControllerTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99511A5E1908D2A00003775D /* CWmeAudioVolumeControllerTest.cpp */; };
+		99511A751908D2A00003775D /* CWmeCodecEnumeratorTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99511A5F1908D2A00003775D /* CWmeCodecEnumeratorTest.cpp */; };
+		99511A761908D2A00003775D /* CWmeInterfaceTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99511A601908D2A00003775D /* CWmeInterfaceTest.cpp */; };
+		99511A771908D2A00003775D /* CWmelAudioDeviceTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99511A611908D2A00003775D /* CWmelAudioDeviceTest.cpp */; };
+		99511A791908D2A00003775D /* CWmeLocalAudioExternalTrackTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99511A631908D2A00003775D /* CWmeLocalAudioExternalTrackTest.cpp */; };
+		99511A7A1908D2A00003775D /* CWmeLocalAudioTrackTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99511A641908D2A00003775D /* CWmeLocalAudioTrackTest.cpp */; };
+		99511A7C1908D2A00003775D /* CWmeLocalVideoExternalTrackTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99511A661908D2A00003775D /* CWmeLocalVideoExternalTrackTest.cpp */; };
+		99511A7D1908D2A00003775D /* CWmeLocalVideoTrackTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99511A671908D2A00003775D /* CWmeLocalVideoTrackTest.cpp */; };
+		99511A7E1908D2A00003775D /* CWmeMediaDeviceNotifierTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99511A681908D2A00003775D /* CWmeMediaDeviceNotifierTest.cpp */; };
+		99511A7F1908D2A00003775D /* CWmeMediaInfoTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99511A691908D2A00003775D /* CWmeMediaInfoTest.cpp */; };
+		99511A801908D2A00003775D /* CWmeMediaSessionTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99511A6B1908D2A00003775D /* CWmeMediaSessionTest.cpp */; };
+		99511A811908D2A00003775D /* CWmeMediaSyncBoxTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99511A6C1908D2A00003775D /* CWmeMediaSyncBoxTest.cpp */; };
+		99511A821908D2A00003775D /* CWmeRemoteAudioTrackTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99511A6D1908D2A00003775D /* CWmeRemoteAudioTrackTest.cpp */; };
+		99511A841908D2A00003775D /* CWmeRemoteVideoTrackTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99511A6F1908D2A00003775D /* CWmeRemoteVideoTrackTest.cpp */; };
+		99511A851908D2A00003775D /* CWmeVideoCaptureDeviceTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99511A701908D2A00003775D /* CWmeVideoCaptureDeviceTest.cpp */; };
+		99511A861908D2A00003775D /* CWmeVideoCodecEnumeratorTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99511A711908D2A00003775D /* CWmeVideoCodecEnumeratorTest.cpp */; };
+		99511A871908D2A00003775D /* CWmeVideoPreviewTrackTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99511A721908D2A00003775D /* CWmeVideoPreviewTrackTest.cpp */; };
+		99511A881908D2A00003775D /* WhitneyMediaSDK_GTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99511A731908D2A00003775D /* WhitneyMediaSDK_GTest.cpp */; };
+		BDF8310219162FBA004EED97 /* WmeH264PacketizationTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99264765190E666600D3698D /* WmeH264PacketizationTest.cpp */; };
+		DC1D52C01949DF2B00C58A2A /* CWmeScreenTrackTestBaseMac.mm in Sources */ = {isa = PBXBuildFile; fileRef = DC1D52BF1949DF2B00C58A2A /* CWmeScreenTrackTestBaseMac.mm */; };
+		DC1D52C21949E2B400C58A2A /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC1D52C11949E2B400C58A2A /* AppKit.framework */; };
+		DC766F231949B2D5007CEC64 /* CWmeScreenTrackTestBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC766F221949B2D5007CEC64 /* CWmeScreenTrackTestBase.cpp */; };
+		DC766F2C1949B3B3007CEC64 /* wmeutil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC766F291949B389007CEC64 /* wmeutil.framework */; };
+		DCB7306D19406F1C00E7D6D5 /* CWmeScreenShareLocalCompositeTrackTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DCB7306819406F1C00E7D6D5 /* CWmeScreenShareLocalCompositeTrackTest.cpp */; };
+		DCB7306E19406F1C00E7D6D5 /* CWmeScreenShareLocalTrackTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DCB7306919406F1C00E7D6D5 /* CWmeScreenShareLocalTrackTest.cpp */; };
+		DCB7306F19406F1C00E7D6D5 /* CWmeScreenShareRemoteTrackTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DCB7306A19406F1C00E7D6D5 /* CWmeScreenShareRemoteTrackTest.cpp */; };
+		DCB7307019406F1C00E7D6D5 /* CWmeScreenShareSourceTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DCB7306B19406F1C00E7D6D5 /* CWmeScreenShareSourceTest.cpp */; };
+		DCC6CD9619414071008DE2B3 /* CWmeScreenCaptureEngineTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DCC6CD9519414071008DE2B3 /* CWmeScreenCaptureEngineTest.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		992646BB190DFFF900D3698D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 992646B7190DFFF800D3698D /* util.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B10A6ADA1697BD3A00374A3E;
+			remoteInfo = util;
+		};
+		992646BD190E005100D3698D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 992646B7190DFFF800D3698D /* util.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B10A6AD91697BD3A00374A3E;
+			remoteInfo = util;
+		};
+		99511A181908D0CB0003775D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 995119ED1908D0CA0003775D /* wmeclient.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A503F57F1793C91F00FB1105;
+			remoteInfo = wmeclient;
+		};
+		99511A1E1908D0DC0003775D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99511A1A1908D0DC0003775D /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 99B81CF61908B65000614567;
+			remoteInfo = gtest;
+		};
+		99511A241908D0E00003775D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99511A201908D0E00003775D /* gmock.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 995119CE1908B9680003775D;
+			remoteInfo = gmock;
+		};
+		99511A501908D1110003775D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99511A1A1908D0DC0003775D /* gtest.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 99B81CF51908B65000614567;
+			remoteInfo = gtest;
+		};
+		99511A551908D1140003775D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99511A201908D0E00003775D /* gmock.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 995119CD1908B9680003775D;
+			remoteInfo = gmock;
+		};
+		99511A571908D1170003775D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 995119ED1908D0CA0003775D /* wmeclient.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A503F57E1793C91F00FB1105;
+			remoteInfo = wmeclient;
+		};
+		DC766F281949B389007CEC64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC766F241949B389007CEC64 /* wmeutil.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A503F4AB1793C52200FB1105;
+			remoteInfo = wmeutil;
+		};
+		DC766F2A1949B398007CEC64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC766F241949B389007CEC64 /* wmeutil.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A503F4AA1793C52200FB1105;
+			remoteInfo = wmeutil;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		995119DF1908CFA20003775D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3AA39F0319B963CF00CDA645 /* CWmeNetworkIndicatorTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CWmeNetworkIndicatorTest.cpp; sourceTree = "<group>"; };
+		992646B7190DFFF800D3698D /* util.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = util.xcodeproj; path = ../../mediaengine/util/src/util.xcodeproj; sourceTree = "<group>"; };
+		99264765190E666600D3698D /* WmeH264PacketizationTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WmeH264PacketizationTest.cpp; sourceTree = "<group>"; };
+		9942218E190A06230054301F /* wmeclientTest_mac-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wmeclientTest_mac-Prefix.pch"; sourceTree = "<group>"; };
+		995119E11908CFA20003775D /* wmeclientTest_mac */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = wmeclientTest_mac; sourceTree = BUILT_PRODUCTS_DIR; };
+		995119ED1908D0CA0003775D /* wmeclient.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = wmeclient.xcodeproj; path = ../../mediaengine/wme/bld/client/mac/wmeclient.xcodeproj; sourceTree = "<group>"; };
+		99511A1A1908D0DC0003775D /* gtest.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = gtest.xcodeproj; path = ../../vendor/gtest/bld/mac/gtest.xcodeproj; sourceTree = "<group>"; };
+		99511A201908D0E00003775D /* gmock.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = gmock.xcodeproj; path = ../../vendor/gtest/bld/mac/gmock.xcodeproj; sourceTree = "<group>"; };
+		99511A5E1908D2A00003775D /* CWmeAudioVolumeControllerTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CWmeAudioVolumeControllerTest.cpp; sourceTree = "<group>"; };
+		99511A5F1908D2A00003775D /* CWmeCodecEnumeratorTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CWmeCodecEnumeratorTest.cpp; sourceTree = "<group>"; };
+		99511A601908D2A00003775D /* CWmeInterfaceTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CWmeInterfaceTest.cpp; sourceTree = "<group>"; };
+		99511A611908D2A00003775D /* CWmelAudioDeviceTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CWmelAudioDeviceTest.cpp; sourceTree = "<group>"; };
+		99511A631908D2A00003775D /* CWmeLocalAudioExternalTrackTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CWmeLocalAudioExternalTrackTest.cpp; sourceTree = "<group>"; };
+		99511A641908D2A00003775D /* CWmeLocalAudioTrackTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CWmeLocalAudioTrackTest.cpp; sourceTree = "<group>"; };
+		99511A661908D2A00003775D /* CWmeLocalVideoExternalTrackTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CWmeLocalVideoExternalTrackTest.cpp; sourceTree = "<group>"; };
+		99511A671908D2A00003775D /* CWmeLocalVideoTrackTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = CWmeLocalVideoTrackTest.cpp; sourceTree = "<group>"; };
+		99511A681908D2A00003775D /* CWmeMediaDeviceNotifierTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CWmeMediaDeviceNotifierTest.cpp; sourceTree = "<group>"; };
+		99511A691908D2A00003775D /* CWmeMediaInfoTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CWmeMediaInfoTest.cpp; sourceTree = "<group>"; };
+		99511A6B1908D2A00003775D /* CWmeMediaSessionTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CWmeMediaSessionTest.cpp; sourceTree = "<group>"; };
+		99511A6C1908D2A00003775D /* CWmeMediaSyncBoxTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CWmeMediaSyncBoxTest.cpp; sourceTree = "<group>"; };
+		99511A6D1908D2A00003775D /* CWmeRemoteAudioTrackTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CWmeRemoteAudioTrackTest.cpp; sourceTree = "<group>"; };
+		99511A6F1908D2A00003775D /* CWmeRemoteVideoTrackTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CWmeRemoteVideoTrackTest.cpp; sourceTree = "<group>"; };
+		99511A701908D2A00003775D /* CWmeVideoCaptureDeviceTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CWmeVideoCaptureDeviceTest.cpp; sourceTree = "<group>"; };
+		99511A711908D2A00003775D /* CWmeVideoCodecEnumeratorTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CWmeVideoCodecEnumeratorTest.cpp; sourceTree = "<group>"; };
+		99511A721908D2A00003775D /* CWmeVideoPreviewTrackTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CWmeVideoPreviewTrackTest.cpp; sourceTree = "<group>"; };
+		99511A731908D2A00003775D /* WhitneyMediaSDK_GTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WhitneyMediaSDK_GTest.cpp; sourceTree = "<group>"; };
+		BFF957921945860F00E3EBD8 /* DebugCommon.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = DebugCommon.xcconfig; path = ../../mediaengine/bld/mac/Config/DebugCommon.xcconfig; sourceTree = "<group>"; };
+		BFF957931945860F00E3EBD8 /* ReleaseCommon.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = ReleaseCommon.xcconfig; path = ../../mediaengine/bld/mac/Config/ReleaseCommon.xcconfig; sourceTree = "<group>"; };
+		DC1D52BF1949DF2B00C58A2A /* CWmeScreenTrackTestBaseMac.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CWmeScreenTrackTestBaseMac.mm; sourceTree = "<group>"; };
+		DC1D52C11949E2B400C58A2A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		DC766F221949B2D5007CEC64 /* CWmeScreenTrackTestBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CWmeScreenTrackTestBase.cpp; sourceTree = "<group>"; };
+		DC766F241949B389007CEC64 /* wmeutil.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = wmeutil.xcodeproj; path = ../../mediaengine/wmeutil/bld/client/mac/wmeutil.xcodeproj; sourceTree = "<group>"; };
+		DCB7306819406F1C00E7D6D5 /* CWmeScreenShareLocalCompositeTrackTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CWmeScreenShareLocalCompositeTrackTest.cpp; sourceTree = "<group>"; };
+		DCB7306919406F1C00E7D6D5 /* CWmeScreenShareLocalTrackTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CWmeScreenShareLocalTrackTest.cpp; sourceTree = "<group>"; };
+		DCB7306A19406F1C00E7D6D5 /* CWmeScreenShareRemoteTrackTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CWmeScreenShareRemoteTrackTest.cpp; sourceTree = "<group>"; };
+		DCB7306B19406F1C00E7D6D5 /* CWmeScreenShareSourceTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CWmeScreenShareSourceTest.cpp; sourceTree = "<group>"; };
+		DCB7306C19406F1C00E7D6D5 /* CWmeScreenTrackTestBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWmeScreenTrackTestBase.h; sourceTree = "<group>"; };
+		DCC6CD9519414071008DE2B3 /* CWmeScreenCaptureEngineTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CWmeScreenCaptureEngineTest.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		995119DE1908CFA20003775D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC1D52C21949E2B400C58A2A /* AppKit.framework in Frameworks */,
+				DC766F2C1949B3B3007CEC64 /* wmeutil.framework in Frameworks */,
+				99511A591908D1470003775D /* libgtest.a in Frameworks */,
+				99511A5A1908D14A0003775D /* libgmock.a in Frameworks */,
+				992646BF190E005900D3698D /* util.framework in Frameworks */,
+				99421E241908F45D0054301F /* wmeclient.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		992646B8190DFFF800D3698D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				992646BC190DFFF900D3698D /* util.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9942218D190A06150054301F /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				9942218E190A06230054301F /* wmeclientTest_mac-Prefix.pch */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
+		995119D81908CFA20003775D = {
+			isa = PBXGroup;
+			children = (
+				DC1D52C11949E2B400C58A2A /* AppKit.framework */,
+				BFF95791194585F900E3EBD8 /* Config */,
+				99511A5C1908D19A0003775D /* Dependencies */,
+				99511A5D1908D1AB0003775D /* Tests */,
+				9942218D190A06150054301F /* Others */,
+				995119E21908CFA20003775D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		995119E21908CFA20003775D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				995119E11908CFA20003775D /* wmeclientTest_mac */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		995119EE1908D0CA0003775D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99511A191908D0CB0003775D /* wmeclient.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		99511A1B1908D0DC0003775D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99511A1F1908D0DC0003775D /* libgtest.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		99511A211908D0E00003775D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99511A251908D0E00003775D /* libgmock.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		99511A5C1908D19A0003775D /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				DC766F241949B389007CEC64 /* wmeutil.xcodeproj */,
+				99511A201908D0E00003775D /* gmock.xcodeproj */,
+				99511A1A1908D0DC0003775D /* gtest.xcodeproj */,
+				992646B7190DFFF800D3698D /* util.xcodeproj */,
+				995119ED1908D0CA0003775D /* wmeclient.xcodeproj */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		99511A5D1908D1AB0003775D /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				DCB7306719406F0200E7D6D5 /* appshare */,
+				99511A5E1908D2A00003775D /* CWmeAudioVolumeControllerTest.cpp */,
+				99511A5F1908D2A00003775D /* CWmeCodecEnumeratorTest.cpp */,
+				99511A601908D2A00003775D /* CWmeInterfaceTest.cpp */,
+				99511A611908D2A00003775D /* CWmelAudioDeviceTest.cpp */,
+				99511A631908D2A00003775D /* CWmeLocalAudioExternalTrackTest.cpp */,
+				99511A641908D2A00003775D /* CWmeLocalAudioTrackTest.cpp */,
+				99511A661908D2A00003775D /* CWmeLocalVideoExternalTrackTest.cpp */,
+				99511A671908D2A00003775D /* CWmeLocalVideoTrackTest.cpp */,
+				99511A681908D2A00003775D /* CWmeMediaDeviceNotifierTest.cpp */,
+				99511A691908D2A00003775D /* CWmeMediaInfoTest.cpp */,
+				99511A6B1908D2A00003775D /* CWmeMediaSessionTest.cpp */,
+				99511A6C1908D2A00003775D /* CWmeMediaSyncBoxTest.cpp */,
+				3AA39F0319B963CF00CDA645 /* CWmeNetworkIndicatorTest.cpp */,
+				99511A6D1908D2A00003775D /* CWmeRemoteAudioTrackTest.cpp */,
+				99511A6F1908D2A00003775D /* CWmeRemoteVideoTrackTest.cpp */,
+				99511A701908D2A00003775D /* CWmeVideoCaptureDeviceTest.cpp */,
+				99511A711908D2A00003775D /* CWmeVideoCodecEnumeratorTest.cpp */,
+				99511A721908D2A00003775D /* CWmeVideoPreviewTrackTest.cpp */,
+				99511A731908D2A00003775D /* WhitneyMediaSDK_GTest.cpp */,
+				99264765190E666600D3698D /* WmeH264PacketizationTest.cpp */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		BFF95791194585F900E3EBD8 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				BFF957921945860F00E3EBD8 /* DebugCommon.xcconfig */,
+				BFF957931945860F00E3EBD8 /* ReleaseCommon.xcconfig */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		DC766F251949B389007CEC64 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC766F291949B389007CEC64 /* wmeutil.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCB7306719406F0200E7D6D5 /* appshare */ = {
+			isa = PBXGroup;
+			children = (
+				DC1D52BF1949DF2B00C58A2A /* CWmeScreenTrackTestBaseMac.mm */,
+				DC766F221949B2D5007CEC64 /* CWmeScreenTrackTestBase.cpp */,
+				DCC6CD9519414071008DE2B3 /* CWmeScreenCaptureEngineTest.cpp */,
+				DCB7306819406F1C00E7D6D5 /* CWmeScreenShareLocalCompositeTrackTest.cpp */,
+				DCB7306919406F1C00E7D6D5 /* CWmeScreenShareLocalTrackTest.cpp */,
+				DCB7306A19406F1C00E7D6D5 /* CWmeScreenShareRemoteTrackTest.cpp */,
+				DCB7306B19406F1C00E7D6D5 /* CWmeScreenShareSourceTest.cpp */,
+				DCB7306C19406F1C00E7D6D5 /* CWmeScreenTrackTestBase.h */,
+			);
+			name = appshare;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		995119E01908CFA20003775D /* wmeclientTest_mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 995119EA1908CFA20003775D /* Build configuration list for PBXNativeTarget "wmeclientTest_mac" */;
+			buildPhases = (
+				995119DD1908CFA20003775D /* Sources */,
+				995119DE1908CFA20003775D /* Frameworks */,
+				995119DF1908CFA20003775D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC766F2B1949B398007CEC64 /* PBXTargetDependency */,
+				99511A511908D1110003775D /* PBXTargetDependency */,
+				99511A561908D1140003775D /* PBXTargetDependency */,
+				992646BE190E005100D3698D /* PBXTargetDependency */,
+				99511A581908D1170003775D /* PBXTargetDependency */,
+			);
+			name = wmeclientTest_mac;
+			productName = wmeclientTest_mac;
+			productReference = 995119E11908CFA20003775D /* wmeclientTest_mac */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		995119D91908CFA20003775D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = cisco;
+			};
+			buildConfigurationList = 995119DC1908CFA20003775D /* Build configuration list for PBXProject "wmeclientTest_mac" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 995119D81908CFA20003775D;
+			productRefGroup = 995119E21908CFA20003775D /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 99511A211908D0E00003775D /* Products */;
+					ProjectRef = 99511A201908D0E00003775D /* gmock.xcodeproj */;
+				},
+				{
+					ProductGroup = 99511A1B1908D0DC0003775D /* Products */;
+					ProjectRef = 99511A1A1908D0DC0003775D /* gtest.xcodeproj */;
+				},
+				{
+					ProductGroup = 992646B8190DFFF800D3698D /* Products */;
+					ProjectRef = 992646B7190DFFF800D3698D /* util.xcodeproj */;
+				},
+				{
+					ProductGroup = 995119EE1908D0CA0003775D /* Products */;
+					ProjectRef = 995119ED1908D0CA0003775D /* wmeclient.xcodeproj */;
+				},
+				{
+					ProductGroup = DC766F251949B389007CEC64 /* Products */;
+					ProjectRef = DC766F241949B389007CEC64 /* wmeutil.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				995119E01908CFA20003775D /* wmeclientTest_mac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		992646BC190DFFF900D3698D /* util.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = util.framework;
+			remoteRef = 992646BB190DFFF900D3698D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		99511A191908D0CB0003775D /* wmeclient.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = wmeclient.framework;
+			remoteRef = 99511A181908D0CB0003775D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		99511A1F1908D0DC0003775D /* libgtest.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libgtest.a;
+			remoteRef = 99511A1E1908D0DC0003775D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		99511A251908D0E00003775D /* libgmock.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libgmock.a;
+			remoteRef = 99511A241908D0E00003775D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DC766F291949B389007CEC64 /* wmeutil.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = wmeutil.framework;
+			remoteRef = DC766F281949B389007CEC64 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXSourcesBuildPhase section */
+		995119DD1908CFA20003775D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99511A741908D2A00003775D /* CWmeAudioVolumeControllerTest.cpp in Sources */,
+				99511A751908D2A00003775D /* CWmeCodecEnumeratorTest.cpp in Sources */,
+				3AA39F0419B963CF00CDA645 /* CWmeNetworkIndicatorTest.cpp in Sources */,
+				DCB7307019406F1C00E7D6D5 /* CWmeScreenShareSourceTest.cpp in Sources */,
+				99511A761908D2A00003775D /* CWmeInterfaceTest.cpp in Sources */,
+				DCB7306E19406F1C00E7D6D5 /* CWmeScreenShareLocalTrackTest.cpp in Sources */,
+				DCB7306F19406F1C00E7D6D5 /* CWmeScreenShareRemoteTrackTest.cpp in Sources */,
+				99511A771908D2A00003775D /* CWmelAudioDeviceTest.cpp in Sources */,
+				99511A791908D2A00003775D /* CWmeLocalAudioExternalTrackTest.cpp in Sources */,
+				DC1D52C01949DF2B00C58A2A /* CWmeScreenTrackTestBaseMac.mm in Sources */,
+				99511A7A1908D2A00003775D /* CWmeLocalAudioTrackTest.cpp in Sources */,
+				99511A7C1908D2A00003775D /* CWmeLocalVideoExternalTrackTest.cpp in Sources */,
+				99511A7D1908D2A00003775D /* CWmeLocalVideoTrackTest.cpp in Sources */,
+				99511A7E1908D2A00003775D /* CWmeMediaDeviceNotifierTest.cpp in Sources */,
+				DC766F231949B2D5007CEC64 /* CWmeScreenTrackTestBase.cpp in Sources */,
+				99511A7F1908D2A00003775D /* CWmeMediaInfoTest.cpp in Sources */,
+				DCC6CD9619414071008DE2B3 /* CWmeScreenCaptureEngineTest.cpp in Sources */,
+				99511A801908D2A00003775D /* CWmeMediaSessionTest.cpp in Sources */,
+				99511A811908D2A00003775D /* CWmeMediaSyncBoxTest.cpp in Sources */,
+				99511A821908D2A00003775D /* CWmeRemoteAudioTrackTest.cpp in Sources */,
+				99511A841908D2A00003775D /* CWmeRemoteVideoTrackTest.cpp in Sources */,
+				DCB7306D19406F1C00E7D6D5 /* CWmeScreenShareLocalCompositeTrackTest.cpp in Sources */,
+				99511A851908D2A00003775D /* CWmeVideoCaptureDeviceTest.cpp in Sources */,
+				99511A861908D2A00003775D /* CWmeVideoCodecEnumeratorTest.cpp in Sources */,
+				99511A871908D2A00003775D /* CWmeVideoPreviewTrackTest.cpp in Sources */,
+				BDF8310219162FBA004EED97 /* WmeH264PacketizationTest.cpp in Sources */,
+				99511A881908D2A00003775D /* WhitneyMediaSDK_GTest.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		992646BE190E005100D3698D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = util;
+			targetProxy = 992646BD190E005100D3698D /* PBXContainerItemProxy */;
+		};
+		99511A511908D1110003775D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = gtest;
+			targetProxy = 99511A501908D1110003775D /* PBXContainerItemProxy */;
+		};
+		99511A561908D1140003775D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = gmock;
+			targetProxy = 99511A551908D1140003775D /* PBXContainerItemProxy */;
+		};
+		99511A581908D1170003775D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = wmeclient;
+			targetProxy = 99511A571908D1170003775D /* PBXContainerItemProxy */;
+		};
+		DC766F2B1949B398007CEC64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = wmeutil;
+			targetProxy = DC766F2A1949B398007CEC64 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		995119E81908CFA20003775D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFF957921945860F00E3EBD8 /* DebugCommon.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OBJROOT = "$(SRCROOT)/../objs/mac";
+				SDKROOT = macosx;
+				SYMROOT = "$(SRCROOT)/../bin/mac";
+			};
+			name = Debug;
+		};
+		995119E91908CFA20003775D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFF957931945860F00E3EBD8 /* ReleaseCommon.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OBJROOT = "$(SRCROOT)/../objs/mac";
+				SDKROOT = macosx;
+				SYMROOT = "$(SRCROOT)/../bin/mac";
+			};
+			name = Release;
+		};
+		995119EB1908CFA20003775D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "wmeclientTest_mac-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../api\"",
+					"\"$(SRCROOT)/../../mediaengine/dolphin/include\"",
+					"\"$(SRCROOT)/../../mediaengine/shark/include\"",
+					"\"$(SRCROOT)/../../mediaengine/wme/src\"/**",
+					"\"$(SRCROOT)/../../vendor/gtest/gtest-1.7.0/include\"",
+					"\"$(SRCROOT)/../../vendor/gtest/gtest-1.7.0\"",
+					"\"$(SRCROOT)/../../vendor/gtest/gmock-1.7.0/include\"",
+					"\"$(SRCROOT)/../../vendor/gtest/gmock-1.7.0\"",
+					"\"$(SRCROOT)/../../mediaengine/util/include\"",
+					"\"$(SRCROOT)/../../mediaengine/util/include/macos\"",
+					"\"$(SRCROOT)/../../mediaengine/util/include/client\"",
+					"\"$(SRCROOT)/../../mediaengine/transmission/include\"",
+					"\"$(SRCROOT)/../../mediaengine/dolphin/src/AudioEngine/h\"",
+					"\"$(SRCROOT)/../../mediaengine/appshare/include\"",
+					"\"$(SRCROOT)/../../mediaengine/shark/src/h\"",
+					"\"$(SRCROOT)/../../mediaengine/shark/src/common\"",
+				);
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../../../../distribution/mac/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		995119EC1908CFA20003775D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "wmeclientTest_mac-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../api\"",
+					"\"$(SRCROOT)/../../mediaengine/dolphin/include\"",
+					"\"$(SRCROOT)/../../mediaengine/shark/include\"",
+					"\"$(SRCROOT)/../../mediaengine/wme/src\"/**",
+					"\"$(SRCROOT)/../../vendor/gtest/gtest-1.7.0/include\"",
+					"\"$(SRCROOT)/../../vendor/gtest/gtest-1.7.0\"",
+					"\"$(SRCROOT)/../../vendor/gtest/gmock-1.7.0/include\"",
+					"\"$(SRCROOT)/../../vendor/gtest/gmock-1.7.0\"",
+					"\"$(SRCROOT)/../../mediaengine/util/include\"",
+					"\"$(SRCROOT)/../../mediaengine/util/include/macos\"",
+					"\"$(SRCROOT)/../../mediaengine/util/include/client\"",
+					"\"$(SRCROOT)/../../mediaengine/transmission/include\"",
+					"\"$(SRCROOT)/../../mediaengine/dolphin/src/AudioEngine/h\"",
+					"\"$(SRCROOT)/../../mediaengine/appshare/include\"",
+					"\"$(SRCROOT)/../../mediaengine/shark/src/h\"",
+					"\"$(SRCROOT)/../../mediaengine/shark/src/common\"",
+				);
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../../../../distribution/mac/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		995119DC1908CFA20003775D /* Build configuration list for PBXProject "wmeclientTest_mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				995119E81908CFA20003775D /* Debug */,
+				995119E91908CFA20003775D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		995119EA1908CFA20003775D /* Build configuration list for PBXNativeTarget "wmeclientTest_mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				995119EB1908CFA20003775D /* Debug */,
+				995119EC1908CFA20003775D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 995119D91908CFA20003775D /* Project object */;
+}

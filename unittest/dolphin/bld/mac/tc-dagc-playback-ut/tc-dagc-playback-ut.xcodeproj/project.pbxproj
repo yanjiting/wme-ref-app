@@ -1,0 +1,287 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6F1E70461C5A386800741F4C /* tcdagc_playbackTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F1E70451C5A386800741F4C /* tcdagc_playbackTest.cpp */; };
+		6F1E704B1C5A5CD300741F4C /* libtcaudio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FA0267E1AF23261008CB4DC /* libtcaudio.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6FA0267D1AF23261008CB4DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D42F1DC31AF1245A00082957 /* tcaudio.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FA8DB390196CC74300A3A855;
+			remoteInfo = tcaudio;
+		};
+		6FA026831AF23318008CB4DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D42F1DC31AF1245A00082957 /* tcaudio.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = FA8DB38F196CC74300A3A855;
+			remoteInfo = tcaudio;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6F1E70451C5A386800741F4C /* tcdagc_playbackTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tcdagc_playbackTest.cpp; path = "tc-dagc-playback-ut/tcdagc_playbackTest.cpp"; sourceTree = SOURCE_ROOT; };
+		6F6248421AEA6B0200DBBACF /* tc-dagc-playback-ut */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "tc-dagc-playback-ut"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D42F1DC31AF1245A00082957 /* tcaudio.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = tcaudio.xcodeproj; path = ../../../../../mediaengine/dolphin/src/AudioEngine/src/tcaudio/tcaudio.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6F62483F1AEA6B0200DBBACF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F1E704B1C5A5CD300741F4C /* libtcaudio.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6F6248391AEA6B0200DBBACF = {
+			isa = PBXGroup;
+			children = (
+				6F6248441AEA6B0200DBBACF /* tc-dagc-playback-ut */,
+				6F6248431AEA6B0200DBBACF /* Products */,
+				D42F1DC31AF1245A00082957 /* tcaudio.xcodeproj */,
+			);
+			sourceTree = "<group>";
+		};
+		6F6248431AEA6B0200DBBACF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6F6248421AEA6B0200DBBACF /* tc-dagc-playback-ut */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6F6248441AEA6B0200DBBACF /* tc-dagc-playback-ut */ = {
+			isa = PBXGroup;
+			children = (
+				6F1E70451C5A386800741F4C /* tcdagc_playbackTest.cpp */,
+			);
+			path = "tc-dagc-playback-ut";
+			sourceTree = "<group>";
+		};
+		6FA026771AF23261008CB4DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6FA0267E1AF23261008CB4DC /* libtcaudio.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6F6248411AEA6B0200DBBACF /* tc-dagc-playback-ut */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F6248491AEA6B0200DBBACF /* Build configuration list for PBXNativeTarget "tc-dagc-playback-ut" */;
+			buildPhases = (
+				6F62483E1AEA6B0200DBBACF /* Sources */,
+				6F62483F1AEA6B0200DBBACF /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6FA026841AF23318008CB4DC /* PBXTargetDependency */,
+			);
+			name = "tc-dagc-playback-ut";
+			productName = "tc-dagc-playback-ut";
+			productReference = 6F6248421AEA6B0200DBBACF /* tc-dagc-playback-ut */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6F62483A1AEA6B0200DBBACF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+			};
+			buildConfigurationList = 6F62483D1AEA6B0200DBBACF /* Build configuration list for PBXProject "tc-dagc-playback-ut" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6F6248391AEA6B0200DBBACF;
+			productRefGroup = 6F6248431AEA6B0200DBBACF /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 6FA026771AF23261008CB4DC /* Products */;
+					ProjectRef = D42F1DC31AF1245A00082957 /* tcaudio.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				6F6248411AEA6B0200DBBACF /* tc-dagc-playback-ut */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		6FA0267E1AF23261008CB4DC /* libtcaudio.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libtcaudio.a;
+			remoteRef = 6FA0267D1AF23261008CB4DC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6F62483E1AEA6B0200DBBACF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F1E70461C5A386800741F4C /* tcdagc_playbackTest.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6FA026841AF23318008CB4DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = tcaudio;
+			targetProxy = 6FA026831AF23318008CB4DC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6F6248471AEA6B0200DBBACF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		6F6248481AEA6B0200DBBACF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		6F62484A1AEA6B0200DBBACF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../../../vendor/tc/functional/audio/local/out/cmod/lslimiter/api",
+					"$(SRCROOT)/../../../../../vendor/tc/functional/audio/local/out/cmod/loudmax/api",
+					"$(SRCROOT)/../../../../../mediaengine/dolphin/src/cochelea/include",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6F62484B1AEA6B0200DBBACF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../../../vendor/tc/functional/audio/local/out/cmod/lslimiter/api",
+					"$(SRCROOT)/../../../../../vendor/tc/functional/audio/local/out/cmod/loudmax/api",
+					"$(SRCROOT)/../../../../../mediaengine/dolphin/src/cochelea/include",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6F62483D1AEA6B0200DBBACF /* Build configuration list for PBXProject "tc-dagc-playback-ut" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F6248471AEA6B0200DBBACF /* Debug */,
+				6F6248481AEA6B0200DBBACF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F6248491AEA6B0200DBBACF /* Build configuration list for PBXNativeTarget "tc-dagc-playback-ut" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F62484A1AEA6B0200DBBACF /* Debug */,
+				6F62484B1AEA6B0200DBBACF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6F62483A1AEA6B0200DBBACF /* Project object */;
+}

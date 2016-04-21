@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="29" failures="0" disabled="0" errors="0" timestamp="2016-03-11T16:36:16" time="0.423" name="AllTests">
+  <testsuite name="CShareFrameTest" tests="11" failures="0" disabled="0" errors="0" time="0.02">
+    <testcase name="SetExternalBuf" status="run" time="0.003" classname="CShareFrameTest" />
+    <testcase name="GetFrameData" status="run" time="0" classname="CShareFrameTest" />
+    <testcase name="GetFrameLineData" status="run" time="0" classname="CShareFrameTest" />
+    <testcase name="GetFrameDataLen" status="run" time="0.001" classname="CShareFrameTest" />
+    <testcase name="GetFrameLineBytes" status="run" time="0" classname="CShareFrameTest" />
+    <testcase name="SetFrameLineBytes" status="run" time="0" classname="CShareFrameTest" />
+    <testcase name="SetFrameDataFormat_GetFrameDataFormat" status="run" time="0" classname="CShareFrameTest" />
+    <testcase name="SetFrameSize_GetFrameSize" status="run" time="0" classname="CShareFrameTest" />
+    <testcase name="WriteFrameData_ReadFrameData" status="run" time="0.016" classname="CShareFrameTest" />
+    <testcase name="WriteFrameLineData_ReadFrameLineData" status="run" time="0" classname="CShareFrameTest" />
+    <testcase name="WriteFrameAreaData_ReadFrameAreaData" status="run" time="0" classname="CShareFrameTest" />
+  </testsuite>
+  <testsuite name="CShareCapturerContentTest" tests="1" failures="0" disabled="0" errors="0" time="0.386">
+    <testcase name="Start" status="run" time="0.386" classname="CShareCapturerContentTest" />
+  </testsuite>
+  <testsuite name="share_capture_engine" tests="1" failures="0" disabled="0" errors="0" time="0.008">
+    <testcase name="CreateShareCaptureEngine_DestroyShareCaptureEngine" status="run" time="0.007" classname="share_capture_engine" />
+  </testsuite>
+  <testsuite name="CShareCaptureEngineTest" tests="11" failures="0" disabled="0" errors="0" time="0.009">
+    <testcase name="Start" status="run" time="0.003" classname="CShareCaptureEngineTest" />
+    <testcase name="Stop" status="run" time="0.001" classname="CShareCaptureEngineTest" />
+    <testcase name="Pause" status="run" time="0.001" classname="CShareCaptureEngineTest" />
+    <testcase name="Resume" status="run" time="0.001" classname="CShareCaptureEngineTest" />
+    <testcase name="SetSink" status="run" time="0" classname="CShareCaptureEngineTest" />
+    <testcase name="SetExternalIShareCapturer" status="run" time="0.001" classname="CShareCaptureEngineTest" />
+    <testcase name="SetExternalISharePointing" status="run" time="0" classname="CShareCaptureEngineTest" />
+    <testcase name="AddCaptureShareSource" status="run" time="0" classname="CShareCaptureEngineTest" />
+    <testcase name="RemoveCaptureShareSource" status="run" time="0.001" classname="CShareCaptureEngineTest" />
+    <testcase name="GetCaptureShareSourceCount" status="run" time="0" classname="CShareCaptureEngineTest" />
+    <testcase name="GetCaptureShareSource" status="run" time="0" classname="CShareCaptureEngineTest" />
+  </testsuite>
+  <testsuite name="WbxGraphicUtil" tests="4" failures="0" disabled="0" errors="0" time="0">
+    <testcase name="WbxAlphaBlend_FAIL_CASES" status="run" time="0" classname="WbxGraphicUtil" />
+    <testcase name="WbxAlphaBlend_SUCESS_COMMON_COPY" status="run" time="0" classname="WbxGraphicUtil" />
+    <testcase name="WbxAlphaBlend_SUCESS_COMMON_TRANSPARENT" status="run" time="0" classname="WbxGraphicUtil" />
+    <testcase name="WbxAlphaBlend_SUCESS_COMMON_BLEND" status="run" time="0" classname="WbxGraphicUtil" />
+  </testsuite>
+  <testsuite name="WbxConfigUtil" tests="1" failures="0" disabled="0" errors="0" time="0">
+    <testcase name="ReadConfig" status="run" time="0" classname="WbxConfigUtil" />
+  </testsuite>
+</testsuites>

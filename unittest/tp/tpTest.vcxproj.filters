@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="websocket">
+      <UniqueIdentifier>{ad51cddb-a91c-4764-89e1-e67306fb1570}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mock">
+      <UniqueIdentifier>{602fee09-7a66-4f9a-ac49-34661ee8e22f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="REST">
+      <UniqueIdentifier>{ed9bb195-1ece-4199-b383-f97cba5bca5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BOSH">
+      <UniqueIdentifier>{dada68ee-3b3e-455b-8655-482e16b0093d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="connection">
+      <UniqueIdentifier>{54433177-ac86-4f7d-9a42-65d70e0c3ad1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Reactor">
+      <UniqueIdentifier>{aeaabfa3-6f47-42c7-897e-95fbbac60059}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\tp\src\CmRestHandle.cpp">
+      <Filter>REST</Filter>
+    </ClCompile>
+    <ClCompile Include="CmConnectionInterfaceTest.cpp">
+      <Filter>connection</Filter>
+    </ClCompile>
+    <ClCompile Include="CmReactorBaseTest.cpp">
+      <Filter>Reactor</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Mock_CmConnectionInterface.h">
+      <Filter>mock</Filter>
+    </ClInclude>
+    <ClInclude Include="Mock_CmHttpInterface.h">
+      <Filter>mock</Filter>
+    </ClInclude>
+    <ClInclude Include="Mock_CmOnePortImpl.h">
+      <Filter>mock</Filter>
+    </ClInclude>
+    <ClInclude Include="Mock_CmOnePortInterface.h">
+      <Filter>mock</Filter>
+    </ClInclude>
+    <ClInclude Include="Mock_IIceEngineSink.h">
+      <Filter>mock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediaengine\tp\src\CmRestHandle.h">
+      <Filter>REST</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,38 @@
+﻿<Window x:Class="wme4netTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
+        xmlns:local="clr-namespace:wme4netTest"
+        Title="MainWindow" Height="350" Width="525" SizeChanged="Window_SizeChanged">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" Grid.Row="0">
+            <Button Content="Loopback" Click="Button_Click"/>
+            <Button Content="Screens" Click="Button_Click_1"/>
+            <Button Content="Devices" Click="Button_Click_2"/>
+        </StackPanel>
+        <Grid Grid.Row="1">
+            <!--
+            <local:NoFlickerWindowsFormsHost>
+                <wf:PictureBox x:Name="ShareViewPictureBox"></wf:PictureBox>
+            </local:NoFlickerWindowsFormsHost>
+            -->
+            <Image x:Name="ShareViewImage"/>
+            <HeaderedItemsControl Header="Framerate" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="55">
+                <Grid>
+                    <Rectangle Fill="#55FF0000" Height="60">
+                    </Rectangle>
+                    <TextBlock Text="30"/>
+                </Grid>
+            </HeaderedItemsControl>
+            <Image x:Name="LocalVideoImage" HorizontalAlignment="Left" Height="45" Margin="430,0,0,0" VerticalAlignment="Top" Width="80"/>
+            <Image x:Name="RemoteVideoImage1" HorizontalAlignment="Left" Height="45" Margin="430,50,0,0" VerticalAlignment="Top" Width="80"/>
+            <Image x:Name="RemoteVideoImage2" HorizontalAlignment="Left" Height="45" Margin="430,100,0,0" VerticalAlignment="Top" Width="80"/>
+            <Image x:Name="RemoteVideoImage3" HorizontalAlignment="Left" Height="45" Margin="430,150,0,0" VerticalAlignment="Top" Width="80"/>
+            <Image x:Name="RemoteVideoImage4" HorizontalAlignment="Left" Height="45" Margin="430,200,0,0" VerticalAlignment="Top" Width="80"/>
+        </Grid>
+    </Grid>
+</Window>

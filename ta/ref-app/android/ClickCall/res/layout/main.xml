@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:controls="http://schemas.android.com/apk/res/com.wx2.clickcall"
+              android:gravity="center"
+              android:background="#FFFFFFFF"
+              android:layout_width="match_parent"
+              android:orientation="vertical"
+              android:layout_height="match_parent">
+    <LinearLayout android:id="@+id/buttons"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:gravity="center"
+                  android:layout_alignParentBottom="true">
+            <Button
+                android:id="@+id/StartButtonJava"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/active_button"
+                android:layout_margin="15dp"
+                android:padding="15dp"
+                android:text="@string/start_btn" >
+                <requestFocus />
+            </Button>
+    </LinearLayout>
+    <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/buttons">
+        <LinearLayout android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:layout_gravity="center">
+
+	        <ImageView
+	            android:id="@+id/imgLogo"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginBottom="20dp"
+	            android:layout_gravity="center"
+	            android:contentDescription="@string/app_desc"
+	            android:src="@drawable/clickcall" />
+
+		    <TableLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:verticalSpacing="8dp"
+		            android:paddingLeft="10dp"
+		            android:paddingRight="10dp"
+		            android:stretchColumns="*" android:soundEffectsEnabled="false">
+		       <com.wx2.control.EditControl
+		                android:visibility="visible"
+		                android:id="@+id/linus_row"
+		                controls:values="10.224.166.110:5000;10.224.203.73:5000"
+		                controls:label="Linus:"
+		                controls:text="10.224.166.110:5000" />
+		       <com.wx2.control.EditControl
+		                android:visibility="invisible"
+		                android:id="@+id/ws_row"
+		                controls:values="10.224.166.110:8080/?r=1217;"
+		                controls:label="WS:"
+		                controls:text="1217" />
+            </TableLayout>
+		    <TableLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:verticalSpacing="8dp"
+		            android:paddingLeft="10dp"
+		            android:paddingRight="10dp"
+		            android:stretchColumns="*" android:soundEffectsEnabled="false">
+		        <com.wx2.control.ToggleControl
+		            android:id="@+id/isCalliope"
+		            controls:label="Calliope:"
+		            controls:checked="true"/>
+		        <com.wx2.control.ToggleControl
+		            android:id="@+id/isLoopback"
+		            controls:label="Loop:"
+		            controls:checked="true"/>
+		        <com.wx2.control.ToggleControl
+		            android:id="@+id/enableAS"
+		            controls:label="Enable AS:"
+		            controls:checked="false"/>
+                <com.wx2.control.ToggleControl
+                    android:id="@+id/enableHWScreenVideo"
+                    controls:label="Enable Screen share HW Codec:"
+                    controls:checked="false"/>
+                <com.wx2.control.ToggleControl
+                android:id="@+id/enableASSharer"
+                controls:label="Is sharer:"
+                controls:checked="false"/>
+                <com.wx2.control.ToggleControl
+                    android:id="@+id/enableSRTP"
+                    controls:label="Enable SRTP:"
+                    controls:checked="false"/>
+                <com.wx2.control.ToggleControl
+                    android:id="@+id/enableMulti"
+                    controls:label="Enable Multistream:"
+                    controls:checked="true"/>
+		        <com.wx2.control.ToggleControl
+		            android:id="@+id/enableICE"
+		            controls:label="Enable ICE:"
+		            controls:checked="true"/>
+                <com.wx2.control.ToggleControl
+                    android:id="@+id/enableHWVideo"
+                    controls:label="Enable HW Codec:"
+                    controls:checked="false"/>
+                <com.wx2.control.ToggleControl
+                    android:id="@+id/enableFilmStrip"
+                    controls:label="4 active video:"
+                    controls:checked="false"/>
+                <com.wx2.control.ToggleControl
+                    android:id="@+id/enableQoS"
+                    controls:label="Enable QoS:"
+                    controls:checked="true"/>
+                <com.wx2.control.ToggleControl
+                    android:id="@+id/enableCVO"
+                    controls:label="Enable CVO:"
+                    controls:checked="false"/>
+                <com.wx2.control.ToggleControl
+                    android:id="@+id/enableDtlsSRTP"
+                    controls:label="Enable DtlsSRTP:"
+                    controls:checked="false"/>
+                <com.wx2.control.ToggleControl
+                    android:id="@+id/enableAudio"
+                    controls:label="Enable Audio:"
+                    controls:checked="true"/>
+                <com.wx2.control.ToggleControl
+                    android:id="@+id/enableVideo"
+                    controls:label="Enable Video:"
+                    controls:checked="true"/>
+                <com.wx2.control.ToggleControl
+                    android:id="@+id/enableAaec"
+                    controls:label="Enable A-AEC:"
+                    controls:checked="false"/>
+		     </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+    
+</RelativeLayout>
+

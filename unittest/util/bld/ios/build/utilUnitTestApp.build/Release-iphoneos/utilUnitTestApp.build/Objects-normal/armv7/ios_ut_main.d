@@ -1,0 +1,22 @@
+dependencies: \
+  /Users/zzchu/Desktop/git-ws/wme_git/wme/unittest/util/ios_ut_main.cpp \
+  /Users/zzchu/Desktop/git-ws/wme_git/wme/unittest/util/ios_ut_main.h \
+  /Users/zzchu/Desktop/git-ws/wme_git/wme/unittest/util/bld/ios/../../../../vendor/gtest/gtest-1.7.0/include/gtest/gtest.h \
+  /Users/zzchu/Desktop/git-ws/wme_git/wme/unittest/util/bld/ios/../../../../vendor/gtest/gtest-1.7.0/include/gtest/internal/gtest-internal.h \
+  /Users/zzchu/Desktop/git-ws/wme_git/wme/unittest/util/bld/ios/../../../../vendor/gtest/gtest-1.7.0/include/gtest/internal/gtest-port.h \
+  /Users/zzchu/Desktop/git-ws/wme_git/wme/unittest/util/bld/ios/../../../../vendor/gtest/gtest-1.7.0/include/gtest/internal/gtest-tuple.h \
+  /Users/zzchu/Desktop/git-ws/wme_git/wme/unittest/util/bld/ios/../../../../vendor/gtest/gtest-1.7.0/include/gtest/gtest-message.h \
+  /Users/zzchu/Desktop/git-ws/wme_git/wme/unittest/util/bld/ios/../../../../vendor/gtest/gtest-1.7.0/include/gtest/internal/gtest-string.h \
+  /Users/zzchu/Desktop/git-ws/wme_git/wme/unittest/util/bld/ios/../../../../vendor/gtest/gtest-1.7.0/include/gtest/internal/gtest-filepath.h \
+  /Users/zzchu/Desktop/git-ws/wme_git/wme/unittest/util/bld/ios/../../../../vendor/gtest/gtest-1.7.0/include/gtest/internal/gtest-type-util.h \
+  /Users/zzchu/Desktop/git-ws/wme_git/wme/unittest/util/bld/ios/../../../../vendor/gtest/gtest-1.7.0/include/gtest/gtest-death-test.h \
+  /Users/zzchu/Desktop/git-ws/wme_git/wme/unittest/util/bld/ios/../../../../vendor/gtest/gtest-1.7.0/include/gtest/internal/gtest-death-test-internal.h \
+  /Users/zzchu/Desktop/git-ws/wme_git/wme/unittest/util/bld/ios/../../../../vendor/gtest/gtest-1.7.0/include/gtest/gtest-param-test.h \
+  /Users/zzchu/Desktop/git-ws/wme_git/wme/unittest/util/bld/ios/../../../../vendor/gtest/gtest-1.7.0/include/gtest/internal/gtest-param-util.h \
+  /Users/zzchu/Desktop/git-ws/wme_git/wme/unittest/util/bld/ios/../../../../vendor/gtest/gtest-1.7.0/include/gtest/internal/gtest-linked_ptr.h \
+  /Users/zzchu/Desktop/git-ws/wme_git/wme/unittest/util/bld/ios/../../../../vendor/gtest/gtest-1.7.0/include/gtest/gtest-printers.h \
+  /Users/zzchu/Desktop/git-ws/wme_git/wme/unittest/util/bld/ios/../../../../vendor/gtest/gtest-1.7.0/include/gtest/internal/gtest-param-util-generated.h \
+  /Users/zzchu/Desktop/git-ws/wme_git/wme/unittest/util/bld/ios/../../../../vendor/gtest/gtest-1.7.0/include/gtest/gtest_prod.h \
+  /Users/zzchu/Desktop/git-ws/wme_git/wme/unittest/util/bld/ios/../../../../vendor/gtest/gtest-1.7.0/include/gtest/gtest-test-part.h \
+  /Users/zzchu/Desktop/git-ws/wme_git/wme/unittest/util/bld/ios/../../../../vendor/gtest/gtest-1.7.0/include/gtest/gtest-typed-test.h \
+  /Users/zzchu/Desktop/git-ws/wme_git/wme/unittest/util/bld/ios/../../../../vendor/gtest/gtest-1.7.0/include/gtest/gtest_pred_impl.h

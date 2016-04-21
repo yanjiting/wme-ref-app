@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tga;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="wbxaudioengine">
+      <UniqueIdentifier>{18a6ab5b-acfe-4f32-a7a0-4892da315b86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="wbxaudioengine\common">
+      <UniqueIdentifier>{28c8289f-11e7-4046-8e02-07a2d82c0c32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="wbxaudioengine\headerfiles">
+      <UniqueIdentifier>{11037297-70ef-4981-9afa-d30aea1193e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="wbxaudioengine\AQE">
+      <UniqueIdentifier>{90f506d3-f11d-4380-a31f-3c0f6d961683}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="wbxaudioengine\device">
+      <UniqueIdentifier>{72bf66ae-b02e-45e9-9850-f12e59da3237}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="wbxaudioengine\playback">
+      <UniqueIdentifier>{5ea40734-6556-4f61-9b9b-9a623ec3afb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="wbxaudioengine\playback\h">
+      <UniqueIdentifier>{7b8d137c-03e1-4c78-bdec-dcc726eba839}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="wbxaudioengine\playback\src">
+      <UniqueIdentifier>{e63e6ba9-43d5-4563-813d-525616d35247}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="wbxaudioengine\capture">
+      <UniqueIdentifier>{0d207b2c-d22c-4dc6-bd19-eec773104b75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="wbxaudioengine\capture\src">
+      <UniqueIdentifier>{790b0bed-202a-4f6f-8791-2ae2f91c0ea4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="wbxaudioengine\capture\h">
+      <UniqueIdentifier>{217ff00b-468d-4a11-bc06-62648cf690ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="wbxaudioengine\framework">
+      <UniqueIdentifier>{d8879539-7309-4aed-8258-f62a2d2d6047}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="wbxaudioengine\datadump">
+      <UniqueIdentifier>{0910ae15-d77d-44e6-9253-5cce3fe46f2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="wbxaudioengine\json">
+      <UniqueIdentifier>{324a8b4a-5034-49d1-972d-62a8df6a126d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="wmeutil">
+      <UniqueIdentifier>{ca1118e1-3474-432f-bb62-a5340fe6eb6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="wmeutil\h">
+      <UniqueIdentifier>{cc9f833d-122a-4f6c-8014-3bc4d09f5d6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="wmeutil\src">
+      <UniqueIdentifier>{5753e548-5474-4d99-8867-9033430bfe97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UT">
+      <UniqueIdentifier>{4f478a64-7633-46bc-9874-cdffc73b123b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\common\WbxAeJitterBuffer.cpp">
+      <Filter>wbxaudioengine\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\common\WbxAeJitterPolicy.cpp">
+      <Filter>wbxaudioengine\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\common\WbxAeMediaBlock.cpp">
+      <Filter>wbxaudioengine\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\common\WbxAeMediaBlockList.cpp">
+      <Filter>wbxaudioengine\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\aqe\WbxAeAEC_Module.cpp">
+      <Filter>wbxaudioengine\AQE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\aqe\WbxAeAnalogAGCDecide_Module.cpp">
+      <Filter>wbxaudioengine\AQE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\aqe\WbxAeAQE.cpp">
+      <Filter>wbxaudioengine\AQE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\aqe\WbxAeBaseModule.cpp">
+      <Filter>wbxaudioengine\AQE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\aqe\WbxAeBuffer_Module.cpp">
+      <Filter>wbxaudioengine\AQE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\aqe\WbxAeDigitalAGC_Module.cpp">
+      <Filter>wbxaudioengine\AQE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\aqe\WbxAeNR_Module.cpp">
+      <Filter>wbxaudioengine\AQE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\aqe\WbxAePrepareAECData_Module.cpp">
+      <Filter>wbxaudioengine\AQE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\aqe\WbxAeQI.cpp">
+      <Filter>wbxaudioengine\AQE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\aqe\WbxAeSignalAnalysis_Module.cpp">
+      <Filter>wbxaudioengine\AQE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\deviceenumerator\WbxAeCreateDeviceEnum.cpp">
+      <Filter>wbxaudioengine\device</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\deviceenumerator\wp8\WbxAEDeviceEmu_winp8.cpp">
+      <Filter>wbxaudioengine\device</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\playback\WbxAeAudioPlayback.cpp">
+      <Filter>wbxaudioengine\playback\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\playback\WbxAePlaybackPlatformFactory.cpp">
+      <Filter>wbxaudioengine\playback\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\playback\wp8\WbxAePlaybackPlatformWP80.cpp">
+      <Filter>wbxaudioengine\playback\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\capture\WbxAeAudioCapture.cpp">
+      <Filter>wbxaudioengine\capture\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\capture\WbxAeCapturePlatformFactory.cpp">
+      <Filter>wbxaudioengine\capture\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\capture\wp8\WbxAeCapturePlatformWP80.cpp">
+      <Filter>wbxaudioengine\capture\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\framework\AudioDefaultSettings.cpp">
+      <Filter>wbxaudioengine\framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\framework\WbxAeAudioChannel.cpp">
+      <Filter>wbxaudioengine\framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\framework\WbxAeEncoderThread.cpp">
+      <Filter>wbxaudioengine\framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\framework\WbxAeVoiceMixer.cpp">
+      <Filter>wbxaudioengine\framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\framework\WbxAudioEngineImpl.cpp">
+      <Filter>wbxaudioengine\framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\datadump\WBXAeWavAdaptor.cpp">
+      <Filter>wbxaudioengine\datadump</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\datadump\WbxDataDump.cpp">
+      <Filter>wbxaudioengine\datadump</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\vendor\SuperEasyJSON\json.cpp">
+      <Filter>wbxaudioengine\json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\main.cpp">
+      <Filter>UT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\CWbxMemPoolTest.cpp">
+      <Filter>UT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\mediaengine\shark\src\common\WP8_thread\ThreadEmulation.cpp">
+      <Filter>wmeutil\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\mediaengine\shark\src\common\WseDebug.cpp">
+      <Filter>wmeutil\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\mediaengine\shark\src\common\WseHeapMem.cpp">
+      <Filter>wmeutil\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\mediaengine\shark\src\common\WseTaskThread.cpp">
+      <Filter>wmeutil\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\mediaengine\shark\src\common\WseTimer.cpp">
+      <Filter>wmeutil\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\mediaengine\shark\src\common\WseUtil.cpp">
+      <Filter>wmeutil\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\mediaengine\shark\src\common\WseWorkPath.cpp">
+      <Filter>wmeutil\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\framework\CMixerDestroyEventTest.cpp">
+      <Filter>UT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\framework\CMixerStartEventTest.cpp">
+      <Filter>UT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\framework\CMixerStopEventTest.cpp">
+      <Filter>UT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\framework\CWBXAeWavAdaptorTest.cpp">
+      <Filter>UT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\CwbxAeMediaBlockListTest.cpp">
+      <Filter>UT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\CWBXAEMediaBlockTest.cpp">
+      <Filter>UT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\CWbxAJBPolicyTest.cpp">
+      <Filter>UT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jitterbuffer\CWbxAeMediaBlockListTest.cpp">
+      <Filter>UT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jitterbuffer\CWbxAeMediaBlockTest.cpp">
+      <Filter>UT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\deviceenumerator\wp8\WbxAEVolumeControl_WP8.cpp">
+      <Filter>wbxaudioengine\device</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\framework\CWbxAeAudioChannelTest.cpp">
+      <Filter>UT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\aqe\Modules_UnitTest.cpp">
+      <Filter>UT</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\common\WbxAeJitterBuffer.h">
+      <Filter>wbxaudioengine\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\common\WbxAeJitterPolicy.h">
+      <Filter>wbxaudioengine\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\common\WbxAeMediaBlock.h">
+      <Filter>wbxaudioengine\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\common\WbxAeMediaBlockList.h">
+      <Filter>wbxaudioengine\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\common\WbxAeTrace.h">
+      <Filter>wbxaudioengine\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\include\IWbxAeBase.h">
+      <Filter>wbxaudioengine\headerfiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\include\WbxAeAJBInterface.h">
+      <Filter>wbxaudioengine\headerfiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\include\WbxAeAJBPolicy.h">
+      <Filter>wbxaudioengine\headerfiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\include\WbxAeCodecError.h">
+      <Filter>wbxaudioengine\headerfiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\include\WbxAeCodecInterface.h">
+      <Filter>wbxaudioengine\headerfiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\include\WbxAeDefine.h">
+      <Filter>wbxaudioengine\headerfiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\include\WbxAeFecRecoverDef.h">
+      <Filter>wbxaudioengine\headerfiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\aqe\WbxAeAEC_Module.h">
+      <Filter>wbxaudioengine\AQE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\aqe\WbxAeAnalogAGCDecide_Module.h">
+      <Filter>wbxaudioengine\AQE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\aqe\WbxAeAQE_define_inner.h">
+      <Filter>wbxaudioengine\AQE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\aqe\WbxAeBaseModule.h">
+      <Filter>wbxaudioengine\AQE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\aqe\WbxAeBuffer_Module.h">
+      <Filter>wbxaudioengine\AQE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\aqe\WbxAeDigitalAGC_Module.h">
+      <Filter>wbxaudioengine\AQE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\aqe\WbxAeNR_Module.h">
+      <Filter>wbxaudioengine\AQE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\aqe\WbxAeParameterClass.h">
+      <Filter>wbxaudioengine\AQE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\aqe\WbxAePrepareAECData_Module.h">
+      <Filter>wbxaudioengine\AQE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\aqe\WbxAeQI.h">
+      <Filter>wbxaudioengine\AQE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\aqe\WbxAeSignalAnalysis_Module.h">
+      <Filter>wbxaudioengine\AQE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\deviceenumerator\wp8\WbxAEDeviceEmu_winp8.h">
+      <Filter>wbxaudioengine\device</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\include\IWbxAePlaybackPlatform.h">
+      <Filter>wbxaudioengine\playback\h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\h\WbxAeAudioPlayback.h">
+      <Filter>wbxaudioengine\playback\h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\playback\IWbxAePlaybackPlatformFactory.h">
+      <Filter>wbxaudioengine\playback\h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\playback\wp8\WbxAePlaybackPlatformWP80.h">
+      <Filter>wbxaudioengine\playback\h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\include\IWbxAeCapturePlatform.h">
+      <Filter>wbxaudioengine\capture\h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\h\IWbxAeAudioCaptureStatus.h">
+      <Filter>wbxaudioengine\capture\h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\h\WbxAeAudioCapture.h">
+      <Filter>wbxaudioengine\capture\h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\h\WbxAeAudioEngineCommon.h">
+      <Filter>wbxaudioengine\capture\h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\capture\IWbxAeCapturePlatformFactory.h">
+      <Filter>wbxaudioengine\capture\h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\capture\wp8\WbxAeCapturePlatformWP80.h">
+      <Filter>wbxaudioengine\capture\h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\framework\AudioDefaultSettings.h">
+      <Filter>wbxaudioengine\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\framework\WbxAeAudioChannel.h">
+      <Filter>wbxaudioengine\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\framework\WbxAeEncoderThread.h">
+      <Filter>wbxaudioengine\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\framework\WbxAeVoiceMixer.h">
+      <Filter>wbxaudioengine\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\framework\WbxAudioEngineImpl.h">
+      <Filter>wbxaudioengine\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\datadump\WBXAeWavAdaptor.h">
+      <Filter>wbxaudioengine\datadump</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\datadump\WbxDataDump.h">
+      <Filter>wbxaudioengine\datadump</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\vendor\SuperEasyJSON\json.h">
+      <Filter>wbxaudioengine\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\mediaengine\shark\src\common\macros.h">
+      <Filter>wmeutil\h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\mediaengine\shark\src\common\mem_align.h">
+      <Filter>wmeutil\h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\mediaengine\shark\src\common\MyBase.h">
+      <Filter>wmeutil\h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\mediaengine\shark\src\common\WP8_thread\ThreadEmulation.h">
+      <Filter>wmeutil\h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\mediaengine\shark\src\common\WseCircleBuffer.h">
+      <Filter>wmeutil\h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\mediaengine\shark\src\common\WseEvent.h">
+      <Filter>wmeutil\h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\mediaengine\shark\src\common\WseHeapMem.h">
+      <Filter>wmeutil\h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\mediaengine\shark\src\common\WseMem.h">
+      <Filter>wmeutil\h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\mediaengine\shark\src\common\WseTaskBase.h">
+      <Filter>wmeutil\h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\mediaengine\shark\src\common\WseTaskThread.h">
+      <Filter>wmeutil\h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\mediaengine\shark\src\common\WseWorkPath.h">
+      <Filter>wmeutil\h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\mediaengine\shark\src\h\WseMutex.h">
+      <Filter>wmeutil\h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\mediaengine\shark\src\h\WseMutexGuardT.h">
+      <Filter>wmeutil\h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\mediaengine\shark\src\h\WseTextFormator.h">
+      <Filter>wmeutil\h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\mediaengine\shark\src\h\WseUtil.h">
+      <Filter>wmeutil\h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\mediaengine\dolphin\src\AudioEngine\src\deviceenumerator\wp8\WbxAEVolumeControl_WP8.h">
+      <Filter>wbxaudioengine\device</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DolphinTest.def" />
+  </ItemGroup>
+</Project>

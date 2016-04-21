@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="ActiveBufferTest.cpp" />
+    <ClCompile Include="CFBPacketTest.cpp" />
+    <ClCompile Include="CFECEncoderTest.cpp" />
+    <ClCompile Include="CFECLevelTest.cpp" />
+    <ClCompile Include="CMMFrameManagerTest.cpp" />
+    <ClCompile Include="CPSFBPacketTest.cpp" />
+    <ClCompile Include="CRetransmissionPacketTest.cpp" />
+    <ClCompile Include="CRTCPHandlerTest.cpp" />
+    <ClCompile Include="CRTCPPacketTest.cpp" />
+    <ClCompile Include="CRTPAggregatePacketTest.cpp" />
+    <ClCompile Include="CRTPChannelTest.cpp" />
+    <ClCompile Include="CRTPFBPacketTest.cpp" />
+    <ClCompile Include="CRTPPacketLazyTest.cpp" />
+    <ClCompile Include="CRTPPacketTest.cpp" />
+    <ClCompile Include="CRTPSessionClientTest.cpp" />
+    <ClCompile Include="CRTPStreamTest.cpp" />
+    <ClCompile Include="CRTPUtilsTest.cpp" />
+    <ClCompile Include="CSecurityStrategyWrapperClientTest.cpp" />
+    <ClCompile Include="CSendWindowTest.cpp" />
+    <ClCompile Include="CSeqCountorTest.cpp" />
+    <ClCompile Include="CSequenceDBTest.cpp" />
+    <ClCompile Include="FrameNALFragmentTest.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MediaStatisticsTest.cpp" />
+    <ClCompile Include="NewTraceInterfaceTest.cpp" />
+    <ClCompile Include="PktStatTest.cpp" />
+    <ClCompile Include="PSFBCallFlowTest.cpp" />
+    <ClCompile Include="RTPMediaAPITest.cpp" />
+    <ClCompile Include="RTPSessionConfigTest.cpp" />
+    <ClCompile Include="RTPTimeTest.cpp" />
+    <ClCompile Include="SendControlTest.cpp" />
+    <ClCompile Include="SendingControlTest.cpp" />
+    <ClCompile Include="SimulcastCallflowTest.cpp" />
+    <ClCompile Include="simulcastTest.cpp" />
+    <ClCompile Include="SpeedMeasureTest.cpp" />
+    <ClCompile Include="testutil.cpp" />
+    <ClCompile Include="TMMBRTest.cpp" />
+    <ClCompile Include="WMEInterfaceMock.cpp" />
+    <ClCompile Include="RTPHeaderExtensionVideoTest.cpp" />
+    <ClCompile Include="..\..\mediaengine\transmission\src\activebuffer.cpp">
+      <Filter>wrtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\transmission\src\assendadaptor.cpp">
+      <Filter>wrtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\transmission\src\fecdecoder.cpp">
+      <Filter>wrtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\transmission\src\fecencoder.cpp">
+      <Filter>wrtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\transmission\src\feclevel.cpp">
+      <Filter>wrtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\transmission\src\mediametainfo.cpp">
+      <Filter>wrtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\transmission\src\mmframemgr.cpp">
+      <Filter>wrtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\transmission\src\qoshandler.cpp">
+      <Filter>wrtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\transmission\src\retransmissionpacket.cpp">
+      <Filter>wrtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\transmission\src\rtcphandler.cpp">
+      <Filter>wrtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\transmission\src\rtcppacket.cpp">
+      <Filter>wrtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\transmission\src\rtpchannel.cpp">
+      <Filter>wrtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\transmission\src\rtpheaderext.cpp">
+      <Filter>wrtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\transmission\src\rtppacket.cpp">
+      <Filter>wrtp</Filter>
+    </ClCompile>
+    <ClCompile Include="RTPPacketizationTest.cpp">
+      <Filter>wrtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\transmission\src\rtppackettracing.cpp">
+      <Filter>wrtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\transmission\src\rtpqosadaptor.cpp">
+      <Filter>wrtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\transmission\src\rtprecover.cpp">
+      <Filter>wrtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\transmission\src\rtpsessionbase.cpp">
+      <Filter>wrtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\transmission\src\rtpsessionclient.cpp">
+      <Filter>wrtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\transmission\src\rtpsessionconfig.cpp">
+      <Filter>wrtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\transmission\src\rtptime.cpp">
+      <Filter>wrtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\transmission\src\rtpstream.cpp">
+      <Filter>wrtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\transmission\src\rtpstreammanager.cpp">
+      <Filter>wrtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\transmission\src\rtputils.cpp">
+      <Filter>wrtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\transmission\src\scheduler.cpp">
+      <Filter>wrtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\transmission\src\seccryptosuite.cpp">
+      <Filter>wrtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\transmission\src\secstrategyclientwrapper.cpp">
+      <Filter>wrtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\transmission\src\secstrategyfactoryclient.cpp">
+      <Filter>wrtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\transmission\src\secstrategywrapper.cpp">
+      <Filter>wrtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\transmission\src\sendadaptor.cpp">
+      <Filter>wrtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\transmission\src\sendbpsstat.cpp">
+      <Filter>wrtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\transmission\src\sendcontrol.cpp">
+      <Filter>wrtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\transmission\src\sendwindow.cpp">
+      <Filter>wrtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\transmission\src\pktstat.cpp">
+      <Filter>wrtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\transmission\src\networkindicator.cpp">
+      <Filter>wrtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\transmission\src\simulcastpacketquerier.cpp">
+      <Filter>wrtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\transmission\src\simulcastrequester.cpp">
+      <Filter>wrtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\transmission\src\simulcastrequestmsg.cpp">
+      <Filter>wrtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\transmission\src\simulcastresponser.cpp">
+      <Filter>wrtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\transmission\src\simulcastretransmitter.cpp">
+      <Filter>wrtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\transmission\src\simulcastwrapper.cpp">
+      <Filter>wrtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\transmission\src\smoothsend.cpp">
+      <Filter>wrtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\transmission\src\speedmeasure.cpp">
+      <Filter>wrtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\transmission\src\statistics.cpp">
+      <Filter>wrtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\transmission\src\streammonitor.cpp">
+      <Filter>wrtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\transmission\src\streamstats.cpp">
+      <Filter>wrtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\transmission\src\tmmbrhandler.cpp">
+      <Filter>wrtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\transmission\src\videostream.cpp">
+      <Filter>wrtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\transmission\src\wrtptrace.cpp">
+      <Filter>wrtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\transmission\src\fecparametertracker.cpp">
+      <Filter>wrtp</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoRecvBufferTest\RTPVideoRecvFrameManagerTest.cpp">
+      <Filter>VideoRecvBufferTest</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoRecvBufferTest\RTPVideoRecvFrameTest.cpp">
+      <Filter>VideoRecvBufferTest</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoRecvBufferTest\VideoRecvFrameInfoTest.cpp">
+      <Filter>VideoRecvBufferTest</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoRecvBufferTest\VideoRecvFramePacketTest.cpp">
+      <Filter>VideoRecvBufferTest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\transmission\src\videorecvframe.cpp">
+      <Filter>wrtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\transmission\src\videodepacketization.cpp">
+      <Filter>wrtp</Filter>
+    </ClCompile>
+    <ClCompile Include="SecurityPolicyAPITest.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\mediaengine\transmission\src\resource.h" />
+    <ClInclude Include="testutil.h" />
+    <ClInclude Include="WMEInterfaceMock.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="wrtp">
+      <UniqueIdentifier>{14a08de0-1bd2-424d-8573-f4566408c6d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VideoRecvBufferTest">
+      <UniqueIdentifier>{71060a9d-4956-4ba0-bf3e-c1ef9f17f502}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

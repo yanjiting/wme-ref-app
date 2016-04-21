@@ -1,0 +1,905 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		DCD972591B5256AB00022023 /* BuildAll */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = DCD9725A1B5256AB00022023 /* Build configuration list for PBXAggregateTarget "BuildAll" */;
+			buildPhases = (
+			);
+			dependencies = (
+				DC1865B31B525C1A00BC0D16 /* PBXTargetDependency */,
+				DCD9726A1B52573100022023 /* PBXTargetDependency */,
+				DCD9726C1B52573100022023 /* PBXTargetDependency */,
+				DCD9726E1B52573100022023 /* PBXTargetDependency */,
+				DCD972701B52573100022023 /* PBXTargetDependency */,
+				DCD972721B52573100022023 /* PBXTargetDependency */,
+				DCD972741B52573100022023 /* PBXTargetDependency */,
+				DCD972761B52573100022023 /* PBXTargetDependency */,
+				DCD972781B52573100022023 /* PBXTargetDependency */,
+				DCD9727A1B52573100022023 /* PBXTargetDependency */,
+				DCD9727C1B52573100022023 /* PBXTargetDependency */,
+				DCD9727E1B52573100022023 /* PBXTargetDependency */,
+				DCD972801B52573100022023 /* PBXTargetDependency */,
+				DCD972821B52573100022023 /* PBXTargetDependency */,
+				DCD972841B52573100022023 /* PBXTargetDependency */,
+				DCD972861B52573100022023 /* PBXTargetDependency */,
+				DCD972681B52572000022023 /* PBXTargetDependency */,
+				DCD972661B52571D00022023 /* PBXTargetDependency */,
+				DCD972641B52571800022023 /* PBXTargetDependency */,
+				DCD972621B5256C700022023 /* PBXTargetDependency */,
+				DCD972601B5256BF00022023 /* PBXTargetDependency */,
+				DCD9725E1B5256BB00022023 /* PBXTargetDependency */,
+			);
+			name = BuildAll;
+			productName = BuildAll;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXContainerItemProxy section */
+		DC1865B01B525C0E00BC0D16 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC1865AC1B525C0E00BC0D16 /* MediaSession.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03DC211518D1442E00847EFF;
+			remoteInfo = MediaSession;
+		};
+		DC1865B21B525C1A00BC0D16 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC1865AC1B525C0E00BC0D16 /* MediaSession.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 03DC211418D1442E00847EFF;
+			remoteInfo = MediaSession;
+		};
+		DCD9714E1B5254CC00022023 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCD971491B5254CC00022023 /* appshareUnitTest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 505AC790191CB3E800F4E819;
+			remoteInfo = appshareUnitTest;
+		};
+		DCD971501B5254CC00022023 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCD971491B5254CC00022023 /* appshareUnitTest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 505AC7B4191CB3E900F4E819;
+			remoteInfo = appshareUnitTestTests;
+		};
+		DCD971571B5254DB00022023 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCD971521B5254DB00022023 /* dolphinUnitTestApp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 323E5A2D190F45C800C2CD93;
+			remoteInfo = dolphinUnitTestApp;
+		};
+		DCD971591B5254DB00022023 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCD971521B5254DB00022023 /* dolphinUnitTestApp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 323E5A48190F45C800C2CD93;
+			remoteInfo = dolphinUnitTestAppTests;
+		};
+		DCD9720F1B52557300022023 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCD9720B1B52557300022023 /* mediasessionUT_ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE409FFC175EE20800CAEE9D;
+			remoteInfo = mediasessionUT_ios;
+		};
+		DCD972161B52558000022023 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCD972111B52558000022023 /* sharkUnitTestApp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 323E59D3190F41EB00C2CD93;
+			remoteInfo = sharkUnitTestApp;
+		};
+		DCD972181B52558000022023 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCD972111B52558000022023 /* sharkUnitTestApp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 323E59EE190F41EB00C2CD93;
+			remoteInfo = sharkUnitTestAppTests;
+		};
+		DCD9721F1B52559E00022023 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCD9721A1B52559E00022023 /* tpUnitTestApp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 323E5946190F376C00C2CD93;
+			remoteInfo = tpUnitTestApp;
+		};
+		DCD972211B52559E00022023 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCD9721A1B52559E00022023 /* tpUnitTestApp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 323E5961190F376C00C2CD93;
+			remoteInfo = tpUnitTestAppTests;
+		};
+		DCD972281B5255AB00022023 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCD972231B5255AB00022023 /* utilUnitTestApp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 322A82E1190F36130098A326;
+			remoteInfo = utilUnitTestApp;
+		};
+		DCD9722A1B5255AB00022023 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCD972231B5255AB00022023 /* utilUnitTestApp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 322A82FC190F36140098A326;
+			remoteInfo = utilUnitTestAppTests;
+		};
+		DCD972311B5255B800022023 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCD9722C1B5255B800022023 /* wmeUnitTestApp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3233575A190F32E50013A95D;
+			remoteInfo = wmeUnitTestApp;
+		};
+		DCD972331B5255B800022023 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCD9722C1B5255B800022023 /* wmeUnitTestApp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 32335775190F32E50013A95D;
+			remoteInfo = wmeUnitTestAppTests;
+		};
+		DCD9723A1B5255C500022023 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCD972351B5255C500022023 /* wqosUnitTestApp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 32335702190F30160013A95D;
+			remoteInfo = wqosUnitTestApp;
+		};
+		DCD9723C1B5255C500022023 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCD972351B5255C500022023 /* wqosUnitTestApp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3233571D190F30170013A95D;
+			remoteInfo = wqosUnitTestAppTests;
+		};
+		DCD972431B5255DA00022023 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCD9723E1B5255DA00022023 /* wrtpUnitTestApp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 32335662190F2C990013A95D;
+			remoteInfo = wrtpUnitTestApp;
+		};
+		DCD972451B5255DA00022023 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCD9723E1B5255DA00022023 /* wrtpUnitTestApp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3233567D190F2C990013A95D;
+			remoteInfo = wrtpUnitTestAppTests;
+		};
+		DCD9724C1B52565E00022023 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCD972471B52565E00022023 /* gmock.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 326EBD1818E93B52004588B0;
+			remoteInfo = gmock;
+		};
+		DCD9724E1B52565E00022023 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCD972471B52565E00022023 /* gmock.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 326EBD2818E93B52004588B0;
+			remoteInfo = gmockTests;
+		};
+		DCD972551B52566E00022023 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCD972501B52566E00022023 /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 32E000B418EAA18600630848;
+			remoteInfo = gtest;
+		};
+		DCD972571B52566E00022023 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCD972501B52566E00022023 /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 32E000C418EAA18600630848;
+			remoteInfo = gtestTests;
+		};
+		DCD9725D1B5256BB00022023 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCD972501B52566E00022023 /* gtest.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 32E000B318EAA18600630848;
+			remoteInfo = gtest;
+		};
+		DCD9725F1B5256BF00022023 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCD972471B52565E00022023 /* gmock.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 326EBD1718E93B52004588B0;
+			remoteInfo = gmock;
+		};
+		DCD972611B5256C700022023 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCD9723E1B5255DA00022023 /* wrtpUnitTestApp.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 32335661190F2C990013A95D;
+			remoteInfo = wrtpUnitTestApp;
+		};
+		DCD972631B52571800022023 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCD972501B52566E00022023 /* gtest.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 32E000C318EAA18600630848;
+			remoteInfo = gtestTests;
+		};
+		DCD972651B52571D00022023 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCD972471B52565E00022023 /* gmock.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 326EBD2718E93B52004588B0;
+			remoteInfo = gmockTests;
+		};
+		DCD972671B52572000022023 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCD9723E1B5255DA00022023 /* wrtpUnitTestApp.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 3233567C190F2C990013A95D;
+			remoteInfo = wrtpUnitTestAppTests;
+		};
+		DCD972691B52573100022023 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCD972351B5255C500022023 /* wqosUnitTestApp.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 32335701190F30160013A95D;
+			remoteInfo = wqosUnitTestApp;
+		};
+		DCD9726B1B52573100022023 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCD972351B5255C500022023 /* wqosUnitTestApp.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 3233571C190F30170013A95D;
+			remoteInfo = wqosUnitTestAppTests;
+		};
+		DCD9726D1B52573100022023 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCD9722C1B5255B800022023 /* wmeUnitTestApp.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 32335759190F32E50013A95D;
+			remoteInfo = wmeUnitTestApp;
+		};
+		DCD9726F1B52573100022023 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCD9722C1B5255B800022023 /* wmeUnitTestApp.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 32335774190F32E50013A95D;
+			remoteInfo = wmeUnitTestAppTests;
+		};
+		DCD972711B52573100022023 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCD972231B5255AB00022023 /* utilUnitTestApp.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 322A82E0190F36130098A326;
+			remoteInfo = utilUnitTestApp;
+		};
+		DCD972731B52573100022023 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCD972231B5255AB00022023 /* utilUnitTestApp.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 322A82FB190F36140098A326;
+			remoteInfo = utilUnitTestAppTests;
+		};
+		DCD972751B52573100022023 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCD9721A1B52559E00022023 /* tpUnitTestApp.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 323E5945190F376C00C2CD93;
+			remoteInfo = tpUnitTestApp;
+		};
+		DCD972771B52573100022023 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCD9721A1B52559E00022023 /* tpUnitTestApp.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 323E5960190F376C00C2CD93;
+			remoteInfo = tpUnitTestAppTests;
+		};
+		DCD972791B52573100022023 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCD972111B52558000022023 /* sharkUnitTestApp.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 323E59D2190F41EB00C2CD93;
+			remoteInfo = sharkUnitTestApp;
+		};
+		DCD9727B1B52573100022023 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCD972111B52558000022023 /* sharkUnitTestApp.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 323E59ED190F41EB00C2CD93;
+			remoteInfo = sharkUnitTestAppTests;
+		};
+		DCD9727D1B52573100022023 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCD9720B1B52557300022023 /* mediasessionUT_ios.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EE409FFB175EE20800CAEE9D;
+			remoteInfo = mediasessionUT_ios;
+		};
+		DCD9727F1B52573100022023 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCD971521B5254DB00022023 /* dolphinUnitTestApp.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 323E5A2C190F45C800C2CD93;
+			remoteInfo = dolphinUnitTestApp;
+		};
+		DCD972811B52573100022023 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCD971521B5254DB00022023 /* dolphinUnitTestApp.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 323E5A47190F45C800C2CD93;
+			remoteInfo = dolphinUnitTestAppTests;
+		};
+		DCD972831B52573100022023 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCD971491B5254CC00022023 /* appshareUnitTest.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 505AC78F191CB3E800F4E819;
+			remoteInfo = appshareUnitTest;
+		};
+		DCD972851B52573100022023 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCD971491B5254CC00022023 /* appshareUnitTest.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 505AC7B3191CB3E900F4E819;
+			remoteInfo = appshareUnitTestTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DC1865AC1B525C0E00BC0D16 /* MediaSession.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MediaSession.xcodeproj; path = ../../../../mediasession/bld/ios/MediaSession.xcodeproj; sourceTree = "<group>"; };
+		DC1865B41B52609A00BC0D16 /* DebugCommon.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = DebugCommon.xcconfig; path = ../DebugCommon.xcconfig; sourceTree = "<group>"; };
+		DC1865B51B5260A100BC0D16 /* ReleaseCommon.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = ReleaseCommon.xcconfig; path = ../ReleaseCommon.xcconfig; sourceTree = "<group>"; };
+		DCD971491B5254CC00022023 /* appshareUnitTest.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = appshareUnitTest.xcodeproj; path = ../../../appshare/bld/ios/appshareUnitTest/appshareUnitTest.xcodeproj; sourceTree = "<group>"; };
+		DCD971521B5254DB00022023 /* dolphinUnitTestApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = dolphinUnitTestApp.xcodeproj; path = ../../../dolphin/bld/ios/dolphinUnitTestApp.xcodeproj; sourceTree = "<group>"; };
+		DCD9720B1B52557300022023 /* mediasessionUT_ios.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = mediasessionUT_ios.xcodeproj; path = ../../../mediasession/mediasessionUT_ios.xcodeproj; sourceTree = "<group>"; };
+		DCD972111B52558000022023 /* sharkUnitTestApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = sharkUnitTestApp.xcodeproj; path = ../../../shark/bld/ios/sharkUnitTestApp.xcodeproj; sourceTree = "<group>"; };
+		DCD9721A1B52559E00022023 /* tpUnitTestApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = tpUnitTestApp.xcodeproj; path = ../../../tp/bld/ios/tpUnitTestApp.xcodeproj; sourceTree = "<group>"; };
+		DCD972231B5255AB00022023 /* utilUnitTestApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = utilUnitTestApp.xcodeproj; path = ../../../util/bld/ios/utilUnitTestApp.xcodeproj; sourceTree = "<group>"; };
+		DCD9722C1B5255B800022023 /* wmeUnitTestApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = wmeUnitTestApp.xcodeproj; path = ../../../wme/bld/ios/wmeUnitTestApp.xcodeproj; sourceTree = "<group>"; };
+		DCD972351B5255C500022023 /* wqosUnitTestApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = wqosUnitTestApp.xcodeproj; path = ../../../wqos/bld/ios/wqosUnitTestApp.xcodeproj; sourceTree = "<group>"; };
+		DCD9723E1B5255DA00022023 /* wrtpUnitTestApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = wrtpUnitTestApp.xcodeproj; path = ../../../wrtp/bld/ios/wrtpUnitTestApp.xcodeproj; sourceTree = "<group>"; };
+		DCD972471B52565E00022023 /* gmock.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = gmock.xcodeproj; path = ../../../../vendor/gtest/bld/ios/gmock.xcodeproj; sourceTree = "<group>"; };
+		DCD972501B52566E00022023 /* gtest.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = gtest.xcodeproj; path = ../../../../vendor/gtest/bld/ios/gtest.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		DC1865AD1B525C0E00BC0D16 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC1865B11B525C0E00BC0D16 /* libMediaSession.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCD971421B5254B500022023 = {
+			isa = PBXGroup;
+			children = (
+				DC1865B51B5260A100BC0D16 /* ReleaseCommon.xcconfig */,
+				DC1865B41B52609A00BC0D16 /* DebugCommon.xcconfig */,
+				DC1865AC1B525C0E00BC0D16 /* MediaSession.xcodeproj */,
+				DCD972501B52566E00022023 /* gtest.xcodeproj */,
+				DCD972471B52565E00022023 /* gmock.xcodeproj */,
+				DCD9723E1B5255DA00022023 /* wrtpUnitTestApp.xcodeproj */,
+				DCD972351B5255C500022023 /* wqosUnitTestApp.xcodeproj */,
+				DCD9722C1B5255B800022023 /* wmeUnitTestApp.xcodeproj */,
+				DCD972231B5255AB00022023 /* utilUnitTestApp.xcodeproj */,
+				DCD9721A1B52559E00022023 /* tpUnitTestApp.xcodeproj */,
+				DCD972111B52558000022023 /* sharkUnitTestApp.xcodeproj */,
+				DCD9720B1B52557300022023 /* mediasessionUT_ios.xcodeproj */,
+				DCD971521B5254DB00022023 /* dolphinUnitTestApp.xcodeproj */,
+				DCD971491B5254CC00022023 /* appshareUnitTest.xcodeproj */,
+			);
+			sourceTree = "<group>";
+		};
+		DCD9714A1B5254CC00022023 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCD9714F1B5254CC00022023 /* appshareUnitTest.app */,
+				DCD971511B5254CC00022023 /* appshareUnitTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCD971531B5254DB00022023 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCD971581B5254DB00022023 /* dolphinUnitTestApp.app */,
+				DCD9715A1B5254DB00022023 /* dolphinUnitTestAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCD9720C1B52557300022023 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCD972101B52557300022023 /* mediasessionUT_ios.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCD972121B52558000022023 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCD972171B52558000022023 /* sharkUnitTestApp.app */,
+				DCD972191B52558000022023 /* sharkUnitTestAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCD9721B1B52559E00022023 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCD972201B52559E00022023 /* tpUnitTestApp.app */,
+				DCD972221B52559E00022023 /* tpUnitTestAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCD972241B5255AB00022023 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCD972291B5255AB00022023 /* utilUnitTestApp.app */,
+				DCD9722B1B5255AB00022023 /* utilUnitTestAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCD9722D1B5255B800022023 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCD972321B5255B800022023 /* wmeUnitTestApp.app */,
+				DCD972341B5255B800022023 /* wmeUnitTestAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCD972361B5255C500022023 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCD9723B1B5255C500022023 /* wqosUnitTestApp.app */,
+				DCD9723D1B5255C500022023 /* wqosUnitTestAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCD9723F1B5255DA00022023 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCD972441B5255DA00022023 /* wrtpUnitTestApp.app */,
+				DCD972461B5255DA00022023 /* wrtpUnitTestAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCD972481B52565E00022023 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCD9724D1B52565E00022023 /* libgmock.a */,
+				DCD9724F1B52565E00022023 /* gmockTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCD972511B52566E00022023 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCD972561B52566E00022023 /* libgtest.a */,
+				DCD972581B52566E00022023 /* gtestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		DCD971431B5254B500022023 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				TargetAttributes = {
+					DCD972591B5256AB00022023 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = DCD971461B5254B500022023 /* Build configuration list for PBXProject "WmeUnitTestIOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DCD971421B5254B500022023;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = DCD9714A1B5254CC00022023 /* Products */;
+					ProjectRef = DCD971491B5254CC00022023 /* appshareUnitTest.xcodeproj */;
+				},
+				{
+					ProductGroup = DCD971531B5254DB00022023 /* Products */;
+					ProjectRef = DCD971521B5254DB00022023 /* dolphinUnitTestApp.xcodeproj */;
+				},
+				{
+					ProductGroup = DCD972481B52565E00022023 /* Products */;
+					ProjectRef = DCD972471B52565E00022023 /* gmock.xcodeproj */;
+				},
+				{
+					ProductGroup = DCD972511B52566E00022023 /* Products */;
+					ProjectRef = DCD972501B52566E00022023 /* gtest.xcodeproj */;
+				},
+				{
+					ProductGroup = DC1865AD1B525C0E00BC0D16 /* Products */;
+					ProjectRef = DC1865AC1B525C0E00BC0D16 /* MediaSession.xcodeproj */;
+				},
+				{
+					ProductGroup = DCD9720C1B52557300022023 /* Products */;
+					ProjectRef = DCD9720B1B52557300022023 /* mediasessionUT_ios.xcodeproj */;
+				},
+				{
+					ProductGroup = DCD972121B52558000022023 /* Products */;
+					ProjectRef = DCD972111B52558000022023 /* sharkUnitTestApp.xcodeproj */;
+				},
+				{
+					ProductGroup = DCD9721B1B52559E00022023 /* Products */;
+					ProjectRef = DCD9721A1B52559E00022023 /* tpUnitTestApp.xcodeproj */;
+				},
+				{
+					ProductGroup = DCD972241B5255AB00022023 /* Products */;
+					ProjectRef = DCD972231B5255AB00022023 /* utilUnitTestApp.xcodeproj */;
+				},
+				{
+					ProductGroup = DCD9722D1B5255B800022023 /* Products */;
+					ProjectRef = DCD9722C1B5255B800022023 /* wmeUnitTestApp.xcodeproj */;
+				},
+				{
+					ProductGroup = DCD972361B5255C500022023 /* Products */;
+					ProjectRef = DCD972351B5255C500022023 /* wqosUnitTestApp.xcodeproj */;
+				},
+				{
+					ProductGroup = DCD9723F1B5255DA00022023 /* Products */;
+					ProjectRef = DCD9723E1B5255DA00022023 /* wrtpUnitTestApp.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				DCD972591B5256AB00022023 /* BuildAll */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		DC1865B11B525C0E00BC0D16 /* libMediaSession.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMediaSession.a;
+			remoteRef = DC1865B01B525C0E00BC0D16 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DCD9714F1B5254CC00022023 /* appshareUnitTest.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = appshareUnitTest.app;
+			remoteRef = DCD9714E1B5254CC00022023 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DCD971511B5254CC00022023 /* appshareUnitTestTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = appshareUnitTestTests.xctest;
+			remoteRef = DCD971501B5254CC00022023 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DCD971581B5254DB00022023 /* dolphinUnitTestApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = dolphinUnitTestApp.app;
+			remoteRef = DCD971571B5254DB00022023 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DCD9715A1B5254DB00022023 /* dolphinUnitTestAppTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = dolphinUnitTestAppTests.xctest;
+			remoteRef = DCD971591B5254DB00022023 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DCD972101B52557300022023 /* mediasessionUT_ios.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = mediasessionUT_ios.app;
+			remoteRef = DCD9720F1B52557300022023 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DCD972171B52558000022023 /* sharkUnitTestApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = sharkUnitTestApp.app;
+			remoteRef = DCD972161B52558000022023 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DCD972191B52558000022023 /* sharkUnitTestAppTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = sharkUnitTestAppTests.xctest;
+			remoteRef = DCD972181B52558000022023 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DCD972201B52559E00022023 /* tpUnitTestApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = tpUnitTestApp.app;
+			remoteRef = DCD9721F1B52559E00022023 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DCD972221B52559E00022023 /* tpUnitTestAppTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = tpUnitTestAppTests.xctest;
+			remoteRef = DCD972211B52559E00022023 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DCD972291B5255AB00022023 /* utilUnitTestApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = utilUnitTestApp.app;
+			remoteRef = DCD972281B5255AB00022023 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DCD9722B1B5255AB00022023 /* utilUnitTestAppTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = utilUnitTestAppTests.xctest;
+			remoteRef = DCD9722A1B5255AB00022023 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DCD972321B5255B800022023 /* wmeUnitTestApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = wmeUnitTestApp.app;
+			remoteRef = DCD972311B5255B800022023 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DCD972341B5255B800022023 /* wmeUnitTestAppTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = wmeUnitTestAppTests.xctest;
+			remoteRef = DCD972331B5255B800022023 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DCD9723B1B5255C500022023 /* wqosUnitTestApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = wqosUnitTestApp.app;
+			remoteRef = DCD9723A1B5255C500022023 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DCD9723D1B5255C500022023 /* wqosUnitTestAppTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = wqosUnitTestAppTests.xctest;
+			remoteRef = DCD9723C1B5255C500022023 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DCD972441B5255DA00022023 /* wrtpUnitTestApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = wrtpUnitTestApp.app;
+			remoteRef = DCD972431B5255DA00022023 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DCD972461B5255DA00022023 /* wrtpUnitTestAppTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = wrtpUnitTestAppTests.xctest;
+			remoteRef = DCD972451B5255DA00022023 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DCD9724D1B52565E00022023 /* libgmock.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libgmock.a;
+			remoteRef = DCD9724C1B52565E00022023 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DCD9724F1B52565E00022023 /* gmockTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = gmockTests.xctest;
+			remoteRef = DCD9724E1B52565E00022023 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DCD972561B52566E00022023 /* libgtest.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libgtest.a;
+			remoteRef = DCD972551B52566E00022023 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DCD972581B52566E00022023 /* gtestTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = gtestTests.xctest;
+			remoteRef = DCD972571B52566E00022023 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXTargetDependency section */
+		DC1865B31B525C1A00BC0D16 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MediaSession;
+			targetProxy = DC1865B21B525C1A00BC0D16 /* PBXContainerItemProxy */;
+		};
+		DCD9725E1B5256BB00022023 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = gtest;
+			targetProxy = DCD9725D1B5256BB00022023 /* PBXContainerItemProxy */;
+		};
+		DCD972601B5256BF00022023 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = gmock;
+			targetProxy = DCD9725F1B5256BF00022023 /* PBXContainerItemProxy */;
+		};
+		DCD972621B5256C700022023 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = wrtpUnitTestApp;
+			targetProxy = DCD972611B5256C700022023 /* PBXContainerItemProxy */;
+		};
+		DCD972641B52571800022023 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = gtestTests;
+			targetProxy = DCD972631B52571800022023 /* PBXContainerItemProxy */;
+		};
+		DCD972661B52571D00022023 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = gmockTests;
+			targetProxy = DCD972651B52571D00022023 /* PBXContainerItemProxy */;
+		};
+		DCD972681B52572000022023 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = wrtpUnitTestAppTests;
+			targetProxy = DCD972671B52572000022023 /* PBXContainerItemProxy */;
+		};
+		DCD9726A1B52573100022023 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = wqosUnitTestApp;
+			targetProxy = DCD972691B52573100022023 /* PBXContainerItemProxy */;
+		};
+		DCD9726C1B52573100022023 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = wqosUnitTestAppTests;
+			targetProxy = DCD9726B1B52573100022023 /* PBXContainerItemProxy */;
+		};
+		DCD9726E1B52573100022023 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = wmeUnitTestApp;
+			targetProxy = DCD9726D1B52573100022023 /* PBXContainerItemProxy */;
+		};
+		DCD972701B52573100022023 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = wmeUnitTestAppTests;
+			targetProxy = DCD9726F1B52573100022023 /* PBXContainerItemProxy */;
+		};
+		DCD972721B52573100022023 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = utilUnitTestApp;
+			targetProxy = DCD972711B52573100022023 /* PBXContainerItemProxy */;
+		};
+		DCD972741B52573100022023 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = utilUnitTestAppTests;
+			targetProxy = DCD972731B52573100022023 /* PBXContainerItemProxy */;
+		};
+		DCD972761B52573100022023 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = tpUnitTestApp;
+			targetProxy = DCD972751B52573100022023 /* PBXContainerItemProxy */;
+		};
+		DCD972781B52573100022023 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = tpUnitTestAppTests;
+			targetProxy = DCD972771B52573100022023 /* PBXContainerItemProxy */;
+		};
+		DCD9727A1B52573100022023 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = sharkUnitTestApp;
+			targetProxy = DCD972791B52573100022023 /* PBXContainerItemProxy */;
+		};
+		DCD9727C1B52573100022023 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = sharkUnitTestAppTests;
+			targetProxy = DCD9727B1B52573100022023 /* PBXContainerItemProxy */;
+		};
+		DCD9727E1B52573100022023 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = mediasessionUT_ios;
+			targetProxy = DCD9727D1B52573100022023 /* PBXContainerItemProxy */;
+		};
+		DCD972801B52573100022023 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = dolphinUnitTestApp;
+			targetProxy = DCD9727F1B52573100022023 /* PBXContainerItemProxy */;
+		};
+		DCD972821B52573100022023 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = dolphinUnitTestAppTests;
+			targetProxy = DCD972811B52573100022023 /* PBXContainerItemProxy */;
+		};
+		DCD972841B52573100022023 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = appshareUnitTest;
+			targetProxy = DCD972831B52573100022023 /* PBXContainerItemProxy */;
+		};
+		DCD972861B52573100022023 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = appshareUnitTestTests;
+			targetProxy = DCD972851B52573100022023 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DCD971471B5254B600022023 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC1865B41B52609A00BC0D16 /* DebugCommon.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		DCD971481B5254B600022023 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC1865B51B5260A100BC0D16 /* ReleaseCommon.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		DCD9725B1B5256AB00022023 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC1865B41B52609A00BC0D16 /* DebugCommon.xcconfig */;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DCD9725C1B5256AB00022023 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC1865B51B5260A100BC0D16 /* ReleaseCommon.xcconfig */;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DCD971461B5254B500022023 /* Build configuration list for PBXProject "WmeUnitTestIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCD971471B5254B600022023 /* Debug */,
+				DCD971481B5254B600022023 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCD9725A1B5256AB00022023 /* Build configuration list for PBXAggregateTarget "BuildAll" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCD9725B1B5256AB00022023 /* Debug */,
+				DCD9725C1B5256AB00022023 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DCD971431B5254B500022023 /* Project object */;
+}

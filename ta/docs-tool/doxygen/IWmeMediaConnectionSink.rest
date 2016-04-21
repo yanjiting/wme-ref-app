@@ -1,0 +1,7 @@
+Callbacks during a MediaConnection lifetime for varying status and events.
+
+.. contents:: 
+    :local: 
+    :depth: 2
+
+<doxygen2rst class=wme::IWmeMediaConnectionSink>MediaConnection Callbacks</doxygen2rst>

@@ -1,0 +1,693 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		320C8A7119175E130049027A /* DebugCommon.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 320C8A6F19175E130049027A /* DebugCommon.xcconfig */; };
+		320C8A7219175E130049027A /* ReleaseCommon.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 320C8A7019175E130049027A /* ReleaseCommon.xcconfig */; };
+		323E5A31190F45C800C2CD93 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 323E5A30190F45C800C2CD93 /* Foundation.framework */; };
+		323E5A33190F45C800C2CD93 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 323E5A32190F45C800C2CD93 /* CoreGraphics.framework */; };
+		323E5A35190F45C800C2CD93 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 323E5A34190F45C800C2CD93 /* UIKit.framework */; };
+		323E5A3B190F45C800C2CD93 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 323E5A39190F45C800C2CD93 /* InfoPlist.strings */; };
+		323E5A3D190F45C800C2CD93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 323E5A3C190F45C800C2CD93 /* main.m */; };
+		323E5A41190F45C800C2CD93 /* UTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 323E5A40190F45C800C2CD93 /* UTAppDelegate.m */; };
+		323E5A43190F45C800C2CD93 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 323E5A42190F45C800C2CD93 /* Images.xcassets */; };
+		323E5A4A190F45C800C2CD93 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 323E5A49190F45C800C2CD93 /* XCTest.framework */; };
+		323E5A4B190F45C800C2CD93 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 323E5A30190F45C800C2CD93 /* Foundation.framework */; };
+		323E5A4C190F45C800C2CD93 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 323E5A34190F45C800C2CD93 /* UIKit.framework */; };
+		323E5A54190F45C800C2CD93 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 323E5A52190F45C800C2CD93 /* InfoPlist.strings */; };
+		323E5A56190F45C800C2CD93 /* dolphinUnitTestAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 323E5A55190F45C800C2CD93 /* dolphinUnitTestAppTests.m */; };
+		323E5A61190F46A100C2CD93 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 323E5A60190F46A100C2CD93 /* main.cpp */; };
+		323E5A7E190F46C100C2CD93 /* AQE_Unit_MyTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 323E5A64190F46C100C2CD93 /* AQE_Unit_MyTest.cpp */; };
+		323E5A7F190F46C100C2CD93 /* Modules_UnitTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 323E5A66190F46C100C2CD93 /* Modules_UnitTest.cpp */; };
+		323E5A81190F46C100C2CD93 /* CwbxAeMediaBlockListTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 323E5A6A190F46C100C2CD93 /* CwbxAeMediaBlockListTest.cpp */; };
+		323E5A82190F46C100C2CD93 /* CWBXAEMediaBlockTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 323E5A6B190F46C100C2CD93 /* CWBXAEMediaBlockTest.cpp */; };
+		323E5A84190F46C100C2CD93 /* CWbxAJBPolicyTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 323E5A6D190F46C100C2CD93 /* CWbxAJBPolicyTest.cpp */; };
+		323E5A85190F46C100C2CD93 /* CWbxMemPoolTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 323E5A6E190F46C100C2CD93 /* CWbxMemPoolTest.cpp */; };
+		323E5A86190F46C100C2CD93 /* CMixerDestroyEventTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 323E5A70190F46C100C2CD93 /* CMixerDestroyEventTest.cpp */; };
+		323E5A87190F46C100C2CD93 /* CMixerStartEventTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 323E5A71190F46C100C2CD93 /* CMixerStartEventTest.cpp */; };
+		323E5A88190F46C100C2CD93 /* CMixerStopEventTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 323E5A72190F46C100C2CD93 /* CMixerStopEventTest.cpp */; };
+		323E5A89190F46C100C2CD93 /* CWbxAeAudioChannelTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 323E5A73190F46C100C2CD93 /* CWbxAeAudioChannelTest.cpp */; };
+		323E5A8C190F46C100C2CD93 /* CWbxAeVoiceMixerTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 323E5A76190F46C100C2CD93 /* CWbxAeVoiceMixerTest.cpp */; };
+		323E5A94190F489400C2CD93 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 323E5A92190F489400C2CD93 /* AudioToolbox.framework */; };
+		323E5A95190F489400C2CD93 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 323E5A93190F489400C2CD93 /* CoreAudio.framework */; };
+		323E5ADF190F778000C2CD93 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 323E5ADE190F778000C2CD93 /* OpenGLES.framework */; };
+		328BF1F71915CD8800FF4BEA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 328BF1F61915CD8800FF4BEA /* AVFoundation.framework */; };
+		328BF1F91915CD8F00FF4BEA /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 328BF1F81915CD8F00FF4BEA /* CoreMedia.framework */; };
+		328BF21E1915CE1000FF4BEA /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 328BF21D1915CE1000FF4BEA /* CoreVideo.framework */; };
+		84B9789019245442008CA205 /* CWbxAudioEngineImplTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84B9788F19245442008CA205 /* CWbxAudioEngineImplTest.cpp */; };
+		A0BF80911945A2740008A0AD /* CWbxAJBJitterbufferTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0BF80901945A2740008A0AD /* CWbxAJBJitterbufferTest.cpp */; };
+		A1CEE99919ECF34F0040D9A3 /* CAudioDefaultSettingsTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1CEE99719ECF34F0040D9A3 /* CAudioDefaultSettingsTest.cpp */; };
+		A1CEE9A619EE583F0040D9A3 /* CWBXAeWavAdaptorTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1CEE9A419EE583F0040D9A3 /* CWBXAeWavAdaptorTest.cpp */; };
+		D9A398B41B2ABD290060E0E2 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9A398B31B2ABD290060E0E2 /* CoreTelephony.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		323E5A4D190F45C800C2CD93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 323E5A25190F45C800C2CD93 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 323E5A2C190F45C800C2CD93;
+			remoteInfo = dolphinUnitTestApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		320C8A6F19175E130049027A /* DebugCommon.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = DebugCommon.xcconfig; path = ../../../bld/ios/DebugCommon.xcconfig; sourceTree = "<group>"; };
+		320C8A7019175E130049027A /* ReleaseCommon.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = ReleaseCommon.xcconfig; path = ../../../bld/ios/ReleaseCommon.xcconfig; sourceTree = "<group>"; };
+		323E5A2D190F45C800C2CD93 /* dolphinUnitTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dolphinUnitTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		323E5A30190F45C800C2CD93 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		323E5A32190F45C800C2CD93 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		323E5A34190F45C800C2CD93 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		323E5A38190F45C800C2CD93 /* dolphinUnitTestApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "dolphinUnitTestApp-Info.plist"; sourceTree = "<group>"; };
+		323E5A3A190F45C800C2CD93 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		323E5A3C190F45C800C2CD93 /* main.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = main.m; sourceTree = "<group>"; };
+		323E5A3E190F45C800C2CD93 /* dolphinUnitTestApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "dolphinUnitTestApp-Prefix.pch"; sourceTree = "<group>"; };
+		323E5A3F190F45C800C2CD93 /* UTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UTAppDelegate.h; sourceTree = "<group>"; };
+		323E5A40190F45C800C2CD93 /* UTAppDelegate.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = UTAppDelegate.m; sourceTree = "<group>"; };
+		323E5A42190F45C800C2CD93 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		323E5A48190F45C800C2CD93 /* dolphinUnitTestAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dolphinUnitTestAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		323E5A49190F45C800C2CD93 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		323E5A51190F45C800C2CD93 /* dolphinUnitTestAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "dolphinUnitTestAppTests-Info.plist"; sourceTree = "<group>"; };
+		323E5A53190F45C800C2CD93 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		323E5A55190F45C800C2CD93 /* dolphinUnitTestAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = dolphinUnitTestAppTests.m; sourceTree = "<group>"; };
+		323E5A60190F46A100C2CD93 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../../main.cpp; sourceTree = "<group>"; };
+		323E5A64190F46C100C2CD93 /* AQE_Unit_MyTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AQE_Unit_MyTest.cpp; sourceTree = "<group>"; };
+		323E5A65190F46C100C2CD93 /* CReceiver_AQE_test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CReceiver_AQE_test.h; sourceTree = "<group>"; };
+		323E5A66190F46C100C2CD93 /* Modules_UnitTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Modules_UnitTest.cpp; sourceTree = "<group>"; };
+		323E5A68190F46C100C2CD93 /* test_set.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = test_set.h; sourceTree = "<group>"; };
+		323E5A6A190F46C100C2CD93 /* CwbxAeMediaBlockListTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CwbxAeMediaBlockListTest.cpp; sourceTree = "<group>"; };
+		323E5A6B190F46C100C2CD93 /* CWBXAEMediaBlockTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CWBXAEMediaBlockTest.cpp; sourceTree = "<group>"; };
+		323E5A6D190F46C100C2CD93 /* CWbxAJBPolicyTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CWbxAJBPolicyTest.cpp; sourceTree = "<group>"; };
+		323E5A6E190F46C100C2CD93 /* CWbxMemPoolTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CWbxMemPoolTest.cpp; sourceTree = "<group>"; };
+		323E5A70190F46C100C2CD93 /* CMixerDestroyEventTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CMixerDestroyEventTest.cpp; sourceTree = "<group>"; };
+		323E5A71190F46C100C2CD93 /* CMixerStartEventTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CMixerStartEventTest.cpp; sourceTree = "<group>"; };
+		323E5A72190F46C100C2CD93 /* CMixerStopEventTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CMixerStopEventTest.cpp; sourceTree = "<group>"; };
+		323E5A73190F46C100C2CD93 /* CWbxAeAudioChannelTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CWbxAeAudioChannelTest.cpp; sourceTree = "<group>"; };
+		323E5A76190F46C100C2CD93 /* CWbxAeVoiceMixerTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CWbxAeVoiceMixerTest.cpp; sourceTree = "<group>"; };
+		323E5A92190F489400C2CD93 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		323E5A93190F489400C2CD93 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		323E5ADE190F778000C2CD93 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		328BF1F61915CD8800FF4BEA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		328BF1F81915CD8F00FF4BEA /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		328BF21D1915CE1000FF4BEA /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		84B9788F19245442008CA205 /* CWbxAudioEngineImplTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CWbxAudioEngineImplTest.cpp; sourceTree = "<group>"; };
+		A0BF80901945A2740008A0AD /* CWbxAJBJitterbufferTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CWbxAJBJitterbufferTest.cpp; sourceTree = "<group>"; };
+		A1CEE99719ECF34F0040D9A3 /* CAudioDefaultSettingsTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CAudioDefaultSettingsTest.cpp; sourceTree = "<group>"; };
+		A1CEE9A419EE583F0040D9A3 /* CWBXAeWavAdaptorTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CWBXAeWavAdaptorTest.cpp; sourceTree = "<group>"; };
+		D9A398B31B2ABD290060E0E2 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		323E5A2A190F45C800C2CD93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9A398B41B2ABD290060E0E2 /* CoreTelephony.framework in Frameworks */,
+				328BF21E1915CE1000FF4BEA /* CoreVideo.framework in Frameworks */,
+				328BF1F91915CD8F00FF4BEA /* CoreMedia.framework in Frameworks */,
+				328BF1F71915CD8800FF4BEA /* AVFoundation.framework in Frameworks */,
+				323E5ADF190F778000C2CD93 /* OpenGLES.framework in Frameworks */,
+				323E5A94190F489400C2CD93 /* AudioToolbox.framework in Frameworks */,
+				323E5A95190F489400C2CD93 /* CoreAudio.framework in Frameworks */,
+				323E5A33190F45C800C2CD93 /* CoreGraphics.framework in Frameworks */,
+				323E5A35190F45C800C2CD93 /* UIKit.framework in Frameworks */,
+				323E5A31190F45C800C2CD93 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		323E5A45190F45C800C2CD93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				323E5A4A190F45C800C2CD93 /* XCTest.framework in Frameworks */,
+				323E5A4C190F45C800C2CD93 /* UIKit.framework in Frameworks */,
+				323E5A4B190F45C800C2CD93 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		320C8A6E19175DFF0049027A /* config */ = {
+			isa = PBXGroup;
+			children = (
+				320C8A6F19175E130049027A /* DebugCommon.xcconfig */,
+				320C8A7019175E130049027A /* ReleaseCommon.xcconfig */,
+			);
+			name = config;
+			sourceTree = "<group>";
+		};
+		323E5A24190F45C800C2CD93 = {
+			isa = PBXGroup;
+			children = (
+				320C8A6E19175DFF0049027A /* config */,
+				323E5A5F190F469200C2CD93 /* src */,
+				323E5A36190F45C800C2CD93 /* dolphinUnitTestApp */,
+				323E5A4F190F45C800C2CD93 /* dolphinUnitTestAppTests */,
+				323E5A2F190F45C800C2CD93 /* Frameworks */,
+				323E5A2E190F45C800C2CD93 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		323E5A2E190F45C800C2CD93 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				323E5A2D190F45C800C2CD93 /* dolphinUnitTestApp.app */,
+				323E5A48190F45C800C2CD93 /* dolphinUnitTestAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		323E5A2F190F45C800C2CD93 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9A398B31B2ABD290060E0E2 /* CoreTelephony.framework */,
+				328BF21D1915CE1000FF4BEA /* CoreVideo.framework */,
+				328BF1F81915CD8F00FF4BEA /* CoreMedia.framework */,
+				328BF1F61915CD8800FF4BEA /* AVFoundation.framework */,
+				323E5ADE190F778000C2CD93 /* OpenGLES.framework */,
+				323E5A92190F489400C2CD93 /* AudioToolbox.framework */,
+				323E5A93190F489400C2CD93 /* CoreAudio.framework */,
+				323E5A30190F45C800C2CD93 /* Foundation.framework */,
+				323E5A32190F45C800C2CD93 /* CoreGraphics.framework */,
+				323E5A34190F45C800C2CD93 /* UIKit.framework */,
+				323E5A49190F45C800C2CD93 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		323E5A36190F45C800C2CD93 /* dolphinUnitTestApp */ = {
+			isa = PBXGroup;
+			children = (
+				323E5A3F190F45C800C2CD93 /* UTAppDelegate.h */,
+				323E5A40190F45C800C2CD93 /* UTAppDelegate.m */,
+				323E5A42190F45C800C2CD93 /* Images.xcassets */,
+				323E5A37190F45C800C2CD93 /* Supporting Files */,
+			);
+			path = dolphinUnitTestApp;
+			sourceTree = "<group>";
+		};
+		323E5A37190F45C800C2CD93 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				323E5A38190F45C800C2CD93 /* dolphinUnitTestApp-Info.plist */,
+				323E5A39190F45C800C2CD93 /* InfoPlist.strings */,
+				323E5A3C190F45C800C2CD93 /* main.m */,
+				323E5A3E190F45C800C2CD93 /* dolphinUnitTestApp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		323E5A4F190F45C800C2CD93 /* dolphinUnitTestAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				323E5A55190F45C800C2CD93 /* dolphinUnitTestAppTests.m */,
+				323E5A50190F45C800C2CD93 /* Supporting Files */,
+			);
+			path = dolphinUnitTestAppTests;
+			sourceTree = "<group>";
+		};
+		323E5A50190F45C800C2CD93 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				323E5A51190F45C800C2CD93 /* dolphinUnitTestAppTests-Info.plist */,
+				323E5A52190F45C800C2CD93 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		323E5A5F190F469200C2CD93 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				323E5A62190F46C100C2CD93 /* aqe */,
+				323E5A69190F46C100C2CD93 /* common */,
+				323E5A6F190F46C100C2CD93 /* framework */,
+				323E5A60190F46A100C2CD93 /* main.cpp */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		323E5A62190F46C100C2CD93 /* aqe */ = {
+			isa = PBXGroup;
+			children = (
+				323E5A64190F46C100C2CD93 /* AQE_Unit_MyTest.cpp */,
+				323E5A65190F46C100C2CD93 /* CReceiver_AQE_test.h */,
+				323E5A66190F46C100C2CD93 /* Modules_UnitTest.cpp */,
+				323E5A68190F46C100C2CD93 /* test_set.h */,
+			);
+			name = aqe;
+			path = ../../aqe;
+			sourceTree = "<group>";
+		};
+		323E5A69190F46C100C2CD93 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				A0BF80901945A2740008A0AD /* CWbxAJBJitterbufferTest.cpp */,
+				323E5A6A190F46C100C2CD93 /* CwbxAeMediaBlockListTest.cpp */,
+				323E5A6B190F46C100C2CD93 /* CWBXAEMediaBlockTest.cpp */,
+				323E5A6D190F46C100C2CD93 /* CWbxAJBPolicyTest.cpp */,
+				323E5A6E190F46C100C2CD93 /* CWbxMemPoolTest.cpp */,
+			);
+			name = common;
+			path = ../../common;
+			sourceTree = "<group>";
+		};
+		323E5A6F190F46C100C2CD93 /* framework */ = {
+			isa = PBXGroup;
+			children = (
+				323E5A70190F46C100C2CD93 /* CMixerDestroyEventTest.cpp */,
+				323E5A71190F46C100C2CD93 /* CMixerStartEventTest.cpp */,
+				323E5A72190F46C100C2CD93 /* CMixerStopEventTest.cpp */,
+				323E5A73190F46C100C2CD93 /* CWbxAeAudioChannelTest.cpp */,
+				323E5A76190F46C100C2CD93 /* CWbxAeVoiceMixerTest.cpp */,
+				84B9788F19245442008CA205 /* CWbxAudioEngineImplTest.cpp */,
+				A1CEE99719ECF34F0040D9A3 /* CAudioDefaultSettingsTest.cpp */,
+				A1CEE9A419EE583F0040D9A3 /* CWBXAeWavAdaptorTest.cpp */,
+			);
+			name = framework;
+			path = ../../framework;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		323E5A2C190F45C800C2CD93 /* dolphinUnitTestApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 323E5A59190F45C800C2CD93 /* Build configuration list for PBXNativeTarget "dolphinUnitTestApp" */;
+			buildPhases = (
+				323E5A29190F45C800C2CD93 /* Sources */,
+				323E5A2A190F45C800C2CD93 /* Frameworks */,
+				323E5A2B190F45C800C2CD93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = dolphinUnitTestApp;
+			productName = dolphinUnitTestApp;
+			productReference = 323E5A2D190F45C800C2CD93 /* dolphinUnitTestApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		323E5A47190F45C800C2CD93 /* dolphinUnitTestAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 323E5A5C190F45C800C2CD93 /* Build configuration list for PBXNativeTarget "dolphinUnitTestAppTests" */;
+			buildPhases = (
+				323E5A44190F45C800C2CD93 /* Sources */,
+				323E5A45190F45C800C2CD93 /* Frameworks */,
+				323E5A46190F45C800C2CD93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				323E5A4E190F45C800C2CD93 /* PBXTargetDependency */,
+			);
+			name = dolphinUnitTestAppTests;
+			productName = dolphinUnitTestAppTests;
+			productReference = 323E5A48190F45C800C2CD93 /* dolphinUnitTestAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		323E5A25190F45C800C2CD93 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = UT;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = WME;
+				TargetAttributes = {
+					323E5A47190F45C800C2CD93 = {
+						TestTargetID = 323E5A2C190F45C800C2CD93;
+					};
+				};
+			};
+			buildConfigurationList = 323E5A28190F45C800C2CD93 /* Build configuration list for PBXProject "dolphinUnitTestApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 323E5A24190F45C800C2CD93;
+			productRefGroup = 323E5A2E190F45C800C2CD93 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				323E5A2C190F45C800C2CD93 /* dolphinUnitTestApp */,
+				323E5A47190F45C800C2CD93 /* dolphinUnitTestAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		323E5A2B190F45C800C2CD93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				323E5A3B190F45C800C2CD93 /* InfoPlist.strings in Resources */,
+				320C8A7119175E130049027A /* DebugCommon.xcconfig in Resources */,
+				323E5A43190F45C800C2CD93 /* Images.xcassets in Resources */,
+				320C8A7219175E130049027A /* ReleaseCommon.xcconfig in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		323E5A46190F45C800C2CD93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				323E5A54190F45C800C2CD93 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		323E5A29190F45C800C2CD93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84B9789019245442008CA205 /* CWbxAudioEngineImplTest.cpp in Sources */,
+				323E5A89190F46C100C2CD93 /* CWbxAeAudioChannelTest.cpp in Sources */,
+				323E5A3D190F45C800C2CD93 /* main.m in Sources */,
+				323E5A87190F46C100C2CD93 /* CMixerStartEventTest.cpp in Sources */,
+				323E5A8C190F46C100C2CD93 /* CWbxAeVoiceMixerTest.cpp in Sources */,
+				A0BF80911945A2740008A0AD /* CWbxAJBJitterbufferTest.cpp in Sources */,
+				323E5A85190F46C100C2CD93 /* CWbxMemPoolTest.cpp in Sources */,
+				323E5A41190F45C800C2CD93 /* UTAppDelegate.m in Sources */,
+				323E5A82190F46C100C2CD93 /* CWBXAEMediaBlockTest.cpp in Sources */,
+				323E5A7E190F46C100C2CD93 /* AQE_Unit_MyTest.cpp in Sources */,
+				323E5A84190F46C100C2CD93 /* CWbxAJBPolicyTest.cpp in Sources */,
+				323E5A61190F46A100C2CD93 /* main.cpp in Sources */,
+				323E5A86190F46C100C2CD93 /* CMixerDestroyEventTest.cpp in Sources */,
+				A1CEE99919ECF34F0040D9A3 /* CAudioDefaultSettingsTest.cpp in Sources */,
+				323E5A88190F46C100C2CD93 /* CMixerStopEventTest.cpp in Sources */,
+				323E5A81190F46C100C2CD93 /* CwbxAeMediaBlockListTest.cpp in Sources */,
+				A1CEE9A619EE583F0040D9A3 /* CWBXAeWavAdaptorTest.cpp in Sources */,
+				323E5A7F190F46C100C2CD93 /* Modules_UnitTest.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		323E5A44190F45C800C2CD93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				323E5A56190F45C800C2CD93 /* dolphinUnitTestAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		323E5A4E190F45C800C2CD93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 323E5A2C190F45C800C2CD93 /* dolphinUnitTestApp */;
+			targetProxy = 323E5A4D190F45C800C2CD93 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		323E5A39190F45C800C2CD93 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				323E5A3A190F45C800C2CD93 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		323E5A52190F45C800C2CD93 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				323E5A53190F45C800C2CD93 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		323E5A57190F45C800C2CD93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		323E5A58190F45C800C2CD93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		323E5A5A190F45C800C2CD93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 320C8A6F19175E130049027A /* DebugCommon.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "dolphinUnitTestApp/dolphinUnitTestApp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					MachOSupport,
+					"$(inherited)",
+				);
+				"GCC_PREPROCESSOR_DEFINITIONS[sdk=iphonesimulator*]" = (
+					IOS_SIMULATOR,
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "dolphinUnitTestApp/dolphinUnitTestApp-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../../../vendor/gtest/bld/ios/bin/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"",
+					"\"$(SRCROOT)/../../../../distribution/ios/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"",
+					"\"$(SRCROOT)/../../../../distribution/ios/Debug-iphoneos\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lwbxaudioengine",
+					"-lwseutil",
+					"-lwsertp",
+					"-lutil_ios",
+					"-lgmock",
+					"-lgtest",
+					"-lwbx_aec",
+					"-lwbx_aagc",
+					"-lwbx_vad",
+					"-lwbx_sa",
+					"-lwbx_tsm",
+					"-lwbx_plc",
+					"-lwbx_cng",
+					"-lwbx_dagc",
+					"-lwbx_resample",
+					"-lwbxaecodec",
+					"-lsafec",
+					"-lwseclient",
+					"-ltcagc",
+					"-ltcaec",
+					"-ltcaudio",
+					"-lqoem",
+					"-laaec",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYMROOT = "$(SRCROOT)/build";
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../../../vendor/gtest/gmock-1.7.0/include/gmock\" \"$(SRCROOT)/../../../../vendor/gtest/gtest-1.7.0/include/gtest\" \"$(SRCROOT)/../../../../mediaengine/util/include/ios\" \"$(SRCROOT)/../../../../mediaengine/util/include\" \"$(SRCROOT)/../../../../mediaengine/util/include/client\" \"$(SRCROOT)/../../../../mediaengine/transmission/include\" \"$(SRCROOT)/../../../../vendor\" \"$(SRCROOT)/../../../../vendor/gtest/wbxmock/src\" \"$(SRCROOT)/../../../../api\" \"$(SRCROOT)/../../../../mediaengine/dolphin/include\" \"$(SRCROOT)/../../../../mediaengine/dolphin/src/AudioEngine/h\" \"$(SRCROOT)/../../../../mediaengine/dolphin/src/AudioEngine/src/common\" \"$(SRCROOT)/../../../../mediaengine/dolphin/src/AudioEngine/src/aqe\" \"$(SRCROOT)/../../../../mediaengine/dolphin/src/AudioEngine/src/framework\" \"$(SRCROOT)/../../../../mediaengine/dolphin/src/cochelea/include\" \"$(SRCROOT)/../../../../mediaengine/shark/include\" \"$(SRCROOT)/../../../../mediaengine/shark/src/h\" \"$(SRCROOT)/../../../../mediaengine/shark/src/common\" \"$(SRCROOT)/../../../../mediaengine/wme/src/h\" \"$(SRCROOT)/../../../../mediaengine/wme/src/common\" \"$(SRCROOT)/../../../../mediaengine/wme/src/client\" \"$(SRCROOT)/../../../../mediaengine/wme/src/client/ios\" \"$(SRCROOT)/../../../../vendor/security/include\" \"$(SRCROOT)/../../../../vendor/gtest/wbxmock/src/wbxmock\" \"$(SRCROOT)/../../../../mediaengine/dolphin/src/AudioEngine/src/cpve\"/** \"$(SRCROOT)/../../../../vendor/gtest/gtest-1.7.0/include\" \"$(SRCROOT)/../../../../vendor/gtest/gmock-1.7.0/include\" \"$(SRCROOT)/../../../../mediaengine/dolphin/src/AudioEngine/src/datadump\" \"$(SRCROOT)/../../../../vendor/SuperEasyJSON\" \"$(SRCROOT)/../../../../vendor/qoem/include\"";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		323E5A5B190F45C800C2CD93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 320C8A7019175E130049027A /* ReleaseCommon.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "dolphinUnitTestApp/dolphinUnitTestApp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = MachOSupport;
+				"GCC_PREPROCESSOR_DEFINITIONS[sdk=iphonesimulator*]" = IOS_SIMULATOR;
+				INFOPLIST_FILE = "dolphinUnitTestApp/dolphinUnitTestApp-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../../../vendor/gtest/bld/ios/bin/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"",
+					"\"$(SRCROOT)/../../../../distribution/ios/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"",
+					"\"$(SRCROOT)/../../../../distribution/ios/Release-iphoneos\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lwbxaudioengine",
+					"-lwseutil",
+					"-lwsertp",
+					"-lutil_ios",
+					"-lgmock",
+					"-lgtest",
+					"-lwbx_aec",
+					"-lwbx_aagc",
+					"-lwbx_vad",
+					"-lwbx_sa",
+					"-lwbx_tsm",
+					"-lwbx_plc",
+					"-lwbx_cng",
+					"-lwbx_dagc",
+					"-lwbx_resample",
+					"-lwbxaecodec",
+					"-lsafec",
+					"-lwseclient",
+					"-ltcagc",
+					"-ltcaec",
+					"-ltcaudio",
+					"-lqoem",
+					"-laaec",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYMROOT = "$(SRCROOT)/build";
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../../../vendor/gtest/gmock-1.7.0/include/gmock\" \"$(SRCROOT)/../../../../vendor/gtest/gtest-1.7.0/include/gtest\" \"$(SRCROOT)/../../../../mediaengine/util/include/ios\" \"$(SRCROOT)/../../../../mediaengine/util/include\" \"$(SRCROOT)/../../../../mediaengine/util/include/client\" \"$(SRCROOT)/../../../../mediaengine/transmission/include\" \"$(SRCROOT)/../../../../vendor\" \"$(SRCROOT)/../../../../vendor/gtest/wbxmock/src\" \"$(SRCROOT)/../../../../api\" \"$(SRCROOT)/../../../../mediaengine/dolphin/include\" \"$(SRCROOT)/../../../../mediaengine/dolphin/src/AudioEngine/h\" \"$(SRCROOT)/../../../../mediaengine/dolphin/src/AudioEngine/src/common\" \"$(SRCROOT)/../../../../mediaengine/dolphin/src/AudioEngine/src/aqe\" \"$(SRCROOT)/../../../../mediaengine/dolphin/src/AudioEngine/src/framework\" \"$(SRCROOT)/../../../../mediaengine/dolphin/src/cochelea/include\" \"$(SRCROOT)/../../../../mediaengine/shark/include\" \"$(SRCROOT)/../../../../mediaengine/shark/src/h\" \"$(SRCROOT)/../../../../mediaengine/shark/src/common\" \"$(SRCROOT)/../../../../mediaengine/wme/src/h\" \"$(SRCROOT)/../../../../mediaengine/wme/src/common\" \"$(SRCROOT)/../../../../mediaengine/wme/src/client\" \"$(SRCROOT)/../../../../mediaengine/wme/src/client/ios\" \"$(SRCROOT)/../../../../vendor/security/include\" \"$(SRCROOT)/../../../../vendor/gtest/wbxmock/src/wbxmock\" \"$(SRCROOT)/../../../../mediaengine/dolphin/src/AudioEngine/src/cpve\"/** \"$(SRCROOT)/../../../../vendor/gtest/gtest-1.7.0/include\" \"$(SRCROOT)/../../../../vendor/gtest/gmock-1.7.0/include\" \"$(SRCROOT)/../../../../mediaengine/dolphin/src/AudioEngine/src/datadump\" \"$(SRCROOT)/../../../../vendor/SuperEasyJSON\" \"$(SRCROOT)/../../../../vendor/qoem/include\"";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		323E5A5D190F45C800C2CD93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/dolphinUnitTestApp.app/dolphinUnitTestApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "dolphinUnitTestApp/dolphinUnitTestApp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "dolphinUnitTestAppTests/dolphinUnitTestAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		323E5A5E190F45C800C2CD93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/dolphinUnitTestApp.app/dolphinUnitTestApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "dolphinUnitTestApp/dolphinUnitTestApp-Prefix.pch";
+				INFOPLIST_FILE = "dolphinUnitTestAppTests/dolphinUnitTestAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		323E5A28190F45C800C2CD93 /* Build configuration list for PBXProject "dolphinUnitTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				323E5A57190F45C800C2CD93 /* Debug */,
+				323E5A58190F45C800C2CD93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		323E5A59190F45C800C2CD93 /* Build configuration list for PBXNativeTarget "dolphinUnitTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				323E5A5A190F45C800C2CD93 /* Debug */,
+				323E5A5B190F45C800C2CD93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		323E5A5C190F45C800C2CD93 /* Build configuration list for PBXNativeTarget "dolphinUnitTestAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				323E5A5D190F45C800C2CD93 /* Debug */,
+				323E5A5E190F45C800C2CD93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 323E5A25190F45C800C2CD93 /* Project object */;
+}

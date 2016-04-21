@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>WmeTest</ProjectName>
+    <ProjectGuid>{BD4DD546-9DF3-4708-92F2-760F03154F34}</ProjectGuid>
+    <RootNamespace>WmeTest</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.21005.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>../../mediaengine/bin/$(Platform)/$(Configuration)\</OutDir>
+    <IntDir>..\objs\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>../../mediaengine/bin/$(Platform)/$(Configuration)\</OutDir>
+    <IntDir>..\objs\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>../../mediaengine/bin/$(Platform)/$(Configuration)\</OutDir>
+    <IntDir>..\objs\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>../../mediaengine/bin/$(Platform)/$(Configuration)\</OutDir>
+    <IntDir>..\objs\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\vendor\gtest\gtest-1.7.0\include;..\..\vendor\gtest\gmock-1.7.0\include;..\..\mediaengine\util\include;..\..\mediaengine\util\include\client;..\..\mediaengine\util\include\windows;..\..\api;..\..\mediaengine\transmission\include;..\..\mediaengine\shark\include;..\..\mediaengine\dolphin\include;..\..\mediaengine\wme\src\h;..\..\mediaengine\wme\src\client;..\..\mediaengine\wme\src\common;.\;..\..\mediaengine\dolphin\src\AudioEngine\h;..\..\mediaengine\shark\src\h;..\..\mediaengine\appshare\include;..\..\mediaengine\shark\src\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>gtest-md.lib;gmock.lib;wmeclient.lib;util.lib;Ws2_32.lib;wmeutil.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\mediaengine\libs\$(Platform)\$(Configuration);..\..\vendor\gtest\vs2013libs\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>..\maps\$(Platform)\$(Configuration)\$(ProjectName).pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>..\maps\$(Platform)\$(Configuration)\$(ProjectName).map</MapFileName>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\vendor\gtest\gtest-1.7.0\include;..\..\vendor\gtest\gmock-1.7.0\include;..\..\mediaengine\util\include;..\..\mediaengine\util\include\client;..\..\mediaengine\util\include\windows;..\..\api;..\..\mediaengine\transmission\include;..\..\mediaengine\shark\include;..\..\mediaengine\dolphin\include;..\..\mediaengine\wme\src\h;..\..\mediaengine\wme\src\client;..\..\mediaengine\wme\src\common;.\;..\..\mediaengine\dolphin\src\AudioEngine\h;..\..\mediaengine\shark\src\h;..\..\mediaengine\appshare\include;..\..\mediaengine\shark\src\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>gtest-md.lib;gmock.lib;wmeclient.lib;util.lib;Ws2_32.lib;wmeutil.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\mediaengine\libs\$(Platform)\$(Configuration);..\..\vendor\gtest\vs2013libs\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>..\maps\$(Platform)\$(Configuration)\$(ProjectName).pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>..\maps\$(Platform)\$(Configuration)\$(ProjectName).map</MapFileName>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\..\vendor\gtest\gtest-1.7.0\include;..\..\vendor\gtest\gmock-1.7.0\include;..\..\mediaengine\util\include;..\..\mediaengine\util\include\client;..\..\mediaengine\util\include\windows;..\..\api;..\..\mediaengine\transmission\include;..\..\mediaengine\shark\include;..\..\mediaengine\dolphin\include;..\..\mediaengine\wme\src\h;..\..\mediaengine\wme\src\client;..\..\mediaengine\wme\src\common;.\;..\..\mediaengine\dolphin\src\AudioEngine\h;..\..\mediaengine\shark\src\h;..\..\mediaengine\appshare\include;..\..\mediaengine\shark\src\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>gtest-md.lib;gmock.lib;wmeclient.lib;util.lib;Ws2_32.lib;wmeutil.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\mediaengine\libs\$(Platform)\$(Configuration);..\..\vendor\gtest\vs2013libs\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>..\maps\$(Platform)\$(Configuration)\$(ProjectName).pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>..\maps\$(Platform)\$(Configuration)\$(ProjectName).map</MapFileName>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\..\vendor\gtest\gtest-1.7.0\include;..\..\vendor\gtest\gmock-1.7.0\include;..\..\mediaengine\util\include;..\..\mediaengine\util\include\client;..\..\mediaengine\util\include\windows;..\..\api;..\..\mediaengine\transmission\include;..\..\mediaengine\shark\include;..\..\mediaengine\dolphin\include;..\..\mediaengine\wme\src\h;..\..\mediaengine\wme\src\client;..\..\mediaengine\wme\src\common;.\;..\..\mediaengine\dolphin\src\AudioEngine\h;..\..\mediaengine\shark\src\h;..\..\mediaengine\appshare\include;..\..\mediaengine\shark\src\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>gtest-md.lib;gmock.lib;wmeclient.lib;util.lib;Ws2_32.lib;wmeutil.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\mediaengine\libs\$(Platform)\$(Configuration);..\..\vendor\gtest\vs2013libs\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>..\maps\$(Platform)\$(Configuration)\$(ProjectName).pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>..\maps\$(Platform)\$(Configuration)\$(ProjectName).map</MapFileName>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="CWmeAudioVolumeControllerTest.cpp" />
+    <ClCompile Include="CWmeCodecEnumeratorTest.cpp" />
+    <ClCompile Include="CWmeInterfaceTest.cpp" />
+    <ClCompile Include="CWmelAudioDeviceTest.cpp" />
+    <ClCompile Include="CWmeLocalAudioExternalTrackTest.cpp" />
+    <ClCompile Include="CWmeLocalAudioTrackTest.cpp" />
+    <ClCompile Include="CWmeLocalVideoExternalTrackTest.cpp" />
+    <ClCompile Include="CWmeLocalVideoTrackTest.cpp" />
+    <ClCompile Include="CWmeMediaDeviceNotifierTest.cpp" />
+    <ClCompile Include="CWmeMediaInfoTest.cpp" />
+    <ClCompile Include="CWmeMediaSessionTest.cpp" />
+    <ClCompile Include="CWmeMediaSyncBoxTest.cpp" />
+    <ClCompile Include="CWmeNetworkIndicatorTest.cpp" />
+    <ClCompile Include="CWmeRemoteAudioTrackTest.cpp" />
+    <ClCompile Include="CWmeRemoteVideoTrackTest.cpp" />
+    <ClCompile Include="CWmeVideoCaptureDeviceTest.cpp" />
+    <ClCompile Include="CWmeVideoCodecEnumeratorTest.cpp" />
+    <ClCompile Include="CWmeVideoPreviewTrackTest.cpp" />
+    <ClCompile Include="WhitneyMediaSDK_GTest.cpp" />
+    <ClCompile Include="WmeH264PacketizationTest.cpp" />
+    <ClCompile Include="CWmeScreenCaptureEngineTest.cpp" />
+    <ClCompile Include="CWmeScreenShareLocalCompositeTrackTest.cpp" />
+    <ClCompile Include="CWmeScreenShareLocalTrackTest.cpp" />
+    <ClCompile Include="CWmeScreenShareRemoteTrackTest.cpp" />
+    <ClCompile Include="CWmeScreenShareSourceTest.cpp" />
+    <ClCompile Include="CWmeScreenTrackTestBase.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CWmeScreenTrackTestBase.h" />
+    <ClInclude Include="CWmeMediaSDKMock.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

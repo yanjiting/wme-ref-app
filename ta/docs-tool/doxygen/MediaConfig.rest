@@ -1,0 +1,17 @@
+This file describes the interfaces to configure medias.
+
+.. contents:: 
+    :local: 
+    :depth: 2
+
+<doxygen2rst class=wme::IBaseConfig>IBaseConfig</doxygen2rst>
+
+<doxygen2rst class=wme::IAudioConfig>IAudioConfig</doxygen2rst>
+
+<doxygen2rst class=wme::IBaseVideoConfig>IBaseVideoConfig</doxygen2rst>
+
+<doxygen2rst class=wme::IVideoConfig>IVideoConfig</doxygen2rst>
+
+<doxygen2rst class=wme::IShareConfig>IShareConfig</doxygen2rst>
+
+<doxygen2rst class=wme::IGlobalConfig>IGlobalConfig</doxygen2rst>

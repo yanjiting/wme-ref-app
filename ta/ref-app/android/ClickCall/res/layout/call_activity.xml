@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/locus_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <view
+                android:id="@+id/ASGLView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                class="com.webex.wseclient.WseSurfaceView"
+                android:layout_gravity="center">
+        </view>
+
+        <view
+                android:id="@+id/RemoteVideoGLView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                class="com.webex.wseclient.WseSurfaceView" >
+        </view>
+
+        <view
+                android:id="@+id/LocalVideoGLView"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="90dp"
+                android:layout_height="160dp"
+                android:layout_gravity="left|top"
+                class="com.webex.wseclient.WseSurfaceView">
+        </view>
+        
+        <view
+                android:id="@+id/RemoteView1"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_gravity="left|bottom"
+                class="com.webex.wseclient.WseSurfaceView">
+        </view>
+        
+        <view
+                android:id="@+id/RemoteView2"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center|bottom"
+                class="com.webex.wseclient.WseSurfaceView">
+        </view>
+                
+        <view
+                android:id="@+id/RemoteView3"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_gravity="right|bottom"
+                class="com.webex.wseclient.WseSurfaceView">
+        </view>
+                        
+    </FrameLayout>
+
+    <Button
+            android:id="@+id/CameraSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:alpha="50"
+            android:background="@drawable/ic_action_switch_camera" />
+
+    <Button
+            android:id="@+id/ShowStatistics"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/info" />
+
+    <TextView android:id="@+id/ForStatistics"
+              android:layout_marginLeft="10dp"
+              android:layout_marginTop="30dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="#000000"
+              android:text="" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:baselineAligned="false">
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center" >
+            <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Test"
+                    android:id="@+id/testButton" />
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center" >
+            <Button android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Stop"
+                    android:background="@drawable/stop_button"
+                    android:alpha="50"
+                    android:id="@+id/StopButton"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center" >
+            <ToggleButton
+                    android:id="@+id/toggle"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:textOff=""
+                    android:textOn=""
+                    android:alpha="50"
+                    android:background="@drawable/mutecheck"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

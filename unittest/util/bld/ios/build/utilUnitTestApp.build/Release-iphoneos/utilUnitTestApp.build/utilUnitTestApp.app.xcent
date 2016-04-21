@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>application-identifier</key>
+	<string>XU5K75N364.cisco.utilUnitTestApp</string>
+	<key>com.apple.developer.team-identifier</key>
+	<string>DE8Y96K9QP</string>
+	<key>get-task-allow</key>
+	<true/>
+	<key>keychain-access-groups</key>
+	<array>
+		<string>XU5K75N364.cisco.utilUnitTestApp</string>
+	</array>
+</dict>
+</plist>

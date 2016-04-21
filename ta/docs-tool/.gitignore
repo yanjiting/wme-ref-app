@@ -1,0 +1,3 @@
+*.obj
+doxygen/_doxygen
+output/

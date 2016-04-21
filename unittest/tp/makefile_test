@@ -1,0 +1,7 @@
+all:
+	make -f Makefile
+
+clean:
+	make -f Makefile clean
+	rm -f ../../../bin/objs/common/tp/*.gcno
+	rm -f ../../../bin/objs/common/tp/*.gcda

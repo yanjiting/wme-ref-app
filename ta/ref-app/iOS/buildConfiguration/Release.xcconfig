@@ -1,0 +1,13 @@
+// NOTE: The include below does not constitute an inheritance level.
+// Inheritance levels are: Defaults -> Project -> Target
+// So if you have a list like WARNING_CFLAGS in SharedProjectSettings.xcconfig and then try "WARNING_CFLAGS = $(inherited) ..." below,
+// you are simply overriding the value from SharedProjectSettings.xcconfig.
+// You will get the expected behavior of $(inherited) between project and target xcconfig files.
+#include "SharedProjectSettings.xcconfig"
+
+VALIDATE_PRODUCT = YES
+ENABLE_NS_ASSERTIONS = NO
+GCC_PREPROCESSOR_DEFINITIONS = NDEBUG
+
+// We want to extend the typical Debug and Release configurations, which will impact the value of CONFIGURATION.
+BASE_CONFIGURATION = Release

@@ -1,0 +1,19 @@
+
+//
+//  Created by hfe-vscm-mac on 4/24/14.
+//  Copyright (c) 2014 zhchu. All rights reserved.
+//
+// Note: this file is used by all of the UT test APP project and gtest, gmock project.
+//       Be careful to add any info to it
+ARCHS = $(ARCHS_STANDARD)
+
+CLANG_CXX_LIBRARY = libc++
+
+CLANG_CXX_LANGUAGE_STANDARD = gnu++0x
+
+GCC_C_LANGUAGE_STANDARD = gnu99
+
+
+IPHONEOS_DEPLOYMENT_TARGET = 6.0
+
+

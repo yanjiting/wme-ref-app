@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DBACD888-9FDE-4123-86FB-50705B95B942}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ClickCall</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IntDir>$(ProjectDir)\..\..\..\..\mediaengine\objs\$(Platform)\$(Configuration)\$(ProjectName)</IntDir>
+    <OutDir>$(ProjectDir)\..\..\..\..\mediaengine\bin\$(Platform)\$(Configuration)\</OutDir>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)\..\..\..\..\mediaengine\bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)\..\..\..\..\mediaengine\objs\$(Platform)\$(Configuration)\$(ProjectName)</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IntDir>$(ProjectDir)\..\..\..\..\mediaengine\objs\$(Platform)\$(Configuration)\$(ProjectName)</IntDir>
+    <OutDir>$(ProjectDir)\..\..\..\..\mediaengine\bin\$(Platform)\$(Configuration)\</OutDir>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)\..\..\..\..\mediaengine\bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)\..\..\..\..\mediaengine\objs\$(Platform)\$(Configuration)\$(ProjectName)</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)\..\..\src;$(ProjectDir)\..\..\..\..\api;$(ProjectDir)\..\..\..\json-cpp\include;$(ProjectDir)\..\..\..\json-cpp\src\lib_json;$(ProjectDir)\..\..\..\..\mediaengine\util\include;$(ProjectDir)\..\..\..\..\mediaengine\util\include\client;$(ProjectDir)\..\..\..\..\mediaengine\tp\include;$(ProjectDir)\..\..\..\..\mediaengine\util\include\windows;$(ProjectDir)/../../../..\mediasession\src;%(AdditionalIncludeDirectories);$(ProjectDir)\..\..\QRCode;$(ProjectDir)\..\..\QRCode\vendor\zxing\cpp</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)\..\..\..\..\mediaengine\libs\$(Platform)\$(Configuration);$(ProjectDir)\..\..\QRCode\vendor\zxing\cpp\zxing\lib\windows\$(Platform)\$(Configuration)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>mediasession.lib;util.lib;tp.lib;wmeclient.lib;uuid.lib;Rpcrt4.lib;Shlwapi.lib;libzxing.lib;gdiplus.lib;%(AdditionalDependencies);</AdditionalDependencies>
+      <ProgramDatabaseFile>..\..\..\..\mediaengine\maps\Win32\$(Configuration)\$(TargetName).pdb</ProgramDatabaseFile>
+      <AdditionalOptions>/SAFESEH %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>if exist "..\..\..\..\vendor\wbxtrace\libs\windows\wbxtrace.dll" (copy /Y "..\..\..\..\vendor\wbxtrace\libs\windows\wbxtrace.dll" "$(OutDir)")</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)\..\..\src;$(ProjectDir)\..\..\..\..\api;$(ProjectDir)\..\..\..\json-cpp\include;$(ProjectDir)\..\..\..\json-cpp\src\lib_json;$(ProjectDir)\..\..\..\..\mediaengine\util\include;$(ProjectDir)\..\..\..\..\mediaengine\util\include\client;$(ProjectDir)\..\..\..\..\mediaengine\tp\include;$(ProjectDir)\..\..\..\..\mediaengine\util\include\windows;$(ProjectDir)/../../../..\mediasession\src;%(AdditionalIncludeDirectories);$(ProjectDir)\..\..\QRCode;$(ProjectDir)\..\..\QRCode\vendor\zxing\cpp</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)\..\..\..\..\mediaengine\libs\$(Platform)\$(Configuration);$(ProjectDir)\..\..\QRCode\vendor\zxing\cpp\zxing\lib\windows\$(Platform)\$(Configuration)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>mediasession.lib;util.lib;tp.lib;wmeclient.lib;uuid.lib;Rpcrt4.lib;Shlwapi.lib;libzxing.lib;gdiplus.lib;%(AdditionalDependencies);</AdditionalDependencies>
+      <ProgramDatabaseFile>..\..\..\..\mediaengine\maps\$(Platform)\$(Configuration)\$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>if exist "..\..\..\..\vendor\wbxtrace\libs\windows\wbxtrace64.dll" (copy /Y "..\..\..\..\vendor\wbxtrace\libs\windows\wbxtrace64.dll" "$(OutDir)\wbxtrace.dll")</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)\..\..\src;$(ProjectDir)\..\..\..\..\api;$(ProjectDir)\..\..\..\json-cpp\include;$(ProjectDir)\..\..\..\json-cpp\src\lib_json;$(ProjectDir)\..\..\..\..\mediaengine\util\include;$(ProjectDir)\..\..\..\..\mediaengine\util\include\client;$(ProjectDir)\..\..\..\..\mediaengine\tp\include;$(ProjectDir)\..\..\..\..\mediaengine\util\include\windows;$(ProjectDir)/../../../..\mediasession\src;%(AdditionalIncludeDirectories);$(ProjectDir)\..\..\QRCode;$(ProjectDir)\..\..\QRCode\vendor\zxing\cpp</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(ProjectDir)\..\..\..\..\mediaengine\libs\$(Platform)\$(Configuration);$(ProjectDir)\..\..\QRCode\vendor\zxing\cpp\zxing\lib\windows\$(Platform)\$(Configuration)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>mediasession.lib;util.lib;tp.lib;wmeclient.lib;uuid.lib;Rpcrt4.lib;Shlwapi.lib;libzxing.lib;gdiplus.lib;%(AdditionalDependencies);</AdditionalDependencies>
+      <ProgramDatabaseFile>..\..\..\..\mediaengine\maps\Win32\$(Configuration)\$(TargetName).pdb</ProgramDatabaseFile>
+      <AdditionalOptions>/SAFESEH %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>if exist "..\..\..\..\vendor\wbxtrace\libs\windows\wbxtrace.dll" (copy /Y "..\..\..\..\vendor\wbxtrace\libs\windows\wbxtrace.dll" "$(OutDir)")</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)\..\..\src;$(ProjectDir)\..\..\..\..\api;$(ProjectDir)\..\..\..\json-cpp\include;$(ProjectDir)\..\..\..\json-cpp\src\lib_json;$(ProjectDir)\..\..\..\..\mediaengine\util\include;$(ProjectDir)\..\..\..\..\mediaengine\util\include\client;$(ProjectDir)\..\..\..\..\mediaengine\tp\include;$(ProjectDir)\..\..\..\..\mediaengine\util\include\windows;$(ProjectDir)/../../../..\mediasession\src;%(AdditionalIncludeDirectories);$(ProjectDir)\..\..\QRCode;$(ProjectDir)\..\..\QRCode\vendor\zxing\cpp</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(ProjectDir)\..\..\..\..\mediaengine\libs\$(Platform)\$(Configuration);$(ProjectDir)\..\..\QRCode\vendor\zxing\cpp\zxing\lib\windows\$(Platform)\$(Configuration)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>mediasession.lib;util.lib;tp.lib;wmeclient.lib;uuid.lib;Rpcrt4.lib;Shlwapi.lib;libzxing.lib;gdiplus.lib;%(AdditionalDependencies);</AdditionalDependencies>
+      <ProgramDatabaseFile>..\..\..\..\mediaengine\maps\$(Platform)\$(Configuration)\$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>if exist "..\..\..\..\vendor\wbxtrace\libs\windows\wbxtrace64.dll" (copy /Y "..\..\..\..\vendor\wbxtrace\libs\windows\wbxtrace64.dll" "$(OutDir)\wbxtrace.dll")</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\json-cpp\src\lib_json\json_batchallocator.h" />
+    <ClInclude Include="..\..\..\json-cpp\src\lib_json\json_tool.h" />
+    <ClInclude Include="..\..\src\asenum.h" />
+    <ClInclude Include="..\..\src\bearer_oauth.h" />
+    <ClInclude Include="..\..\src\Calabash.h" />
+    <ClInclude Include="..\..\src\calliope_client.h" />
+    <ClInclude Include="..\..\src\CameraPreview.h" />
+    <ClInclude Include="..\..\src\ClickCall.h" />
+    <ClInclude Include="..\..\src\externaltransport.h" />
+    <ClInclude Include="..\..\src\Loopback.h" />
+    <ClInclude Include="..\..\src\PeerCall.h" />
+    <ClInclude Include="..\..\QRCode\ImageReaderSource.h" />
+    <ClInclude Include="..\..\QRCode\jpgd.h" />
+    <ClInclude Include="..\..\QRCode\lodepng.h" />
+    <ClInclude Include="..\..\QRCode\zxinghelper.h" />
+    <ClInclude Include="..\..\src\ScreenTrackViewAnalyzer.h" />
+    <ClInclude Include="..\..\src\StatsInfo.h" />
+    <ClInclude Include="..\..\src\TAHTTPServer.h" />
+    <ClInclude Include="..\..\src\testconfig.h" />
+    <ClInclude Include="..\..\src\wsclient.h" />
+    <ClInclude Include="..\..\src\BackdoorAgent.h" />
+    <ClInclude Include="ClickCall_win.h" />
+    <ClInclude Include="ConfigDialog.h" />
+    <ClInclude Include="ProxyAuthenication.h" />
+    <ClInclude Include="Resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ClickCall.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\json-cpp\src\lib_json\json_reader.cpp" />
+    <ClCompile Include="..\..\..\json-cpp\src\lib_json\json_value.cpp" />
+    <ClCompile Include="..\..\..\json-cpp\src\lib_json\json_writer.cpp" />
+    <ClCompile Include="..\..\src\asenum.cpp" />
+    <ClCompile Include="..\..\src\bearer_oauth.cpp" />
+    <ClCompile Include="..\..\src\Calabash.cpp" />
+    <ClCompile Include="..\..\src\calliope_client.cpp" />
+    <ClCompile Include="..\..\src\CameraPreview.cpp" />
+    <ClCompile Include="..\..\src\ClickCall.cpp" />
+    <ClCompile Include="..\..\src\cmdlinehandler.cpp" />
+    <ClCompile Include="..\..\src\cpuusage.cpp" />
+    <ClCompile Include="..\..\src\externaltransport.cpp" />
+    <ClCompile Include="..\..\src\Loopback.cpp" />
+    <ClCompile Include="..\..\src\PeerCall.cpp" />
+    <ClCompile Include="..\..\QRCode\ImageReaderSource.cpp" />
+    <ClCompile Include="..\..\QRCode\jpgd.cpp" />
+    <ClCompile Include="..\..\QRCode\lodepng.cpp" />
+    <ClCompile Include="..\..\QRCode\zxinghelper.cpp" />
+    <ClCompile Include="..\..\src\ScreenTrackViewAnalyzer.cpp" />
+    <ClCompile Include="..\..\src\StatsInfo.cpp" />
+    <ClCompile Include="..\..\src\stringtoargcargv.cpp" />
+    <ClCompile Include="..\..\src\TAHTTPServer.cpp" />
+    <ClCompile Include="..\..\src\wsclient.cpp" />
+    <ClCompile Include="..\..\src\BackdoorAgent.cpp" />
+    <ClCompile Include="ClickCall_win.cpp" />
+    <ClCompile Include="ConfigDialog.cpp" />
+    <ClCompile Include="ProxyAuthenication.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="ClickCallNew.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A239551A-79EF-455D-9B30-CC31A137E31D}</ProjectGuid>
+    <RootNamespace>wrtpTest</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.21005.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>../../mediaengine/bin/$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>..\objs\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>../../mediaengine/bin/$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>..\objs\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>../../mediaengine/bin/$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>..\objs\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>../../mediaengine/bin/$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>..\objs\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\..\vendor\openssl\ciscossl\include;..\..\vendor\mari\code\include;../../vendor\gtest\gmock-1.7.0\include;..\..\vendor\gtest\gtest-1.7.0\include;..\..\api\include;../../mediaengine/transmission/include;..\..\mediaengine\transmission\src;..\..\api;..\..\mediaengine\util\include;..\..\mediaengine\util\src;..\..\mediaengine\util\include\client;..\..\mediaengine\util\include\windows;../../vendor\libsrtp\include;../../vendor\libsrtp\crypto\include;..\..\mediaengine\wfec\include;..\..\mediaengine\wqos\include;..\..\mediaengine\wqos\src;../../mediaengine\wme\src\common;../../vendor;../../mediaengine\wfec\src\common;../../api</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;WQOS_EXPORTS;NOMINMAX;_DEBUG;_LIB;CM_SUPPORT_T120_UTIL;WRTP_EXPORTS;__MEM_TRACE__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Winmm.lib;gtest-md.lib;gmock.lib;util.lib;wqos.lib;librsfec.lib;Ws2_32.lib;ciscosrtp.lib;libeay32.lib;ssleay32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\libs;../../mediaengine\libs\Win32\$(Configuration);..\..\vendor\gtest\vs2013libs\$(Configuration);..\..\vendor\openssl\ciscossl\libs\windows;%(AdditionalLibraryDirectories);..\..\vendor\mari\build\libs\win32\$(Configuration)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ProgramDatabaseFile>..\maps\$(Platform)\$(Configuration)\$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\..\vendor\openssl\ciscossl\include;..\..\vendor\mari\code\include;../../vendor\gtest\gmock-1.7.0\include;..\..\vendor\gtest\gtest-1.7.0\include;..\..\api\include;../../mediaengine/transmission/include;..\..\mediaengine\transmission\src;..\..\api;..\..\mediaengine\util\include;..\..\mediaengine\util\src;..\..\mediaengine\util\include\client;..\..\mediaengine\util\include\windows;../../vendor\libsrtp\include;../../vendor\libsrtp\crypto\include;..\..\mediaengine\wfec\include;..\..\mediaengine\wqos\include;..\..\mediaengine\wqos\src;../../mediaengine\wme\src\common;../../vendor;../../mediaengine\wfec\src\common;../../api</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;WQOS_EXPORTS;NOMINMAX;_DEBUG;_LIB;CM_SUPPORT_T120_UTIL;WRTP_EXPORTS;__MEM_TRACE__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Winmm.lib;gtest-md.lib;gmock.lib;util.lib;wqos.lib;librsfec.lib;Ws2_32.lib;ciscosrtp.lib;libeay64.lib;ssleay64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\libs;../../mediaengine\libs\x64\$(Configuration);..\..\vendor\gtest\vs2013libs\$(Platform)\$(Configuration);..\..\vendor\openssl\ciscossl\libs\windows;%(AdditionalLibraryDirectories);..\..\vendor\mari\build\libs\win64\$(Configuration)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <ProgramDatabaseFile>..\maps\$(Platform)\$(Configuration)\$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\..\vendor\openssl\ciscossl\include;..\..\vendor\mari\code\include;../../vendor\gtest\gmock-1.7.0\include;..\..\vendor\gtest\gtest-1.7.0\include;..\..\api\include;../../mediaengine/transmission/include;..\..\mediaengine\transmission\src;..\..\api;..\..\mediaengine\util\include;..\..\mediaengine\util\include\client;..\..\mediaengine\util\include\windows;..\..\vendor\libsrtp\include;..\..\vendor\libsrtp\crypto\include;..\..\mediaengine\wfec\include;..\..\mediaengine\wqos\include;..\..\mediaengine\wqos\src;../../mediaengine\wme\src\common;../../vendor;../../mediaengine\wfec\src\common;../../api;..\..\mediaengine\util\src</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;WQOS_EXPORTS;NOMINMAX;NDEBUG;_LIB;WRTP_EXPORTS;CM_SUPPORT_T120_UTIL;__MEM_TRACE__;WQOS_EXPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Winmm.lib;gtest-md.lib;gmock.lib;util.lib;wqos.lib;librsfec.lib;Ws2_32.lib;ciscosrtp.lib;libeay32.lib;ssleay32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\libs;../../mediaengine\libs\Win32\$(Configuration);../../vendor\gtest\vs2013libs\$(Configuration);..\..\vendor\openssl\ciscossl\libs\windows;%(AdditionalLibraryDirectories);../../vendor\mari\build\libs\win32\$(Configuration)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ProgramDatabaseFile>..\maps\$(Platform)\$(Configuration)\$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\..\vendor\openssl\ciscossl\include;..\..\vendor\mari\code\include;../../vendor\gtest\gmock-1.7.0\include;..\..\vendor\gtest\gtest-1.7.0\include;..\..\api\include;../../mediaengine/transmission/include;..\..\mediaengine\transmission\src;..\..\api;..\..\mediaengine\util\include;..\..\mediaengine\util\include\client;..\..\mediaengine\util\include\windows;..\..\vendor\libsrtp\include;..\..\vendor\libsrtp\crypto\include;..\..\mediaengine\wfec\include;..\..\mediaengine\wqos\include;..\..\mediaengine\wqos\src;../../mediaengine\wme\src\common;../../vendor;../../mediaengine\wfec\src\common;../../api;..\..\mediaengine\util\src</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;WQOS_EXPORTS;NOMINMAX;NDEBUG;_LIB;WRTP_EXPORTS;CM_SUPPORT_T120_UTIL;__MEM_TRACE__;WQOS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Winmm.lib;gtest-md.lib;gmock.lib;util.lib;wqos.lib;librsfec.lib;Ws2_32.lib;ciscosrtp.lib;libeay64.lib;ssleay64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\libs;../../mediaengine\libs\x64\$(Configuration);../../vendor\gtest\vs2013libs\$(Platform)\$(Configuration);..\..\vendor\openssl\ciscossl\libs\windows;%(AdditionalLibraryDirectories);../../vendor\mari\build\libs\win64\$(Configuration)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ProgramDatabaseFile>..\maps\$(Platform)\$(Configuration)\$(TargetName).pdb</ProgramDatabaseFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\mediaengine\transmission\src\fecparametertracker.cpp" />
+    <ClCompile Include="..\..\mediaengine\transmission\src\mediametainfo.cpp" />
+    <ClCompile Include="..\..\mediaengine\transmission\src\networkindicator.cpp" />
+    <ClCompile Include="..\..\mediaengine\transmission\src\rtpheaderext.cpp" />
+    <ClCompile Include="..\..\mediaengine\transmission\src\rtppackettracing.cpp" />
+    <ClCompile Include="..\..\mediaengine\transmission\src\rtprecover.cpp" />
+    <ClCompile Include="..\..\mediaengine\transmission\src\statistics.cpp" />
+    <ClCompile Include="..\..\mediaengine\transmission\src\streammonitor.cpp" />
+    <ClCompile Include="..\..\mediaengine\transmission\src\streamstats.cpp" />
+    <ClCompile Include="..\..\mediaengine\transmission\src\rtpstreammanager.cpp" />
+    <ClCompile Include="..\..\mediaengine\transmission\src\videodepacketization.cpp" />
+    <ClCompile Include="..\..\mediaengine\transmission\src\videorecvframe.cpp" />
+    <ClCompile Include="ActiveBufferTest.cpp" />
+    <ClCompile Include="CFBPacketTest.cpp" />
+    <ClCompile Include="CFECEncoderTest.cpp" />
+    <ClCompile Include="CFECLevelTest.cpp" />
+    <ClCompile Include="CMMFrameManagerTest.cpp" />
+    <ClCompile Include="CPSFBPacketTest.cpp" />
+    <ClCompile Include="CRetransmissionPacketTest.cpp" />
+    <ClCompile Include="CRTCPHandlerTest.cpp" />
+    <ClCompile Include="CRTCPPacketTest.cpp" />
+    <ClCompile Include="CRTPAggregatePacketTest.cpp" />
+    <ClCompile Include="CRTPChannelTest.cpp" />
+    <ClCompile Include="CRTPFBPacketTest.cpp" />
+    <ClCompile Include="CRTPPacketLazyTest.cpp" />
+    <ClCompile Include="CRTPPacketTest.cpp" />
+    <ClCompile Include="CRTPSessionClientTest.cpp" />
+    <ClCompile Include="CRTPStreamTest.cpp" />
+    <ClCompile Include="CRTPUtilsTest.cpp" />
+    <ClCompile Include="CSecurityStrategyWrapperClientTest.cpp" />
+    <ClCompile Include="CSendWindowTest.cpp" />
+    <ClCompile Include="CSeqCountorTest.cpp" />
+    <ClCompile Include="CSequenceDBTest.cpp" />
+    <ClCompile Include="FrameNALFragmentTest.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MediaStatisticsTest.cpp" />
+    <ClCompile Include="NewTraceInterfaceTest.cpp" />
+    <ClCompile Include="PktStatTest.cpp" />
+    <ClCompile Include="PSFBCallFlowTest.cpp" />
+    <ClCompile Include="RTPHeaderExtensionVideoTest.cpp" />
+    <ClCompile Include="RTPMediaAPITest.cpp" />
+    <ClCompile Include="RTPPacketizationTest.cpp" />
+    <ClCompile Include="RTPSessionConfigTest.cpp" />
+    <ClCompile Include="RTPTimeTest.cpp" />
+    <ClCompile Include="SecurityPolicyAPITest.cpp" />
+    <ClCompile Include="SendControlTest.cpp" />
+    <ClCompile Include="SendingControlTest.cpp" />
+    <ClCompile Include="SimulcastCallflowTest.cpp" />
+    <ClCompile Include="simulcastTest.cpp" />
+    <ClCompile Include="SpeedMeasureTest.cpp" />
+    <ClCompile Include="testutil.cpp" />
+    <ClCompile Include="TMMBRTest.cpp" />
+    <ClCompile Include="VideoRecvBufferTest\RTPVideoRecvFrameManagerTest.cpp" />
+    <ClCompile Include="VideoRecvBufferTest\RTPVideoRecvFrameTest.cpp" />
+    <ClCompile Include="VideoRecvBufferTest\VideoRecvFrameInfoTest.cpp" />
+    <ClCompile Include="VideoRecvBufferTest\VideoRecvFramePacketTest.cpp" />
+    <ClCompile Include="WMEInterfaceMock.cpp" />
+    <ClCompile Include="..\..\mediaengine\transmission\src\activebuffer.cpp" />
+    <ClCompile Include="..\..\mediaengine\transmission\src\assendadaptor.cpp" />
+    <ClCompile Include="..\..\mediaengine\transmission\src\fecdecoder.cpp" />
+    <ClCompile Include="..\..\mediaengine\transmission\src\fecencoder.cpp" />
+    <ClCompile Include="..\..\mediaengine\transmission\src\feclevel.cpp" />
+    <ClCompile Include="..\..\mediaengine\transmission\src\mmframemgr.cpp" />
+    <ClCompile Include="..\..\mediaengine\transmission\src\pktstat.cpp" />
+    <ClCompile Include="..\..\mediaengine\transmission\src\qoshandler.cpp" />
+    <ClCompile Include="..\..\mediaengine\transmission\src\retransmissionpacket.cpp" />
+    <ClCompile Include="..\..\mediaengine\transmission\src\rtcphandler.cpp" />
+    <ClCompile Include="..\..\mediaengine\transmission\src\rtcppacket.cpp" />
+    <ClCompile Include="..\..\mediaengine\transmission\src\rtpchannel.cpp" />
+    <ClCompile Include="..\..\mediaengine\transmission\src\rtppacket.cpp" />
+    <ClCompile Include="..\..\mediaengine\transmission\src\rtpqosadaptor.cpp" />
+    <ClCompile Include="..\..\mediaengine\transmission\src\rtpsessionbase.cpp" />
+    <ClCompile Include="..\..\mediaengine\transmission\src\rtpsessionclient.cpp" />
+    <ClCompile Include="..\..\mediaengine\transmission\src\rtpsessionconfig.cpp" />
+    <ClCompile Include="..\..\mediaengine\transmission\src\rtpstream.cpp" />
+    <ClCompile Include="..\..\mediaengine\transmission\src\rtptime.cpp" />
+    <ClCompile Include="..\..\mediaengine\transmission\src\rtputils.cpp" />
+    <ClCompile Include="..\..\mediaengine\transmission\src\scheduler.cpp" />
+    <ClCompile Include="..\..\mediaengine\transmission\src\seccryptosuite.cpp" />
+    <ClCompile Include="..\..\mediaengine\transmission\src\secstrategyclientwrapper.cpp" />
+    <ClCompile Include="..\..\mediaengine\transmission\src\secstrategyfactoryclient.cpp" />
+    <ClCompile Include="..\..\mediaengine\transmission\src\secstrategywrapper.cpp" />
+    <ClCompile Include="..\..\mediaengine\transmission\src\sendadaptor.cpp" />
+    <ClCompile Include="..\..\mediaengine\transmission\src\sendbpsstat.cpp" />
+    <ClCompile Include="..\..\mediaengine\transmission\src\sendcontrol.cpp" />
+    <ClCompile Include="..\..\mediaengine\transmission\src\sendwindow.cpp" />
+    <ClCompile Include="..\..\mediaengine\transmission\src\simulcastpacketquerier.cpp" />
+    <ClCompile Include="..\..\mediaengine\transmission\src\simulcastrequester.cpp" />
+    <ClCompile Include="..\..\mediaengine\transmission\src\simulcastrequestmsg.cpp" />
+    <ClCompile Include="..\..\mediaengine\transmission\src\simulcastresponser.cpp" />
+    <ClCompile Include="..\..\mediaengine\transmission\src\simulcastretransmitter.cpp" />
+    <ClCompile Include="..\..\mediaengine\transmission\src\simulcastwrapper.cpp" />
+    <ClCompile Include="..\..\mediaengine\transmission\src\smoothsend.cpp" />
+    <ClCompile Include="..\..\mediaengine\transmission\src\speedmeasure.cpp" />
+    <ClCompile Include="..\..\mediaengine\transmission\src\tmmbrhandler.cpp" />
+    <ClCompile Include="..\..\mediaengine\transmission\src\videostream.cpp" />
+    <ClCompile Include="..\..\mediaengine\transmission\src\wrtptrace.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\mediaengine\transmission\src\resource.h" />
+    <ClInclude Include="testutil.h" />
+    <ClInclude Include="WMEInterfaceMock.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

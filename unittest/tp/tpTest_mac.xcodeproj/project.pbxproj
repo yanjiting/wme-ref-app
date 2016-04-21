@@ -1,0 +1,547 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		48F84E201C21305F000DE74E /* TimerTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 48F84E1F1C21305F000DE74E /* TimerTest.cpp */; };
+		9903EAB4190DFB860096B132 /* util.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99D5B0A5190DFB3900A91D61 /* util.framework */; };
+		99421E48190902070054301F /* tp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99421E45190901CA0054301F /* tp.framework */; };
+		99421E66190902690054301F /* CmConnectionInterfaceTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99421E51190902690054301F /* CmConnectionInterfaceTest.cpp */; };
+		99421E6F190902690054301F /* CmWSHandleRFC6455Test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99421E5A190902690054301F /* CmWSHandleRFC6455Test.cpp */; };
+		99421E7E1909028E0054301F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99421E7D1909028E0054301F /* main.cpp */; };
+		99421EC9190905D00054301F /* libgmock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 99421EC1190905C30054301F /* libgmock.a */; };
+		99421ECA190905D20054301F /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 99421EC4190905C30054301F /* libgtest.a */; };
+		99D5AE43190A1DC400A91D61 /* CmCsLenPkgHeadLen16BitTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99D5AE1E190A1BF600A91D61 /* CmCsLenPkgHeadLen16BitTest.cpp */; };
+		99D5AE45190A1E0700A91D61 /* CmHttpConnectionCrossDomainTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99D5AE20190A1BF600A91D61 /* CmHttpConnectionCrossDomainTest.cpp */; };
+		99D5AE4B190A202400A91D61 /* CmWebsocketClientTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99D5AE24190A1BF600A91D61 /* CmWebsocketClientTest.cpp */; };
+		A1306C1C1BA085D300D5D2B9 /* CmDtlsTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1306C1B1BA085D300D5D2B9 /* CmDtlsTest.cpp */; };
+		D9ACE5CC1B043F7500EF5AFC /* CmReactorBaseTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D9ACE5CB1B043F7500EF5AFC /* CmReactorBaseTest.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9903EAB1190DFB810096B132 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99D5B0A0190DFB3800A91D61 /* util.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B10A6AD91697BD3A00374A3E;
+			remoteInfo = util;
+		};
+		99421E44190901CA0054301F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99421E3F190901C70054301F /* tp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B10A6B721697C82800374A3E;
+			remoteInfo = tp;
+		};
+		99421E46190902000054301F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99421E3F190901C70054301F /* tp.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B10A6B711697C82800374A3E;
+			remoteInfo = tp;
+		};
+		99421EC0190905C30054301F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99421EB9190905C30054301F /* gmock.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 995119CE1908B9680003775D;
+			remoteInfo = gmock;
+		};
+		99421EC3190905C30054301F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99421EBC190905C30054301F /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 99B81CF61908B65000614567;
+			remoteInfo = gtest;
+		};
+		99421EC5190905CA0054301F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99421EB9190905C30054301F /* gmock.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 995119CD1908B9680003775D;
+			remoteInfo = gmock;
+		};
+		99421EC7190905CC0054301F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99421EBC190905C30054301F /* gtest.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 99B81CF51908B65000614567;
+			remoteInfo = gtest;
+		};
+		99D5B0A4190DFB3900A91D61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99D5B0A0190DFB3800A91D61 /* util.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B10A6ADA1697BD3A00374A3E;
+			remoteInfo = util;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		99421E2F190901080054301F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		487895411B8ED41300A79ABB /* SelfSignedCert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelfSignedCert.h; sourceTree = "<group>"; };
+		48F84E1F1C21305F000DE74E /* TimerTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TimerTest.cpp; sourceTree = "<group>"; };
+		99421E31190901080054301F /* tpTest_mac */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = tpTest_mac; sourceTree = BUILT_PRODUCTS_DIR; };
+		99421E3F190901C70054301F /* tp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = tp.xcodeproj; path = ../../mediaengine/tp/src/tp.xcodeproj; sourceTree = "<group>"; };
+		99421E51190902690054301F /* CmConnectionInterfaceTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CmConnectionInterfaceTest.cpp; sourceTree = "<group>"; };
+		99421E5A190902690054301F /* CmWSHandleRFC6455Test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CmWSHandleRFC6455Test.cpp; sourceTree = "<group>"; };
+		99421E7D1909028E0054301F /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		99421E80190903C50054301F /* tpTest_mac-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "tpTest_mac-Prefix.pch"; sourceTree = "<group>"; };
+		99421EB9190905C30054301F /* gmock.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = gmock.xcodeproj; path = ../../vendor/gtest/bld/mac/gmock.xcodeproj; sourceTree = "<group>"; };
+		99421EBC190905C30054301F /* gtest.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = gtest.xcodeproj; path = ../../vendor/gtest/bld/mac/gtest.xcodeproj; sourceTree = "<group>"; };
+		99D5AE17190A1BF600A91D61 /* CCmBaseHTTPExProtoHandleTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCmBaseHTTPExProtoHandleTest.cpp; sourceTree = "<group>"; };
+		99D5AE18190A1BF600A91D61 /* CCmICEConnTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCmICEConnTest.cpp; sourceTree = "<group>"; };
+		99D5AE19190A1BF600A91D61 /* CmBoshBodyTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CmBoshBodyTest.cpp; sourceTree = "<group>"; };
+		99D5AE1A190A1BF600A91D61 /* CmBoshDataBuild.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CmBoshDataBuild.cpp; sourceTree = "<group>"; };
+		99D5AE1B190A1BF600A91D61 /* CmBoshProviderTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CmBoshProviderTest.cpp; sourceTree = "<group>"; };
+		99D5AE1C190A1BF600A91D61 /* CmBoshSessionTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CmBoshSessionTest.cpp; sourceTree = "<group>"; };
+		99D5AE1D190A1BF600A91D61 /* CmBoshTransactionTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CmBoshTransactionTest.cpp; sourceTree = "<group>"; };
+		99D5AE1E190A1BF600A91D61 /* CmCsLenPkgHeadLen16BitTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CmCsLenPkgHeadLen16BitTest.cpp; sourceTree = "<group>"; };
+		99D5AE1F190A1BF600A91D61 /* CmEventTimerTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CmEventTimerTest.cpp; sourceTree = "<group>"; };
+		99D5AE20190A1BF600A91D61 /* CmHttpConnectionCrossDomainTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CmHttpConnectionCrossDomainTest.cpp; sourceTree = "<group>"; };
+		99D5AE21190A1BF600A91D61 /* CmOnePortICEConnTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CmOnePortICEConnTest.cpp; sourceTree = "<group>"; };
+		99D5AE22190A1BF600A91D61 /* CmOnePortImplTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CmOnePortImplTest.cpp; sourceTree = "<group>"; };
+		99D5AE23190A1BF600A91D61 /* CmRestHandleTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CmRestHandleTest.cpp; sourceTree = "<group>"; };
+		99D5AE24190A1BF600A91D61 /* CmWebsocketClientTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CmWebsocketClientTest.cpp; sourceTree = "<group>"; };
+		99D5AE25190A1BF600A91D61 /* CmWebSocketHandleTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CmWebSocketHandleTest.cpp; sourceTree = "<group>"; };
+		99D5AE26190A1BF600A91D61 /* iceEngineCheckMgrtest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = iceEngineCheckMgrtest.cpp; sourceTree = "<group>"; };
+		99D5AE27190A1BF600A91D61 /* iceEngineChecktest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = iceEngineChecktest.cpp; sourceTree = "<group>"; };
+		99D5AE28190A1BF600A91D61 /* iceEngineMgrtest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = iceEngineMgrtest.cpp; sourceTree = "<group>"; };
+		99D5AE29190A1BF600A91D61 /* iceEngineTransporttest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = iceEngineTransporttest.cpp; sourceTree = "<group>"; };
+		99D5B0A0190DFB3800A91D61 /* util.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = util.xcodeproj; path = ../../mediaengine/util/src/util.xcodeproj; sourceTree = "<group>"; };
+		A1306C1B1BA085D300D5D2B9 /* CmDtlsTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CmDtlsTest.cpp; sourceTree = "<group>"; };
+		BFF95786194584BD00E3EBD8 /* DebugCommon.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = DebugCommon.xcconfig; path = ../../mediaengine/bld/mac/Config/DebugCommon.xcconfig; sourceTree = "<group>"; };
+		BFF95787194584BD00E3EBD8 /* ReleaseCommon.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = ReleaseCommon.xcconfig; path = ../../mediaengine/bld/mac/Config/ReleaseCommon.xcconfig; sourceTree = "<group>"; };
+		D9ACE5CB1B043F7500EF5AFC /* CmReactorBaseTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CmReactorBaseTest.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		99421E2E190901080054301F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99421ECA190905D20054301F /* libgtest.a in Frameworks */,
+				99421EC9190905D00054301F /* libgmock.a in Frameworks */,
+				9903EAB4190DFB860096B132 /* util.framework in Frameworks */,
+				99421E48190902070054301F /* tp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		99421E28190901080054301F = {
+			isa = PBXGroup;
+			children = (
+				BFF957851945849B00E3EBD8 /* Config */,
+				99421E3D190901860054301F /* Dependencies */,
+				99421E3E1909019A0054301F /* Tests */,
+				99421E7F190903B50054301F /* Others */,
+				99421E32190901080054301F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		99421E32190901080054301F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99421E31190901080054301F /* tpTest_mac */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		99421E3D190901860054301F /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				99421EB9190905C30054301F /* gmock.xcodeproj */,
+				99421EBC190905C30054301F /* gtest.xcodeproj */,
+				99D5B0A0190DFB3800A91D61 /* util.xcodeproj */,
+				99421E3F190901C70054301F /* tp.xcodeproj */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		99421E3E1909019A0054301F /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A1306C1B1BA085D300D5D2B9 /* CmDtlsTest.cpp */,
+				48F84E1F1C21305F000DE74E /* TimerTest.cpp */,
+				D9ACE5CB1B043F7500EF5AFC /* CmReactorBaseTest.cpp */,
+				487895411B8ED41300A79ABB /* SelfSignedCert.h */,
+				99421E51190902690054301F /* CmConnectionInterfaceTest.cpp */,
+				99D5AE1E190A1BF600A91D61 /* CmCsLenPkgHeadLen16BitTest.cpp */,
+				99D5AE20190A1BF600A91D61 /* CmHttpConnectionCrossDomainTest.cpp */,
+				99D5AE24190A1BF600A91D61 /* CmWebsocketClientTest.cpp */,
+				99421E5A190902690054301F /* CmWSHandleRFC6455Test.cpp */,
+				99421E7D1909028E0054301F /* main.cpp */,
+				99D5AE16190A1BD100A91D61 /* Unsupported */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		99421E40190901C70054301F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99421E45190901CA0054301F /* tp.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		99421E7F190903B50054301F /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				99421E80190903C50054301F /* tpTest_mac-Prefix.pch */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
+		99421EBA190905C30054301F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99421EC1190905C30054301F /* libgmock.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		99421EBD190905C30054301F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99421EC4190905C30054301F /* libgtest.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		99D5AE16190A1BD100A91D61 /* Unsupported */ = {
+			isa = PBXGroup;
+			children = (
+				99D5AE17190A1BF600A91D61 /* CCmBaseHTTPExProtoHandleTest.cpp */,
+				99D5AE18190A1BF600A91D61 /* CCmICEConnTest.cpp */,
+				99D5AE19190A1BF600A91D61 /* CmBoshBodyTest.cpp */,
+				99D5AE1A190A1BF600A91D61 /* CmBoshDataBuild.cpp */,
+				99D5AE1B190A1BF600A91D61 /* CmBoshProviderTest.cpp */,
+				99D5AE1C190A1BF600A91D61 /* CmBoshSessionTest.cpp */,
+				99D5AE1D190A1BF600A91D61 /* CmBoshTransactionTest.cpp */,
+				99D5AE1F190A1BF600A91D61 /* CmEventTimerTest.cpp */,
+				99D5AE21190A1BF600A91D61 /* CmOnePortICEConnTest.cpp */,
+				99D5AE22190A1BF600A91D61 /* CmOnePortImplTest.cpp */,
+				99D5AE23190A1BF600A91D61 /* CmRestHandleTest.cpp */,
+				99D5AE25190A1BF600A91D61 /* CmWebSocketHandleTest.cpp */,
+				99D5AE26190A1BF600A91D61 /* iceEngineCheckMgrtest.cpp */,
+				99D5AE27190A1BF600A91D61 /* iceEngineChecktest.cpp */,
+				99D5AE28190A1BF600A91D61 /* iceEngineMgrtest.cpp */,
+				99D5AE29190A1BF600A91D61 /* iceEngineTransporttest.cpp */,
+			);
+			name = Unsupported;
+			sourceTree = "<group>";
+		};
+		99D5B0A1190DFB3800A91D61 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99D5B0A5190DFB3900A91D61 /* util.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BFF957851945849B00E3EBD8 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				BFF95786194584BD00E3EBD8 /* DebugCommon.xcconfig */,
+				BFF95787194584BD00E3EBD8 /* ReleaseCommon.xcconfig */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		99421E30190901080054301F /* tpTest_mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99421E3A190901080054301F /* Build configuration list for PBXNativeTarget "tpTest_mac" */;
+			buildPhases = (
+				99421E2D190901080054301F /* Sources */,
+				99421E2E190901080054301F /* Frameworks */,
+				99421E2F190901080054301F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99421EC8190905CC0054301F /* PBXTargetDependency */,
+				99421EC6190905CA0054301F /* PBXTargetDependency */,
+				9903EAB2190DFB810096B132 /* PBXTargetDependency */,
+				99421E47190902000054301F /* PBXTargetDependency */,
+			);
+			name = tpTest_mac;
+			productName = tpTest_mac;
+			productReference = 99421E31190901080054301F /* tpTest_mac */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		99421E29190901080054301F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = cisco;
+			};
+			buildConfigurationList = 99421E2C190901080054301F /* Build configuration list for PBXProject "tpTest_mac" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 99421E28190901080054301F;
+			productRefGroup = 99421E32190901080054301F /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 99421EBA190905C30054301F /* Products */;
+					ProjectRef = 99421EB9190905C30054301F /* gmock.xcodeproj */;
+				},
+				{
+					ProductGroup = 99421EBD190905C30054301F /* Products */;
+					ProjectRef = 99421EBC190905C30054301F /* gtest.xcodeproj */;
+				},
+				{
+					ProductGroup = 99421E40190901C70054301F /* Products */;
+					ProjectRef = 99421E3F190901C70054301F /* tp.xcodeproj */;
+				},
+				{
+					ProductGroup = 99D5B0A1190DFB3800A91D61 /* Products */;
+					ProjectRef = 99D5B0A0190DFB3800A91D61 /* util.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				99421E30190901080054301F /* tpTest_mac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		99421E45190901CA0054301F /* tp.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = tp.framework;
+			remoteRef = 99421E44190901CA0054301F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		99421EC1190905C30054301F /* libgmock.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libgmock.a;
+			remoteRef = 99421EC0190905C30054301F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		99421EC4190905C30054301F /* libgtest.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libgtest.a;
+			remoteRef = 99421EC3190905C30054301F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		99D5B0A5190DFB3900A91D61 /* util.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = util.framework;
+			remoteRef = 99D5B0A4190DFB3900A91D61 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXSourcesBuildPhase section */
+		99421E2D190901080054301F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99421E66190902690054301F /* CmConnectionInterfaceTest.cpp in Sources */,
+				D9ACE5CC1B043F7500EF5AFC /* CmReactorBaseTest.cpp in Sources */,
+				48F84E201C21305F000DE74E /* TimerTest.cpp in Sources */,
+				99421E6F190902690054301F /* CmWSHandleRFC6455Test.cpp in Sources */,
+				99421E7E1909028E0054301F /* main.cpp in Sources */,
+				99D5AE43190A1DC400A91D61 /* CmCsLenPkgHeadLen16BitTest.cpp in Sources */,
+				99D5AE45190A1E0700A91D61 /* CmHttpConnectionCrossDomainTest.cpp in Sources */,
+				A1306C1C1BA085D300D5D2B9 /* CmDtlsTest.cpp in Sources */,
+				99D5AE4B190A202400A91D61 /* CmWebsocketClientTest.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9903EAB2190DFB810096B132 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = util;
+			targetProxy = 9903EAB1190DFB810096B132 /* PBXContainerItemProxy */;
+		};
+		99421E47190902000054301F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = tp;
+			targetProxy = 99421E46190902000054301F /* PBXContainerItemProxy */;
+		};
+		99421EC6190905CA0054301F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = gmock;
+			targetProxy = 99421EC5190905CA0054301F /* PBXContainerItemProxy */;
+		};
+		99421EC8190905CC0054301F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = gtest;
+			targetProxy = 99421EC7190905CC0054301F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		99421E38190901080054301F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFF95786194584BD00E3EBD8 /* DebugCommon.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OBJROOT = "$(SRCROOT)/../objs/mac";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SYMROOT = "$(SRCROOT)/../bin/mac";
+			};
+			name = Debug;
+		};
+		99421E39190901080054301F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFF95787194584BD00E3EBD8 /* ReleaseCommon.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OBJROOT = "$(SRCROOT)/../objs/mac";
+				SDKROOT = macosx;
+				SYMROOT = "$(SRCROOT)/../bin/mac";
+			};
+			name = Release;
+		};
+		99421E3B190901080054301F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "tpTest_mac-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "Debug=1";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../vendor/gtest/gtest-1.7.0/include\"",
+					"\"$(SRCROOT)/../../vendor/gtest/gtest-1.7.0\"",
+					"\"$(SRCROOT)/../../vendor/gtest/gmock-1.7.0/include\"",
+					"\"$(SRCROOT)/../../vendor/gtest/gmock-1.7.0\"",
+					"\"$(SRCROOT)/../../mediaengine/util/include\"",
+					"\"$(SRCROOT)/../../mediaengine/util/include/macos\"",
+					"\"$(SRCROOT)/../../mediaengine/util/include/client\"",
+					"\"$(SRCROOT)/../../mediaengine/tp/src\"",
+					"\"$(SRCROOT)/../../mediaengine/tp/include\"",
+					"\"$(SRCROOT)/../../api\"",
+					"\"$(SRCROOT)/../../vendor/openssl/ciscossl/include\"",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../../../../distribution/mac/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/../../vendor/openssl/ciscossl/libs/mac\"";
+				OTHER_LDFLAGS = (
+					"-l",
+					ssl,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		99421E3C190901080054301F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "tpTest_mac-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../vendor/gtest/gtest-1.7.0/include\"",
+					"\"$(SRCROOT)/../../vendor/gtest/gtest-1.7.0\"",
+					"\"$(SRCROOT)/../../vendor/gtest/gmock-1.7.0/include\"",
+					"\"$(SRCROOT)/../../vendor/gtest/gmock-1.7.0\"",
+					"\"$(SRCROOT)/../../mediaengine/util/include\"",
+					"\"$(SRCROOT)/../../mediaengine/util/include/macos\"",
+					"\"$(SRCROOT)/../../mediaengine/util/include/client\"",
+					"\"$(SRCROOT)/../../mediaengine/tp/src\"",
+					"\"$(SRCROOT)/../../mediaengine/tp/include\"",
+					"\"$(SRCROOT)/../../api\"",
+					"\"$(SRCROOT)/../../vendor/openssl/ciscossl/include\"",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../../../../distribution/mac/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/../../vendor/openssl/ciscossl/libs/mac\"";
+				OTHER_LDFLAGS = (
+					"-l",
+					ssl,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		99421E2C190901080054301F /* Build configuration list for PBXProject "tpTest_mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99421E38190901080054301F /* Debug */,
+				99421E39190901080054301F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99421E3A190901080054301F /* Build configuration list for PBXNativeTarget "tpTest_mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99421E3B190901080054301F /* Debug */,
+				99421E3C190901080054301F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 99421E29190901080054301F /* Project object */;
+}

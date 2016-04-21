@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1160BC481C87DD210045FE00 /* CmLogMacrosTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1160BC471C87DD210045FE00 /* CmLogMacrosTest.cpp */; };
+		176874C91990D2F20085F70A /* CmConfigInitFileTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 176874C71990D2F20085F70A /* CmConfigInitFileTest.cpp */; };
+		99421F01190907C70054301F /* CmMessageBlockTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99421EFC190907C70054301F /* CmMessageBlockTest.cpp */; };
+		99421F02190907C70054301F /* CmStdCppTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99421EFD190907C70054301F /* CmStdCppTest.cpp */; };
+		99421F03190907C70054301F /* CmTimeValueTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99421EFE190907C70054301F /* CmTimeValueTest.cpp */; };
+		99421F04190907C70054301F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99421EFF190907C70054301F /* main.cpp */; };
+		99421F16190908450054301F /* util.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99421EF91909077F0054301F /* util.framework */; };
+		99421F17190908480054301F /* libgmock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 99421EF31909077F0054301F /* libgmock.a */; };
+		99421F181909084A0054301F /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 99421EF61909077F0054301F /* libgtest.a */; };
+		9976E2B71909FA2E0095CEFE /* CmMyThread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9976E2AD1909F9EC0095CEFE /* CmMyThread.cpp */; };
+		9976E2B81909FA2E0095CEFE /* CmMyThreadTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9976E2AE1909F9EC0095CEFE /* CmMyThreadTest.cpp */; };
+		99D5AE54190A223C00A91D61 /* CmServerTraceFileNameFormat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9976E2AF1909F9EC0095CEFE /* CmServerTraceFileNameFormat.cpp */; };
+		99D5AE55190A226E00A91D61 /* CmDataBlockTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99421EFB190907C70054301F /* CmDataBlockTest.cpp */; };
+		D923D4711B55F1E10004F243 /* CmListAllocatorTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D923D46F1B55F1E10004F243 /* CmListAllocatorTest.cpp */; };
+		DC8063A11B60B2A1001B9948 /* CmPerformanceTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC8063A01B60B2A1001B9948 /* CmPerformanceTest.cpp */; };
+		DCF756831B4654D7004F01E8 /* CmLockFreeTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DCF756821B4654D7004F01E8 /* CmLockFreeTest.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		99421EF21909077F0054301F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99421EE81909077F0054301F /* gmock.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 995119CE1908B9680003775D;
+			remoteInfo = gmock;
+		};
+		99421EF51909077F0054301F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99421EEB1909077F0054301F /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 99B81CF61908B65000614567;
+			remoteInfo = gtest;
+		};
+		99421EF81909077F0054301F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99421EEE1909077F0054301F /* util.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B10A6ADA1697BD3A00374A3E;
+			remoteInfo = util;
+		};
+		99421F0D1909083D0054301F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99421EEE1909077F0054301F /* util.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B10A6AD91697BD3A00374A3E;
+			remoteInfo = util;
+		};
+		99421F121909083F0054301F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99421EE81909077F0054301F /* gmock.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 995119CD1908B9680003775D;
+			remoteInfo = gmock;
+		};
+		99421F14190908410054301F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99421EEB1909077F0054301F /* gtest.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 99B81CF51908B65000614567;
+			remoteInfo = gtest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		99421ED2190906BB0054301F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1160BC471C87DD210045FE00 /* CmLogMacrosTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CmLogMacrosTest.cpp; sourceTree = "<group>"; };
+		176874C71990D2F20085F70A /* CmConfigInitFileTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CmConfigInitFileTest.cpp; sourceTree = "<group>"; };
+		99421ED4190906BB0054301F /* utilTest_mac */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = utilTest_mac; sourceTree = BUILT_PRODUCTS_DIR; };
+		99421EE81909077F0054301F /* gmock.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = gmock.xcodeproj; path = ../../vendor/gtest/bld/mac/gmock.xcodeproj; sourceTree = "<group>"; };
+		99421EEB1909077F0054301F /* gtest.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = gtest.xcodeproj; path = ../../vendor/gtest/bld/mac/gtest.xcodeproj; sourceTree = "<group>"; };
+		99421EEE1909077F0054301F /* util.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = util.xcodeproj; path = ../../mediaengine/util/src/util.xcodeproj; sourceTree = "<group>"; };
+		99421EFA190907900054301F /* utilTest_mac-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "utilTest_mac-Prefix.pch"; sourceTree = "<group>"; };
+		99421EFB190907C70054301F /* CmDataBlockTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CmDataBlockTest.cpp; sourceTree = "<group>"; };
+		99421EFC190907C70054301F /* CmMessageBlockTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CmMessageBlockTest.cpp; sourceTree = "<group>"; };
+		99421EFD190907C70054301F /* CmStdCppTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CmStdCppTest.cpp; sourceTree = "<group>"; };
+		99421EFE190907C70054301F /* CmTimeValueTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CmTimeValueTest.cpp; sourceTree = "<group>"; };
+		99421EFF190907C70054301F /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = main.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		9976E2AB1909F9EC0095CEFE /* CmDns6ManagerTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CmDns6ManagerTest.cpp; sourceTree = "<group>"; };
+		9976E2AC1909F9EC0095CEFE /* CmDnsManagerTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CmDnsManagerTest.cpp; sourceTree = "<group>"; };
+		9976E2AD1909F9EC0095CEFE /* CmMyThread.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CmMyThread.cpp; sourceTree = "<group>"; };
+		9976E2AE1909F9EC0095CEFE /* CmMyThreadTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CmMyThreadTest.cpp; sourceTree = "<group>"; };
+		9976E2AF1909F9EC0095CEFE /* CmServerTraceFileNameFormat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CmServerTraceFileNameFormat.cpp; sourceTree = "<group>"; };
+		BFF957891945853100E3EBD8 /* DebugCommon.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = DebugCommon.xcconfig; path = ../../mediaengine/bld/mac/Config/DebugCommon.xcconfig; sourceTree = "<group>"; };
+		BFF9578A1945853100E3EBD8 /* ReleaseCommon.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = ReleaseCommon.xcconfig; path = ../../mediaengine/bld/mac/Config/ReleaseCommon.xcconfig; sourceTree = "<group>"; };
+		D923D46F1B55F1E10004F243 /* CmListAllocatorTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CmListAllocatorTest.cpp; sourceTree = "<group>"; };
+		DC8063A01B60B2A1001B9948 /* CmPerformanceTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CmPerformanceTest.cpp; sourceTree = "<group>"; };
+		DCF756821B4654D7004F01E8 /* CmLockFreeTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CmLockFreeTest.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		99421ED1190906BB0054301F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99421F181909084A0054301F /* libgtest.a in Frameworks */,
+				99421F17190908480054301F /* libgmock.a in Frameworks */,
+				99421F16190908450054301F /* util.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		99421ECB190906BB0054301F = {
+			isa = PBXGroup;
+			children = (
+				BFF957881945850F00E3EBD8 /* Config */,
+				99421EE5190907640054301F /* Dependencies */,
+				99421EE6190907690054301F /* Tests */,
+				99421EE71909076E0054301F /* Others */,
+				99421ED5190906BB0054301F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		99421ED5190906BB0054301F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99421ED4190906BB0054301F /* utilTest_mac */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		99421EE5190907640054301F /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				99421EE81909077F0054301F /* gmock.xcodeproj */,
+				99421EEB1909077F0054301F /* gtest.xcodeproj */,
+				99421EEE1909077F0054301F /* util.xcodeproj */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		99421EE6190907690054301F /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				DC8063A01B60B2A1001B9948 /* CmPerformanceTest.cpp */,
+				DCF756821B4654D7004F01E8 /* CmLockFreeTest.cpp */,
+				99421EFB190907C70054301F /* CmDataBlockTest.cpp */,
+				176874C71990D2F20085F70A /* CmConfigInitFileTest.cpp */,
+				99421EFC190907C70054301F /* CmMessageBlockTest.cpp */,
+				9976E2AD1909F9EC0095CEFE /* CmMyThread.cpp */,
+				9976E2AE1909F9EC0095CEFE /* CmMyThreadTest.cpp */,
+				9976E2AF1909F9EC0095CEFE /* CmServerTraceFileNameFormat.cpp */,
+				99421EFD190907C70054301F /* CmStdCppTest.cpp */,
+				99421EFE190907C70054301F /* CmTimeValueTest.cpp */,
+				99421EFF190907C70054301F /* main.cpp */,
+				9976E2AA1909F9AE0095CEFE /* Unsupported */,
+				D923D46F1B55F1E10004F243 /* CmListAllocatorTest.cpp */,
+				1160BC471C87DD210045FE00 /* CmLogMacrosTest.cpp */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		99421EE71909076E0054301F /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				99421EFA190907900054301F /* utilTest_mac-Prefix.pch */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
+		99421EE91909077F0054301F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99421EF31909077F0054301F /* libgmock.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		99421EEC1909077F0054301F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99421EF61909077F0054301F /* libgtest.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		99421EEF1909077F0054301F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99421EF91909077F0054301F /* util.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9976E2AA1909F9AE0095CEFE /* Unsupported */ = {
+			isa = PBXGroup;
+			children = (
+				9976E2AB1909F9EC0095CEFE /* CmDns6ManagerTest.cpp */,
+				9976E2AC1909F9EC0095CEFE /* CmDnsManagerTest.cpp */,
+			);
+			name = Unsupported;
+			sourceTree = "<group>";
+		};
+		BFF957881945850F00E3EBD8 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				BFF957891945853100E3EBD8 /* DebugCommon.xcconfig */,
+				BFF9578A1945853100E3EBD8 /* ReleaseCommon.xcconfig */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		99421ED3190906BB0054301F /* utilTest_mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99421EDD190906BB0054301F /* Build configuration list for PBXNativeTarget "utilTest_mac" */;
+			buildPhases = (
+				99421ED0190906BB0054301F /* Sources */,
+				99421ED1190906BB0054301F /* Frameworks */,
+				99421ED2190906BB0054301F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99421F15190908410054301F /* PBXTargetDependency */,
+				99421F131909083F0054301F /* PBXTargetDependency */,
+				99421F0E1909083D0054301F /* PBXTargetDependency */,
+			);
+			name = utilTest_mac;
+			productName = utilTest_mac;
+			productReference = 99421ED4190906BB0054301F /* utilTest_mac */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		99421ECC190906BB0054301F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = cisco;
+			};
+			buildConfigurationList = 99421ECF190906BB0054301F /* Build configuration list for PBXProject "utilTest_mac" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 99421ECB190906BB0054301F;
+			productRefGroup = 99421ED5190906BB0054301F /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 99421EE91909077F0054301F /* Products */;
+					ProjectRef = 99421EE81909077F0054301F /* gmock.xcodeproj */;
+				},
+				{
+					ProductGroup = 99421EEC1909077F0054301F /* Products */;
+					ProjectRef = 99421EEB1909077F0054301F /* gtest.xcodeproj */;
+				},
+				{
+					ProductGroup = 99421EEF1909077F0054301F /* Products */;
+					ProjectRef = 99421EEE1909077F0054301F /* util.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				99421ED3190906BB0054301F /* utilTest_mac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		99421EF31909077F0054301F /* libgmock.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libgmock.a;
+			remoteRef = 99421EF21909077F0054301F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		99421EF61909077F0054301F /* libgtest.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libgtest.a;
+			remoteRef = 99421EF51909077F0054301F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		99421EF91909077F0054301F /* util.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = util.framework;
+			remoteRef = 99421EF81909077F0054301F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXSourcesBuildPhase section */
+		99421ED0190906BB0054301F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1160BC481C87DD210045FE00 /* CmLogMacrosTest.cpp in Sources */,
+				D923D4711B55F1E10004F243 /* CmListAllocatorTest.cpp in Sources */,
+				176874C91990D2F20085F70A /* CmConfigInitFileTest.cpp in Sources */,
+				9976E2B71909FA2E0095CEFE /* CmMyThread.cpp in Sources */,
+				DCF756831B4654D7004F01E8 /* CmLockFreeTest.cpp in Sources */,
+				99421F01190907C70054301F /* CmMessageBlockTest.cpp in Sources */,
+				99421F02190907C70054301F /* CmStdCppTest.cpp in Sources */,
+				9976E2B81909FA2E0095CEFE /* CmMyThreadTest.cpp in Sources */,
+				99421F03190907C70054301F /* CmTimeValueTest.cpp in Sources */,
+				DC8063A11B60B2A1001B9948 /* CmPerformanceTest.cpp in Sources */,
+				99421F04190907C70054301F /* main.cpp in Sources */,
+				99D5AE54190A223C00A91D61 /* CmServerTraceFileNameFormat.cpp in Sources */,
+				99D5AE55190A226E00A91D61 /* CmDataBlockTest.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		99421F0E1909083D0054301F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = util;
+			targetProxy = 99421F0D1909083D0054301F /* PBXContainerItemProxy */;
+		};
+		99421F131909083F0054301F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = gmock;
+			targetProxy = 99421F121909083F0054301F /* PBXContainerItemProxy */;
+		};
+		99421F15190908410054301F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = gtest;
+			targetProxy = 99421F14190908410054301F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		99421EDB190906BB0054301F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFF957891945853100E3EBD8 /* DebugCommon.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OBJROOT = "$(SRCROOT)/../objs/mac";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SYMROOT = "$(SRCROOT)/../bin/mac";
+			};
+			name = Debug;
+		};
+		99421EDC190906BB0054301F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFF9578A1945853100E3EBD8 /* ReleaseCommon.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OBJROOT = "$(SRCROOT)/../objs/mac";
+				SDKROOT = macosx;
+				SYMROOT = "$(SRCROOT)/../bin/mac";
+			};
+			name = Release;
+		};
+		99421EDE190906BB0054301F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "utilTest_mac-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../vendor/gtest/gtest-1.7.0/include\"",
+					"\"$(SRCROOT)/../../vendor/gtest/gtest-1.7.0\"",
+					"\"$(SRCROOT)/../../vendor/gtest/gmock-1.7.0/include\"",
+					"\"$(SRCROOT)/../../vendor/gtest/gmock-1.7.0\"",
+					"\"$(SRCROOT)/../../mediaengine/util/include\"",
+					"\"$(SRCROOT)/../../mediaengine/util/include/macos\"",
+					"\"$(SRCROOT)/../../mediaengine/util/include/client\"",
+					"\"$(SRCROOT)/../../api\"",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../../../../distribution/mac/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		99421EDF190906BB0054301F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "utilTest_mac-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../vendor/gtest/gtest-1.7.0/include\"",
+					"\"$(SRCROOT)/../../vendor/gtest/gtest-1.7.0\"",
+					"\"$(SRCROOT)/../../vendor/gtest/gmock-1.7.0/include\"",
+					"\"$(SRCROOT)/../../vendor/gtest/gmock-1.7.0\"",
+					"\"$(SRCROOT)/../../mediaengine/util/include\"",
+					"\"$(SRCROOT)/../../mediaengine/util/include/macos\"",
+					"\"$(SRCROOT)/../../mediaengine/util/include/client\"",
+					"\"$(SRCROOT)/../../api\"",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../../../../distribution/mac/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D91B03311B5DE55C00ADBD33 /* GCov_Build */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFF957891945853100E3EBD8 /* DebugCommon.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OBJROOT = "$(SRCROOT)/../objs/mac";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SYMROOT = "$(SRCROOT)/../bin/mac";
+			};
+			name = GCov_Build;
+		};
+		D91B03321B5DE55C00ADBD33 /* GCov_Build */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "utilTest_mac-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../vendor/gtest/gtest-1.7.0/include\"",
+					"\"$(SRCROOT)/../../vendor/gtest/gtest-1.7.0\"",
+					"\"$(SRCROOT)/../../vendor/gtest/gmock-1.7.0/include\"",
+					"\"$(SRCROOT)/../../vendor/gtest/gmock-1.7.0\"",
+					"\"$(SRCROOT)/../../mediaengine/util/include\"",
+					"\"$(SRCROOT)/../../mediaengine/util/include/macos\"",
+					"\"$(SRCROOT)/../../mediaengine/util/include/client\"",
+					"\"$(SRCROOT)/../../api\"",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../../../../distribution/mac/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = GCov_Build;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		99421ECF190906BB0054301F /* Build configuration list for PBXProject "utilTest_mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99421EDB190906BB0054301F /* Debug */,
+				D91B03311B5DE55C00ADBD33 /* GCov_Build */,
+				99421EDC190906BB0054301F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99421EDD190906BB0054301F /* Build configuration list for PBXNativeTarget "utilTest_mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99421EDE190906BB0054301F /* Debug */,
+				D91B03321B5DE55C00ADBD33 /* GCov_Build */,
+				99421EDF190906BB0054301F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 99421ECC190906BB0054301F /* Project object */;
+}

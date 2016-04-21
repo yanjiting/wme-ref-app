@@ -1,0 +1,44 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "AFD3ECC4575CD474EE57476AD2BEB6D043FA7B4B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "8658043081C6C17717D599CA7A9057255680540E" : 0,
+    "AFD3ECC4575CD474EE57476AD2BEB6D043FA7B4B" : 0,
+    "CFF8F76FF31B4C35070E144B1AD7EE0BAC31710D" : 0,
+    "012381AEFB4D8E2FE52558CCA375905359C8DE4D" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B108F2C4-D573-4BC1-829E-4516898AF499",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "8658043081C6C17717D599CA7A9057255680540E" : "wme\/vendor\/libsdp\/",
+    "AFD3ECC4575CD474EE57476AD2BEB6D043FA7B4B" : "wme\/",
+    "CFF8F76FF31B4C35070E144B1AD7EE0BAC31710D" : "wme\/vendor\/mari\/",
+    "012381AEFB4D8E2FE52558CCA375905359C8DE4D" : "wme\/vendor\/libsrtp\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MediaSDKClientTest",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "unittest\/bld\/mac\/MediaSDKClientTest.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "sqbu-github.cisco.com:hankpeng\/libsrtp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "012381AEFB4D8E2FE52558CCA375905359C8DE4D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "sqbu-github.cisco.com:siyuli\/libsdp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8658043081C6C17717D599CA7A9057255680540E"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "sqbu-github.cisco.com:WebExSquared\/wme.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AFD3ECC4575CD474EE57476AD2BEB6D043FA7B4B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "sqbu-github.cisco.com:WME\/adaptation_resilience.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CFF8F76FF31B4C35070E144B1AD7EE0BAC31710D"
+    }
+  ]
+}

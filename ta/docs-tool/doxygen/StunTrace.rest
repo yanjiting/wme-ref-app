@@ -1,0 +1,32 @@
+.. contents:: 
+    :local: 
+
+1. Overview
+===============
+
+The idea of StunTrace come from `draft-martinsen-tram-stuntrace <https://tools.ietf.org/html/draft-martinsen-tram-stuntrace-01>`_ for trouble shooting ICE issue and collect metrics of customer network to our cloud.
+StunPing is a different feature for Spark Media Fusion, where some media servers are deployed on customer enterprise network, and we wants to pick up the best media server for their employees. The method is that we will get a list of on-premise media servers and will do a round of stun ping everytime client network was changed and select the media server which gets the least round trip time.
+
+2. Usage of StunTrace
+======================
+
+StunTrace was triggered automatically by WME when ICE succeeded or failed to connect to remote media server. It will only start StunTrace for UDP connections, and it will not start for screen sharing. It will only start one instance of StunTrace if there are multiple connections, for example, audio and video together.
+    
+Client need to call `SetStunTraceSink`_ function to set callback `IWmeStunTraceSink`_ and implement it to post the JSON data to splunk for further analysis. Client MUST include at least client type and latest locus ID for trouble shooting connectivity issue.
+
+<doxygen2rst function=SetStunTraceSink>SetStunTraceSink</doxygen2rst>
+
+<doxygen2rst class=wme::IWmeStunTraceSink>IWmeStunTraceSink</doxygen2rst>
+
+3. Usage of StunPing
+=====================
+
+StunPing was started by client when it detects client network has changed, for example, switched from wifi to LTE network. Client will get the list of test servers during device registration. In current design, client will ping with LQT server deployed along with Linus server in Fusion.
+
+Client can call `SetTraceServerSink`_ to set callback `IWmeTraceServerSink`_ to receive STUN ping result and then call `StartTraceServer`_ to start the ping procedure. Once a ping is in-progress, we currently doesn't support to Cancel it, so you need to wait for the result and start another ping otherwise `StartTraceServer`_ will return without any action.
+
+<doxygen2rst function=SetTraceServerSink>SetTraceServerSink</doxygen2rst>
+
+<doxygen2rst function=StartTraceServer>StartTraceServer</doxygen2rst>
+
+<doxygen2rst class=wme::IWmeTraceServerSink>IWmeTraceServerSink</doxygen2rst>

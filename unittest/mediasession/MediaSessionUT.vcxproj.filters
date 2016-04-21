@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Target">
+      <UniqueIdentifier>{8f7d2996-e997-4baf-941d-001415ff2937}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="mediasessionut.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\vendor\SuperEasyJSON\json.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediasession\src\IceConnector.h">
+      <Filter>Target</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediasession\src\MediaConnection.hpp">
+      <Filter>Target</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediasession\src\MediaConnectionInfo.h">
+      <Filter>Target</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediasession\src\MediaTrack.h">
+      <Filter>Target</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediasession\src\stringhelper.h">
+      <Filter>Target</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediasession\src\NetworkWarning.h">
+      <Filter>Target</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediasession\src\MediaCSI.h">
+      <Filter>Target</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediasession\src\MediaVID.h">
+      <Filter>Target</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediasession\src\WmePerfsStats.h">
+      <Filter>Target</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediasession\src\MediaTrackMgr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediasession\src\SessionMetrics.h">
+      <Filter>Target</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediasession\src\MultistreamAudioTrack.h">
+      <Filter>Target</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediasession\src\CameraSourceHub.h">
+      <Filter>Target</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediasession\src\mdump.h">
+      <Filter>Target</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediasession\src\MediaAdhocAudio.h">
+      <Filter>Target</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediasession\src\StunTrace.h">
+      <Filter>Target</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediasession\src\TraceServer.h">
+      <Filter>Target</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediasession\src\StunTraceUtil.h">
+      <Filter>Target</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="mediasessionut.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="json_ut.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\vendor\SuperEasyJSON\json.cpp">
+      <Filter>Target</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediasession\src\MediaConnection.cpp">
+      <Filter>Target</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediasession\src\IceConnector.cpp">
+      <Filter>Target</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediasession\src\MediaConnectionInfo.cpp">
+      <Filter>Target</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediasession\src\MediaTrack.cpp">
+      <Filter>Target</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediasession\src\stringhelper.cpp">
+      <Filter>Target</Filter>
+    </ClCompile>
+    <ClCompile Include="mediaconnection_ut.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="networkwarning_ut.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediasession\src\NetworkWarning.cpp">
+      <Filter>Target</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediasession\src\MediaConfigImp.cpp">
+      <Filter>Target</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediasession\src\MediaPerformance.cpp">
+      <Filter>Target</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediasession\src\MediaCSI.cpp">
+      <Filter>Target</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediasession\src\MediaVID.cpp">
+      <Filter>Target</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediasession\src\WmePerfsStats.cpp">
+      <Filter>Target</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediasession\src\SessionMetrics.cpp">
+      <Filter>Target</Filter>
+    </ClCompile>
+    <ClCompile Include="sessionmetric_ut.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediasession\src\MultistreamAudioTrack.cpp">
+      <Filter>Target</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediasession\src\CameraSourceHub.cpp">
+      <Filter>Target</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediasession\src\GlobalFunc.cpp">
+      <Filter>Target</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediasession\src\MediaTrackMgr.cpp">
+      <Filter>Target</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediasession\src\mdump.cpp">
+      <Filter>Target</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediasession\src\MediaAdhocAudio.cpp">
+      <Filter>Target</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediasession\src\StunTrace.cpp">
+      <Filter>Target</Filter>
+    </ClCompile>
+    <ClCompile Include="mediaconnectioninfo_ut.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediasession\src\TraceServer.cpp">
+      <Filter>Target</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediasession\src\StunTraceUtil.cpp">
+      <Filter>Target</Filter>
+    </ClCompile>
+    <ClCompile Include="stuntrace_ut.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

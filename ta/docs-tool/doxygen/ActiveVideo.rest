@@ -1,0 +1,40 @@
+.. contents:: 
+    :local: 
+
+Problem Statement
+====================
+Switched active video could run into some cases where source has no video because of poor network or muted. Client needs to show some indicator eg avartar when the video was not available. Client also needs to display the name of the current video.
+
+To resolve the problem, the CSI of the source was attached in the RTP stream and SCA unavailable notification. WME will notify client for two events: CSI changed and MediaStatus changed.
+
+The evil comes from that the SCA and RTP stream might be in race condition. If an sca that marks a VID as unavailable is delayed relative to rtp, then the video for that vid is frozen and usually so short thats it is not noticable. However, if an sca that marks a VID as available again comes early relative to rtp, then it might show wrong video (cached) from other person. That is in trouble.
+
+Definitions
+===============
+
+**Media track**: The WME <doxygen2rst link=IWmeMediaTrackBase>MediaTrack</doxygen2rst> object
+
+**VID**: virtual ID, also named as SCID (subsession channel ID), each track has an unique VID and will not change, VID was attached in the RTP extension headers.
+
+**CSI**: Contributed Source Identify, the source generated identifier, it was added in the CSRC filed of the RTP header. Track's CSI might change in a call.
+
+**SCA**: Subsession Channel Acknowlegement, it was defined by cisco multistream protocol. It was wrapped in the RTCP-FB packets.
+
+Typical cases
+==================
+Let us assume A/B/C/D in a meeting, and we are observing from D.
+
+**Case 1:** Both A and B are sending video, active speaker changed from A to B, One <doxygen2rst link=IWmeMediaConnectionSink#OnCSIsChanged>OnCSIsChanged</doxygen2rst> will be called to notify client the change. Client can show the name of active video by matching CSI from the participant list.
+
+**Case 2:** A is always active speaker and he muted his video and then unmute it. Two <doxygen2rst link=IWmeMediaConnectionSink#OnMediaStatus>OnMediaStatus</doxygen2rst> will be called to notify client the change without CSI. Client can get the CSI from the track.
+
+**Case 3:** A is sending video and B muted his video, and active speaker changed from A to B, one <doxygen2rst link=IWmeMediaConnectionSink#OnMediaStatus>OnMediaStatus</doxygen2rst> will be called to notify client the change with CSI attached.
+
+**Case 4:** B muted his video and A is sending video, and active speaker changed from B to A, one <doxygen2rst link=IWmeMediaConnectionSink#OnMediaStatus>OnMediaStatus</doxygen2rst> will be called to notify client the change without CSI attached. A further <doxygen2rst link=IWmeMediaConnectionSink#OnMediaBlocked>OnMediaBlocked</doxygen2rst> with "blocked = false" to client if any video was decoded for that track, this was added since WME version 5.2.
+
+**case 5:** combined case, A/B is sending video, C muted his video and active speaker changed from A to C to B.
+<doxygen2rst link=IWmeMediaConnectionSink#OnMediaStatus>OnMediaStatus(Unavailabe, CSI-C)</doxygen2rst> ==> 
+<doxygen2rst link=IWmeMediaConnectionSink#OnMediaStatus>OnMediaStatus(Availabe)</doxygen2rst> ==> 
+<doxygen2rst link=IWmeMediaConnectionSink#OnCSIsChanged>OnCSIsChanged(CSI-A to CSI-B)</doxygen2rst> ==> 
+<doxygen2rst link=IWmeMediaConnectionSink#OnMediaBlocked>OnMediaBlocked(false)</doxygen2rst>
+

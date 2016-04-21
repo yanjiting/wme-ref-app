@@ -1,0 +1,138 @@
+#!/usr/bin/python
+import sys
+import os
+import setting
+import lcov
+import clean
+import summary
+from lcov_cobertura import LcovCobertura
+from optparse import OptionParser
+
+def lcov_cober(info_file, output, base_dir):
+    try:
+        with open(info_file, 'r') as lcov_file:
+            lcov_data = lcov_file.read()
+            lcov_cobertura = LcovCobertura(lcov_data, base_dir)
+            cobertura_xml = lcov_cobertura.convert()
+        with open(output, mode='wt') as output_file:
+            output_file.write(cobertura_xml)
+    except IOError:
+        sys.stderr.write("Unable to convert %s to Cobertura XML" % info_file)
+
+def generate_gcov_file(platform, run_mode):
+    lv = lcov.Lcov()
+    module_list = setting.module_list
+    for i in range(len(module_list)):
+        print "copy *.gcno *.gcda file to src code path, module name = ", module_list[i]['module_name']
+        import os
+        os.system("find ../../../ -name IceConnector.gcno -exec rm {} \; 2>/dev/null")
+        os.system("find ../../../ -name IceConnector.gcda -exec rm {} \; 2>/dev/null")
+        os.system("find ../../../ -name MediaConfigImp.gcno -exec rm {} \; 2>/dev/null")
+        os.system("find ../../../ -name MediaConfigImp.gcda -exec rm {} \; 2>/dev/null")
+        os.system("find ../../../ -name MediaConnection.gcno -exec rm {} \; 2>/dev/null")
+        os.system("find ../../../ -name MediaConnection.gcda -exec rm {} \; 2>/dev/null")
+        os.system("find ../../../ -name activebuffer.gcno -exec rm {} \; 2>/dev/null")
+        os.system("find ../../../ -name activebuffer.gcda -exec rm {} \; 2>/dev/null")
+        re = lv.prepare_gcov_file(module_list[i]['src_path_list'], module_list[i]['gcno_path_list'], module_list[i]['gcda_path_list'])
+        if 1 == re:
+            sys.exit(1)
+        print "generate *.info file, module name = ", module_list[i]['module_name']
+        cmd = lv.gen_info(platform, module_list[i]['src_path_list'], module_list[i]['module_name'])
+        lv.execute(cmd)
+        cmd = lv.remove_useless_infos('./temp/info/', module_list[i]['module_name'])
+        lv.execute(cmd)
+
+    #cmd = "genhtml -o %s %s/wme_gcov.info" % (setting.temp_html_path, setting.temp_info_path)
+    #print cmd
+    #lv.execute(cmd)
+
+    cmd = lv.merge_info('./temp/info', './temp', 'wme_gcov')
+    lv.execute(cmd)
+    
+    for mod in module_list:
+    	lcov_cober('./temp/info/%s.info' % mod["module_name"], './temp/xml/%s.xml' % mod["module_name"], mod["path"])
+    	
+    summary.get_summary_for_each_module()
+    
+    lcov_cober('./temp/wme_gcov.info', './temp/wme_gcov.xml', '../../../')
+
+def clean_src_list():
+    cl = clean.Cleaner()
+    src_path_list = []
+    for i in range(len(setting.module_list)):
+        for j in range(len(setting.module_list[i]['src_path_list'])):
+            src_path_list.append(setting.module_list[i]['src_path_list'][j])
+    cl.clean_src_list(src_path_list)
+
+def clean_obj_list():
+    cl = clean.Cleaner()
+    obj_path_list = []
+    for i in range(len(setting.module_list)):
+        for j in range(len(setting.module_list[i]['gcno_path_list'])):
+            obj_path_list.append(setting.module_list[i]['gcno_path_list'][j])
+    cl.clean_obj_list(obj_path_list)
+    cl.delete_path(setting.unittest_distribution)
+    cl.delete_path(setting.temp_path)
+    cl.delete_path(setting.wbxtrace_path)
+
+def usage():
+    print "Usage: %s [ios|android|clean|help]  [sim|dev] [debug|release]" % sys.argv[0]
+    sys.exit(0)
+
+def clean_temp_folder():
+    print "clean temp fodler"
+    cl = clean.Cleaner()
+    cl.clean_path(setting.temp_path)
+    cl.clean_path(setting.temp_info_path)
+    cl.clean_path(setting.temp_html_path)
+    cl.clean_path(setting.temp_data_path)
+    cl.clean_path(setting.temp_xml_path)
+
+if __name__ == "__main__":
+    platform = 'ios'
+    is_clean = False
+    run_mode = 'sim'
+    build_mode = 'release'
+
+    args = sys.argv[1:]
+    if len(args) == 0:
+        usage()
+
+    if  args[0] == "ios":
+        platform = 'ios'
+    elif args[0] == "android":
+        platform = 'android'
+    elif args[0] == "clean":
+        is_clean = True
+    elif args[0] == "help":
+        usage()
+    else:
+        usage()
+
+    if len(args) > 1 and args[1] == "sim":
+        run_mode = 'sim'
+    elif len(args) > 1 and args[1] == "dev":
+        run_mode = 'dev'
+    elif is_clean != True:
+        usage()
+
+    if len(args) > 2 and args[2] == "debug":
+        build_mode = 'debug'
+    elif len(args) > 2 and args[2] == "release":
+        build_mode = 'release'
+    elif is_clean != True:
+        usage()
+
+    clean_temp_folder();
+
+    if platform == 'ios':
+        setting.init_ios_setting(run_mode, build_mode)
+    elif platform == 'android':
+        setting.init_android_setting(run_mode, build_mode)
+
+    if is_clean == True:
+        clean_obj_list()
+        clean_src_list()
+    else:
+        generate_gcov_file(platform, run_mode)
+

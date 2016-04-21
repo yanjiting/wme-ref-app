@@ -1,0 +1,92 @@
+import com.android.build.gradle.tasks.PackageApplication
+
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.2"
+
+    task copyNativeLibs(type: Copy, dependsOn: 'copyWme') {
+        from(new File('libs')) { include '**/*.so' }
+        into new File(buildDir, 'native-libs')
+    }
+
+    task cleanCopyNativeLibs(type: Delete) {
+        FileTree tree = fileTree (dir: "libs");
+        tree.each { File file ->
+            delete(file)
+        }
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("../../keystore/wmeAndroid.store")
+            storePassword "wme123"
+            keyAlias "wmeAndroid"
+            keyPassword "wme123"
+        }
+    }
+
+    buildTypes {
+        debug {
+            project.ext.set("CONFIGURATION_STRING", "debug")
+            signingConfig signingConfigs.release
+        }
+
+        release {
+            project.ext.set("CONFIGURATION_STRING", "release")
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+    tasks.withType(JavaCompile) {
+        compileTask -> compileTask.dependsOn copyNativeLibs
+    }
+
+    clean.dependsOn 'cleanCopyNativeLibs'
+
+    tasks.withType(PackageApplication) { pkgTask ->
+        pkgTask.jniFolders = [new File(buildDir, 'native-libs')]
+    }
+
+    task ndkCheck {
+        def error = 'set ANDROID_NDK_HOME in your ~/.gradle/gradle.properties'
+        assert ANDROID_NDK_HOME != null: error
+        assert new File(ANDROID_NDK_HOME, 'ndk-build').exists(): error
+    }
+
+    task copyWme (type: Copy, dependsOn: 'buildNative') {
+        def distDir = new File(projectDir, '../../../../../distribution/android/armv7/' + project.CONFIGURATION_STRING)
+        from(distDir) { include '*.so' }
+        into new File(projectDir, 'libs/armeabi-v7a')
+    }
+
+    task buildNative(type: Exec, dependsOn: 'ndkCheck') {
+        println "buildNative..."
+        def ndkBuildingDir = new File("jni");
+        def ndkBuild = new File(ANDROID_NDK_HOME, 'ndk-build')
+        commandLine ndkBuild, "--directory", ndkBuildingDir
+    }
+
+    task cleanNative(type: Exec, dependsOn: 'ndkCheck') {
+        def ndkBuild = new File(ANDROID_NDK_HOME, 'ndk-build')
+        def ndkBuildingDir = new File("jni");
+
+        commandLine ndkBuild, "--directory", ndkBuildingDir, "clean"
+    }
+
+    clean.dependsOn 'cleanNative'
+
+    defaultConfig {
+        applicationId "com.wx2.clickcall"
+        minSdkVersion 15
+        targetSdkVersion 19
+    }
+
+    dependencies {
+        compile fileTree(dir: '../../../../../distribution/android/armv7/' + project.CONFIGURATION_STRING, include: ['*.jar'])
+        compile fileTree(dir: 'jar', include: ['*.jar'])
+    }
+}

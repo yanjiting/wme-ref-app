@@ -1,0 +1,58 @@
+.. contents:: 
+    :local: 
+
+1. Overview
+====================
+Some enterprise network can only connect to internet through proxy servers. It is widely agreed that proxy servers are not the best for media quality. A webrtc friendly firewall or media fusion would resolve the problem gracefully. But the Spark trial users or consumer users would not be possible to make either happen, they should also be able to have Spark media. That is why we still need to support proxy tunneling today.
+
+There are two common proxy types: SOCKS and HTTP. In WebEx customers, the HTTP was more common than SOCKS.
+The proxy configuration varies in different platform:
+
+     - Windows: System default is Ineternet Explorer, but Firefox also provided an independent option to configure Proxy. Chrome uses IE options. 
+     
+     - MAC: There is a system configuration for the HTTP proxy.
+     
+     - android/ios: It is bound to wifi network advanced configuration.
+     
+HTTP proxy has some authentication methods, WME supports some major ones: Basic, Digest and NTLM.
+The persistence of credential is also different in system:
+
+    - Windows can persistent NTLM credential for domain users, but not for others;
+    - MAC/iOS can save all type proxy username and password in system key stores;
+    - Android will never save the username and password
+    
+There were 2 types of HTTP proxy configuration methods: manual and automatic (known as `PAC <https://en.wikipedia.org/wiki/Proxy_auto-config>`_). Android doesn't support automatic configuration except for DX80 and some Android 5.0 devices (for example, SAMSUNG S5). With PAC, you can set different proxy server for different destination, thus it is possible you will need to set different credential for them. An extreme case is the RESTful signaling would use a different username and password other than media.
+
+2. Basic call flow with client involved
+========================================
+The basic case is user has configured the proxy and in that network, and has already registered succesfully in the network.
+
+<doxygen2rst uml=basic_proxyflow>
+participant "wme::IWmeMediaConnectionSink" as Client 
+participant "wme::IWmeMediaConnection" as WME 
+participant "wme::IGlobalConfig" as Config 
+participant "Proxy Server" as Proxy
+
+Client -> WME: SetReceivedSDP 
+WME -> Proxy: CONNECT host
+Proxy -> WME: 407 Proxy Authentication Required
+WME -> WME: Try to find saved credential
+WME -> Client: OnProxyCredentialRequired(szHost, port)
+Client -> Client: Try to find saved credential, if not, prompt user to input in a dialog.
+Client -> Config: SetProxyUsernameAndPassword(username, password)
+WME -> Proxy: Proxy-Authorization
+Proxy -> WME: 2xx
+WME -> Linus: TLS handshake
+</doxygen2rst>
+
+3. API reference
+====================
+
+<doxygen2rst function=SetProxyCredentialSink>SetProxyCredentialSink</doxygen2rst>
+
+<doxygen2rst function=SetProxyUsernamePassword>SetProxyUsernamePassword</doxygen2rst>
+
+<doxygen2rst function=AllowProxyGetSystemCredential>AllowProxyGetSystemCredential</doxygen2rst>
+
+<doxygen2rst class=wme::IProxyCredentialSink>IProxyCredentialSink</doxygen2rst>
+

@@ -1,0 +1,17 @@
+This file describes the special interfaces for WebEx intetration during T31 release.
+
+.. contents:: 
+    :local: 
+    :depth: 2
+
+<doxygen2rst function=CreateMediaConnection4T>CreateMediaConnection4T</doxygen2rst>
+
+<doxygen2rst class=wme::IWmeMediaConnection4T>MediaConnection for WebEx</doxygen2rst>
+
+<doxygen2rst class=wme::IWmeMediaContentCipher>IWmeMediaContentCipher</doxygen2rst>
+
+<doxygen2rst class=wme::IWmeMediaTransport>IWmeMediaTransport</doxygen2rst>
+
+<doxygen2rst function=GetCpuDescription>GetCpuDescription</doxygen2rst>
+
+<doxygen2rst function=CreateVideoRender>CreateVideoRender</doxygen2rst>

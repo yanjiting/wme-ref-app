@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\wqos">
+      <UniqueIdentifier>{d67d82c0-d820-4413-851e-e9e6e5d4059e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\wqos">
+      <UniqueIdentifier>{0a0a121a-8a23-43b1-a501-4a5103d28b3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BandwidthAllocatorTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="multithread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="QoSBandwidthControllerTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\wqos\src\BandwidthAllocator.cpp">
+      <Filter>Source Files\wqos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\wqos\src\BandwidthEvalProxy.cpp">
+      <Filter>Source Files\wqos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\wqos\src\FeedbackGeneratorProxy.cpp">
+      <Filter>Source Files\wqos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\wqos\src\NetworkMonitorProxy.cpp">
+      <Filter>Source Files\wqos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\wqos\src\QoSBandwidthController.cpp">
+      <Filter>Source Files\wqos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\wqos\src\QoSManager.cpp">
+      <Filter>Source Files\wqos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\wqos\src\ServiceWrapper.cpp">
+      <Filter>Source Files\wqos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mediaengine\wqos\src\wqostrace.cpp">
+      <Filter>Source Files\wqos</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BandwidthBoundMock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="QoSServiceListenerMock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wqoscodevtest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediaengine\wqos\src\BandwidthEvalProxy.h">
+      <Filter>Header Files\wqos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediaengine\wqos\src\NetworkMonitorProxy.h">
+      <Filter>Header Files\wqos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediaengine\wqos\src\QoSBandwidthController.h">
+      <Filter>Header Files\wqos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediaengine\wqos\src\QoSManager.h">
+      <Filter>Header Files\wqos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediaengine\wqos\src\ServiceWrapper.h">
+      <Filter>Header Files\wqos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediaengine\wqos\src\QoSRunningStats.h">
+      <Filter>Header Files\wqos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mediaengine\wqos\src\wqostrace.h">
+      <Filter>Header Files\wqos</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

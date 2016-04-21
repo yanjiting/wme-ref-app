@@ -1,0 +1,354 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		25ACE0891B7193270019166C /* libwbx_dagc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25ACE0811B717F070019166C /* libwbx_dagc.a */; };
+		25ACE08A1B71932A0019166C /* libwbx_vad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25ACE0881B717F100019166C /* libwbx_vad.a */; };
+		72944A091A8217CA005E8405 /* CAECMTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72944A061A8217CA005E8405 /* CAECMTest.cpp */; };
+		72944A0A1A8217CA005E8405 /* WaveIO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72944A071A8217CA005E8405 /* WaveIO.cpp */; };
+		72944A0B1A8219F0005E8405 /* libwebrtc_aecm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7294495E1A81F780005E8405 /* libwebrtc_aecm.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		25ACE0801B717F070019166C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25ACE07C1B717F070019166C /* wbx_dagc.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 41D0082717B33307000F92AD;
+			remoteInfo = wbx_dagc;
+		};
+		25ACE0871B717F100019166C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25ACE0831B717F100019166C /* wbx_vad.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4178B2E017B33C5800AEB9D8;
+			remoteInfo = wbx_vad;
+		};
+		7294495D1A81F780005E8405 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 729449591A81F780005E8405 /* webrtc_aecm.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7294494B1A81F780005E8405;
+			remoteInfo = webrtc_aecm;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		729449311A81EE12005E8405 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		25ACE07C1B717F070019166C /* wbx_dagc.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = wbx_dagc.xcodeproj; path = ../../../../../mediaengine/dolphin/src/cochelea/dagc/WebEx_DAGC_Client_16k/MAC/wbx_dagc.xcodeproj; sourceTree = "<group>"; };
+		25ACE0831B717F100019166C /* wbx_vad.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = wbx_vad.xcodeproj; path = ../../../../../mediaengine/dolphin/src/cochelea/vad/webexvadver1/MAC/wbx_vad.xcodeproj; sourceTree = "<group>"; };
+		729449331A81EE12005E8405 /* webrtc-aecm-ut */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "webrtc-aecm-ut"; sourceTree = BUILT_PRODUCTS_DIR; };
+		729449591A81F780005E8405 /* webrtc_aecm.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = webrtc_aecm.xcodeproj; path = ../webrtc_aecm/webrtc_aecm.xcodeproj; sourceTree = "<group>"; };
+		72944A061A8217CA005E8405 /* CAECMTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CAECMTest.cpp; sourceTree = SOURCE_ROOT; };
+		72944A071A8217CA005E8405 /* WaveIO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WaveIO.cpp; sourceTree = SOURCE_ROOT; };
+		72944A081A8217CA005E8405 /* WaveIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaveIO.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		729449301A81EE12005E8405 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25ACE08A1B71932A0019166C /* libwbx_vad.a in Frameworks */,
+				25ACE0891B7193270019166C /* libwbx_dagc.a in Frameworks */,
+				72944A0B1A8219F0005E8405 /* libwebrtc_aecm.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		25ACE07D1B717F070019166C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				25ACE0811B717F070019166C /* libwbx_dagc.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		25ACE0841B717F100019166C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				25ACE0881B717F100019166C /* libwbx_vad.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7294492A1A81EE12005E8405 = {
+			isa = PBXGroup;
+			children = (
+				25ACE0831B717F100019166C /* wbx_vad.xcodeproj */,
+				25ACE07C1B717F070019166C /* wbx_dagc.xcodeproj */,
+				729449591A81F780005E8405 /* webrtc_aecm.xcodeproj */,
+				729449351A81EE12005E8405 /* webrtc-aecm-ut */,
+				729449341A81EE12005E8405 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		729449341A81EE12005E8405 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				729449331A81EE12005E8405 /* webrtc-aecm-ut */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		729449351A81EE12005E8405 /* webrtc-aecm-ut */ = {
+			isa = PBXGroup;
+			children = (
+				72944A061A8217CA005E8405 /* CAECMTest.cpp */,
+				72944A071A8217CA005E8405 /* WaveIO.cpp */,
+				72944A081A8217CA005E8405 /* WaveIO.h */,
+			);
+			path = "webrtc-aecm-ut";
+			sourceTree = "<group>";
+		};
+		7294495A1A81F780005E8405 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7294495E1A81F780005E8405 /* libwebrtc_aecm.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		729449321A81EE12005E8405 /* webrtc-aecm-ut */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7294493A1A81EE12005E8405 /* Build configuration list for PBXNativeTarget "webrtc-aecm-ut" */;
+			buildPhases = (
+				7294492F1A81EE12005E8405 /* Sources */,
+				729449301A81EE12005E8405 /* Frameworks */,
+				729449311A81EE12005E8405 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "webrtc-aecm-ut";
+			productName = "webrtc-aecm-ut";
+			productReference = 729449331A81EE12005E8405 /* webrtc-aecm-ut */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7294492B1A81EE12005E8405 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Cisco;
+				TargetAttributes = {
+					729449321A81EE12005E8405 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 7294492E1A81EE12005E8405 /* Build configuration list for PBXProject "webrtc-aecm-ut" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7294492A1A81EE12005E8405;
+			productRefGroup = 729449341A81EE12005E8405 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 25ACE07D1B717F070019166C /* Products */;
+					ProjectRef = 25ACE07C1B717F070019166C /* wbx_dagc.xcodeproj */;
+				},
+				{
+					ProductGroup = 25ACE0841B717F100019166C /* Products */;
+					ProjectRef = 25ACE0831B717F100019166C /* wbx_vad.xcodeproj */;
+				},
+				{
+					ProductGroup = 7294495A1A81F780005E8405 /* Products */;
+					ProjectRef = 729449591A81F780005E8405 /* webrtc_aecm.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				729449321A81EE12005E8405 /* webrtc-aecm-ut */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		25ACE0811B717F070019166C /* libwbx_dagc.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libwbx_dagc.a;
+			remoteRef = 25ACE0801B717F070019166C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		25ACE0881B717F100019166C /* libwbx_vad.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libwbx_vad.a;
+			remoteRef = 25ACE0871B717F100019166C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7294495E1A81F780005E8405 /* libwebrtc_aecm.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libwebrtc_aecm.a;
+			remoteRef = 7294495D1A81F780005E8405 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7294492F1A81EE12005E8405 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72944A0A1A8217CA005E8405 /* WaveIO.cpp in Sources */,
+				72944A091A8217CA005E8405 /* CAECMTest.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		729449381A81EE12005E8405 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		729449391A81EE12005E8405 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		7294493B1A81EE12005E8405 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../../../../../mediaengine/dolphin/src/cochelea/include,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7294493C1A81EE12005E8405 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../../../../../mediaengine/dolphin/src/cochelea/include,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7294492E1A81EE12005E8405 /* Build configuration list for PBXProject "webrtc-aecm-ut" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				729449381A81EE12005E8405 /* Debug */,
+				729449391A81EE12005E8405 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7294493A1A81EE12005E8405 /* Build configuration list for PBXNativeTarget "webrtc-aecm-ut" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7294493B1A81EE12005E8405 /* Debug */,
+				7294493C1A81EE12005E8405 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7294492B1A81EE12005E8405 /* Project object */;
+}

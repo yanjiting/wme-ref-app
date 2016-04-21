@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "container:"
+      name = "UT Test Projects">
+      <FileRef
+         location = "group:../../wrtp/bld/ios/wrtpUnitTestApp.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../wqos/bld/ios/wqosUnitTestApp.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../wme/bld/ios/wmeUnitTestApp.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../util/bld/ios/utilUnitTestApp.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../tp/bld/ios/tpUnitTestApp.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../mediasession/mediasessionUT_ios.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../dolphin/bld/ios/dolphinUnitTestApp.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../appshare/bld/ios/appshareUnitTest/appshareUnitTest.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../shark/bld/ios/sharkUnitTestApp.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:"
+      name = "Dependent Projects">
+      <FileRef
+         location = "group:../../../mediasession/bld/ios/MediaSession.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../../mediaengine/bld/ios/MediaSDKClient.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../../vendor/gtest/bld/ios/gtest.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../../vendor/gtest/bld/ios/gmock.xcodeproj">
+      </FileRef>
+   </Group>
+</Workspace>

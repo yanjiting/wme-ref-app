@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="134" failures="0" disabled="1" errors="0" timestamp="2016-03-11T16:17:56" time="7.025" name="AllTests">
+  <testsuite name="CCmListAllocatorPoolTest" tests="8" failures="0" disabled="0" errors="0" time="0.289">
+    <testcase name="AllocateParamTest" status="run" time="0.001" classname="CCmListAllocatorPoolTest" />
+    <testcase name="AllocatorAtVeryBeginningTest" status="run" time="0" classname="CCmListAllocatorPoolTest" />
+    <testcase name="AllocateAndDeallocate" status="run" time="0.287" classname="CCmListAllocatorPoolTest" />
+    <testcase name="AllocatorTillPoolMaxCapacityTest" status="run" time="0" classname="CCmListAllocatorPoolTest" />
+    <testcase name="AllocatorAfterPoolMaxCapacityTest" status="run" time="0" classname="CCmListAllocatorPoolTest" />
+    <testcase name="AllocatorAfterPoolFullTest" status="run" time="0" classname="CCmListAllocatorPoolTest" />
+    <testcase name="DeallocatorAfterPoolFullTest" status="run" time="0" classname="CCmListAllocatorPoolTest" />
+    <testcase name="DeallocatorWhenPoolEmptyTest" status="run" time="0" classname="CCmListAllocatorPoolTest" />
+  </testsuite>
+  <testsuite name="CCmListAllocatorTest" tests="6" failures="0" disabled="0" errors="0" time="2.287">
+    <testcase name="IntAllocateAndDeallocate" status="run" time="0.035" classname="CCmListAllocatorTest" />
+    <testcase name="ClassAllocateAndDeallocate" status="run" time="0.035" classname="CCmListAllocatorTest" />
+    <testcase name="PerformanceTest" status="run" time="0.533" classname="CCmListAllocatorTest" />
+    <testcase name="StdSwap2CustomAssignPerformanceTest" status="run" time="1.683" classname="CCmListAllocatorTest" />
+    <testcase name="ListCopyTest" status="run" time="0" classname="CCmListAllocatorTest" />
+    <testcase name="PoolMetricsTest" status="run" time="0" classname="CCmListAllocatorTest" />
+  </testsuite>
+  <testsuite name="CmMessageBlockTest" tests="64" failures="0" disabled="0" errors="0" time="0.007">
+    <testcase name="GetTopLevelLengthIsZeroTest" status="run" time="0.002" classname="CmMessageBlockTest" />
+    <testcase name="GetTopLevelLengthIsNotZeroTest" status="run" time="0" classname="CmMessageBlockTest" />
+    <testcase name="GetTopLevelSpaceIsNotZeroTest" status="run" time="0" classname="CmMessageBlockTest" />
+    <testcase name="GetTopLevelSpaceIsZeroTest" status="run" time="0" classname="CmMessageBlockTest" />
+    <testcase name="GetNextIsNullTest" status="run" time="0" classname="CmMessageBlockTest" />
+    <testcase name="GetNextIsNotNullTest" status="run" time="0" classname="CmMessageBlockTest" />
+    <testcase name="GetTopLevelReadPtrIsNullTest" status="run" time="0" classname="CmMessageBlockTest" />
+    <testcase name="GetTopLevelReadPtrIsNotNullTest" status="run" time="0" classname="CmMessageBlockTest" />
+    <testcase name="GetTopLevelWritePtrIsNullTest" status="run" time="0" classname="CmMessageBlockTest" />
+    <testcase name="GetTopLevelWritePtrIsNotNullTest" status="run" time="0" classname="CmMessageBlockTest" />
+    <testcase name="AdvanceTopLevelWritePtrIsZeroTest" status="run" time="0" classname="CmMessageBlockTest" />
+    <testcase name="AdvanceTopLevelWritePtrIsInScopeTest" status="run" time="0" classname="CmMessageBlockTest" />
+    <testcase name="AdvanceTopLevelWritePtrIsOutScopeTest" status="run" time="0" classname="CmMessageBlockTest" />
+    <testcase name="RetreatTopLevelWritePtrIsZeroTest" status="run" time="0" classname="CmMessageBlockTest" />
+    <testcase name="RetreatTopLevelWritePtrIsInScopeTest" status="run" time="0" classname="CmMessageBlockTest" />
+    <testcase name="RetreatTopLevelWritePtrIsOutScopeTest" status="run" time="0" classname="CmMessageBlockTest" />
+    <testcase name="AdvanceTopLevelReadPtrIsZeroTest" status="run" time="0" classname="CmMessageBlockTest" />
+    <testcase name="AdvanceTopLevelReadPtrIsInScopeTest" status="run" time="0" classname="CmMessageBlockTest" />
+    <testcase name="AdvanceTopLevelReadPtrIsOutScopeTest" status="run" time="0.001" classname="CmMessageBlockTest" />
+    <testcase name="LockReadingTest" status="run" time="0" classname="CmMessageBlockTest" />
+    <testcase name="LockWritingTest" status="run" time="0" classname="CmMessageBlockTest" />
+    <testcase name="CmMessageBlockConstruct1Test" status="run" time="0" classname="CmMessageBlockTest" />
+    <testcase name="CmMessageBlockConstruct2Test" status="run" time="0" classname="CmMessageBlockTest" />
+    <testcase name="CmMessageBlockConstruct3Test" status="run" time="0" classname="CmMessageBlockTest" />
+    <testcase name="SetDataReturnOKTest" status="run" time="0" classname="CmMessageBlockTest" />
+    <testcase name="SetDataReturnError1Test" status="run" time="0" classname="CmMessageBlockTest" />
+    <testcase name="WriteReturnOKTest" status="run" time="0" classname="CmMessageBlockTest" />
+    <testcase name="WriteReturnOK2Test" status="run" time="0" classname="CmMessageBlockTest" />
+    <testcase name="WriteReturnOK3Test" status="run" time="0" classname="CmMessageBlockTest" />
+    <testcase name="GetChainedLengthIsZeroTest" status="run" time="0.001" classname="CmMessageBlockTest" />
+    <testcase name="GetChainedLengthIsNotZeroTest" status="run" time="0" classname="CmMessageBlockTest" />
+    <testcase name="GetChainedLengthHasNextTest" status="run" time="0" classname="CmMessageBlockTest" />
+    <testcase name="GetChainedSpaceIsNotZeroTest" status="run" time="0" classname="CmMessageBlockTest" />
+    <testcase name="GetChainedSpaceIsZeroTest" status="run" time="0" classname="CmMessageBlockTest" />
+    <testcase name="AppendIsNullTest" status="run" time="0" classname="CmMessageBlockTest" />
+    <testcase name="AppendIsNotNullTest" status="run" time="0" classname="CmMessageBlockTest" />
+    <testcase name="AppendIsNotNull2Test" status="run" time="0" classname="CmMessageBlockTest" />
+    <testcase name="AppendIsMySelfTest" status="run" time="0" classname="CmMessageBlockTest" />
+    <testcase name="AppendHasRecursionTest" status="run" time="0" classname="CmMessageBlockTest" />
+    <testcase name="AdvanceChainedReadPtrTest" status="run" time="0" classname="CmMessageBlockTest" />
+    <testcase name="AdvanceChainedWritePtrIsOKTest" status="run" time="0" classname="CmMessageBlockTest" />
+    <testcase name="AdvanceChainedWritePtrHasError1Test" status="run" time="0" classname="CmMessageBlockTest" />
+    <testcase name="AdvanceChainedWritePtrHasError2Test" status="run" time="0" classname="CmMessageBlockTest" />
+    <testcase name="DuplicateChainedReturnOKTest" status="run" time="0" classname="CmMessageBlockTest" />
+    <testcase name="DuplicateChainedReturnNullTest" status="run" time="0.001" classname="CmMessageBlockTest" />
+    <testcase name="DuplicateTopLevelTest" status="run" time="0" classname="CmMessageBlockTest" />
+    <testcase name="DisjointTest" status="run" time="0" classname="CmMessageBlockTest" />
+    <testcase name="DestroyChainedTest" status="run" time="0" classname="CmMessageBlockTest" />
+    <testcase name="FillIovTest" status="run" time="0" classname="CmMessageBlockTest" />
+    <testcase name="RewindChainedTest" status="run" time="0" classname="CmMessageBlockTest" />
+    <testcase name="ReclaimGarbageTest" status="run" time="0" classname="CmMessageBlockTest" />
+    <testcase name="UpdateReturnOKTest" status="run" time="0" classname="CmMessageBlockTest" />
+    <testcase name="UpdateReturnOK2Test" status="run" time="0" classname="CmMessageBlockTest" />
+    <testcase name="UpdateReturnOK3Test" status="run" time="0" classname="CmMessageBlockTest" />
+    <testcase name="UpdateReturnOK4Test" status="run" time="0" classname="CmMessageBlockTest" />
+    <testcase name="UpdateReturnError1Test" status="run" time="0.001" classname="CmMessageBlockTest" />
+    <testcase name="PeekReturnOKTest" status="run" time="0" classname="CmMessageBlockTest" />
+    <testcase name="PeekReturnError1Test" status="run" time="0" classname="CmMessageBlockTest" />
+    <testcase name="CombineSingleBufferHas1MbTest" status="run" time="0" classname="CmMessageBlockTest" />
+    <testcase name="CombineSingleBufferHas2MbTest" status="run" time="0" classname="CmMessageBlockTest" />
+    <testcase name="FlattenChainedTest" status="run" time="0" classname="CmMessageBlockTest" />
+    <testcase name="ReserveTest" status="run" time="0" classname="CmMessageBlockTest" />
+    <testcase name="ChainedReserveTest" status="run" time="0" classname="CmMessageBlockTest" />
+    <testcase name="ReserveSpaceTest" status="run" time="0" classname="CmMessageBlockTest" />
+  </testsuite>
+  <testsuite name="CmLockfreeTest" tests="10" failures="0" disabled="1" errors="0" time="4.437">
+    <testcase name="testSpScQueueCommonFunction_DefaultSize" status="run" time="0.002" classname="CmLockfreeTest" />
+    <testcase name="testSpScQueueCommonFunction_SIZE_ALL" status="run" time="0.018" classname="CmLockfreeTest" />
+    <testcase name="testQueueCommonFunction" status="run" time="0.002" classname="CmLockfreeTest" />
+    <testcase name="testQueueCommonFunction_ALLSIZE" status="run" time="0.019" classname="CmLockfreeTest" />
+    <testcase name="testQueueCommonFunction_PerformanceCompare" status="run" time="3.33" classname="CmLockfreeTest" />
+    <testcase name="testQueueCommonFunction_MultiThreadPerformanceCompare" status="run" time="0.358" classname="CmLockfreeTest" />
+    <testcase name="testSpScQueueThreads" status="run" time="0.073" classname="CmLockfreeTest" />
+    <testcase name="testQueueThreadsPushCount" status="run" time="0.002" classname="CmLockfreeTest" />
+    <testcase name="testQueueThreads" status="run" time="0.633" classname="CmLockfreeTest" />
+    <testcase name="DISABLED_testDebug" status="notrun" time="0" classname="CmLockfreeTest" />
+  </testsuite>
+  <testsuite name="CCmDataBlock" tests="3" failures="0" disabled="0" errors="0" time="0">
+    <testcase name="GetBasePtr" status="run" time="0" classname="CCmDataBlock" />
+    <testcase name="GetLength" status="run" time="0" classname="CCmDataBlock" />
+    <testcase name="GetCapacity" status="run" time="0" classname="CCmDataBlock" />
+  </testsuite>
+  <testsuite name="CCmString" tests="13" failures="0" disabled="0" errors="0" time="0.001">
+    <testcase name="CCmString" status="run" time="0" classname="CCmString" />
+    <testcase name="CCmString_pchar" status="run" time="0" classname="CCmString" />
+    <testcase name="CCmString_pchar_size" status="run" time="0" classname="CCmString" />
+    <testcase name="CCmString_Template" status="run" time="0" classname="CCmString" />
+    <testcase name="CCmString_string" status="run" time="0" classname="CCmString" />
+    <testcase name="CCmString_CCmString" status="run" time="0" classname="CCmString" />
+    <testcase name="CCmString_n_c" status="run" time="0" classname="CCmString" />
+    <testcase name="operatorAssign_pchar" status="run" time="0" classname="CCmString" />
+    <testcase name="operatorAssign_CCmString" status="run" time="0" classname="CCmString" />
+    <testcase name="operatorAssign_c" status="run" time="0" classname="CCmString" />
+    <testcase name="operatorAssign_i" status="run" time="0" classname="CCmString" />
+    <testcase name="toUpperCase" status="run" time="0" classname="CCmString" />
+    <testcase name="toLowerCase" status="run" time="0" classname="CCmString" />
+  </testsuite>
+  <testsuite name="global" tests="3" failures="0" disabled="0" errors="0" time="0.001">
+    <testcase name="TrimString_CCmIsSpace" status="run" time="0" classname="global" />
+    <testcase name="TrimString_template" status="run" time="0" classname="global" />
+    <testcase name="wmetof" status="run" time="0.001" classname="global" />
+  </testsuite>
+  <testsuite name="CCmTimeValue" tests="19" failures="0" disabled="0" errors="0" time="0.001">
+    <testcase name="CCmTimeValue" status="run" time="0.001" classname="CCmTimeValue" />
+    <testcase name="CCmTimeValueOnlyWithSecond" status="run" time="0" classname="CCmTimeValue" />
+    <testcase name="CCmTimeValueOnlyWithDoubleSecond" status="run" time="0" classname="CCmTimeValue" />
+    <testcase name="CCmTimeValueWithSecondAndMicroSecond" status="run" time="0" classname="CCmTimeValue" />
+    <testcase name="CCmTimeValueWithTimeVal" status="run" time="0" classname="CCmTimeValue" />
+    <testcase name="CCmTimeValueSetAndGetTotalMsecond" status="run" time="0" classname="CCmTimeValue" />
+    <testcase name="CCmTimeValueOperationAddAndUsecLessThan1000000L" status="run" time="0" classname="CCmTimeValue" />
+    <testcase name="CCmTimeValueOperationAddAndUsecMoreThan1000000L" status="run" time="0" classname="CCmTimeValue" />
+    <testcase name="CCmTimeValueOperationAddminusUsecMoreThan0L" status="run" time="0" classname="CCmTimeValue" />
+    <testcase name="CCmTimeValueOperationMinusAndUsecLessThan0L" status="run" time="0" classname="CCmTimeValue" />
+    <testcase name="CCmTimeValueCompareOfBiggerThanAndSmallerThanWhenSecondIsEqual" status="run" time="0" classname="CCmTimeValue" />
+    <testcase name="CCmTimeValueCompareOfBiggerThanAndSmallerThanFailWhenSecondIsEqual" status="run" time="0" classname="CCmTimeValue" />
+    <testcase name="CCmTimeValueCompareOfBiggerThanAndSmallerThanWhenSecondIsNotEqual" status="run" time="0" classname="CCmTimeValue" />
+    <testcase name="CCmTimeValueCompareOfBiggerThanAndSmallerThanFailWhenSecondIsNotEqual" status="run" time="0" classname="CCmTimeValue" />
+    <testcase name="CCmTimeValueCompareOfBiggerThanAndSmallerThanWhenValueIsEqual" status="run" time="0" classname="CCmTimeValue" />
+    <testcase name="CCmTimeValueCompareWhenValueIsEqual" status="run" time="0" classname="CCmTimeValue" />
+    <testcase name="CCmTimeValueCompareWhenValueIsNotEqual" status="run" time="0" classname="CCmTimeValue" />
+    <testcase name="CCmTimeValueGetTimeOfDay" status="run" time="0" classname="CCmTimeValue" />
+    <testcase name="CCmTimeValueGetTvzero" status="run" time="0" classname="CCmTimeValue" />
+  </testsuite>
+  <testsuite name="SystemCapacity" tests="1" failures="0" disabled="0" errors="0" time="0">
+    <testcase name="TestGetMemoryUsage" status="run" time="0" classname="SystemCapacity" />
+  </testsuite>
+  <testsuite name="CCmHttpUrl" tests="1" failures="0" disabled="0" errors="0" time="0">
+    <testcase name="CmUri" status="run" time="0" classname="CCmHttpUrl" />
+  </testsuite>
+  <testsuite name="CCmConfigInitFileTest" tests="6" failures="0" disabled="0" errors="0" time="0.001">
+    <testcase name="TestGetIntParam" status="run" time="0" classname="CCmConfigInitFileTest" />
+    <testcase name="TestGetDwordParam" status="run" time="0" classname="CCmConfigInitFileTest" />
+    <testcase name="TestGetWordParam" status="run" time="0" classname="CCmConfigInitFileTest" />
+    <testcase name="TestGetStringParam" status="run" time="0" classname="CCmConfigInitFileTest" />
+    <testcase name="TestGetBoolParam" status="run" time="0" classname="CCmConfigInitFileTest" />
+    <testcase name="TestGetFloatParam" status="run" time="0" classname="CCmConfigInitFileTest" />
+  </testsuite>
+</testsuites>

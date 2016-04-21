@@ -1,0 +1,126 @@
+#!/usr/bin/env ruby
+
+#4d00b01726e460e1
+#LG-F180-0070648c4b0be55d
+require 'optparse'
+require 'fileutils'
+
+linus_server = "http://10.224.166.110:5000/"
+is_windows = (RbConfig::CONFIG['host_os'] =~ /mswin|mingw|cygwin/) != nil
+
+reportformat = "-f pretty --format html --out trace/result.html"
+options = {}
+OptionParser.new do |opts|
+    opts.banner = "Usage: ruby run_ta.rb [options]"
+
+    opts.on("-n", "--no-install", "Force to not install APK to speed up the test.") do |v|
+        options[:noinstall] = !v
+    end
+    opts.on("-t", "--tags TAGS", "run scenarios by tags, you can connect multiple tags with comma.") do |scenario|
+        options[:scenario] = scenario
+    end
+    opts.on("-f", "--feature FEATURE", "run single feature file.") do |feature|
+        options[:feature] = feature
+    end
+    opts.on("--skip-ios", "skip all ios devices.") do |skip_ios|
+        options[:skip_ios] = skip_ios
+    end
+    opts.on("--skip-android", "skip all android devices.") do |skip_android|
+        options[:skip_android] = skip_android
+    end
+    opts.on("--skip-wp8", "skip all ios devices.") do |skip_wp8|
+        options[:skip_wp8] = skip_wp8
+    end
+    opts.on("--debug PORT", "debug in host machine, port is the listen port of WIN/OSX app.") do |debug_port|
+        options[:debug_port] = debug_port
+    end
+    opts.on("--performance-time-factor FACTOR", "use this fractor to control how long performance testing") do |performance_time_factor|
+        options[:performance_time_factor] = performance_time_factor
+    end
+    opts.on("--debug-as-dummy PORT", "debug in host machine, port is the listen port of WIN/OSX screenshare dummy app.") do |debug_as_dummy_port|
+        options[:debug_as_dummy_port] = debug_as_dummy_port
+    end
+    opts.on("--debug-ios IP", "debug in ios device, ip is the ip address of the ios device.") do |debug_ip|
+        options[:debug_ip] = debug_ip
+    end
+    opts.on("--network-emulate", "enable network emulate, network will be flushed after every test.") do |network_emulate|
+        options[:network_emulate] = network_emulate
+    end
+    opts.on("--no-report", "generate json report.") do |v|
+		reportformat = "" if !v
+    end
+    opts.on("--use-nlc", "use network link conditioner to emulate network") do |use_nlc|
+        options[:use_nlc] = use_nlc
+    end
+    opts.on("--uid USERID", "User ID for authentication integration Linus server.") do |v|
+        options[:userid] = v
+    end
+    opts.on("--passwd PASSWD", "User password for authentication integration Linus server.") do |v|
+        options[:passwd] = v
+    end
+    opts.on("--calliope CALLIOPE", "Calliope orpheus server URL, default is: https://calliope-integration.wbx2.com:443/") do |v|
+        options[:calliope] = v
+    end
+    opts.on("--expected-android-devices NUM", "expected android devices, default is 0.") do |v|
+        options[:expected_android_devices] = v.to_i
+    end
+ 
+end.parse!
+
+if(options[:feature])
+    features = "ta_features/#{options[:feature]}.feature" 
+else    
+    features = "ta_features"
+end
+
+if(options[:scenario])
+    tags = "--tags #{options[:scenario]}"
+else
+    tags = ""
+end    
+
+env = ""
+env = "#{env} SKIPIOS=1" if options[:skip_ios]
+env = "#{env} SKIPANDROID=1" if options[:skip_android]
+env = "#{env} SKIPWP8=1" if options[:skip_wp8]
+env = "#{env} NOINSTALL=1" if options[:noinstall]
+env = "#{env} DEBUGMODE=#{options[:debug_port]}" if options[:debug_port]
+env = "#{env} DEBUGMODE_AS_DUMMY=#{options[:debug_as_dummy_port]}" if options[:debug_as_dummy_port]
+env = "#{env} PERFORMANCE_TIME_FACTOR=#{options[:performance_time_factor]}" if options[:performance_time_factor]
+env = "#{env} DEBUGIOS=#{options[:debug_ip]}" if options[:debug_ip]
+env = "#{env} NETWORKEMULATE=1" if options[:network_emulate]
+env = "#{env} USENLC=1" if options[:use_nlc]
+env = "#{env} USERID=#{options[:userid]} PASSWD=#{options[:passwd]}" if options[:userid]
+env = "#{env} EXPECTED_ANDROID_NUM=#{options[:expected_android_devices]}" if options[:expected_android_devices] != 0
+if options[:calliope]
+    env = "#{env} ORPHEUS_SERVER=#{options[:calliope]}" 
+    linus_server = ""
+end
+
+cmds = "cucumber #{features} #{tags} #{reportformat} LINUS_SERVER='#{linus_server}'#{env}"
+puts "========"
+puts cmds
+puts "========"
+
+def is_running?(pid)
+	begin
+		rh = Process.waitpid(pid, Process::WNOHANG)
+		return rh == nil
+	rescue
+		return false
+	end
+end
+
+FileUtils.mkdir_p("trace")
+@trace_file = File.open("trace/run_ta.log", 'w+') unless reportformat == ""
+cucumber_proc = IO.popen(cmds)
+while(1)
+	selectResult = IO.select([cucumber_proc], nil, nil, 1)
+	break unless is_running?(cucumber_proc.pid)
+	next if not selectResult
+	line = cucumber_proc.gets()
+	break if not line
+    line.chomp!
+	puts line unless(line == "")
+    @trace_file.puts(line) unless(line == "" || reportformat == "")		
+end

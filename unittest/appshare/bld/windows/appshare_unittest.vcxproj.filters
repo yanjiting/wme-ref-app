@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Tests">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Tests\share_captureengine">
+      <UniqueIdentifier>{56b281ca-151f-4be9-97f0-54cc7173d87c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tests\share_common">
+      <UniqueIdentifier>{9cf08603-278a-4b70-8441-69c719a7bad7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tests\share_pointing">
+      <UniqueIdentifier>{80a41d29-c184-4521-a9f4-efcd6d85d23d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tests\share_capturer">
+      <UniqueIdentifier>{d3bc41e2-4195-43b4-bb68-2955ff4e61d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tests\share_source">
+      <UniqueIdentifier>{c188c9a3-c79b-428d-b81d-79d144d96504}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tests\share_util">
+      <UniqueIdentifier>{8860b0b1-a647-411a-a4f3-161424c3fef4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="others">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="others\Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\share_capture_engine_mock.h">
+      <Filter>Tests\share_captureengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\appshare_fake_common.h">
+      <Filter>Tests\share_common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\appshare_unittest.h">
+      <Filter>others</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\share_capture_engine_unittest.cpp">
+      <Filter>Tests\share_captureengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\share_common_frame_unittest.cpp">
+      <Filter>Tests\share_common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\share_pointing_mouseTest.cpp">
+      <Filter>Tests\share_pointing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\share_capturer_desktop_win_test.cpp">
+      <Filter>Tests\share_capturer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\share_capturer_impl_test.cpp">
+      <Filter>Tests\share_capturer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\app_enum_win_test.cpp">
+      <Filter>Tests\share_source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\monitor_enum_win_test.cpp">
+      <Filter>Tests\share_source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\share_source_enum_test.cpp">
+      <Filter>Tests\share_source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\share_source_impl_test.cpp">
+      <Filter>Tests\share_source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\share_source_util_win_test.cpp">
+      <Filter>Tests\share_util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\share_util_unittest.cpp">
+      <Filter>Tests\share_util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\appshare_unittest.cpp">
+      <Filter>others</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\share_downsample_unittest.cpp">
+      <Filter>Tests\share_util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\share_downsample_win.cpp">
+      <Filter>Tests\share_util</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

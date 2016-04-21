@@ -1,0 +1,785 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A9A611C19B41608008F636D /* NetworkIndicatorTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A9A611B19B41608008F636D /* NetworkIndicatorTest.cpp */; };
+		8006598A197529A2006F217C /* SimulcastTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80065989197529A2006F217C /* SimulcastTest.cpp */; };
+		8026686A1B57A570003F67AF /* CRTPLossRatioStatsTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 802668691B57A570003F67AF /* CRTPLossRatioStatsTest.cpp */; };
+		80F8739F1A4AA41400658B62 /* librsfec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 80F8739E1A4AA41400658B62 /* librsfec.a */; };
+		84847EB51921E9A400560C48 /* CRTPThreadTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84847EB41921E9A400560C48 /* CRTPThreadTest.cpp */; };
+		992B2670190FBA1C00B43DF3 /* wqos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992B2669190FB9E100B43DF3 /* wqos.framework */; };
+		992B2672190FBA4400B43DF3 /* util.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 992B265D190FB9B300B43DF3 /* util.framework */; };
+		992B271A1910C09E00B43DF3 /* AVSyncAPITest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 992B27111910C09E00B43DF3 /* AVSyncAPITest.cpp */; };
+		992B271B1910C09E00B43DF3 /* CInformQoSAPITEST.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 992B27121910C09E00B43DF3 /* CInformQoSAPITEST.cpp */; };
+		992B271C1910C09E00B43DF3 /* CRTPSessionClientAPITest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 992B27131910C09E00B43DF3 /* CRTPSessionClientAPITest.cpp */; };
+		992B271D1910C09E00B43DF3 /* CWmeCodecPayloadTypeAPITest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 992B27141910C09E00B43DF3 /* CWmeCodecPayloadTypeAPITest.cpp */; };
+		992B271E1910C09E00B43DF3 /* RTPWMEAPITest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 992B27151910C09E00B43DF3 /* RTPWMEAPITest.cpp */; };
+		992B271F1910C09E00B43DF3 /* SecurityPolicyAPITest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 992B27161910C09E00B43DF3 /* SecurityPolicyAPITest.cpp */; };
+		992B27201910C09E00B43DF3 /* SendControlAPITest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 992B27171910C09E00B43DF3 /* SendControlAPITest.cpp */; };
+		992B27211910C09E00B43DF3 /* SendControlAPITestForAS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 992B27181910C09E00B43DF3 /* SendControlAPITestForAS.cpp */; };
+		992B27221910C09E00B43DF3 /* SesscionConfigObserverTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 992B27191910C09E00B43DF3 /* SesscionConfigObserverTest.cpp */; };
+		99421FC219090E1A0054301F /* ActiveBufferTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99421F9619090E1A0054301F /* ActiveBufferTest.cpp */; };
+		99421FC419090E1A0054301F /* CFBPacketTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99421F9819090E1A0054301F /* CFBPacketTest.cpp */; };
+		99421FC519090E1A0054301F /* CFECEncoderTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99421F9919090E1A0054301F /* CFECEncoderTest.cpp */; };
+		99421FC619090E1A0054301F /* CFECLevelTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99421F9A19090E1A0054301F /* CFECLevelTest.cpp */; };
+		99421FC719090E1A0054301F /* CMMFrameManagerTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99421F9B19090E1A0054301F /* CMMFrameManagerTest.cpp */; };
+		99421FC819090E1A0054301F /* CPSFBPacketTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99421F9C19090E1A0054301F /* CPSFBPacketTest.cpp */; };
+		99421FCA19090E1A0054301F /* CRTCPHandlerTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99421F9E19090E1A0054301F /* CRTCPHandlerTest.cpp */; };
+		99421FCB19090E1A0054301F /* CRTCPPacketTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99421F9F19090E1A0054301F /* CRTCPPacketTest.cpp */; };
+		99421FCF19090E1A0054301F /* CRTPChannelTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99421FA319090E1A0054301F /* CRTPChannelTest.cpp */; };
+		99421FD019090E1A0054301F /* CRTPFBPacketTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99421FA419090E1A0054301F /* CRTPFBPacketTest.cpp */; };
+		99421FD319090E1A0054301F /* CRTPSessionClientTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99421FA719090E1A0054301F /* CRTPSessionClientTest.cpp */; };
+		99421FD419090E1A0054301F /* CRTPStreamTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99421FA819090E1A0054301F /* CRTPStreamTest.cpp */; };
+		99421FD519090E1A0054301F /* CRTPUtilsTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99421FA919090E1A0054301F /* CRTPUtilsTest.cpp */; };
+		99421FD619090E1A0054301F /* CSecurityStrategyWrapperClientTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99421FAA19090E1A0054301F /* CSecurityStrategyWrapperClientTest.cpp */; };
+		99421FD719090E1A0054301F /* CSendWindowTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99421FAB19090E1A0054301F /* CSendWindowTest.cpp */; };
+		99421FD819090E1A0054301F /* CSeqCountorTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99421FAC19090E1A0054301F /* CSeqCountorTest.cpp */; };
+		99421FD919090E1A0054301F /* CSequenceDBTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99421FAD19090E1A0054301F /* CSequenceDBTest.cpp */; };
+		99421FDA19090E1A0054301F /* CVideoStreamTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99421FAE19090E1A0054301F /* CVideoStreamTest.cpp */; };
+		99421FDC19090E1A0054301F /* FrameNALFragmentTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99421FB019090E1A0054301F /* FrameNALFragmentTest.cpp */; };
+		99421FDD19090E1A0054301F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99421FB119090E1A0054301F /* main.cpp */; };
+		99421FDE19090E1A0054301F /* MediaStatisticsTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99421FB219090E1A0054301F /* MediaStatisticsTest.cpp */; };
+		99421FDF19090E1A0054301F /* NewTraceInterfaceTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99421FB319090E1A0054301F /* NewTraceInterfaceTest.cpp */; };
+		99421FE019090E1A0054301F /* PktStatTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99421FB419090E1A0054301F /* PktStatTest.cpp */; };
+		99421FE119090E1A0054301F /* PSFBCallFlowTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99421FB519090E1A0054301F /* PSFBCallFlowTest.cpp */; };
+		99421FE419090E1A0054301F /* RTPMediaAPITest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99421FB819090E1A0054301F /* RTPMediaAPITest.cpp */; };
+		99421FE519090E1A0054301F /* RTPPacketizationTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99421FB919090E1A0054301F /* RTPPacketizationTest.cpp */; };
+		99421FE619090E1A0054301F /* RTPSessionConfigTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99421FBA19090E1A0054301F /* RTPSessionConfigTest.cpp */; };
+		99421FE819090E1A0054301F /* SendControlTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99421FBC19090E1A0054301F /* SendControlTest.cpp */; };
+		99421FE919090E1A0054301F /* SendingControlTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99421FBD19090E1A0054301F /* SendingControlTest.cpp */; };
+		99421FEA19090E1A0054301F /* SpeedMeasureTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99421FBE19090E1A0054301F /* SpeedMeasureTest.cpp */; };
+		99421FEB19090E1A0054301F /* TMMBRTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99421FBF19090E1A0054301F /* TMMBRTest.cpp */; };
+		99421FED19090E1A0054301F /* WMEInterfaceMock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99421FC119090E1A0054301F /* WMEInterfaceMock.cpp */; };
+		9942200C19090EA50054301F /* wrtp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9942200519090E3F0054301F /* wrtp.framework */; };
+		9942200D19090EAA0054301F /* libgmock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 99421FF619090E2B0054301F /* libgmock.a */; };
+		9942200E19090EAD0054301F /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 99421FF919090E2B0054301F /* libgtest.a */; };
+		994220161909133D0054301F /* testutil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 994220151909133D0054301F /* testutil.cpp */; };
+		99D5AE9A190A267F00A91D61 /* CRetransmissionPacketTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99421F9D19090E1A0054301F /* CRetransmissionPacketTest.cpp */; };
+		99D5AE9C190A275A00A91D61 /* CRTPAggregatePacketTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99421FA119090E1A0054301F /* CRTPAggregatePacketTest.cpp */; };
+		99D5AE9E190A27E700A91D61 /* CRTPPacketLazyTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99421FA519090E1A0054301F /* CRTPPacketLazyTest.cpp */; };
+		99D5AE9F190A281000A91D61 /* CRTPPacketTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99421FA619090E1A0054301F /* CRTPPacketTest.cpp */; };
+		99D5AEA3190A288900A91D61 /* RTPTimeTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99421FBB19090E1A0054301F /* RTPTimeTest.cpp */; };
+		BD07883D1ACA331C000DC197 /* RTPStreamManagementTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD07883C1ACA331C000DC197 /* RTPStreamManagementTest.cpp */; };
+		BD1F95BE1C48828000FA78DD /* RequestVidsChangeTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD1F95BD1C48828000FA78DD /* RequestVidsChangeTest.cpp */; };
+		BD38B4F81B8BC85400D17E47 /* VideoRecvFramePacketTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD38B4F71B8BC85400D17E47 /* VideoRecvFramePacketTest.cpp */; };
+		BD38B4FA1B8BD54300D17E47 /* VideoRecvFrameInfoTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD38B4F91B8BD54300D17E47 /* VideoRecvFrameInfoTest.cpp */; };
+		BD591A9B1B8D335A00D3837F /* RTPVideoRecvFrameManagerTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD591A9A1B8D335A00D3837F /* RTPVideoRecvFrameManagerTest.cpp */; };
+		BDB778AA19E5336D00432E99 /* RTPHeaderExtensionVideoTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDB778A919E5336D00432E99 /* RTPHeaderExtensionVideoTest.cpp */; };
+		BDD4C6B2196277B900A06405 /* SimulcastCallflowTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDD4C6B0196277B900A06405 /* SimulcastCallflowTest.cpp */; };
+		BDFC67571B8C3EC9008D6002 /* RTPVideoRecvFrameTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDFC67561B8C3EC9008D6002 /* RTPVideoRecvFrameTest.cpp */; };
+		BFF0191019D7DA4400AD9CD6 /* CRTPRecoverTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFF0190E19D7DA4400AD9CD6 /* CRTPRecoverTest.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		992B265C190FB9B300B43DF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 992B2658190FB9B200B43DF3 /* util.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B10A6ADA1697BD3A00374A3E;
+			remoteInfo = util;
+		};
+		992B2668190FB9E100B43DF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 992B2664190FB9E000B43DF3 /* wqos.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6FABAD591712CAA100C5B818;
+			remoteInfo = wqos;
+		};
+		992B266A190FB9F900B43DF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 992B2658190FB9B200B43DF3 /* util.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B10A6AD91697BD3A00374A3E;
+			remoteInfo = util;
+		};
+		992B266E190FBA0000B43DF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 992B2664190FB9E000B43DF3 /* wqos.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 6FABAD581712CAA100C5B818;
+			remoteInfo = wqos;
+		};
+		99421FF519090E2B0054301F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99421FEE19090E2B0054301F /* gmock.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 995119CE1908B9680003775D;
+			remoteInfo = gmock;
+		};
+		99421FF819090E2B0054301F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99421FF119090E2B0054301F /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 99B81CF61908B65000614567;
+			remoteInfo = gtest;
+		};
+		9942200419090E3F0054301F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99421FFA19090E3E0054301F /* wrtp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B4A9C8A416E6CCCD0091D2AF;
+			remoteInfo = wrtp;
+		};
+		9942200619090E900054301F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99421FFA19090E3E0054301F /* wrtp.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B4A9C8A316E6CCCD0091D2AF;
+			remoteInfo = wrtp;
+		};
+		9942200819090E940054301F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99421FEE19090E2B0054301F /* gmock.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 995119CD1908B9680003775D;
+			remoteInfo = gmock;
+		};
+		9942200A19090E960054301F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99421FF119090E2B0054301F /* gtest.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 99B81CF51908B65000614567;
+			remoteInfo = gtest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		99421F8419090D680054301F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3A9A611B19B41608008F636D /* NetworkIndicatorTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NetworkIndicatorTest.cpp; sourceTree = "<group>"; };
+		80065989197529A2006F217C /* SimulcastTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SimulcastTest.cpp; sourceTree = "<group>"; };
+		802668691B57A570003F67AF /* CRTPLossRatioStatsTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CRTPLossRatioStatsTest.cpp; sourceTree = "<group>"; };
+		80F8739E1A4AA41400658B62 /* librsfec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librsfec.a; path = ../../vendor/mari/build/libs/mac/Debug/librsfec.a; sourceTree = "<group>"; };
+		84847EB41921E9A400560C48 /* CRTPThreadTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CRTPThreadTest.cpp; sourceTree = "<group>"; };
+		992B2658190FB9B200B43DF3 /* util.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = util.xcodeproj; path = ../../mediaengine/util/src/util.xcodeproj; sourceTree = "<group>"; };
+		992B2664190FB9E000B43DF3 /* wqos.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = wqos.xcodeproj; path = ../../mediaengine/wqos/src/wqos.xcodeproj; sourceTree = "<group>"; };
+		992B27111910C09E00B43DF3 /* AVSyncAPITest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AVSyncAPITest.cpp; sourceTree = "<group>"; };
+		992B27121910C09E00B43DF3 /* CInformQoSAPITEST.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CInformQoSAPITEST.cpp; sourceTree = "<group>"; };
+		992B27131910C09E00B43DF3 /* CRTPSessionClientAPITest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CRTPSessionClientAPITest.cpp; sourceTree = "<group>"; };
+		992B27141910C09E00B43DF3 /* CWmeCodecPayloadTypeAPITest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CWmeCodecPayloadTypeAPITest.cpp; sourceTree = "<group>"; };
+		992B27151910C09E00B43DF3 /* RTPWMEAPITest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RTPWMEAPITest.cpp; sourceTree = "<group>"; };
+		992B27161910C09E00B43DF3 /* SecurityPolicyAPITest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SecurityPolicyAPITest.cpp; sourceTree = "<group>"; };
+		992B27171910C09E00B43DF3 /* SendControlAPITest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SendControlAPITest.cpp; sourceTree = "<group>"; };
+		992B27181910C09E00B43DF3 /* SendControlAPITestForAS.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SendControlAPITestForAS.cpp; sourceTree = "<group>"; };
+		992B27191910C09E00B43DF3 /* SesscionConfigObserverTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SesscionConfigObserverTest.cpp; sourceTree = "<group>"; };
+		99421F8619090D680054301F /* wrtpTest_mac */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = wrtpTest_mac; sourceTree = BUILT_PRODUCTS_DIR; };
+		99421F9519090DEE0054301F /* wrtpTest_mac-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wrtpTest_mac-Prefix.pch"; sourceTree = "<group>"; };
+		99421F9619090E1A0054301F /* ActiveBufferTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ActiveBufferTest.cpp; sourceTree = "<group>"; };
+		99421F9819090E1A0054301F /* CFBPacketTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CFBPacketTest.cpp; sourceTree = "<group>"; };
+		99421F9919090E1A0054301F /* CFECEncoderTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CFECEncoderTest.cpp; sourceTree = "<group>"; };
+		99421F9A19090E1A0054301F /* CFECLevelTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CFECLevelTest.cpp; sourceTree = "<group>"; };
+		99421F9B19090E1A0054301F /* CMMFrameManagerTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CMMFrameManagerTest.cpp; sourceTree = "<group>"; };
+		99421F9C19090E1A0054301F /* CPSFBPacketTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CPSFBPacketTest.cpp; sourceTree = "<group>"; };
+		99421F9D19090E1A0054301F /* CRetransmissionPacketTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CRetransmissionPacketTest.cpp; sourceTree = "<group>"; };
+		99421F9E19090E1A0054301F /* CRTCPHandlerTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CRTCPHandlerTest.cpp; sourceTree = "<group>"; };
+		99421F9F19090E1A0054301F /* CRTCPPacketTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CRTCPPacketTest.cpp; sourceTree = "<group>"; };
+		99421FA119090E1A0054301F /* CRTPAggregatePacketTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CRTPAggregatePacketTest.cpp; sourceTree = "<group>"; };
+		99421FA319090E1A0054301F /* CRTPChannelTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CRTPChannelTest.cpp; sourceTree = "<group>"; };
+		99421FA419090E1A0054301F /* CRTPFBPacketTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CRTPFBPacketTest.cpp; sourceTree = "<group>"; };
+		99421FA519090E1A0054301F /* CRTPPacketLazyTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CRTPPacketLazyTest.cpp; sourceTree = "<group>"; };
+		99421FA619090E1A0054301F /* CRTPPacketTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CRTPPacketTest.cpp; sourceTree = "<group>"; };
+		99421FA719090E1A0054301F /* CRTPSessionClientTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CRTPSessionClientTest.cpp; sourceTree = "<group>"; };
+		99421FA819090E1A0054301F /* CRTPStreamTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CRTPStreamTest.cpp; sourceTree = "<group>"; };
+		99421FA919090E1A0054301F /* CRTPUtilsTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CRTPUtilsTest.cpp; sourceTree = "<group>"; };
+		99421FAA19090E1A0054301F /* CSecurityStrategyWrapperClientTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CSecurityStrategyWrapperClientTest.cpp; sourceTree = "<group>"; };
+		99421FAB19090E1A0054301F /* CSendWindowTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CSendWindowTest.cpp; sourceTree = "<group>"; };
+		99421FAC19090E1A0054301F /* CSeqCountorTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CSeqCountorTest.cpp; sourceTree = "<group>"; };
+		99421FAD19090E1A0054301F /* CSequenceDBTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CSequenceDBTest.cpp; sourceTree = "<group>"; };
+		99421FAE19090E1A0054301F /* CVideoStreamTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVideoStreamTest.cpp; sourceTree = "<group>"; };
+		99421FB019090E1A0054301F /* FrameNALFragmentTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FrameNALFragmentTest.cpp; sourceTree = "<group>"; };
+		99421FB119090E1A0054301F /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		99421FB219090E1A0054301F /* MediaStatisticsTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MediaStatisticsTest.cpp; sourceTree = "<group>"; };
+		99421FB319090E1A0054301F /* NewTraceInterfaceTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NewTraceInterfaceTest.cpp; sourceTree = "<group>"; };
+		99421FB419090E1A0054301F /* PktStatTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PktStatTest.cpp; sourceTree = "<group>"; };
+		99421FB519090E1A0054301F /* PSFBCallFlowTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PSFBCallFlowTest.cpp; sourceTree = "<group>"; };
+		99421FB819090E1A0054301F /* RTPMediaAPITest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RTPMediaAPITest.cpp; sourceTree = "<group>"; };
+		99421FB919090E1A0054301F /* RTPPacketizationTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RTPPacketizationTest.cpp; sourceTree = "<group>"; };
+		99421FBA19090E1A0054301F /* RTPSessionConfigTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RTPSessionConfigTest.cpp; sourceTree = "<group>"; };
+		99421FBB19090E1A0054301F /* RTPTimeTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RTPTimeTest.cpp; sourceTree = "<group>"; };
+		99421FBC19090E1A0054301F /* SendControlTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SendControlTest.cpp; sourceTree = "<group>"; };
+		99421FBD19090E1A0054301F /* SendingControlTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SendingControlTest.cpp; sourceTree = "<group>"; };
+		99421FBE19090E1A0054301F /* SpeedMeasureTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpeedMeasureTest.cpp; sourceTree = "<group>"; };
+		99421FBF19090E1A0054301F /* TMMBRTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TMMBRTest.cpp; sourceTree = "<group>"; };
+		99421FC119090E1A0054301F /* WMEInterfaceMock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WMEInterfaceMock.cpp; sourceTree = "<group>"; };
+		99421FEE19090E2B0054301F /* gmock.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = gmock.xcodeproj; path = ../../vendor/gtest/bld/mac/gmock.xcodeproj; sourceTree = "<group>"; };
+		99421FF119090E2B0054301F /* gtest.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = gtest.xcodeproj; path = ../../vendor/gtest/bld/mac/gtest.xcodeproj; sourceTree = "<group>"; };
+		99421FFA19090E3E0054301F /* wrtp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = wrtp.xcodeproj; path = ../../mediaengine/transmission/src/wrtp.xcodeproj; sourceTree = "<group>"; };
+		994220151909133D0054301F /* testutil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = testutil.cpp; sourceTree = "<group>"; };
+		BD07883C1ACA331C000DC197 /* RTPStreamManagementTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RTPStreamManagementTest.cpp; sourceTree = "<group>"; };
+		BD1F95BD1C48828000FA78DD /* RequestVidsChangeTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RequestVidsChangeTest.cpp; sourceTree = "<group>"; };
+		BD38B4F71B8BC85400D17E47 /* VideoRecvFramePacketTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VideoRecvFramePacketTest.cpp; path = VideoRecvBufferTest/VideoRecvFramePacketTest.cpp; sourceTree = "<group>"; };
+		BD38B4F91B8BD54300D17E47 /* VideoRecvFrameInfoTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VideoRecvFrameInfoTest.cpp; path = VideoRecvBufferTest/VideoRecvFrameInfoTest.cpp; sourceTree = "<group>"; };
+		BD591A9A1B8D335A00D3837F /* RTPVideoRecvFrameManagerTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RTPVideoRecvFrameManagerTest.cpp; path = VideoRecvBufferTest/RTPVideoRecvFrameManagerTest.cpp; sourceTree = "<group>"; };
+		BDB778A919E5336D00432E99 /* RTPHeaderExtensionVideoTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RTPHeaderExtensionVideoTest.cpp; sourceTree = "<group>"; };
+		BDD4C6B0196277B900A06405 /* SimulcastCallflowTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SimulcastCallflowTest.cpp; sourceTree = "<group>"; };
+		BDFC67561B8C3EC9008D6002 /* RTPVideoRecvFrameTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RTPVideoRecvFrameTest.cpp; path = VideoRecvBufferTest/RTPVideoRecvFrameTest.cpp; sourceTree = "<group>"; };
+		BFF0190E19D7DA4400AD9CD6 /* CRTPRecoverTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CRTPRecoverTest.cpp; sourceTree = "<group>"; };
+		BFF957981945871000E3EBD8 /* DebugCommon.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = DebugCommon.xcconfig; path = ../../mediaengine/bld/mac/Config/DebugCommon.xcconfig; sourceTree = "<group>"; };
+		BFF957991945871000E3EBD8 /* ReleaseCommon.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = ReleaseCommon.xcconfig; path = ../../mediaengine/bld/mac/Config/ReleaseCommon.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		99421F8319090D680054301F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80F8739F1A4AA41400658B62 /* librsfec.a in Frameworks */,
+				9942200E19090EAD0054301F /* libgtest.a in Frameworks */,
+				9942200D19090EAA0054301F /* libgmock.a in Frameworks */,
+				992B2672190FBA4400B43DF3 /* util.framework in Frameworks */,
+				992B2670190FBA1C00B43DF3 /* wqos.framework in Frameworks */,
+				9942200C19090EA50054301F /* wrtp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		992B2659190FB9B200B43DF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				992B265D190FB9B300B43DF3 /* util.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		992B2665190FB9E000B43DF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				992B2669190FB9E100B43DF3 /* wqos.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		99421F7D19090D680054301F = {
+			isa = PBXGroup;
+			children = (
+				80F8739E1A4AA41400658B62 /* librsfec.a */,
+				BFF95797194586FF00E3EBD8 /* Config */,
+				99421F9419090DA10054301F /* Dependencies */,
+				99421F9319090D9C0054301F /* Tests */,
+				99421F9219090D970054301F /* Others */,
+				99421F8719090D680054301F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		99421F8719090D680054301F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99421F8619090D680054301F /* wrtpTest_mac */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		99421F9219090D970054301F /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				99421F9519090DEE0054301F /* wrtpTest_mac-Prefix.pch */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
+		99421F9319090D9C0054301F /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				99421F9619090E1A0054301F /* ActiveBufferTest.cpp */,
+				992B27111910C09E00B43DF3 /* AVSyncAPITest.cpp */,
+				99421F9819090E1A0054301F /* CFBPacketTest.cpp */,
+				99421F9919090E1A0054301F /* CFECEncoderTest.cpp */,
+				99421F9A19090E1A0054301F /* CFECLevelTest.cpp */,
+				992B27121910C09E00B43DF3 /* CInformQoSAPITEST.cpp */,
+				99421F9B19090E1A0054301F /* CMMFrameManagerTest.cpp */,
+				99421F9C19090E1A0054301F /* CPSFBPacketTest.cpp */,
+				99421F9D19090E1A0054301F /* CRetransmissionPacketTest.cpp */,
+				99421F9E19090E1A0054301F /* CRTCPHandlerTest.cpp */,
+				99421F9F19090E1A0054301F /* CRTCPPacketTest.cpp */,
+				99421FA119090E1A0054301F /* CRTPAggregatePacketTest.cpp */,
+				99421FA319090E1A0054301F /* CRTPChannelTest.cpp */,
+				99421FA419090E1A0054301F /* CRTPFBPacketTest.cpp */,
+				802668691B57A570003F67AF /* CRTPLossRatioStatsTest.cpp */,
+				99421FA519090E1A0054301F /* CRTPPacketLazyTest.cpp */,
+				99421FA619090E1A0054301F /* CRTPPacketTest.cpp */,
+				BFF0190E19D7DA4400AD9CD6 /* CRTPRecoverTest.cpp */,
+				992B27131910C09E00B43DF3 /* CRTPSessionClientAPITest.cpp */,
+				99421FA719090E1A0054301F /* CRTPSessionClientTest.cpp */,
+				99421FA819090E1A0054301F /* CRTPStreamTest.cpp */,
+				84847EB41921E9A400560C48 /* CRTPThreadTest.cpp */,
+				99421FA919090E1A0054301F /* CRTPUtilsTest.cpp */,
+				99421FAA19090E1A0054301F /* CSecurityStrategyWrapperClientTest.cpp */,
+				99421FAB19090E1A0054301F /* CSendWindowTest.cpp */,
+				99421FAC19090E1A0054301F /* CSeqCountorTest.cpp */,
+				99421FAD19090E1A0054301F /* CSequenceDBTest.cpp */,
+				99421FAE19090E1A0054301F /* CVideoStreamTest.cpp */,
+				992B27141910C09E00B43DF3 /* CWmeCodecPayloadTypeAPITest.cpp */,
+				99421FB019090E1A0054301F /* FrameNALFragmentTest.cpp */,
+				99421FB119090E1A0054301F /* main.cpp */,
+				99421FB219090E1A0054301F /* MediaStatisticsTest.cpp */,
+				3A9A611B19B41608008F636D /* NetworkIndicatorTest.cpp */,
+				99421FB319090E1A0054301F /* NewTraceInterfaceTest.cpp */,
+				99421FB419090E1A0054301F /* PktStatTest.cpp */,
+				99421FB519090E1A0054301F /* PSFBCallFlowTest.cpp */,
+				BD1F95BD1C48828000FA78DD /* RequestVidsChangeTest.cpp */,
+				BDB778A919E5336D00432E99 /* RTPHeaderExtensionVideoTest.cpp */,
+				99421FB819090E1A0054301F /* RTPMediaAPITest.cpp */,
+				99421FB919090E1A0054301F /* RTPPacketizationTest.cpp */,
+				99421FBA19090E1A0054301F /* RTPSessionConfigTest.cpp */,
+				BD07883C1ACA331C000DC197 /* RTPStreamManagementTest.cpp */,
+				99421FBB19090E1A0054301F /* RTPTimeTest.cpp */,
+				992B27151910C09E00B43DF3 /* RTPWMEAPITest.cpp */,
+				992B27161910C09E00B43DF3 /* SecurityPolicyAPITest.cpp */,
+				992B27171910C09E00B43DF3 /* SendControlAPITest.cpp */,
+				992B27181910C09E00B43DF3 /* SendControlAPITestForAS.cpp */,
+				99421FBC19090E1A0054301F /* SendControlTest.cpp */,
+				99421FBD19090E1A0054301F /* SendingControlTest.cpp */,
+				992B27191910C09E00B43DF3 /* SesscionConfigObserverTest.cpp */,
+				BDD4C6B0196277B900A06405 /* SimulcastCallflowTest.cpp */,
+				80065989197529A2006F217C /* SimulcastTest.cpp */,
+				99421FBE19090E1A0054301F /* SpeedMeasureTest.cpp */,
+				994220151909133D0054301F /* testutil.cpp */,
+				99421FBF19090E1A0054301F /* TMMBRTest.cpp */,
+				99D5AE99190A265F00A91D61 /* Unsupported */,
+				BD38B4F51B8BC7B100D17E47 /* VideoRecvBufferTest */,
+				99421FC119090E1A0054301F /* WMEInterfaceMock.cpp */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		99421F9419090DA10054301F /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				99421FEE19090E2B0054301F /* gmock.xcodeproj */,
+				99421FF119090E2B0054301F /* gtest.xcodeproj */,
+				992B2658190FB9B200B43DF3 /* util.xcodeproj */,
+				992B2664190FB9E000B43DF3 /* wqos.xcodeproj */,
+				99421FFA19090E3E0054301F /* wrtp.xcodeproj */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		99421FEF19090E2B0054301F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99421FF619090E2B0054301F /* libgmock.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		99421FF219090E2B0054301F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99421FF919090E2B0054301F /* libgtest.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		99421FFB19090E3E0054301F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9942200519090E3F0054301F /* wrtp.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		99D5AE99190A265F00A91D61 /* Unsupported */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Unsupported;
+			sourceTree = "<group>";
+		};
+		BD38B4F51B8BC7B100D17E47 /* VideoRecvBufferTest */ = {
+			isa = PBXGroup;
+			children = (
+				BD38B4F71B8BC85400D17E47 /* VideoRecvFramePacketTest.cpp */,
+				BD38B4F91B8BD54300D17E47 /* VideoRecvFrameInfoTest.cpp */,
+				BDFC67561B8C3EC9008D6002 /* RTPVideoRecvFrameTest.cpp */,
+				BD591A9A1B8D335A00D3837F /* RTPVideoRecvFrameManagerTest.cpp */,
+			);
+			name = VideoRecvBufferTest;
+			sourceTree = "<group>";
+		};
+		BFF95797194586FF00E3EBD8 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				BFF957981945871000E3EBD8 /* DebugCommon.xcconfig */,
+				BFF957991945871000E3EBD8 /* ReleaseCommon.xcconfig */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		99421F8519090D680054301F /* wrtpTest_mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99421F8F19090D680054301F /* Build configuration list for PBXNativeTarget "wrtpTest_mac" */;
+			buildPhases = (
+				99421F8219090D680054301F /* Sources */,
+				99421F8319090D680054301F /* Frameworks */,
+				99421F8419090D680054301F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9942200B19090E960054301F /* PBXTargetDependency */,
+				9942200919090E940054301F /* PBXTargetDependency */,
+				992B266B190FB9F900B43DF3 /* PBXTargetDependency */,
+				992B266F190FBA0000B43DF3 /* PBXTargetDependency */,
+				9942200719090E900054301F /* PBXTargetDependency */,
+			);
+			name = wrtpTest_mac;
+			productName = wrtpTest_mac;
+			productReference = 99421F8619090D680054301F /* wrtpTest_mac */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		99421F7E19090D680054301F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = cisco;
+			};
+			buildConfigurationList = 99421F8119090D680054301F /* Build configuration list for PBXProject "wrtpTest_mac" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 99421F7D19090D680054301F;
+			productRefGroup = 99421F8719090D680054301F /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 99421FEF19090E2B0054301F /* Products */;
+					ProjectRef = 99421FEE19090E2B0054301F /* gmock.xcodeproj */;
+				},
+				{
+					ProductGroup = 99421FF219090E2B0054301F /* Products */;
+					ProjectRef = 99421FF119090E2B0054301F /* gtest.xcodeproj */;
+				},
+				{
+					ProductGroup = 992B2659190FB9B200B43DF3 /* Products */;
+					ProjectRef = 992B2658190FB9B200B43DF3 /* util.xcodeproj */;
+				},
+				{
+					ProductGroup = 992B2665190FB9E000B43DF3 /* Products */;
+					ProjectRef = 992B2664190FB9E000B43DF3 /* wqos.xcodeproj */;
+				},
+				{
+					ProductGroup = 99421FFB19090E3E0054301F /* Products */;
+					ProjectRef = 99421FFA19090E3E0054301F /* wrtp.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				99421F8519090D680054301F /* wrtpTest_mac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		992B265D190FB9B300B43DF3 /* util.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = util.framework;
+			remoteRef = 992B265C190FB9B300B43DF3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		992B2669190FB9E100B43DF3 /* wqos.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = wqos.framework;
+			remoteRef = 992B2668190FB9E100B43DF3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		99421FF619090E2B0054301F /* libgmock.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libgmock.a;
+			remoteRef = 99421FF519090E2B0054301F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		99421FF919090E2B0054301F /* libgtest.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libgtest.a;
+			remoteRef = 99421FF819090E2B0054301F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9942200519090E3F0054301F /* wrtp.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = wrtp.framework;
+			remoteRef = 9942200419090E3F0054301F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXSourcesBuildPhase section */
+		99421F8219090D680054301F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A9A611C19B41608008F636D /* NetworkIndicatorTest.cpp in Sources */,
+				99421FC219090E1A0054301F /* ActiveBufferTest.cpp in Sources */,
+				99421FC419090E1A0054301F /* CFBPacketTest.cpp in Sources */,
+				99421FC519090E1A0054301F /* CFECEncoderTest.cpp in Sources */,
+				99421FC619090E1A0054301F /* CFECLevelTest.cpp in Sources */,
+				99421FC719090E1A0054301F /* CMMFrameManagerTest.cpp in Sources */,
+				99421FC819090E1A0054301F /* CPSFBPacketTest.cpp in Sources */,
+				99421FCA19090E1A0054301F /* CRTCPHandlerTest.cpp in Sources */,
+				99421FCB19090E1A0054301F /* CRTCPPacketTest.cpp in Sources */,
+				99421FCF19090E1A0054301F /* CRTPChannelTest.cpp in Sources */,
+				99421FD019090E1A0054301F /* CRTPFBPacketTest.cpp in Sources */,
+				99421FD319090E1A0054301F /* CRTPSessionClientTest.cpp in Sources */,
+				99421FD419090E1A0054301F /* CRTPStreamTest.cpp in Sources */,
+				99421FD519090E1A0054301F /* CRTPUtilsTest.cpp in Sources */,
+				99421FD619090E1A0054301F /* CSecurityStrategyWrapperClientTest.cpp in Sources */,
+				99421FD719090E1A0054301F /* CSendWindowTest.cpp in Sources */,
+				BDFC67571B8C3EC9008D6002 /* RTPVideoRecvFrameTest.cpp in Sources */,
+				99421FD819090E1A0054301F /* CSeqCountorTest.cpp in Sources */,
+				99421FD919090E1A0054301F /* CSequenceDBTest.cpp in Sources */,
+				99421FDA19090E1A0054301F /* CVideoStreamTest.cpp in Sources */,
+				99421FDC19090E1A0054301F /* FrameNALFragmentTest.cpp in Sources */,
+				99421FDD19090E1A0054301F /* main.cpp in Sources */,
+				99421FDE19090E1A0054301F /* MediaStatisticsTest.cpp in Sources */,
+				99421FDF19090E1A0054301F /* NewTraceInterfaceTest.cpp in Sources */,
+				99421FE019090E1A0054301F /* PktStatTest.cpp in Sources */,
+				BD1F95BE1C48828000FA78DD /* RequestVidsChangeTest.cpp in Sources */,
+				BFF0191019D7DA4400AD9CD6 /* CRTPRecoverTest.cpp in Sources */,
+				8026686A1B57A570003F67AF /* CRTPLossRatioStatsTest.cpp in Sources */,
+				99421FE119090E1A0054301F /* PSFBCallFlowTest.cpp in Sources */,
+				99421FE419090E1A0054301F /* RTPMediaAPITest.cpp in Sources */,
+				99421FE519090E1A0054301F /* RTPPacketizationTest.cpp in Sources */,
+				BDD4C6B2196277B900A06405 /* SimulcastCallflowTest.cpp in Sources */,
+				99421FE619090E1A0054301F /* RTPSessionConfigTest.cpp in Sources */,
+				99421FE819090E1A0054301F /* SendControlTest.cpp in Sources */,
+				99421FE919090E1A0054301F /* SendingControlTest.cpp in Sources */,
+				BD07883D1ACA331C000DC197 /* RTPStreamManagementTest.cpp in Sources */,
+				99421FEA19090E1A0054301F /* SpeedMeasureTest.cpp in Sources */,
+				BDB778AA19E5336D00432E99 /* RTPHeaderExtensionVideoTest.cpp in Sources */,
+				99421FEB19090E1A0054301F /* TMMBRTest.cpp in Sources */,
+				99421FED19090E1A0054301F /* WMEInterfaceMock.cpp in Sources */,
+				994220161909133D0054301F /* testutil.cpp in Sources */,
+				BD38B4F81B8BC85400D17E47 /* VideoRecvFramePacketTest.cpp in Sources */,
+				BD591A9B1B8D335A00D3837F /* RTPVideoRecvFrameManagerTest.cpp in Sources */,
+				99D5AE9A190A267F00A91D61 /* CRetransmissionPacketTest.cpp in Sources */,
+				99D5AE9C190A275A00A91D61 /* CRTPAggregatePacketTest.cpp in Sources */,
+				99D5AE9E190A27E700A91D61 /* CRTPPacketLazyTest.cpp in Sources */,
+				99D5AE9F190A281000A91D61 /* CRTPPacketTest.cpp in Sources */,
+				99D5AEA3190A288900A91D61 /* RTPTimeTest.cpp in Sources */,
+				992B271A1910C09E00B43DF3 /* AVSyncAPITest.cpp in Sources */,
+				992B271B1910C09E00B43DF3 /* CInformQoSAPITEST.cpp in Sources */,
+				992B271C1910C09E00B43DF3 /* CRTPSessionClientAPITest.cpp in Sources */,
+				992B271D1910C09E00B43DF3 /* CWmeCodecPayloadTypeAPITest.cpp in Sources */,
+				992B271E1910C09E00B43DF3 /* RTPWMEAPITest.cpp in Sources */,
+				992B271F1910C09E00B43DF3 /* SecurityPolicyAPITest.cpp in Sources */,
+				992B27201910C09E00B43DF3 /* SendControlAPITest.cpp in Sources */,
+				BD38B4FA1B8BD54300D17E47 /* VideoRecvFrameInfoTest.cpp in Sources */,
+				992B27211910C09E00B43DF3 /* SendControlAPITestForAS.cpp in Sources */,
+				992B27221910C09E00B43DF3 /* SesscionConfigObserverTest.cpp in Sources */,
+				8006598A197529A2006F217C /* SimulcastTest.cpp in Sources */,
+				84847EB51921E9A400560C48 /* CRTPThreadTest.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		992B266B190FB9F900B43DF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = util;
+			targetProxy = 992B266A190FB9F900B43DF3 /* PBXContainerItemProxy */;
+		};
+		992B266F190FBA0000B43DF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = wqos;
+			targetProxy = 992B266E190FBA0000B43DF3 /* PBXContainerItemProxy */;
+		};
+		9942200719090E900054301F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = wrtp;
+			targetProxy = 9942200619090E900054301F /* PBXContainerItemProxy */;
+		};
+		9942200919090E940054301F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = gmock;
+			targetProxy = 9942200819090E940054301F /* PBXContainerItemProxy */;
+		};
+		9942200B19090E960054301F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = gtest;
+			targetProxy = 9942200A19090E960054301F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		99421F8D19090D680054301F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFF957981945871000E3EBD8 /* DebugCommon.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OBJROOT = "$(SRCROOT)/../objs/mac";
+				SDKROOT = macosx;
+				SYMROOT = "$(SRCROOT)/../bin/mac";
+			};
+			name = Debug;
+		};
+		99421F8E19090D680054301F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFF957991945871000E3EBD8 /* ReleaseCommon.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OBJROOT = "$(SRCROOT)/../objs/mac";
+				SDKROOT = macosx;
+				SYMROOT = "$(SRCROOT)/../bin/mac";
+			};
+			name = Release;
+		};
+		99421F9019090D680054301F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "wrtpTest_mac-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../vendor/gtest/gtest-1.7.0/include\"",
+					"\"$(SRCROOT)/../../vendor/gtest/gtest-1.7.0\"",
+					"\"$(SRCROOT)/../../vendor/gtest/gmock-1.7.0/include\"",
+					"\"$(SRCROOT)/../../vendor/gtest/gmock-1.7.0\"",
+					"\"$(SRCROOT)/../../mediaengine/util/include\"",
+					"\"$(SRCROOT)/../../mediaengine/util/include/macos\"",
+					"\"$(SRCROOT)/../../mediaengine/util/include/client\"",
+					"\"$(SRCROOT)/../../mediaengine/wqos/include\"",
+					"\"$(SRCROOT)/../../mediaengine/wqos/src\"",
+					"\"$(SRCROOT)/../../mediaengine/transmission/include\"",
+					"\"$(SRCROOT)/../../mediaengine/transmission/src\"",
+					"\"$(SRCROOT)/../../api\"",
+					"\"$(SRCROOT)/../../vendor\"",
+					"\"$(SRCROOT)/../../mediaengine/util/src\"",
+					"\"$(SRCROOT)/../../vendor/mari/code/include\"",
+					"\"$(SRCROOT)/../../vendor/libsrtp/include\"",
+					"\"$(SRCROOT)/../../vendor/libsrtp/crypto/include\"",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../../../../distribution/mac/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../vendor/mari/build/libs/mac/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		99421F9119090D680054301F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "wrtpTest_mac-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../vendor/gtest/gtest-1.7.0/include\"",
+					"\"$(SRCROOT)/../../vendor/gtest/gtest-1.7.0\"",
+					"\"$(SRCROOT)/../../vendor/gtest/gmock-1.7.0/include\"",
+					"\"$(SRCROOT)/../../vendor/gtest/gmock-1.7.0\"",
+					"\"$(SRCROOT)/../../mediaengine/util/include\"",
+					"\"$(SRCROOT)/../../mediaengine/util/include/macos\"",
+					"\"$(SRCROOT)/../../mediaengine/util/include/client\"",
+					"\"$(SRCROOT)/../../mediaengine/wqos/include\"",
+					"\"$(SRCROOT)/../../mediaengine/wqos/src\"",
+					"\"$(SRCROOT)/../../mediaengine/transmission/include\"",
+					"\"$(SRCROOT)/../../mediaengine/transmission/src\"",
+					"\"$(SRCROOT)/../../api\"",
+					"\"$(SRCROOT)/../../vendor\"",
+					"\"$(SRCROOT)/../../mediaengine/util/src\"",
+					"\"$(SRCROOT)/../../vendor/mari/code/include\"",
+					"\"$(SRCROOT)/../../vendor/libsrtp/include\"",
+					"\"$(SRCROOT)/../../vendor/libsrtp/crypto/include\"",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../../../../distribution/mac/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../vendor/mari/build/libs/mac/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		99421F8119090D680054301F /* Build configuration list for PBXProject "wrtpTest_mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99421F8D19090D680054301F /* Debug */,
+				99421F8E19090D680054301F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99421F8F19090D680054301F /* Build configuration list for PBXNativeTarget "wrtpTest_mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99421F9019090D680054301F /* Debug */,
+				99421F9119090D680054301F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 99421F7E19090D680054301F /* Project object */;
+}

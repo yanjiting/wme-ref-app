@@ -1,0 +1,376 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_DUMP_DATA_OPTIONS DIALOGEX 0, 0, 289, 100
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Options for dumpping data"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,63,75,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,180,75,50,14
+    LTEXT           "Choose the dumpping flag:",IDC_STATIC,19,14,87,8
+    CONTROL         "Video Raw Capture",IDC_CHECK_VIDEO_RAW_CAPTURE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,31,77,10
+    CONTROL         "Encode RTP Layer",IDC_CHECK_ENCODE_RTP_LAYER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,106,31,74,10
+    CONTROL         "Nal To Listen Channel",IDC_CHECK_NAL_TO_LISTEN_CHANNEL,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,191,31,85,10
+    CONTROL         "Nal To Decoder",IDC_CHECK_NAL_TO_DECODER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,52,65,10
+    CONTROL         "Video Raw Before Rendering",IDC_CHECK_VIDEO_RAW_AFTER_DECODE_TO_RENDER,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,106,52,107,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG_DUMP_DATA_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 282
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 93
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_STATISTICS DIALOGEX 0, 0, 584, 186
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Statistics"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Video Info:",IDC_STATIC,7,12,570,79
+    EDITTEXT        IDC_EDIT_LOCAL_VIDEO_LOSSRATIO,72,41,43,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_LOCAL_VIDEO_JITTER,184,41,43,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_LOCAL_VIDEO_BYTES,296,41,43,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_LOCAL_VIDEO_RTT,128,41,43,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_LOCAL_VIDEO_PACKET_NUM,240,41,43,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Width",IDC_STATIC,359,26,20,8
+    LTEXT           "FPS",IDC_STATIC,474,26,14,8
+    LTEXT           "Height",IDC_STATIC,414,26,22,8
+    EDITTEXT        IDC_EDIT_LOCAL_VIDEO_WIDTH,351,41,43,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_LOCAL_VIDEO_HEIGHT,407,41,43,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_LOCAL_VIDEO_FPS,463,41,43,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_REMOTE_VIDEO_LOSSRATIO,72,64,43,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_REMOTE_VIDEO_JITTER,184,64,43,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_REMOTE_VIDEO_BYTES,296,64,43,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_REMOTE_VIDEO_RTT,128,64,43,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_REMOTE_VIDEO_PACKET_NUM,240,64,43,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_REMOTE_VIDEO_WIDTH,352,64,43,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_REMOTE_VIDEO_HEIGHT,408,64,43,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_REMOTE_VIDEO_FPS,464,64,43,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_LOCAL_AUDIO_LOSSRATIO,72,127,43,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_LOCAL_AUDIO_JITTER,184,127,43,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_LOCAL_AUDIO_BYTES,296,127,43,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_LOCAL_AUDIO_RTT,128,127,43,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_LOCAL_AUDIO_PACKET_NUM,240,127,43,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_REMOTE_AUDIO_LOSSRATIO,72,147,43,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_REMOTE_AUDIO_JITTER,184,147,43,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_REMOTE_AUDIO_BYTES,296,147,43,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_REMOTE_AUDIO_RTT,128,147,43,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_REMOTE_AUDIO_PACKET_NUM,240,147,43,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Inward:",IDC_STATIC,32,67,36,8
+    LTEXT           "Outward:",IDC_STATIC,32,44,36,8
+    LTEXT           "Loss Ratio(%)",IDC_STATIC,71,26,48,8
+    LTEXT           "RTT(ms)",IDC_STATIC,137,26,27,8
+    LTEXT           "Jitter",IDC_STATIC,194,26,22,8
+    LTEXT           "Packets Num",IDC_STATIC,241,26,43,8
+    LTEXT           "Bytes",IDC_STATIC,306,26,19,8
+    GROUPBOX        "Audio Info:",IDC_STATIC,8,102,569,70
+    LTEXT           "Inward:",IDC_STATIC,32,150,36,8
+    LTEXT           "Outward:",IDC_STATIC,32,132,36,8
+    LTEXT           "Loss Ratio(%)",IDC_STATIC,74,110,48,8
+    LTEXT           "RTT(ms)",IDC_STATIC,137,110,27,8
+    LTEXT           "Jitter",IDC_STATIC,195,110,22,8
+    LTEXT           "Packets Num",IDC_STATIC,240,110,43,8
+    LTEXT           "Bytes",IDC_STATIC,307,110,19,8
+    LTEXT           "Bitrate(Kbps)",IDC_STATIC,519,26,43,8
+    EDITTEXT        IDC_EDIT_LOCAL_VIDEO_BITRATE,518,41,43,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_REMOTE_VIDEO_BITRATE,519,64,43,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Bitrate(Kbps)",IDC_STATIC,348,110,44,8
+    EDITTEXT        IDC_EDIT_LOCAL_AUDIO_BITRATE,349,127,43,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_REMOTE_AUDIO_BITRATE,350,147,43,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "FEC Enabled",IDC_STATIC,405,109,44,8
+    LTEXT           "Packets Recoved by FEC",IDC_STATIC,458,107,55,16
+    EDITTEXT        IDC_EDIT_LOCAL_AUDIO_FEC_ENABLED,405,126,43,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_REMOTE_AUDIO_FEC_ENABLED,406,147,43,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_LOCAL_AUDIO_PACKETS_RECOVED_BY_FEC,460,126,43,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_REMOTE_AUDIO_PACKETS_RECOVED_BY_FEC,460,147,43,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_ENGINEDEMO_DIALOG DIALOGEX 0, 0, 525, 319
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "EngineDemo"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Video Setting",IDC_STATIC,14,7,235,127
+    LTEXT           "Codec & Capability:",IDC_STATIC,26,104,59,8
+    GROUPBOX        "Audio Setting",IDC_STATIC,14,139,237,136
+    LTEXT           "Capture Device:",IDC_STATIC,28,170,53,8
+    LTEXT           "Audio Codec:",IDC_STATIC,28,207,44,8
+    LTEXT           "Play Device:",IDC_STATIC,28,227,40,8
+    GROUPBOX        "Role Setting",IDC_STATIC,277,181,234,69,WS_GROUP,WS_EX_TRANSPARENT
+    LTEXT           "Host IP Address:",IDC_STATIC,289,212,55,8
+    GROUPBOX        "Network Setting",IDC_STATIC,275,109,236,67,WS_GROUP,WS_EX_TRANSPARENT
+    LTEXT           "JINGLE Server IP:",IDC_STATIC,289,139,58,8
+    LTEXT           "STUN Server IP:",IDC_STATIC,289,159,53,8
+    GROUPBOX        "Action",IDC_STATIC,276,254,232,62,WS_GROUP,WS_EX_TRANSPARENT
+    COMBOBOX        IDC_COMBO_CAMERA_LIST,69,68,129,70,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_LAYER,92,103,152,70,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_MIC_LIST,85,168,152,70,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_AUDIO_PARAM,85,206,152,70,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_SPEAKER_LIST2,85,224,152,70,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "As Host",IDC_AS_HOST,"Button",BS_AUTORADIOBUTTON,289,192,41,10
+    CONTROL         "As Client",IDC_AS_RECEIVER,"Button",BS_AUTORADIOBUTTON,373,192,44,10
+    CONTROL         "",IDC_REMOTE_RECEIVER_IPADDRESS,"SysIPAddress32",WS_TABSTOP,363,209,114,15
+    CONTROL         "Enable NAT/Firewall Transversal",IDC_CHECK_NAT_TRANS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,287,122,136,11
+    EDITTEXT        IDC_EDIT_JINGLE_SERVER,355,138,72,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_STUN_SERVER,355,157,72,15,ES_AUTOHSCROLL
+    CONTROL         "Send My Video",IDC_CHECK_SEND_VIDEO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,288,268,68,11
+    CONTROL         "Send My Audio",IDC_CHECK_SEND_AUDIO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,366,268,68,11
+    PUSHBUTTON      "Connect",IDC_CONNECT,450,266,50,14
+    PUSHBUTTON      "DisConnect",IDC_DISCONNECT,450,284,50,14
+    LTEXT           "Port:",IDC_STATIC,439,141,17,8
+    LTEXT           "Port:",IDC_STATIC,439,160,17,8
+    EDITTEXT        IDC_EDIT_JINGLE_PORT,461,138,35,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_STUN_PORT,463,157,35,15,ES_AUTOHSCROLL
+    LTEXT           "My Name:",IDC_STATIC,289,232,33,8
+    EDITTEXT        IDC_EDIT_MY_NAME,329,229,55,14,ES_AUTOHSCROLL
+    LTEXT           "Host Name:",IDC_STATIC,405,232,38,8
+    EDITTEXT        IDC_EDIT_HOST_NAME,445,229,55,14,ES_AUTOHSCROLL
+    LTEXT           "Play Volume:",IDC_STATIC,29,245,42,8
+    CONTROL         "",IDC_SLIDER_PLAY_VOLUME,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,108,245,133,13
+    PUSHBUTTON      "X",IDC_BUTTON_PLAY_VOLUME_MUTE,85,245,16,10
+    CTEXT           "-",IDC_STATIC,102,246,9,8
+    CTEXT           "+",IDC_STATIC,239,245,9,8
+    LTEXT           "Capture Volume:",IDC_STATIC,27,188,57,8
+    CONTROL         "",IDC_SLIDER_CAPTURE_VOLUME,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,108,188,133,13
+    PUSHBUTTON      "X",IDC_BUTTON_CAPTURE_VOLUME_MUTE,85,188,16,10
+    CTEXT           "-",IDC_STATIC,102,189,9,8
+    CTEXT           "+",IDC_STATIC,240,188,9,8
+    PUSHBUTTON      "Preview",IDC_BUTTON_PREVIEW,203,67,38,14
+    CONTROL         "View Statistics",IDC_CHECK_VIEW_STATISTICS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,288,284,68,11
+    LTEXT           "Renderer Mode:",IDC_STATIC,28,120,53,8
+    CONTROL         "Fill",IDC_RADIO_FILL,"Button",BS_AUTORADIOBUTTON,91,120,24,10
+    CONTROL         "Letter Box",IDC_RADIO_LETTERBOX,"Button",BS_AUTORADIOBUTTON,125,120,49,10
+    CONTROL         "Crop Fill",IDC_RADIO_CROPFILL,"Button",BS_AUTORADIOBUTTON,179,120,41,10
+    CONTROL         "Enable QoS",IDC_CHECK_ENABLE_QOS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,366,284,68,11
+    CONTROL         "EC",IDC_CHECK_ENABLE_EC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,59,262,19,11
+    CONTROL         "VAD",IDC_CHECK_ENABLE_VAD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,85,262,25,11
+    CONTROL         " NS",IDC_CHECK_ENABLE_NS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,117,262,24,11
+    CONTROL         "AGC",IDC_CHECK_ENABLE_AGC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,148,262,26,11
+    CONTROL         "Auto Drop Data",IDC_CHECK_ENABLE_AUTODROPDATA,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,181,262,64,11
+    LTEXT           "Enable:",IDC_STATIC,27,262,25,8
+    LTEXT           "Capture  Capability:",IDC_STATIC,39,87,65,8
+    COMBOBOX        IDC_COMBO_CAMERA_CAPABILITY,107,84,134,70,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Dump Data",IDC_CHECK_DUMP_DATA,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,288,300,60,11
+    CONTROL         "Enable Video",IDC_CHECK_ENABLE_VIDEO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,26,19,56,11
+    CONTROL         "Enable Audio",IDC_CHECK_ENABLE_AUDIO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,28,153,136,11
+    CONTROL         "File:",IDC_RADIO_USE_VIDEO_FILE,"Button",BS_AUTORADIOBUTTON,25,34,29,10
+    CONTROL         "Camera:",IDC_RADIO_USE_CAMERA,"Button",BS_AUTORADIOBUTTON,25,69,43,10
+    EDITTEXT        IDC_EDIT_VIDEO_FILE,56,32,148,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Select",IDC_BUTTON_SELECT_VIDEO_FILE,211,31,28,14
+    LTEXT           "Wid:",IDC_STATIC,38,51,16,8
+    LTEXT           "Hei:",IDC_STATIC,87,51,14,8
+    LTEXT           "Form:",IDC_STATIC,177,51,20,8
+    LTEXT           "FPS:",IDC_STATIC,134,51,16,8
+    EDITTEXT        IDC_EDIT_VIDEO_WIDTH,55,49,24,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VIDEO_HEIGHT,102,49,24,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VIDEO_FPS,152,49,17,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_VIDEO_FORMAT,199,49,41,70,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Screen Share Setting",IDC_STATIC,12,276,237,38
+    CONTROL         "Enable Screen Share",IDC_CHECK_ENABLE_SCREEN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,25,287,77,11
+    COMBOBOX        IDC_COMBO_SCREEN_SOURCE_LIST,104,286,133,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "1:1",IDC_RADIO_ORIGINAL,"Button",BS_AUTORADIOBUTTON,211,300,27,9
+    LTEXT           "Renderer Mode:",IDC_STATIC,24,300,53,8
+    CONTROL         "Fill",IDC_RADIO_AS_FILL,"Button",BS_AUTORADIOBUTTON,79,301,24,8
+    CONTROL         "Letter Box",IDC_RADIO_AS_LETTER_BOX,"Button",BS_AUTORADIOBUTTON,107,301,49,8
+    CONTROL         "Crop Fill",IDC_RADIO_AS_CROP,"Button",BS_AUTORADIOBUTTON,165,301,38,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG_STATISTICS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 577
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 182
+    END
+
+    IDD_ENGINEDEMO_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 518
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 316
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\EngineDemo.rc""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res/EngineDemo.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,0,9,2013
+ PRODUCTVERSION 2,0,9,2013
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "2, 0, 9, 2013"
+            VALUE "InternalName", "EngineDemo.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "EngineDemo.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "2, 0, 9, 2013"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\EngineDemo.rc"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

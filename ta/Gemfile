@@ -1,0 +1,14 @@
+source 'https://rubygems.org'
+
+group :test do
+  gem 'rake'
+  gem 'calabash-cucumber', '=0.9.168'
+  gem 'calabash-android', '=0.5.2'
+  gem 'cucumber', '=1.3.18'
+  gem 'rest-client'
+  gem 'ocunit2junit'
+end
+
+group :ondevice do
+  gem 'idevice'
+end

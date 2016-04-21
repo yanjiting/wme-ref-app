@@ -1,0 +1,47 @@
+.. contents:: 
+    :local: 
+
+Static Performance Control
+==========================
+
+How does WME derive static performance
+------------------------------------
+WME determine the device performance based on CPU (core number and clock rate), Memory, Hardware Codec and OS. 
+We had 4 type of capabilitis: send capability (send), receive capability (receive), simulcast capability(simul) and filmstrip capability(pip).
+
+Send and Receive need not to be symetric, but the least receive capability was set to 360p to be compatible with legacy devices. The output of send/receive capability is <doxygen2rst link=TypesAndStructures#WmeVideoPerformance>WmeVideoPerformance</doxygen2rst>.
+
+The output of simulcast capability was maximum layers it can support. If the return is 2 and send capability is 720p then it will advertise 720p + 180p in the SDP simulcast attributes for Spark client and 720p + 90p for WebEx client. That is because Spark has an agreement to no 90p video, WebEx would like to be compatible with 90p. 
+
+The output of filmstrip capability was the maximum extra 180p video decoding instances that hardware can sustain. By default it will always return 4 because filmstrip was now only supported by desktop.
+
+Client can override the JSON input file with <doxygen2rst link=MediaConfig#setdevicemediasettings>SetDeviceMediaSettings</doxygen2rst>, here is an example of default JSON file:
+
+<doxygen2rst include=../../../mediasession/performance_default.json></doxygen2rst>
+
+<doxygen2rst function=GetStaticPerformance>GetStaticPerformance</doxygen2rst>
+
+
+Dynamic Performance Control
+=============================
+
+Dynamic performance control was now only applied to desktop clients. It will detect the system CPU usage and adjust the video encode parameters and SCR. The typical use case is you are compiling XCode project while you are in a spark call. We also found a special case where Spark was decoding messages and in a call. Dynamic performance control would never output result stronger than static performance control or client setting.
+
+WME didn't extend it to mobile because mobile device has its own dynamic control based on battery and phone status to adjust the CPU clock rate.
+
+We set it to CPU high if the CPU usage is worse than 95% for 5 seconds and we set it to CPU low if the CPU usage is better than 60% for 5 seconds. It will degrade one level once it is in CPU high status and try to upgrade one level once it is in CPU low status. 
+
+Let us assume it was sending 720p video and receiving 720p active video + 3 180p thumbnail video. The downgrade sequence was: 
+
+    encode (720p -> 360p) ==> 
+    decode (active video, 720p -> 360p) ==> 
+    encode (360p -> 180p) ==> 
+    decode (active video, 360p -> 180p) ==> 
+    encode (180p -> 90p) ==> 
+    decode (thumbnail video 3, 180p -> 90p) ==> 
+    decode (thumbnail video 2, 180p -> 90p) ==> 
+    decode (thumbnail video 1, 180p -> 90p) ==> 
+    decode (active video, 180p -> 90p)
+
+The bottom line of dynamic performance control is 90p, it never stops video.
+

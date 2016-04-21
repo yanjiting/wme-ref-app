@@ -1,0 +1,14 @@
+//
+// Prefix header for all source files of the 'wrtp' target in the 'wrtp' project
+//
+
+#include <Carbon/Carbon.h>
+
+#define MACOS           1
+#define MACOSX          1
+#define CM_PORT_CLIENT  1
+
+#define MachOSupport    1
+#define __TRACE__       1
+
+#define CM_MACOS        1

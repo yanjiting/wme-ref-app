@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B31F4EB1B86F1950057A5C5 /* util.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B31F4E81B86F1430057A5C5 /* util.framework */; };
+		A005455B19BE91D200B478F5 /* policyUT.pch in Sources */ = {isa = PBXBuildFile; fileRef = A005455919BE918600B478F5 /* policyUT.pch */; };
+		A00545C219BEA51900B478F5 /* libsafec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A00545AC19BEA4AD00B478F5 /* libsafec.a */; };
+		A00545C319BEA51900B478F5 /* wmeutil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A00545B219BEA4DB00B478F5 /* wmeutil.framework */; };
+		A00545C419BEA51A00B478F5 /* wsertp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A00545B919BEA4F500B478F5 /* wsertp.framework */; };
+		A0486D6D19D3BD890000C16F /* WbxAeJitterPolicyDolphin10.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0486D6719D3BD890000C16F /* WbxAeJitterPolicyDolphin10.cpp */; };
+		A0486D6E19D3BD890000C16F /* WbxAeJitterPolicyModify.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0486D6919D3BD890000C16F /* WbxAeJitterPolicyModify.cpp */; };
+		A0486D6F19D3BD890000C16F /* WbxAeJitterPolicyTrain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0486D6B19D3BD890000C16F /* WbxAeJitterPolicyTrain.cpp */; };
+		A05821B819BF08F30031AB57 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A05821B719BF08F30031AB57 /* main.cpp */; };
+		A077EB2A19B9BB8A001635DA /* WbxAeJitterBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A077EB2619B9BB8A001635DA /* WbxAeJitterBuffer.cpp */; };
+		A077EB2B19B9BB8A001635DA /* WbxAeJitterPolicy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A077EB2819B9BB8A001635DA /* WbxAeJitterPolicy.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0B31F4E71B86F1430057A5C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B31F4E31B86F1430057A5C5 /* util.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B10A6ADA1697BD3A00374A3E;
+			remoteInfo = util;
+		};
+		0B31F4E91B86F18E0057A5C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B31F4E31B86F1430057A5C5 /* util.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B10A6AD91697BD3A00374A3E;
+			remoteInfo = util;
+		};
+		A00545AB19BEA4AD00B478F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A00545A719BEA4AD00B478F5 /* safec.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC046055464E500DB518D;
+			remoteInfo = safec;
+		};
+		A00545B119BEA4DB00B478F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A00545AD19BEA4DB00B478F5 /* wmeutil.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A503F4AB1793C52200FB1105;
+			remoteInfo = wmeutil;
+		};
+		A00545B819BEA4F500B478F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A00545B319BEA4F400B478F5 /* wsertp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 04B7984F1149D83E00629A02;
+			remoteInfo = wsertp;
+		};
+		A00545BA19BEA51000B478F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A00545B319BEA4F400B478F5 /* wsertp.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 04B7984E1149D83E00629A02;
+			remoteInfo = wsertp;
+		};
+		A00545BC19BEA51000B478F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A00545A719BEA4AD00B478F5 /* safec.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC045055464E500DB518D;
+			remoteInfo = safec;
+		};
+		A00545BE19BEA51000B478F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A00545AD19BEA4DB00B478F5 /* wmeutil.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A503F4AA1793C52200FB1105;
+			remoteInfo = wmeutil;
+		};
+		A00545C019BEA51000B478F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A00545A719BEA4AD00B478F5 /* safec.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC045055464E500DB518D;
+			remoteInfo = safec;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A077EB0119B9BA8D001635DA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0B31F4E31B86F1430057A5C5 /* util.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = util.xcodeproj; path = ../../../../mediaengine/util/src/util.xcodeproj; sourceTree = "<group>"; };
+		A005455919BE918600B478F5 /* policyUT.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = policyUT.pch; sourceTree = SOURCE_ROOT; };
+		A00545A719BEA4AD00B478F5 /* safec.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = safec.xcodeproj; path = ../../../../vendor/security/library/safec/mac/safec.xcodeproj; sourceTree = "<group>"; };
+		A00545AD19BEA4DB00B478F5 /* wmeutil.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = wmeutil.xcodeproj; path = ../../../../mediaengine/wmeutil/bld/client/mac/wmeutil.xcodeproj; sourceTree = "<group>"; };
+		A00545B319BEA4F400B478F5 /* wsertp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = wsertp.xcodeproj; path = ../../../../mediaengine/shark/bld/client/mac/wsertp.xcodeproj; sourceTree = "<group>"; };
+		A00545CB19BEA7F800B478F5 /* policyUT.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = policyUT.1; sourceTree = SOURCE_ROOT; };
+		A0486D6719D3BD890000C16F /* WbxAeJitterPolicyDolphin10.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = WbxAeJitterPolicyDolphin10.cpp; path = ../WbxAeJitterPolicyDolphin10.cpp; sourceTree = SOURCE_ROOT; };
+		A0486D6819D3BD890000C16F /* WbxAeJitterPolicyDolphin10.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WbxAeJitterPolicyDolphin10.h; path = ../WbxAeJitterPolicyDolphin10.h; sourceTree = SOURCE_ROOT; };
+		A0486D6919D3BD890000C16F /* WbxAeJitterPolicyModify.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = WbxAeJitterPolicyModify.cpp; path = ../WbxAeJitterPolicyModify.cpp; sourceTree = SOURCE_ROOT; };
+		A0486D6A19D3BD890000C16F /* WbxAeJitterPolicyModify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WbxAeJitterPolicyModify.h; path = ../WbxAeJitterPolicyModify.h; sourceTree = SOURCE_ROOT; };
+		A0486D6B19D3BD890000C16F /* WbxAeJitterPolicyTrain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = WbxAeJitterPolicyTrain.cpp; path = ../WbxAeJitterPolicyTrain.cpp; sourceTree = SOURCE_ROOT; };
+		A0486D6C19D3BD890000C16F /* WbxAeJitterPolicyTrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WbxAeJitterPolicyTrain.h; path = ../WbxAeJitterPolicyTrain.h; sourceTree = SOURCE_ROOT; };
+		A05821B719BF08F30031AB57 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../main.cpp; sourceTree = SOURCE_ROOT; };
+		A077EB0319B9BA8D001635DA /* policyUT */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = policyUT; sourceTree = BUILT_PRODUCTS_DIR; };
+		A077EB2419B9BB70001635DA /* WbxAeAJBInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WbxAeAJBInterface.h; path = ../../../../mediaengine/dolphin/include/WbxAeAJBInterface.h; sourceTree = "<group>"; };
+		A077EB2519B9BB70001635DA /* WbxAeAJBPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WbxAeAJBPolicy.h; path = ../../../../mediaengine/dolphin/include/WbxAeAJBPolicy.h; sourceTree = "<group>"; };
+		A077EB2619B9BB8A001635DA /* WbxAeJitterBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = WbxAeJitterBuffer.cpp; path = ../../../../mediaengine/dolphin/src/AudioEngine/src/common/WbxAeJitterBuffer.cpp; sourceTree = "<group>"; };
+		A077EB2719B9BB8A001635DA /* WbxAeJitterBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WbxAeJitterBuffer.h; path = ../../../../mediaengine/dolphin/src/AudioEngine/src/common/WbxAeJitterBuffer.h; sourceTree = "<group>"; };
+		A077EB2819B9BB8A001635DA /* WbxAeJitterPolicy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = WbxAeJitterPolicy.cpp; path = ../../../../mediaengine/dolphin/src/AudioEngine/src/common/WbxAeJitterPolicy.cpp; sourceTree = "<group>"; };
+		A077EB2919B9BB8A001635DA /* WbxAeJitterPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WbxAeJitterPolicy.h; path = ../../../../mediaengine/dolphin/src/AudioEngine/src/common/WbxAeJitterPolicy.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A077EB0019B9BA8D001635DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B31F4EB1B86F1950057A5C5 /* util.framework in Frameworks */,
+				A00545C219BEA51900B478F5 /* libsafec.a in Frameworks */,
+				A00545C319BEA51900B478F5 /* wmeutil.framework in Frameworks */,
+				A00545C419BEA51A00B478F5 /* wsertp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B31F4E41B86F1430057A5C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0B31F4E81B86F1430057A5C5 /* util.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A005455A19BE919400B478F5 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				A005455919BE918600B478F5 /* policyUT.pch */,
+			);
+			name = resource;
+			sourceTree = "<group>";
+		};
+		A00545A819BEA4AD00B478F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A00545AC19BEA4AD00B478F5 /* libsafec.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A00545AE19BEA4DB00B478F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A00545B219BEA4DB00B478F5 /* wmeutil.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A00545B419BEA4F400B478F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A00545B919BEA4F500B478F5 /* wsertp.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A077EAFA19B9BA8D001635DA = {
+			isa = PBXGroup;
+			children = (
+				A005455A19BE919400B478F5 /* resource */,
+				A077EB2C19B9BB8E001635DA /* src */,
+				A077EB2319B9BB5F001635DA /* include */,
+				A077EB1519B9BADC001635DA /* dependences */,
+				A077EB0519B9BA8D001635DA /* policyUT */,
+				A077EB0419B9BA8D001635DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A077EB0419B9BA8D001635DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A077EB0319B9BA8D001635DA /* policyUT */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A077EB0519B9BA8D001635DA /* policyUT */ = {
+			isa = PBXGroup;
+			children = (
+				A0486D6719D3BD890000C16F /* WbxAeJitterPolicyDolphin10.cpp */,
+				A0486D6819D3BD890000C16F /* WbxAeJitterPolicyDolphin10.h */,
+				A0486D6919D3BD890000C16F /* WbxAeJitterPolicyModify.cpp */,
+				A0486D6A19D3BD890000C16F /* WbxAeJitterPolicyModify.h */,
+				A0486D6B19D3BD890000C16F /* WbxAeJitterPolicyTrain.cpp */,
+				A0486D6C19D3BD890000C16F /* WbxAeJitterPolicyTrain.h */,
+				A05821B719BF08F30031AB57 /* main.cpp */,
+				A00545CB19BEA7F800B478F5 /* policyUT.1 */,
+			);
+			path = policyUT;
+			sourceTree = "<group>";
+		};
+		A077EB1519B9BADC001635DA /* dependences */ = {
+			isa = PBXGroup;
+			children = (
+				0B31F4E31B86F1430057A5C5 /* util.xcodeproj */,
+				A00545B319BEA4F400B478F5 /* wsertp.xcodeproj */,
+				A00545AD19BEA4DB00B478F5 /* wmeutil.xcodeproj */,
+				A00545A719BEA4AD00B478F5 /* safec.xcodeproj */,
+			);
+			name = dependences;
+			sourceTree = "<group>";
+		};
+		A077EB2319B9BB5F001635DA /* include */ = {
+			isa = PBXGroup;
+			children = (
+				A077EB2719B9BB8A001635DA /* WbxAeJitterBuffer.h */,
+				A077EB2919B9BB8A001635DA /* WbxAeJitterPolicy.h */,
+				A077EB2419B9BB70001635DA /* WbxAeAJBInterface.h */,
+				A077EB2519B9BB70001635DA /* WbxAeAJBPolicy.h */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		A077EB2C19B9BB8E001635DA /* src */ = {
+			isa = PBXGroup;
+			children = (
+				A077EB2619B9BB8A001635DA /* WbxAeJitterBuffer.cpp */,
+				A077EB2819B9BB8A001635DA /* WbxAeJitterPolicy.cpp */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A077EB0219B9BA8D001635DA /* policyUT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A077EB0C19B9BA8D001635DA /* Build configuration list for PBXNativeTarget "policyUT" */;
+			buildPhases = (
+				A077EAFF19B9BA8D001635DA /* Sources */,
+				A077EB0019B9BA8D001635DA /* Frameworks */,
+				A077EB0119B9BA8D001635DA /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B31F4EA1B86F18E0057A5C5 /* PBXTargetDependency */,
+				A00545BB19BEA51000B478F5 /* PBXTargetDependency */,
+				A00545BD19BEA51000B478F5 /* PBXTargetDependency */,
+				A00545BF19BEA51000B478F5 /* PBXTargetDependency */,
+				A00545C119BEA51000B478F5 /* PBXTargetDependency */,
+			);
+			name = policyUT;
+			productName = policyUT;
+			productReference = A077EB0319B9BA8D001635DA /* policyUT */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A077EAFB19B9BA8D001635DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "___FULLUSERNAME___";
+			};
+			buildConfigurationList = A077EAFE19B9BA8D001635DA /* Build configuration list for PBXProject "policyUT" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A077EAFA19B9BA8D001635DA;
+			productRefGroup = A077EB0419B9BA8D001635DA /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A00545A819BEA4AD00B478F5 /* Products */;
+					ProjectRef = A00545A719BEA4AD00B478F5 /* safec.xcodeproj */;
+				},
+				{
+					ProductGroup = 0B31F4E41B86F1430057A5C5 /* Products */;
+					ProjectRef = 0B31F4E31B86F1430057A5C5 /* util.xcodeproj */;
+				},
+				{
+					ProductGroup = A00545AE19BEA4DB00B478F5 /* Products */;
+					ProjectRef = A00545AD19BEA4DB00B478F5 /* wmeutil.xcodeproj */;
+				},
+				{
+					ProductGroup = A00545B419BEA4F400B478F5 /* Products */;
+					ProjectRef = A00545B319BEA4F400B478F5 /* wsertp.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				A077EB0219B9BA8D001635DA /* policyUT */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		0B31F4E81B86F1430057A5C5 /* util.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = util.framework;
+			remoteRef = 0B31F4E71B86F1430057A5C5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A00545AC19BEA4AD00B478F5 /* libsafec.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libsafec.a;
+			remoteRef = A00545AB19BEA4AD00B478F5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A00545B219BEA4DB00B478F5 /* wmeutil.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = wmeutil.framework;
+			remoteRef = A00545B119BEA4DB00B478F5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A00545B919BEA4F500B478F5 /* wsertp.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = wsertp.framework;
+			remoteRef = A00545B819BEA4F500B478F5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A077EAFF19B9BA8D001635DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0486D6D19D3BD890000C16F /* WbxAeJitterPolicyDolphin10.cpp in Sources */,
+				A0486D6E19D3BD890000C16F /* WbxAeJitterPolicyModify.cpp in Sources */,
+				A005455B19BE91D200B478F5 /* policyUT.pch in Sources */,
+				A0486D6F19D3BD890000C16F /* WbxAeJitterPolicyTrain.cpp in Sources */,
+				A077EB2A19B9BB8A001635DA /* WbxAeJitterBuffer.cpp in Sources */,
+				A05821B819BF08F30031AB57 /* main.cpp in Sources */,
+				A077EB2B19B9BB8A001635DA /* WbxAeJitterPolicy.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0B31F4EA1B86F18E0057A5C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = util;
+			targetProxy = 0B31F4E91B86F18E0057A5C5 /* PBXContainerItemProxy */;
+		};
+		A00545BB19BEA51000B478F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = wsertp;
+			targetProxy = A00545BA19BEA51000B478F5 /* PBXContainerItemProxy */;
+		};
+		A00545BD19BEA51000B478F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = safec;
+			targetProxy = A00545BC19BEA51000B478F5 /* PBXContainerItemProxy */;
+		};
+		A00545BF19BEA51000B478F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = wmeutil;
+			targetProxy = A00545BE19BEA51000B478F5 /* PBXContainerItemProxy */;
+		};
+		A00545C119BEA51000B478F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = safec;
+			targetProxy = A00545C019BEA51000B478F5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A077EB0A19B9BA8D001635DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = policyUT.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../../../../vendor/security/include,
+					../../../../mediaengine/dolphin/src/AudioEngine/h,
+					../../../../mediaengine/dolphin/include,
+					../../../../mediaengine/shark/include,
+					../../../../mediaengine/shark/src/h,
+					../../../../mediaengine/shark/src/common,
+					"\"$(SRCROOT)/../../../../mediaengine/dolphin/src/AudioEngine/src/common\"",
+					"\"$(SRCROOT)/../../../../mediaengine/util/include\"",
+					"\"$(SRCROOT)/../../../../mediaengine/util/src\"",
+					"\"$(SRCROOT)/../../../../api\"",
+					"\"$(SRCROOT)/../../../../mediaengine/util/include/macos\"",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../../../../distribution/mac/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OBJROOT = "$(SRCROOT)/../objs/mac";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SYMROOT = "$(SRCROOT)/../../distribution";
+			};
+			name = Debug;
+		};
+		A077EB0B19B9BA8D001635DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = policyUT.pch;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../../../../vendor/security/include,
+					../../../../mediaengine/dolphin/src/AudioEngine/h,
+					../../../../mediaengine/dolphin/include,
+					../../../../mediaengine/shark/include,
+					../../../../mediaengine/shark/src/h,
+					../../../../mediaengine/shark/src/common,
+					"\"$(SRCROOT)/../../../../mediaengine/dolphin/src/AudioEngine/src/common\"",
+					"\"$(SRCROOT)/../../../../mediaengine/util/include\"",
+					"\"$(SRCROOT)/../../../../mediaengine/util/src\"",
+					"\"$(SRCROOT)/../../../../api\"",
+					"\"$(SRCROOT)/../../../../mediaengine/util/include/macos\"",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../../../../distribution/mac/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OBJROOT = "$(SRCROOT)/../objs/mac";
+				SDKROOT = macosx;
+				SYMROOT = "$(SRCROOT)/../../distribution";
+			};
+			name = Release;
+		};
+		A077EB0D19B9BA8D001635DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../../../../vendor/security/include,
+					../../../../mediaengine/dolphin/src/AudioEngine/h,
+					../../../../mediaengine/dolphin/src/AudioEngine/src/common,
+					../../../../mediaengine/dolphin/include,
+					../../../../mediaengine/shark/include,
+					../../../../mediaengine/shark/src/h,
+					../../../../mediaengine/shark/src/common,
+					"\"$(SRCROOT)/../../../../mediaengine/dolphin/src/AudioEngine/src/common\"",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path";
+				OBJROOT = "$(SRCROOT)/../../../objs/mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYMROOT = "$(SRCROOT)/../../../../distribution/mac";
+			};
+			name = Debug;
+		};
+		A077EB0E19B9BA8D001635DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../../../../vendor/security/include,
+					../../../../mediaengine/dolphin/src/AudioEngine/h,
+					../../../../mediaengine/dolphin/src/AudioEngine/src/common,
+					../../../../mediaengine/dolphin/include,
+					../../../../mediaengine/shark/include,
+					../../../../mediaengine/shark/src/h,
+					../../../../mediaengine/shark/src/common,
+					"\"$(SRCROOT)/../../../../mediaengine/dolphin/src/AudioEngine/src/common\"",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path";
+				OBJROOT = "$(SRCROOT)/../../../objs/mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYMROOT = "$(SRCROOT)/../../../../distribution/mac";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A077EAFE19B9BA8D001635DA /* Build configuration list for PBXProject "policyUT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A077EB0A19B9BA8D001635DA /* Debug */,
+				A077EB0B19B9BA8D001635DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A077EB0C19B9BA8D001635DA /* Build configuration list for PBXNativeTarget "policyUT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A077EB0D19B9BA8D001635DA /* Debug */,
+				A077EB0E19B9BA8D001635DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A077EAFB19B9BA8D001635DA /* Project object */;
+}

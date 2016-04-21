@@ -1,0 +1,9 @@
+include ':app'
+include ':mediasession'
+project(':mediasession').projectDir = new File('../../../../mediasession/src/java/mediasession_gradle')
+include ':shark'
+project(':shark').projectDir = new File('../../../../mediaengine/shark/src/client/SvcClientEngine/android/gradle')
+include ':dolphin'
+project(':dolphin').projectDir = new File('../../../../mediaengine/dolphin/bld/client/Android/gradle')
+include ':appshare'
+project(':appshare').projectDir = new File('../../../../mediaengine/appshare/bld/client/android/gradle')

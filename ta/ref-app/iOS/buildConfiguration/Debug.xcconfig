@@ -1,0 +1,22 @@
+// NOTE: The include below does not constitute an inheritance level.
+// Inheritance levels are: Defaults -> Project -> Target
+// So if you have a list like WARNING_CFLAGS in SharedProjectSettings.xcconfig and then try "WARNING_CFLAGS = $(inherited) ..." below,
+// you are simply overriding the value from SharedProjectSettings.xcconfig.
+// You will get the expected behavior of $(inherited) between project and target xcconfig files.
+#include "SharedProjectSettings.xcconfig"
+
+ONLY_ACTIVE_ARCH = YES
+COPY_PHASE_STRIP = NO
+GCC_OPTIMIZATION_LEVEL = 0
+GCC_SYMBOLS_PRIVATE_EXTERN = NO
+GCC_PREPROCESSOR_DEFINITIONS = DEBUG=1
+
+// We want to extend the typical Debug and Release configurations, which will impact the value of CONFIGURATION.
+BASE_CONFIGURATION = Debug
+
+
+// Uncomment the following line to use Reveal.app. Limiting to Debug config to avoid any chance of polluting Release builds.
+// To avoid version mismatches between framework and app, we reference the framework from within the app itself.
+// This assumes that the app is in /Applications.
+// DO NOT COMMIT WITH THE FOLLOWING LINE UNCOMMENTED!!!
+//OTHER_LDFLAGS_REVEAL = -ObjC -framework AdSupport -F"/Applications/Reveal.app/Contents/SharedSupport/iOS-Libraries/" -framework Reveal

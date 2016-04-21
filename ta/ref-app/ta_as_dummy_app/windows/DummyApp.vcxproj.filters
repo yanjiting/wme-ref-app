@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{88603bb0-412d-47e7-8bd3-e4e73994e7da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="json-cpp">
+      <UniqueIdentifier>{39ec284c-9fd1-41a9-aaf0-35ecedda37a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="QRCode">
+      <UniqueIdentifier>{5d05eb0d-9a82-40af-aab8-550039cf8e07}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DummyApp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DummyBackdoorAgent.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\json-cpp\src\lib_json\json_batchallocator.h">
+      <Filter>json-cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\json-cpp\src\lib_json\json_tool.h">
+      <Filter>json-cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DummyDbg.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="QRCodeCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="QRview.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\QRCode\QR_Encode.h">
+      <Filter>QRCode</Filter>
+    </ClInclude>
+    <ClInclude Include="QR_encode_win.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\TAHTTPServer.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DummyApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\DummyBackdoorAgent.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\json-cpp\src\lib_json\json_reader.cpp">
+      <Filter>json-cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\json-cpp\src\lib_json\json_value.cpp">
+      <Filter>json-cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\json-cpp\src\lib_json\json_writer.cpp">
+      <Filter>json-cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="QRCodeCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="QRview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\QRCode\QR_Encode.cpp">
+      <Filter>QRCode</Filter>
+    </ClCompile>
+    <ClCompile Include="QR_encode_win.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\TAHTTPServer.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DummyApp.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="small.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="DummyApp.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\json-cpp\src\lib_json\json_internalarray.inl">
+      <Filter>json-cpp</Filter>
+    </None>
+    <None Include="..\..\..\json-cpp\src\lib_json\json_internalmap.inl">
+      <Filter>json-cpp</Filter>
+    </None>
+    <None Include="..\..\..\json-cpp\src\lib_json\json_valueiterator.inl">
+      <Filter>json-cpp</Filter>
+    </None>
+    <None Include="..\..\..\json-cpp\src\lib_json\sconscript">
+      <Filter>json-cpp</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,154 @@
+#!/usr/bin/python
+import sys
+import setting
+import lcov
+import clean
+import os
+import commands
+from lcov_cobertura import LcovCobertura
+from optparse import OptionParser
+
+temp_path = './temp_merge/'
+temp_data_path = './temp_merge/data/'
+temp_info_path = './temp_merge/info/'
+temp_html_path = './temp_merge/html/'
+temp_xml_path = './temp_merge/xml/'
+
+
+def lcov_cober(info_file, output, base_dir):
+    try:
+        with open(info_file, 'r') as lcov_file:
+            lcov_data = lcov_file.read()
+            lcov_cobertura = LcovCobertura(lcov_data, base_dir)
+            cobertura_xml = lcov_cobertura.convert()
+        with open(output, mode='wt') as output_file:
+            output_file.write(cobertura_xml)
+    except IOError:
+        sys.stderr.write("Unable to convert %s to Cobertura XML" % info_file)
+
+def merge_module_info(input_folder0, input_folder1, output_folder):
+    lv = lcov.Lcov()
+    for f in os.listdir(input_folder0):
+        filename0 = os.path.join(input_folder0, f)
+        filename1 = os.path.join(input_folder1, f)
+        if os.path.isfile(filename0) and os.path.isfile(filename1):
+            if f.lower().split('.')[-1] == 'info':
+                merge_cmd = 'lcov -q --rc lcov_branch_coverage=1 '
+                merge_cmd = merge_cmd + '-a ' + filename0 + ' -a ' + filename1+ ' '
+                merge_cmd = merge_cmd + '-o ' + os.path.join(output_folder, f)
+                lv.execute(merge_cmd)
+    os.system(" cp -R -n %s %s" % (input_folder0+'/', output_folder))
+    os.system(" cp -R -n %s %s" % (input_folder1+'/', output_folder))                  
+    
+def get_summary_for_each_module():
+    print "get summary for each module:"
+    file = open(temp_path+'summary.xml', 'w')
+    file.write("<coverage>\n")
+    output = commands.getoutput(" lcov -summary "+temp_path+"wme_gcov.info").split('\n')
+    print "Total:"
+    for line in output:
+        line = line.lstrip()
+        if "Reading" == line[:7] or "Summary" == line[:7]:
+            continue
+        a = line.split(' ')
+        if "lines......:" == a[0]:
+            line_cov = a[1]
+            print "  line_coverage = %s" %(line_cov)
+        elif "functions..:" == a[0]:
+            functions_cov = a[1]
+            print "  functions_coverage = %s" %(functions_cov)
+        elif "branches...:" == a[0]:
+            branches_cov = a[1]
+            print "  branches_coverage = %s" %(branches_cov)
+    xml_line = '<total lines="%s" functions="%s" branches="%s"></total>\n' % (line_cov, functions_cov, branches_cov)
+    file.write(xml_line)
+
+    for f in os.listdir(temp_info_path):
+        if f.lower().split('.')[-1] == 'info':
+            module_name = f[:-5]
+            print module_name, ":"
+            output = commands.getoutput(" lcov -summary "+temp_info_path+"%s" % (f)).split('\n')
+            for line in output:
+                line = line.lstrip()
+                if "Reading" == line[:7] or "Summary" == line[:7]:
+                    continue
+                a = line.split(' ')
+                if "lines......:" == a[0]:
+                    line_cov = a[1]
+                    print "  line_coverage = %s" %(line_cov)
+                elif "functions..:" == a[0]:
+                    functions_cov = a[1]
+                    print "  functions_coverage = %s" %(functions_cov)
+                elif "branches...:" == a[0]:
+                    branches_cov = a[1]
+                    print "  branches_coverage = %s" %(branches_cov)
+            xml_line = '<%s lines="%s" functions="%s" branches="%s"></%s>\n' % (module_name, line_cov, functions_cov, branches_cov, module_name)
+            file.write(xml_line)
+
+    file.write("</coverage>")
+    file.close        
+def usage():
+    print "Usage: %s [ios/android/mac] [dev/sim] [debug/release] input_folder0, input_folder1" % sys.argv[0]
+    sys.exit(0)
+
+
+if __name__ == "__main__":
+
+    platform = 'ios'
+    run_mode = 'sim'
+    build_mode = 'release'
+
+    args = sys.argv[1:]
+    if len(args) == 0:
+        usage()
+
+    if  args[0] == "ios":
+        platform = 'ios'
+    elif args[0] == "android":
+        platform = 'android'
+    elif args[0] == "mac":
+        platform = 'mac'        
+    elif args[0] == "help":
+        usage()
+    else:
+        usage()
+
+    if len(args) > 1 and args[1] == "sim":
+        run_mode = 'sim'
+    elif len(args) > 1 and args[1] == "dev":
+        run_mode = 'dev'
+
+    if len(args) > 2 and args[2] == "debug":
+        build_mode = 'debug'
+    elif len(args) > 2 and args[2] == "release":
+        build_mode = 'release'
+
+    if platform == 'ios':
+        setting.init_ios_setting(run_mode, build_mode)
+    elif platform == 'android':
+        setting.init_android_setting(run_mode, build_mode)
+    elif platform == 'mac':
+        setting.init_mac_setting(run_mode, build_mode)
+        
+    os.system("mkdir -p %s" % temp_path)
+    os.system("mkdir -p %s" % temp_info_path)
+    os.system("mkdir -p %s" % temp_xml_path)  
+      
+    merge_module_info(args[3], args[4], temp_info_path)
+   
+    lv = lcov.Lcov()
+    cmd = lv.merge_info(temp_info_path, temp_path, 'wme_gcov')    
+    lv.execute(cmd)
+    module_list = setting.module_list
+    cc_workspace = setting.cc_workspace
+    for mod in module_list:
+        if platform == 'android':
+    	    lcov_cober(temp_info_path+'%s.info' % mod["module_name"], temp_xml_path+'%s.xml' % mod["module_name"], mod["path"])
+    	else:
+	        lcov_cober(temp_info_path+'%s.info' % mod["module_name"], temp_xml_path+'%s.xml' % mod["module_name"], cc_workspace+mod["module_name"])
+    	
+    get_summary_for_each_module()
+    
+    lcov_cober(temp_path+'wme_gcov.info', temp_path+'wme_gcov.xml', '../../../')
+
+

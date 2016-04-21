@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		9976E2BA190A09BA0095CEFE /* BuildAll */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 9976E2BD190A09BA0095CEFE /* Build configuration list for PBXAggregateTarget "BuildAll" */;
+			buildPhases = (
+			);
+			dependencies = (
+				84A9BFE01922CA1B00D52BB2 /* PBXTargetDependency */,
+				99D5AF4F190A2EC400A91D61 /* PBXTargetDependency */,
+				99D5AF4D190A2EBF00A91D61 /* PBXTargetDependency */,
+				99D5AF53190A2EC400A91D61 /* PBXTargetDependency */,
+				99D5AF4B190A2EBD00A91D61 /* PBXTargetDependency */,
+				99D5AF49190A2EBB00A91D61 /* PBXTargetDependency */,
+				99D5AF51190A2EC400A91D61 /* PBXTargetDependency */,
+				9976E2F0190A09F00095CEFE /* PBXTargetDependency */,
+			);
+			name = BuildAll;
+			productName = BuildAll;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXContainerItemProxy section */
+		482D89EA1C04459700C0F07F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 482D89E61C04459600C0F07F /* MediaSessionUT_mac.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 482D89401C0442A700C0F07F;
+			remoteInfo = MediaSessionUT_mac;
+		};
+		84A9BFDD1922C9E400D52BB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84A9BFD51922C9DE00D52BB2 /* appshareTest_mac.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AAC084CB191C66CB00473AE4;
+			remoteInfo = appshareTest_mac;
+		};
+		84A9BFDF1922CA1B00D52BB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84A9BFD51922C9DE00D52BB2 /* appshareTest_mac.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = AAC084CA191C66CB00473AE4;
+			remoteInfo = appshareTest_mac;
+		};
+		9976E2ED190A09E60095CEFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9976E2BE190A09E50095CEFE /* wmeclientTest_mac.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 995119E11908CFA20003775D;
+			remoteInfo = wmeclientTest_mac;
+		};
+		9976E2EF190A09F00095CEFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9976E2BE190A09E50095CEFE /* wmeclientTest_mac.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 995119E01908CFA20003775D;
+			remoteInfo = wmeclientTest_mac;
+		};
+		99D5AF13190A2E5A00A91D61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99D5AF0B190A2E5900A91D61 /* wbxaudioengineTest_mac.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 994220AD1909FBAB0054301F;
+			remoteInfo = wbxaudioengineTest_mac;
+		};
+		99D5AF1C190A2E6400A91D61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99D5AF15190A2E6300A91D61 /* wseclientTest_mac.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 99422045190915730054301F;
+			remoteInfo = wseclientTest_mac;
+		};
+		99D5AF27190A2E7600A91D61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99D5AF1E190A2E7500A91D61 /* tpTest_mac.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 99421E31190901080054301F;
+			remoteInfo = tpTest_mac;
+		};
+		99D5AF30190A2E8300A91D61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99D5AF29190A2E8200A91D61 /* utilTest_mac.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 99421ED4190906BB0054301F;
+			remoteInfo = utilTest_mac;
+		};
+		99D5AF3A190A2E9500A91D61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99D5AF32190A2E9400A91D61 /* wqosTest_mac.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 99421F22190908E30054301F;
+			remoteInfo = wqosTest_mac;
+		};
+		99D5AF46190A2EA300A91D61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99D5AF3C190A2EA200A91D61 /* wrtpTest_mac.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 99421F8619090D680054301F;
+			remoteInfo = wrtpTest_mac;
+		};
+		99D5AF48190A2EBB00A91D61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99D5AF0B190A2E5900A91D61 /* wbxaudioengineTest_mac.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 994220AC1909FBAB0054301F;
+			remoteInfo = wbxaudioengineTest_mac;
+		};
+		99D5AF4A190A2EBD00A91D61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99D5AF3C190A2EA200A91D61 /* wrtpTest_mac.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 99421F8519090D680054301F;
+			remoteInfo = wrtpTest_mac;
+		};
+		99D5AF4C190A2EBF00A91D61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99D5AF1E190A2E7500A91D61 /* tpTest_mac.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 99421E30190901080054301F;
+			remoteInfo = tpTest_mac;
+		};
+		99D5AF4E190A2EC400A91D61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99D5AF29190A2E8200A91D61 /* utilTest_mac.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 99421ED3190906BB0054301F;
+			remoteInfo = utilTest_mac;
+		};
+		99D5AF50190A2EC400A91D61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99D5AF15190A2E6300A91D61 /* wseclientTest_mac.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 99422044190915730054301F;
+			remoteInfo = wseclientTest_mac;
+		};
+		99D5AF52190A2EC400A91D61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99D5AF32190A2E9400A91D61 /* wqosTest_mac.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 99421F21190908E30054301F;
+			remoteInfo = wqosTest_mac;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		482D89E61C04459600C0F07F /* MediaSessionUT_mac.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MediaSessionUT_mac.xcodeproj; path = ../../mediasession/MediaSessionUT_mac.xcodeproj; sourceTree = "<group>"; };
+		84A9BFD51922C9DE00D52BB2 /* appshareTest_mac.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = appshareTest_mac.xcodeproj; path = ../../appshare/bld/mac/appshareTest_mac.xcodeproj; sourceTree = "<group>"; };
+		9976E2BE190A09E50095CEFE /* wmeclientTest_mac.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = wmeclientTest_mac.xcodeproj; path = ../../wme/wmeclientTest_mac.xcodeproj; sourceTree = "<group>"; };
+		99D5AF0B190A2E5900A91D61 /* wbxaudioengineTest_mac.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = wbxaudioengineTest_mac.xcodeproj; path = ../../dolphin/wbxaudioengineTest_mac.xcodeproj; sourceTree = "<group>"; };
+		99D5AF15190A2E6300A91D61 /* wseclientTest_mac.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = wseclientTest_mac.xcodeproj; path = ../../shark/wseclientTest_mac.xcodeproj; sourceTree = "<group>"; };
+		99D5AF1E190A2E7500A91D61 /* tpTest_mac.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = tpTest_mac.xcodeproj; path = ../../tp/tpTest_mac.xcodeproj; sourceTree = "<group>"; };
+		99D5AF29190A2E8200A91D61 /* utilTest_mac.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = utilTest_mac.xcodeproj; path = ../../util/utilTest_mac.xcodeproj; sourceTree = "<group>"; };
+		99D5AF32190A2E9400A91D61 /* wqosTest_mac.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = wqosTest_mac.xcodeproj; path = ../../wqos/wqosTest_mac.xcodeproj; sourceTree = "<group>"; };
+		99D5AF3C190A2EA200A91D61 /* wrtpTest_mac.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = wrtpTest_mac.xcodeproj; path = ../../wrtp/wrtpTest_mac.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		482D89E71C04459600C0F07F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				482D89EB1C04459700C0F07F /* MediaSessionUT_mac */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84A9BFD61922C9DE00D52BB2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84A9BFDE1922C9E400D52BB2 /* appshareTest_mac */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9976E2BF190A09E50095CEFE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9976E2EE190A09E60095CEFE /* wmeclientTest_mac */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		99D5ADF0190A098000A91D61 = {
+			isa = PBXGroup;
+			children = (
+				482D89E61C04459600C0F07F /* MediaSessionUT_mac.xcodeproj */,
+				84A9BFD51922C9DE00D52BB2 /* appshareTest_mac.xcodeproj */,
+				99D5AF1E190A2E7500A91D61 /* tpTest_mac.xcodeproj */,
+				99D5AF29190A2E8200A91D61 /* utilTest_mac.xcodeproj */,
+				99D5AF0B190A2E5900A91D61 /* wbxaudioengineTest_mac.xcodeproj */,
+				9976E2BE190A09E50095CEFE /* wmeclientTest_mac.xcodeproj */,
+				99D5AF32190A2E9400A91D61 /* wqosTest_mac.xcodeproj */,
+				99D5AF3C190A2EA200A91D61 /* wrtpTest_mac.xcodeproj */,
+				99D5AF15190A2E6300A91D61 /* wseclientTest_mac.xcodeproj */,
+			);
+			sourceTree = "<group>";
+		};
+		99D5AF0C190A2E5900A91D61 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99D5AF14190A2E5A00A91D61 /* wbxaudioengineTest_mac */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		99D5AF16190A2E6300A91D61 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99D5AF1D190A2E6400A91D61 /* wseclientTest_mac */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		99D5AF1F190A2E7500A91D61 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99D5AF28190A2E7600A91D61 /* tpTest_mac */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		99D5AF2A190A2E8200A91D61 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99D5AF31190A2E8300A91D61 /* utilTest_mac */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		99D5AF33190A2E9400A91D61 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99D5AF3B190A2E9500A91D61 /* wqosTest_mac */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		99D5AF3D190A2EA200A91D61 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99D5AF47190A2EA300A91D61 /* wrtpTest_mac */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		99D5ADF1190A098000A91D61 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+			};
+			buildConfigurationList = 99D5ADF4190A098000A91D61 /* Build configuration list for PBXProject "MediaSDKClientTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 99D5ADF0190A098000A91D61;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 84A9BFD61922C9DE00D52BB2 /* Products */;
+					ProjectRef = 84A9BFD51922C9DE00D52BB2 /* appshareTest_mac.xcodeproj */;
+				},
+				{
+					ProductGroup = 482D89E71C04459600C0F07F /* Products */;
+					ProjectRef = 482D89E61C04459600C0F07F /* MediaSessionUT_mac.xcodeproj */;
+				},
+				{
+					ProductGroup = 99D5AF1F190A2E7500A91D61 /* Products */;
+					ProjectRef = 99D5AF1E190A2E7500A91D61 /* tpTest_mac.xcodeproj */;
+				},
+				{
+					ProductGroup = 99D5AF2A190A2E8200A91D61 /* Products */;
+					ProjectRef = 99D5AF29190A2E8200A91D61 /* utilTest_mac.xcodeproj */;
+				},
+				{
+					ProductGroup = 99D5AF0C190A2E5900A91D61 /* Products */;
+					ProjectRef = 99D5AF0B190A2E5900A91D61 /* wbxaudioengineTest_mac.xcodeproj */;
+				},
+				{
+					ProductGroup = 9976E2BF190A09E50095CEFE /* Products */;
+					ProjectRef = 9976E2BE190A09E50095CEFE /* wmeclientTest_mac.xcodeproj */;
+				},
+				{
+					ProductGroup = 99D5AF33190A2E9400A91D61 /* Products */;
+					ProjectRef = 99D5AF32190A2E9400A91D61 /* wqosTest_mac.xcodeproj */;
+				},
+				{
+					ProductGroup = 99D5AF3D190A2EA200A91D61 /* Products */;
+					ProjectRef = 99D5AF3C190A2EA200A91D61 /* wrtpTest_mac.xcodeproj */;
+				},
+				{
+					ProductGroup = 99D5AF16190A2E6300A91D61 /* Products */;
+					ProjectRef = 99D5AF15190A2E6300A91D61 /* wseclientTest_mac.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				9976E2BA190A09BA0095CEFE /* BuildAll */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		482D89EB1C04459700C0F07F /* MediaSessionUT_mac */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = MediaSessionUT_mac;
+			remoteRef = 482D89EA1C04459700C0F07F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84A9BFDE1922C9E400D52BB2 /* appshareTest_mac */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = appshareTest_mac;
+			remoteRef = 84A9BFDD1922C9E400D52BB2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9976E2EE190A09E60095CEFE /* wmeclientTest_mac */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = wmeclientTest_mac;
+			remoteRef = 9976E2ED190A09E60095CEFE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		99D5AF14190A2E5A00A91D61 /* wbxaudioengineTest_mac */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = wbxaudioengineTest_mac;
+			remoteRef = 99D5AF13190A2E5A00A91D61 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		99D5AF1D190A2E6400A91D61 /* wseclientTest_mac */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = wseclientTest_mac;
+			remoteRef = 99D5AF1C190A2E6400A91D61 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		99D5AF28190A2E7600A91D61 /* tpTest_mac */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = tpTest_mac;
+			remoteRef = 99D5AF27190A2E7600A91D61 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		99D5AF31190A2E8300A91D61 /* utilTest_mac */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = utilTest_mac;
+			remoteRef = 99D5AF30190A2E8300A91D61 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		99D5AF3B190A2E9500A91D61 /* wqosTest_mac */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = wqosTest_mac;
+			remoteRef = 99D5AF3A190A2E9500A91D61 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		99D5AF47190A2EA300A91D61 /* wrtpTest_mac */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = wrtpTest_mac;
+			remoteRef = 99D5AF46190A2EA300A91D61 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXTargetDependency section */
+		84A9BFE01922CA1B00D52BB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = appshareTest_mac;
+			targetProxy = 84A9BFDF1922CA1B00D52BB2 /* PBXContainerItemProxy */;
+		};
+		9976E2F0190A09F00095CEFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = wmeclientTest_mac;
+			targetProxy = 9976E2EF190A09F00095CEFE /* PBXContainerItemProxy */;
+		};
+		99D5AF49190A2EBB00A91D61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = wbxaudioengineTest_mac;
+			targetProxy = 99D5AF48190A2EBB00A91D61 /* PBXContainerItemProxy */;
+		};
+		99D5AF4B190A2EBD00A91D61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = wrtpTest_mac;
+			targetProxy = 99D5AF4A190A2EBD00A91D61 /* PBXContainerItemProxy */;
+		};
+		99D5AF4D190A2EBF00A91D61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = tpTest_mac;
+			targetProxy = 99D5AF4C190A2EBF00A91D61 /* PBXContainerItemProxy */;
+		};
+		99D5AF4F190A2EC400A91D61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = utilTest_mac;
+			targetProxy = 99D5AF4E190A2EC400A91D61 /* PBXContainerItemProxy */;
+		};
+		99D5AF51190A2EC400A91D61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = wseclientTest_mac;
+			targetProxy = 99D5AF50190A2EC400A91D61 /* PBXContainerItemProxy */;
+		};
+		99D5AF53190A2EC400A91D61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = wqosTest_mac;
+			targetProxy = 99D5AF52190A2EC400A91D61 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9976E2BB190A09BA0095CEFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9976E2BC190A09BA0095CEFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		99D5ADF5190A098000A91D61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OBJROOT = ../../objs/mac;
+				SDKROOT = macosx;
+				SYMROOT = ../../bin/mac;
+			};
+			name = Debug;
+		};
+		99D5ADF6190A098000A91D61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OBJROOT = ../../objs/mac;
+				SDKROOT = macosx;
+				SYMROOT = ../../bin/mac;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9976E2BD190A09BA0095CEFE /* Build configuration list for PBXAggregateTarget "BuildAll" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9976E2BB190A09BA0095CEFE /* Debug */,
+				9976E2BC190A09BA0095CEFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99D5ADF4190A098000A91D61 /* Build configuration list for PBXProject "MediaSDKClientTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99D5ADF5190A098000A91D61 /* Debug */,
+				99D5ADF6190A098000A91D61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 99D5ADF1190A098000A91D61 /* Project object */;
+}

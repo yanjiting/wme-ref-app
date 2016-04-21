@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{33482E76-C5C0-4EEB-ADF9-98E49ADD4C64}</ProjectGuid>
+    <RootNamespace>SharkTest</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.21005.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>../../mediaengine/bin/$(Platform)/$(Configuration)\</OutDir>
+    <IntDir>../objs/$(Platform)/$(Configuration)/$(ProjectName)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>../../mediaengine/bin/$(Platform)/$(Configuration)\</OutDir>
+    <IntDir>../objs/$(Platform)/$(Configuration)/$(ProjectName)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>../../mediaengine/bin/$(Platform)/$(Configuration)\</OutDir>
+    <IntDir>../objs/$(Platform)/$(Configuration)/$(ProjectName)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>../../mediaengine/bin/$(Platform)/$(Configuration)\</OutDir>
+    <IntDir>../objs/$(Platform)/$(Configuration)/$(ProjectName)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\vendor\gtest\gtest-1.7.0\include;..\..\vendor\gtest\gmock-1.7.0\include;..\..\mediaengine\shark\src\client\SvcClientEngine;..\..\mediaengine\shark\src\jlcore;..\..\mediaengine\shark\include;..\..\mediaengine\shark\src\h;..\..\mediaengine\shark\src\common;..\..\mediaengine\shark\src\client\h;..\..\mediaengine\shark\src\client\SvcClientEngine\windows;..\..\mediaengine\transmission\include;..\..\mediaengine\util\include;..\..\mediaengine\util\include\windows;..\..\vendor\openh264\api;..\..\mediaengine\shark\src\wsevp\interface;..\..\api;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_U_TEST_;ENABLE_RTCP_CONTROLLER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>gtest-md.lib;gmock.lib;wsertp.lib;winmm.lib;ws2_32.lib;wsevp.lib;util.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\vendor\gtest\vs2013libs\$(Configuration);..\..\mediaengine\libs\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>..\maps\$(Platform)\$(Configuration)\$(ProjectName).pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\vendor\gtest\gtest-1.7.0\include;..\..\vendor\gtest\gmock-1.7.0\include;..\..\mediaengine\shark\src\client\SvcClientEngine;..\..\mediaengine\shark\src\jlcore;..\..\mediaengine\shark\include;..\..\mediaengine\shark\src\h;..\..\mediaengine\shark\src\common;..\..\mediaengine\shark\src\client\h;..\..\mediaengine\shark\src\client\SvcClientEngine\windows;..\..\mediaengine\transmission\include;..\..\mediaengine\util\include;..\..\mediaengine\util\include\windows;..\..\vendor\openh264\api;..\..\mediaengine\shark\src\wsevp\interface;..\..\api;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_U_TEST_;ENABLE_RTCP_CONTROLLER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>gtest-md.lib;gmock.lib;wsertp.lib;winmm.lib;ws2_32.lib;wsevp.lib;util.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\vendor\gtest\vs2013libs\$(Platform)\$(Configuration);..\..\mediaengine\libs\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>..\maps\$(Platform)\$(Configuration)\$(ProjectName).pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\..\vendor\gtest\gtest-1.7.0\include;..\..\vendor\gtest\gmock-1.7.0\include;..\..\mediaengine\shark\src\client\SvcClientEngine;..\..\mediaengine\shark\src\jlcore;..\..\mediaengine\shark\include;..\..\mediaengine\shark\src\h;..\..\mediaengine\shark\src\common;..\..\mediaengine\shark\src\client\h;..\..\mediaengine\shark\src\client\SvcClientEngine\windows;..\..\mediaengine\transmission\include;..\..\mediaengine\util\include;..\..\mediaengine\util\include\windows;..\..\vendor\openh264\api;..\..\mediaengine\shark\src\wsevp\interface;..\..\api;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_U_TEST_;ENABLE_RTCP_CONTROLLER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>gtest-md.lib;gmock.lib;wsertp.lib;winmm.lib;ws2_32.lib;wsevp.lib;util.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\vendor\gtest\vs2013libs\$(Configuration);..\..\mediaengine\libs\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>..\maps\$(Platform)\$(Configuration)\$(ProjectName).pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\..\vendor\gtest\gtest-1.7.0\include;..\..\vendor\gtest\gmock-1.7.0\include;..\..\mediaengine\shark\src\client\SvcClientEngine;..\..\mediaengine\shark\src\jlcore;..\..\mediaengine\shark\include;..\..\mediaengine\shark\src\h;..\..\mediaengine\shark\src\common;..\..\mediaengine\shark\src\client\h;..\..\mediaengine\shark\src\client\SvcClientEngine\windows;..\..\mediaengine\transmission\include;..\..\mediaengine\util\include;..\..\mediaengine\util\include\windows;..\..\vendor\openh264\api;..\..\mediaengine\shark\src\wsevp\interface;..\..\api;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_U_TEST_;ENABLE_RTCP_CONTROLLER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>gtest-md.lib;gmock.lib;wsertp.lib;winmm.lib;ws2_32.lib;wsevp.lib;util.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\vendor\gtest\vs2013libs\$(Platform)\$(Configuration);..\..\mediaengine\libs\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>..\maps\$(Platform)\$(Configuration)\$(ProjectName).pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\mediaengine\shark\src\client\SvcClientEngine\WseCodecTrace.cpp" />
+    <ClCompile Include="..\..\mediaengine\shark\src\client\SvcClientEngine\WseHybridEncoder.cpp" />
+    <ClCompile Include="..\..\mediaengine\shark\src\client\SvcClientEngine\WseVideoDecoderFactory.cpp" />
+    <ClCompile Include="..\..\mediaengine\shark\src\client\SvcClientEngine\WseVideoEncoderFactory.cpp" />
+    <ClCompile Include="..\..\mediaengine\shark\src\client\SvcClientEngine\WseVideoReceivingBuffer.cpp" />
+    <ClCompile Include="CWseEncodeControlTest.cpp" />
+    <ClCompile Include="CWseEncodeParamGeneratorTest.cpp" />
+    <ClCompile Include="CWseEngineImpTest.cpp" />
+    <ClCompile Include="CWseH264SvcDecoderTest.cpp" />
+    <ClCompile Include="CWseH264SvcEncoderTest.cpp" />
+    <ClCompile Include="CWseUtil.cpp" />
+    <ClCompile Include="CWseVideoEncoderTest.cpp" />
+    <ClCompile Include="CWseVideoListenChannelTest.cpp" />
+    <ClCompile Include="CWseVideoMediaInfoTest.cpp" />
+    <ClCompile Include="CWseVideoProcessingTest.cpp" />
+    <ClCompile Include="CWseVideoSourceChannelTest.cpp" />
+    <ClCompile Include="SharkTest.cpp" />
+    <ClCompile Include="WseClientUtilTest.cpp" />
+    <ClCompile Include="WseRtpApPacketTest.cpp" />
+    <ClCompile Include="WseRtpFuPacketTest.cpp" />
+    <ClCompile Include="..\..\mediaengine\shark\src\client\SvcClientEngine\ClientRtcpController.cpp" />
+    <ClCompile Include="..\..\mediaengine\shark\src\client\SvcClientEngine\deliverermgr.cpp" />
+    <ClCompile Include="..\..\mediaengine\shark\src\client\SvcClientEngine\Prioritygenerator.cpp" />
+    <ClCompile Include="..\..\mediaengine\shark\src\common\RtpExtend.cpp" />
+    <ClCompile Include="..\..\mediaengine\shark\src\client\SvcClientEngine\SendAdaptor.cpp" />
+    <ClCompile Include="..\..\mediaengine\shark\src\client\SvcClientEngine\SVCEncodedBlock.cpp" />
+    <ClCompile Include="..\..\mediaengine\shark\src\client\SvcClientEngine\SvcRtpPacker.cpp" />
+    <ClCompile Include="..\..\mediaengine\shark\src\client\SvcClientEngine\WseCo2Vp8Encoder.cpp" />
+    <ClCompile Include="..\..\mediaengine\shark\src\client\SvcClientEngine\WseDataBuff.cpp" />
+    <ClCompile Include="..\..\mediaengine\shark\src\client\SvcClientEngine\WseEncodeControl.cpp" />
+    <ClCompile Include="..\..\mediaengine\shark\src\client\SvcClientEngine\WseEncodeParamGenerator.cpp" />
+    <ClCompile Include="..\..\mediaengine\shark\src\client\SvcClientEngine\WseEngineImp.cpp" />
+    <ClCompile Include="..\..\mediaengine\shark\src\client\SvcClientEngine\WseFrameRateMonitor.cpp" />
+    <ClCompile Include="..\..\mediaengine\shark\src\client\SvcClientEngine\WseH264MediaInfo.cpp" />
+    <ClCompile Include="..\..\mediaengine\shark\src\client\SvcClientEngine\WseH264SvcDecoder.cpp" />
+    <ClCompile Include="..\..\mediaengine\shark\src\client\SvcClientEngine\WseH264SvcEncoder.cpp" />
+    <ClCompile Include="..\..\mediaengine\shark\src\client\SvcClientEngine\WseModule.cpp" />
+    <ClCompile Include="..\..\mediaengine\shark\src\client\SvcClientEngine\WseRtpApPacket.cpp" />
+    <ClCompile Include="..\..\mediaengine\shark\src\client\SvcClientEngine\WseRtpFuPacket.cpp" />
+    <ClCompile Include="..\..\mediaengine\shark\src\client\SvcClientEngine\WseRtpPacketization.cpp" />
+    <ClCompile Include="..\..\mediaengine\shark\src\client\SvcClientEngine\WseSendController.cpp" />
+    <ClCompile Include="..\..\mediaengine\shark\src\client\SvcClientEngine\WseSmoothPlayControl.cpp" />
+    <ClCompile Include="..\..\mediaengine\shark\src\client\SvcClientEngine\WseVideoColorspaceConverter.cpp" />
+    <ClCompile Include="..\..\mediaengine\shark\src\client\SvcClientEngine\WseVideoCropper.cpp" />
+    <ClCompile Include="..\..\mediaengine\shark\src\client\SvcClientEngine\WseVideoEncoder.cpp" />
+    <ClCompile Include="..\..\mediaengine\shark\src\client\SvcClientEngine\WseVideoEncryption.cpp" />
+    <ClCompile Include="..\..\mediaengine\shark\src\client\SvcClientEngine\WseVideoListenChannel.cpp" />
+    <ClCompile Include="..\..\mediaengine\shark\src\client\SvcClientEngine\WseVideoMediaInfo.cpp" />
+    <ClCompile Include="..\..\mediaengine\shark\src\client\SvcClientEngine\WseVideoMediaInfoGetter.cpp" />
+    <ClCompile Include="..\..\mediaengine\shark\src\client\SvcClientEngine\WseVideoProcessing.cpp" />
+    <ClCompile Include="..\..\mediaengine\shark\src\client\SvcClientEngine\WseVideoSample.cpp" />
+    <ClCompile Include="..\..\mediaengine\shark\src\client\SvcClientEngine\WseVideoDirectBuffer.cpp" />
+    <ClCompile Include="..\..\mediaengine\shark\src\client\SvcClientEngine\WseVideoSourceChannel.cpp" />
+    <ClCompile Include="..\..\mediaengine\shark\src\client\SvcClientEngine\WseVp8EncSink.cpp" />
+    <ClCompile Include="..\..\mediaengine\shark\src\jlcore\jlbaseimp.cpp" />
+    <ClCompile Include="..\..\mediaengine\shark\src\common\RtpMonitorManager.cpp" />
+    <ClCompile Include="..\..\mediaengine\shark\src\common\SvcFecControl.cpp" />
+    <ClCompile Include="..\..\mediaengine\shark\src\common\SvcNal.cpp" />
+    <ClCompile Include="..\..\mediaengine\shark\src\client\SvcClientEngine\WseClientUtil.cpp" />
+    <ClCompile Include="..\..\mediaengine\shark\src\common\WseDataDump.cpp" />
+    <ClCompile Include="..\..\mediaengine\shark\src\common\WseFeedbackMessage.cpp" />
+    <ClCompile Include="..\..\mediaengine\shark\src\common\WseHeapMem.cpp" />
+    <ClCompile Include="..\..\mediaengine\shark\src\common\WseRtpMonitor.cpp" />
+    <ClCompile Include="..\..\mediaengine\shark\src\common\WseRtpStat.cpp" />
+    <ClCompile Include="..\..\mediaengine\shark\src\client\SvcClientEngine\WseSample.cpp" />
+    <ClCompile Include="..\..\mediaengine\shark\src\common\WseTaskThread.cpp" />
+    <ClCompile Include="..\..\mediaengine\shark\src\common\WseTimer.cpp" />
+    <ClCompile Include="..\..\mediaengine\shark\src\common\WseUtil.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="SvcClientEngineMock.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SharkTest.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

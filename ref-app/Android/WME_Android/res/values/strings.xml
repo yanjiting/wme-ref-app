@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Webex Media Engine</string>
+    <string name="action_settings">Settings</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="stun">STUN SERVER IP:</string>
+    <string name="jingle">JINGLE SERVER IP:</string>
+    <string name="port">Port:</string>
+    <string name="connect">Connect</string>
+    <string name="hostIP">Host IP</string>
+
+    <string-array name="video_codec_params">
+        <item>SVC : 1280x720 : 30.0FPS</item>
+        <item>SVC : 640x360 : 30.0FPS</item>
+        <item>SVC : 320x180 : 15.0FPS</item>
+        <item>SVC : 160x90 : 7.5FPS</item>
+    </string-array>
+    
+    <string-array name="camera_facing">
+        <item>front</item>
+        <item>back</item>
+    </string-array>
+    
+    <string-array name="video_quality">
+        <item>sLD</item>
+        <item>LD</item>
+        <item>SD</item>
+        <item>HD_720P</item>     
+    </string-array>
+    
+    <string-array name="render_mode">
+        <item>Stretch</item>
+        <item>LetterBox</item>
+        <item>CropFit</item>     
+    </string-array>
+    
+    <string-array name="audio_codec_params">
+        <item>OPUS : 16KHz : Bitrate = 25Kbps</item>
+    </string-array>
+    <string name="videoSettings"><b>Video Settings</b></string>
+    <string name="audioSettings"><b>Audio Settings</b></string>
+    <string name="videoStop">Stop Video</string>
+    <string name="audioStop">Stop Audio</string>
+    
+    <string name="enable_video">Enable Video</string>
+    <string name="data_dump">Data Dump</string>  
+    <string name="disable_enable_video">Disable/Enable Video</string>
+    <string name="video_preview">Video Preview</string>
+    <string name="video_parameters">Video Parameters</string>
+    <string name="forcerenderinlandscape">ForceRenderInLandscape</string>
+    
+    <string name="rawCaptureDump">Enable Capture</string>
+    <string name="encodeRtpDump">Enable Encode</string>
+    <string name="recvNalDump">Enable Nal</string>
+    <string name="decodeNalDump">Enable Decode</string>
+    <string name="renderDataDump">Enable Render</string>
+            
+    <string name="pathLocation">Location</string>
+    <string name="selectBtn">Select</string>
+    <string name="localFileName">File name:</string>
+    <string name="noAnyData">No Data</string>
+    <string name="canNotAccess">Cannot Access</string>
+    <string name="enable_external_track">Enable External Track</string>
+    <string name="select_file">SelectRawFile</string>
+    <string name="selected_file_name">Selected local file</string>
+    <string name="external_track">External Track</string>
+    <string name="video_size">Size:</string>
+    <string name="video_color">ColorSpace:</string>
+    <string name="split_label">x</string>
+    <string name="apply_external_track">Apply External Track</string>
+    
+    <string-array name="video_colorspaces">
+        <item>WmeVideoUnknown</item>
+        <item>WmeI420</item>
+        <item>WmeYV12</item>
+        <item>WmeNV12</item> 
+        <item>WmeNV21</item>
+        <item>WmeYUY2</item>
+        <item>WmeRGB24</item> 
+        <item>WmeBGR24</item>
+        <item>WmeRGB24Flip</item>
+        <item>WmeBGR24Flip</item> 
+        <item>WmeRGBA32</item>
+        <item>WmeBGRA32</item>
+        <item>WmeARGB32</item>
+        <item>WmeABGR32</item>     
+    </string-array>        
+</resources>

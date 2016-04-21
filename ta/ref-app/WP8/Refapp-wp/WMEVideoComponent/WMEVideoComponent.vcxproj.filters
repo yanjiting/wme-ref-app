@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resources">
+      <UniqueIdentifier>c86186df-0189-4ebb-b565-b4149381d279</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tga;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="WME">
+      <UniqueIdentifier>{282e2945-cbd7-496a-baf2-44c54f590e4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TA">
+      <UniqueIdentifier>{ba060a3d-5445-470a-882d-5b7564be2e70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="h">
+      <UniqueIdentifier>{f0a6f9e7-82fd-4ea5-a853-f3611faa4420}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libjason">
+      <UniqueIdentifier>{61519c11-f25c-408b-a868-e041da8832e4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\asenum.cpp" />
+    <ClCompile Include="..\..\..\src\BackdoorAgent.cpp" />
+    <ClCompile Include="..\..\..\src\bearer_oauth.cpp" />
+    <ClCompile Include="..\..\..\src\Calabash.cpp" />
+    <ClCompile Include="..\..\..\src\calliope_client.cpp" />
+    <ClCompile Include="..\..\..\src\ClickCall.cpp" />
+    <ClCompile Include="..\..\..\src\cmdlinehandler.cpp" />
+    <ClCompile Include="..\..\..\src\cpuusage.cpp" />
+    <ClCompile Include="..\..\..\src\Loopback.cpp" />
+    <ClCompile Include="..\..\..\src\PeerCall.cpp" />
+    <ClCompile Include="..\..\..\src\StatsInfo.cpp" />
+    <ClCompile Include="..\..\..\src\stringtoargcargv.cpp" />
+    <ClCompile Include="..\..\..\src\TAHTTPServer.cpp" />
+    <ClCompile Include="..\..\..\src\wsclient.cpp" />
+    <ClCompile Include="..\..\..\src\ScreenTrackViewAnalyzer.cpp" />
+    <ClCompile Include="..\..\..\src\externaltransport.cpp" />
+    <ClCompile Include="..\..\..\..\json-cpp\src\lib_json\json_reader.cpp">
+      <Filter>libjason</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\json-cpp\src\lib_json\json_value.cpp">
+      <Filter>libjason</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\json-cpp\src\lib_json\json_writer.cpp">
+      <Filter>libjason</Filter>
+    </ClCompile>
+    <ClCompile Include="ExternalRenderContentProvider.cpp" />
+    <ClCompile Include="WMEVideoHost.cpp">
+      <Filter>WME</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\asenum.h">
+      <Filter>h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\BackdoorAgent.h">
+      <Filter>h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\BackdoorAgentSink.h">
+      <Filter>h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\bearer_oauth.h">
+      <Filter>h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Calabash.h">
+      <Filter>h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\calliope_client.h">
+      <Filter>h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\ClickCall.h">
+      <Filter>h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Loopback.h">
+      <Filter>h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\PeerCall.h">
+      <Filter>h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\StatsInfo.h">
+      <Filter>h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\TAHTTPServer.h">
+      <Filter>h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\testconfig.h">
+      <Filter>h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\wsclient.h">
+      <Filter>h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\ScreenTrackViewAnalyzer.h">
+      <Filter>h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\externaltransport.h" />
+    <ClInclude Include="..\..\..\..\json-cpp\src\lib_json\json_batchallocator.h">
+      <Filter>libjason</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\json-cpp\src\lib_json\json_tool.h">
+      <Filter>libjason</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternalRenderContentProvider.h" />
+    <ClInclude Include="WMEVideoHost.h">
+      <Filter>WME</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\json-cpp\src\lib_json\json_internalarray.inl">
+      <Filter>libjason</Filter>
+    </None>
+    <None Include="..\..\..\..\json-cpp\src\lib_json\json_internalmap.inl">
+      <Filter>libjason</Filter>
+    </None>
+    <None Include="..\..\..\..\json-cpp\src\lib_json\json_valueiterator.inl">
+      <Filter>libjason</Filter>
+    </None>
+    <None Include="..\..\..\..\json-cpp\src\lib_json\sconscript">
+      <Filter>libjason</Filter>
+    </None>
+  </ItemGroup>
+</Project>

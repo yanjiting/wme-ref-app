@@ -1,0 +1,13 @@
+This file describes the interface IWmeMediaConnection.
+
+.. contents:: 
+    :local: 
+    :depth: 2
+
+<doxygen2rst function=InitMediaEngine>InitMediaEngine</doxygen2rst>
+
+<doxygen2rst function=UninitMediaEngine>UninitMediaEngine</doxygen2rst>
+
+<doxygen2rst function=CreateMediaConnection>CreateMediaConnection</doxygen2rst>
+
+<doxygen2rst class=wme::IWmeMediaConnection>MediaConnection</doxygen2rst>

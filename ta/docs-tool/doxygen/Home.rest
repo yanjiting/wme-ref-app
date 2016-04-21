@@ -1,0 +1,15 @@
+.. contents:: 
+    :local: 
+
+1. MediaSession API Document
+-----------------------------
+ - `MediaSession API Document <wiki/MediaSessionAPI>`_
+	
+2. WME Threading models
+---------------------
+
+a. We suggest upper layer calling the API in one thread.
+b. The callback may come up in different work thread. It is better upper layer switch to main thread.
+ - `WME Threading Overview <wiki/WME-Threading-Overview>`_
+ - `WME Threading Creation <wiki/WME-Threading-Creation>`_ 
+ - `WME Threading Processing <wiki/WME-Threading-Processing>`_ 

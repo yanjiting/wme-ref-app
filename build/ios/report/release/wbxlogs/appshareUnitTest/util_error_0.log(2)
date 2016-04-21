@@ -1,0 +1,5 @@
+630                            
+[03/11/2016 16:31:07.418 pid=750 tid=443978] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] ERROR: [CShareCaptureEngine::Start]>>fail>>without screen source, m_eSHARE_CAPTURE_ENGINE_TYPE=2,count = 0[/Users/zzchu/Desktop/git-ws/wme_git/wme/mediaengine/appshare/src/share_capture_engine_impl.cpp:226]
+[03/11/2016 16:31:07.419 pid=750 tid=443978] [[ScreenShare],[Core]] :[[ScreenShare],[Core]] ERROR: [CShareCaptureEngine::Start]>>fail>>without screen source, m_eSHARE_CAPTURE_ENGINE_TYPE=2,count = 0[/Users/zzchu/Desktop/git-ws/wme_git/wme/mediaengine/appshare/src/share_capture_engine_impl.cpp:226]
+************************* Current Trace Point *************************
+
